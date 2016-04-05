@@ -1,0 +1,311 @@
+@import url('http://fonts.googleapis.com/css?family=Armata');
+.one-third {
+    width: 33.3%;
+}
+
+body {
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    height: 100%;
+    font-size: 18px;
+}
+
+.row {
+    margin-left: -1px;
+    margin-right: 0px;
+}
+
+.right {
+    float: right;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    padding-right: 0px;
+    color: white;
+}
+
+.navbar {
+    background-color: #294B74;
+    box-shadow: inset 0px 0px 11px 4px #0A315F;
+    color: white;
+    border: none;
+    border-radius: 0px;
+    margin-bottom: 0px;
+}
+
+.navbar-default .navbar-nav li a {
+    color: white;
+}
+
+.navbar-default .navbar-nav > li > a:focus,
+.navbar-default .navbar-nav > li > a:hover {
+    color: white;
+    background-color: #102F54;
+}
+
+.navbar-default .navbar-brand {
+    color: white;
+    margin: 0px;
+}
+
+.application-section {
+    position: relative;
+    height: 800px;
+    width: 33.33%;
+    float: left;
+    font-size: 20px;
+    background: #294B74;
+    box-shadow: inset 0px 0px 11px 4px #0A315F;
+}
+
+.application-section #sub-name-list {
+    padding: 0px;
+    margin-top: 30px;
+}
+
+.application-section #sub-name-list li {
+    margin-top: 20px;
+    font-size: inherit;
+}
+
+.application-section #sub-name-list li a {
+    color: white;
+    display: block;
+    padding: 10px 30px;
+    padding-right: 25px;
+    text-decoration: none;
+}
+
+.application-section #sub-name-list li a:focus,
+.application-section #sub-name-list li a:hover {
+    color: white;
+    background-color: #FAC369;
+}
+
+.application-section #application {
+    position: relative;
+    top: 20px;
+}
+
+.application-section #application h4 {
+    color: #A5A5A5;
+    padding-left: 20px;
+    margin-top: 30px;
+    padding-left: 30px;
+}
+
+.rule-section {
+    position: relative;
+    height: 800px;
+    width: 33.33%;
+    float: left;
+    font-size: 20px;
+    background-image: linear-gradient(-90deg, #F9F9F9 9%, #F0F0F0 83%);
+}
+
+.rule-section #sub-name-list {
+    padding: 0px;
+    margin-top: 30px;
+}
+
+.rule-section #application #sub-name-list li {
+    margin-top: 20px;
+    font-size: 20px;
+    color: #173C68
+}
+
+.rule-section #sub-name-list li a {
+    color: #173C68;
+    display: block;
+    padding: 10px 30px;
+    padding-right: 25px;
+    text-decoration: none;
+}
+
+.rule-section #application #sub-name-list li a:focus,
+.rule-section #application #sub-name-list li a:hover {
+    color: white;
+    background-color: #FAC369;
+}
+
+.rule-section #application {
+    position: relative;
+    top: 20px;
+}
+
+.rule-section #application h4 {
+    color: #A5A5A5;
+    padding-left: 20px;
+    margin-top: 30px;
+    padding-left: 30px;
+}
+
+.assigned-section {
+    position: relative;
+    height: 800px;
+    background-color: #ffffff;
+    width: 33.33%;
+    float: left;
+}
+
+.assigned-section #application {
+    position: relative;
+    top: 20px;
+    left: 20px
+}
+
+.assigned-section #application h4 {
+    color: #A5A5A5;
+    padding-left: 20px;
+    margin-top: 30px;
+    padding-left: 30px;
+}
+
+.assigned-section #application #name-list {
+    margin-left: 30px;
+    padding-left: 0px;
+    margin-top: 25px;
+}
+
+.assigned-section #application #name-list li {
+    color: #0088CC;
+    background-color: #D9EDF7;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 12px;
+    border-bottom: 1px solid #f2f2f2;
+    margin-top: 15px;
+    width: 285px;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+.glyphicon {
+    top: 3px;
+}
+
+#bookmark {
+    padding-bottom: 10px;
+    position: relative;
+    opacity: 0.7;
+    background: #F5F5F5;
+    border: 1px solid #C7A3A3;
+    border-radius: 8px;
+    height: auto;
+    width: 350px;
+    margin-top: 60px;
+    margin-left: 25px;
+}
+
+#bookmark h4 {
+    margin-left: 20px;
+}
+
+#bookmark #name-list {
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-left: 0px;
+}
+
+#bookmark #name-list li {
+    color: black;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 12px;
+    border-bottom: 1px solid #f2f2f2;
+    margin-top: 15px;
+    width: 310px;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+#bookmark #name-list #group {
+    background-color: #DFF0D8;
+    color: #609A60;
+}
+
+#bookmark #name-list #people {
+    background-color: #D9EDF7;
+    color: #0088CC;
+}
+
+#bookmark #sub-name-list {
+    margin-left: 15px;
+    margin-right: 15px;
+    padding-left: 0px;
+}
+
+#bookmark #sub-name-list li {
+    color: #0088CC;
+    background-color: #D9EDF7;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 12px;
+    border-bottom: 1px solid #f2f2f2;
+    margin-top: 15px;
+    width: 285px;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+.input-group {
+    top: 15px;
+    margin-left: 25px;
+    width: 30%;
+    float: left;
+}
+
+.input-group .form-control {
+    position: relative;
+    z-index: 2;
+    float: left;
+    width: 315px;
+    background: #ffffff;
+    box-shadow: inset 0px 1px 0px 0px #ECECEC;
+}
+
+.col-md-8 {
+    padding-left: 0px;
+    padding-right: 0px;
+    width: 75%;
+}
+
+.col-md-8 .searchbar-application {
+    padding-top: 5px;
+    width: 100%;
+    height: 85px;
+    background: white;
+    border-bottom: 8px;
+    border-bottom-color: #E0E0E0;
+    border-bottom-style: solid;
+}
+
+.col-md-4 {
+    padding-left: 0px;
+    padding-right: 0px;
+    width: 25%;
+}
+
+.page-content {}
+
+.col-md-4 .searchbar-application {
+    height: 885px;
+    border-left: 8px;
+    border-left-color: #E0E0E0;
+    border-left-style: solid;
+    border-bottom: none;
+    background: white;
+    padding-top: 5px;
+}
+
+
+}
+.col-md-4 .searchbar-application .input-group .glyphicon {
+    opacity: 0.5;
+    margin-bottom: 3px;
+}

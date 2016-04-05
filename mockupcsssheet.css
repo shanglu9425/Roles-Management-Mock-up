@@ -1,6 +1,19 @@
 @import url('http://fonts.googleapis.com/css?family=Armata');
+.content {
+    height: 100%;
+    display: table;
+}
+
+.wrapper2 {
+    height: 100%;
+}
+
 .one-third {
     width: 33.3%;
+}
+
+html {
+    height: 100%
 }
 
 body {

@@ -1,2 +1,5 @@
 
 .sass-cache/092320c24d049c71d37cbff84172f78b7bb13822/test.scssc
+
+# Ignore all .map files
+*.map

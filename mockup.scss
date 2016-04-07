@@ -1,0 +1,125 @@
+body {
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    height: 100%;
+    font-size: 15px;
+    ul {
+        list-style: none;
+    }
+}
+
+.searchbar-application {
+    height: 70px;
+    border-bottom-color: #E0E0E0;
+    border-bottom-style: solid;
+    width: 100%;
+    border-bottom-width: 5px;
+    .form-control {
+        width: 200px;
+    }
+    .input-group {
+        top: 15px;
+        margin-left: 25px;
+        width: 30%;
+        float: left;
+    }
+    .form-control {
+        position: relative;
+        z-index: 2;
+        float: left;
+        width: 200px;
+        background: #ffffff;
+        box-shadow: inset 0px 1px 0px 0px #ECECEC;
+    }
+}
+
+.application-section {
+    ul {
+        list-style: none;
+    }
+    li {
+        padding-right: 0px;
+        color: white;
+    }
+}
+
+.assigned-section {
+    li {
+        width: 200px;
+        color: #0088CC;
+        background-color: #D9EDF7;
+        padding-top: 2px;
+        padding-bottom: 2px;
+        padding-left: 12px;
+        border-bottom: 1px solid #f2f2f2;
+        margin-top: 15px;
+        font-size: 15px;
+        border-radius: 5px;
+    }
+}
+
+.bookmark-name {
+    height: 100vh;
+    border-left-color: #E0E0E0;
+    border-left-style: solid;
+    border-bottom: none;
+    background: white;
+    padding-top: 5px;
+    width: 100%;
+    border-left-width: 5px;
+}
+
+#bookmark {
+    width: 80%;
+    h4 {
+        margin-left: 20px;
+    }
+    #name-list {
+        margin-left: 20px;
+        margin-right: 20px;
+        padding-left: 0px;
+    }
+    li {
+        color: black;
+        padding-top: 2px;
+        padding-bottom: 2px;
+        padding-left: 12px;
+        border-bottom: 1px solid #f2f2f2;
+        margin-top: 15px;
+        width: 100%;
+        font-size: 20px;
+        border-radius: 5px;
+    }
+    #sub-name-list li {
+        color: #0088CC;
+        background-color: #D9EDF7;
+        padding-top: 2px;
+        padding-bottom: 2px;
+        padding-left: 12px;
+        border-bottom: 1px solid #f2f2f2;
+        margin-top: 15px;
+        width: 100%;
+        font-size: 20px;
+        border-radius: 5px;
+    }
+}
+
+.col-md-6 {
+    .input-group {
+        float: right;
+    }
+}
+
+.background-white {
+    background: white;
+}
+
+.background-gray {
+    background-image: linear-gradient(-90deg, #F9F9F9 9%, #F0F0F0 83%);
+}
+
+.background-blue {
+    background: #294B74;
+    box-shadow: inset 0px 0px 11px 4px #0A315F;
+}

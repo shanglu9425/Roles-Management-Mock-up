@@ -1,0 +1,39 @@
+.row {
+    margin-left: -1px;
+    margin-right: 0px;
+}
+
+.navbar {
+    background-color: #294B74;
+    box-shadow: inset 0px 0px 11px 4px #0A315F;
+    color: white;
+    border: none;
+    border-radius: 0px;
+    margin-bottom: 0px;
+}
+
+.navbar-default .navbar-brand {
+    color: white;
+    margin: 0px;
+}
+
+.glyphicon {
+    top: 3px;
+}
+
+.col-md-4 {
+    padding-left: 0px;
+    padding-right: 0px;
+    width: 25%;
+}
+
+.col-md-3 {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.col-md-8 {
+    padding-left: 0px;
+    padding-right: 0px;
+    width: 75%;
+}

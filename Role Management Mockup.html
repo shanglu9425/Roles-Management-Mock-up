@@ -6,10 +6,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-
     <link rel="stylesheet" href="mockupcsssheet.css">
     <link rel="stylesheet" href="bootstrapoverwrite.css">
     <link rel="stylesheet" href="mockup.css">
+    <link rel="stylesheet" href="form.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 
 </head>
 
@@ -172,25 +173,41 @@
         <div class="col-md-4">
             <div class="bookmark-name">
 
+                <section class='container'>
+                    <!-- / Form -->
+                    <form>
+                        <!-- / Fieldset Alpha -->
+                        <fieldset class='alpha'>
+                            <legend><b>Anthropology Mailing Lists</b></legend>
+                            <div class='list'>
+                                <h5>Name</h5>
+                                <input class='item' placeholder='Username' type='text'>
+                            </div>
+                            <div class='list'>
+                                <h5>Description</h5>
+                                <input class='item' placeholder='Username' type='text'>
+                            </div>
+                            <div class='list'>
+                                <h5>URL</h5>
+                                <input class='item' placeholder='Username' type='text'>
+                            </div>
+                            <div class='list'>
+                                <h5>Owner</h5>
+                                <input class='item' placeholder='Email' type='email'>
+                            </div>
+                            <div class='list'>
+                                <h5>Operators</h5>
+                                <input class='item' placeholder='Password' type='password'>
+                            </div>
+                            <div class='setting-button'>
 
-                <div id="bookmark">
-                    <h4>BOOKMARKS</h4>
+                                <a class='button-delete' href='#' style="width:30%; float:left;">Delete</a>
+                                <a class='button-change' href='#' style="width:60%; float:right;">Apply Changes</a>
+                            </div>
+                        </fieldset>
 
-                    <ul id="name-list">
-                        <li id="group">Group
-                            <p class="pull-right">10</p>
-                        </li>
-                        <li id="people">People
-                            <p class="pull-right">3</p>
-                        </li>
-
-                        <ul id="sub-name-list">
-                            <li>John Smith </li>
-                            <li> Angela Jackson</li>
-                            <li> Joe Chung</li>
-                        </ul>
-                    </ul>
-                </div>
+                    </form>
+                </section>
             </div>
         </div>
     </div>

@@ -42,6 +42,7 @@
     width: 100%;
     float: left;
     font-size: 15px;
+    overflow-y: scroll;
 }
 .application-section #sub-name-list {
     padding: 0px;

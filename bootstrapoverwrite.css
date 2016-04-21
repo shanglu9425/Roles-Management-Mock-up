@@ -21,15 +21,22 @@
     top: 3px;
 }
 
+.col-md-6 {
+    padding-left: 0px;
+    padding-right: 0px;
+    width: 40%;
+}
+
 .col-md-4 {
     padding-left: 0px;
     padding-right: 0px;
-    width: 25%;
+    width: 20%;
 }
 
 .col-md-3 {
     padding-left: 0px;
     padding-right: 0px;
+    width: 20%;
 }
 
 .col-md-8 {

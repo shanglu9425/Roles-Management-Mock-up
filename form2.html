@@ -1,4 +1,4 @@
-<html>   
+<html>
 
 <head>
     <title>Roles Management</title>
@@ -11,85 +11,148 @@
     <link rel="stylesheet" href="bootstrapoverwrite.css">
     <link rel="stylesheet" href="mockup.css">
     <link rel="stylesheet" href="form2.css">
- <link rel="stylesheet" href="testform.css">
+    <link rel="stylesheet" href="testform.css">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 
 </head>
-   
-   <body>
-       
-        <div class="container" style="border: medium solid gray; border-radius: 15px;">
-           <!--title-->             
-        <div class="modal-header"style="text-align:center";>
-  <h3>Kerr 186 Crew</h3>
-</div>     
 
-  <!-- Nav tabs -->
-            <div class="model-body">
-        <div class="tabs-left">
-  <ul class="nav nav-tabs" role="tablist" style="float:left;">
-    <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Home</a></li>
-    <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Profile</a></li>
-    <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Messages</a></li>
-    <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Settings</a></li>
-  </ul>
-        
-   
-  <!-- Tab panes -->
-  <div class="tab-content">
-    <div role="tabpanel" class="tab-pane active" id="home"><div class="container">
+<body>
 
-                        <!-- / Fieldset Alpha -->
-                        <fieldset class='alpha'>
-                            
-            
-                            <div class='list'>
-                                <h5>Name</h5>
-                                <input class='item' placeholder='Username' type='text'>
-                            </div>
-                                <div class='list'>
-                                <h5>Description</h5>
-                                <input class='item' placeholder='Username' type='text'>
-                            </div>
-                                
-                            <div class='list'>
-                                <h5>URL</h5>
-                                <input class='item' placeholder='Username' type='text'>
-                            </div>
-                                 
-                            <div class='list'>
-                                <h5>Owner</h5>
-                                <input class='item' placeholder='Email' type='email'>
-                            </div>
-                                
-                            <div class='list'>
-                                <h5>Operators</h5>
-                                <input class='item' placeholder='Password' type='password'>
-                            </div>
-                                
-                            
-                        </fieldset>
-
-                    
-       </div></div>
-    <div role="tabpanel" class="tab-pane" id="profile">HAHAHAHA</div>
-    <div role="tabpanel" class="tab-pane" id="messages">FSDFASDFSDA</div>
-    <div role="tabpanel" class="tab-pane" id="settings">4FSDFSDFSD</div>
-  </div>
-
-
-          
-    
-    
+    <div class="container" style="border: medium solid gray; border-radius: 15px;">
+        <!--title-->
+        <div class="modal-header" style="text-align:center; border-bottom:none;">
+            <h3>Kerr 186 Crew</h3>
         </div>
+
+        <!-- Nav tabs -->
+        <div class="model-body">
+            <div class="">
+                <ul class="nav nav-tabs" role="tablist" style="float:left;width:100%;">
+                    <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Summary</a></li>
+                    <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Relations</a></li>
+                    <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Rules</a></li>
+                </ul>
+
+
+                <!-- Tab panes -->
+                <div class="tab-content" style="float:left; width:100%;">
+                    <div role="tabpanel" class="tab-pane active" id="home" style="overflow:auto;">
+                        <div class="container">
+
+                            <!-- / Fieldset Alpha -->
+                            <fieldset class='alpha'>
+
+
+                                <div class='list'>
+                                    <h5>Name</h5>
+                                    <input class='item' placeholder='Username' type='text'>
+                                </div>
+                                <div class='list'>
+                                    <h5>Description</h5>
+                                    <textarea name="description" class="input-xxlarge" rows="3"></textarea>
+                                </div>
+
+
+                            </fieldset>
+
+
+
+
+                        </div>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="profile">
+                        <div role="tabpanel" class="tab-pane active" id="home" style="overflow:auto;">
+                            <div class="container">
+
+                                <!-- / Fieldset Alpha -->
+                                <fieldset class="alpha">
+
+
+                                    <div class="list">
+                                        <h5>Owners</h5>
+                                        <input class="item" placeholder="Username" type="text">
+                                    </div>
+                                    <div class="list">
+                                        <h5>Operators</h5>
+                                        <input class="item" placeholder="Username" type="text">
+                                    </div>
+                                    <div class="list">
+                                        <h5>Members</h5>
+                                        <input class="item" placeholder="Username" type="text">
+                                    </div>
+
+
+                                </fieldset>
+
+
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="messages" style="overflow:auto;">
+                        <div class="container">
+                            <table id="rules">
+                                <thead>
+                                    <tr>
+                                        <th class="medium">Column</th>
+                                        <th class="mini">Condition</th>
+                                        <th class="large">Value</th>
+                                        <th>
+                                            <!-- Actions -->
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody style="display: table-row-group;">
+                                    <tr class="fields">
+                                        <td>
+                                            <select id="column" class="medium" style="    margin-right: 5px;">
+                                                <option value="department">Department</option>
+                                                <option value="organization">Organization</option>
+                                                <option value="loginid">Login ID</option>
+                                                <option value="title">Title</option>
+                                                <option value="major">Major</option>
+                                                <option value="affiliation">Affiliation</option>
+                                            </select>
+                                        </td>
+                                        <td>
+                                            <select id="condition" class="mini">
+                                                <option value="is">is</option>
+                                                <option value="is not">is not</option>
+                                            </select>
+                                        </td>
+                                        <td>
+                                            <input id="value" size="15" value="" class="large" autocomplete="off" type="text" style="margin:5px 5px;">
+                                        </td>
+                                        <td>
+                                            <button class="btn btn-danger" id="remove_group_rule" type="button">Remove</button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class='setting-button modal-footer'>
+
+                        <a class='button-delete' href='#' style="width:30%; float:left;">Delete</a>
+                        <a class='button-change' href='#' style="width:60%; float:right;">Accept Changes</a>
+                    </div>
                 </div>
-       </div>
-       
-       
-       
-       
-       
-       
-                    </body>
-    
+
+
+
+
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+</body>
+
 </html>

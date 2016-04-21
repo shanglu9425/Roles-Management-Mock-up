@@ -55,7 +55,7 @@
 .application-section #sub-name-list li a {
     color: white;
     display: block;
-    padding: 10px 30px;
+    padding: 5px 30px;
     padding-right: 25px;
     text-decoration: none;
 }
@@ -93,7 +93,7 @@
 .rule-section #sub-name-list li a {
     color: #173C68;
     display: block;
-    padding: 10px 30px;
+    padding: 5px 30px;
     padding-right: 25px;
     text-decoration: none;
 }

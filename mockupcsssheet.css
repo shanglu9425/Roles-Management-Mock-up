@@ -1,4 +1,3 @@
-@import url('http://fonts.googleapis.com/css?family=Armata');
 .wrapper {
     position: relative;
     height: 100%;
@@ -46,7 +45,7 @@
 }
 .application-section #sub-name-list {
     padding: 0px;
-    margin-top: 30px;
+    margin-top: 90px;
 }
 .application-section #sub-name-list li {
     margin-top: 20px;
@@ -83,7 +82,7 @@
 }
 .rule-section #sub-name-list {
     padding: 0px;
-    margin-top: 30px;
+    margin-top: 90px;
 }
 .rule-section #application #sub-name-list li {
     margin-top: 20px;

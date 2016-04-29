@@ -28,6 +28,7 @@ form {
     margin-top: 20px;
     /* W3C */ }
     form fieldset legend {
+      font-size: 12pt;
       text-align: center;
       float: left;
       display: block;

@@ -1,6 +1,175 @@
+html {
+    height: 100%;
+}
+
+
+/*===================== navi ======================*/
+
+.navbar {
+    background-color: #294B74;
+    box-shadow: inset 0px 0px 11px 4px #0A315F;
+    color: white;
+    border: none;
+    border-radius: 0px;
+    margin-bottom: 0px;
+}
+
+.navbar-default .navbar-nav li a {
+    color: white;
+}
+
+.navbar-default .navbar-nav > li > a:focus,
+.navbar-default .navbar-nav > li > a:hover {
+    color: white;
+    background-color: #102F54;
+}
+
+.navbar-default .navbar-brand {
+    color: white;
+    margin: 0px;
+}
+
+
+/*================== application-section===================*/
+
+.application-section {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    float: left;
+    font-size: 15px;
+    overflow-y: auto;
+}
+
+.application-section #sub-name-list {
+    padding: 0px;
+    margin-top: 90px;
+}
+
+.application-section #sub-name-list li {
+    margin-top: 20px;
+    font-size: inherit;
+}
+
+.application-section #sub-name-list li a {
+    color: white;
+    display: block;
+    padding: 5px 30px;
+    padding-right: 25px;
+    text-decoration: none;
+}
+
+.application-section #sub-name-list li a:focus,
+.application-section #sub-name-list li a:hover {
+    color: white;
+    background-color: #FAC369;
+}
+
+.application-section #application {
+    position: relative;
+    top: 20px;
+}
+
+.application-section #application h4 {
+    color: #A5A5A5;
+    padding-left: 20px;
+    margin-top: 30px;
+    padding-left: 30px;
+}
+
+
+/*===================== rule-section ======================*/
+
+.rule-section {
+    position: relative;
+    height: 100%;
+    float: left;
+    font-size: 15px;
+    width: 100%;
+    overflow-y: auto;
+}
+
+.rule-section #sub-name-list {
+    padding: 0px;
+    margin-top: 90px;
+}
+
+.rule-section #application #sub-name-list li {
+    margin-top: 20px;
+    font-size: 15px;
+    color: #173C68
+}
+
+.rule-section #sub-name-list li a {
+    color: #173C68;
+    display: block;
+    padding: 5px 30px;
+    padding-right: 25px;
+    text-decoration: none;
+}
+
+.rule-section #application #sub-name-list li a:focus,
+.rule-section #application #sub-name-list li a:hover {
+    color: white;
+    background-color: #FAC369;
+}
+
+.rule-section #application {
+    position: relative;
+    top: 20px;
+}
+
+.rule-section #application h4 {
+    color: #A5A5A5;
+    padding-left: 20px;
+    margin-top: 30px;
+    padding-left: 30px;
+}
+
+
+/*============== assigned-section ===============*/
+
+.assigned-section {
+    position: relative;
+    height: 100%;
+    background-color: #ffffff;
+    width: 100%;
+    float: left;
+}
+
+.assigned-section #application h4 {
+    color: #A5A5A5;
+    padding-left: 20px;
+    margin-top: 30px;
+    padding-left: 30px;
+}
+
+.assigned-section #application #name-list {
+    margin-left: 30px;
+    padding-left: 0px;
+    margin-top: 110px;
+}
+
+
+/*================== Searchbar-application==================*/
+
+.col-md-8 .searchbar-application {
+    padding-top: 5px;
+    width: 100%;
+    height: 85px;
+    background: white;
+    border-bottom: 8px;
+    border-bottom-color: #E0E0E0;
+    border-bottom-style: solid;
+}
+
+
+/*================== MISC==================*/
+
 .wrapper {
     position: relative;
     height: 100%;
+    height: calc(100% - 125px);
     float: left;
     width: 100%;
 }
@@ -13,127 +182,13 @@
     width: 33.3%;
 }
 
+.col-md-4 .searchbar-application .input-group .glyphicon {
+    opacity: 0.5;
+    margin-bottom: 3px;
+}
 
-}
-.navbar {
-    background-color: #294B74;
-    box-shadow: inset 0px 0px 11px 4px #0A315F;
-    color: white;
-    border: none;
-    border-radius: 0px;
-    margin-bottom: 0px;
-}
-.navbar-default .navbar-nav li a {
-    color: white;
-}
-.navbar-default .navbar-nav > li > a:focus,
-.navbar-default .navbar-nav > li > a:hover {
-    color: white;
-    background-color: #102F54;
-}
-.navbar-default .navbar-brand {
-    color: white;
-    margin: 0px;
-}
-.application-section {
-    position: relative;
-    height: 100vh;
-    width: 100%;
-    float: left;
-    font-size: 15px;
-    overflow-y: scroll;
-}
-.application-section #sub-name-list {
-    padding: 0px;
-    margin-top: 90px;
-}
-.application-section #sub-name-list li {
-    margin-top: 20px;
-    font-size: inherit;
-}
-.application-section #sub-name-list li a {
-    color: white;
-    display: block;
-    padding: 5px 30px;
-    padding-right: 25px;
-    text-decoration: none;
-}
-.application-section #sub-name-list li a:focus,
-.application-section #sub-name-list li a:hover {
-    color: white;
-    background-color: #FAC369;
-}
-.application-section #application {
-    position: relative;
-    top: 20px;
-}
-.application-section #application h4 {
-    color: #A5A5A5;
-    padding-left: 20px;
-    margin-top: 30px;
-    padding-left: 30px;
-}
-.rule-section {
-    position: relative;
-    height: 100vh;
-    float: left;
-    font-size: 15px;
-    width: 100%;
-}
-.rule-section #sub-name-list {
-    padding: 0px;
-    margin-top: 90px;
-}
-.rule-section #application #sub-name-list li {
-    margin-top: 20px;
-    font-size: 15px;
-    color: #173C68
-}
-.rule-section #sub-name-list li a {
-    color: #173C68;
-    display: block;
-    padding: 5px 30px;
-    padding-right: 25px;
-    text-decoration: none;
-}
-.rule-section #application #sub-name-list li a:focus,
-.rule-section #application #sub-name-list li a:hover {
-    color: white;
-    background-color: #FAC369;
-}
-.rule-section #application {
-    position: relative;
-    top: 20px;
-}
-.rule-section #application h4 {
-    color: #A5A5A5;
-    padding-left: 20px;
-    margin-top: 30px;
-    padding-left: 30px;
-}
-.assigned-section {
-    position: relative;
-    height: 100vh;
-    background-color: #ffffff;
-    width: 33.33%;
-    float: left;
-}
-.assigned-section #application {
-    position: relative;
-    top: 20px;
-    left: 20px
-}
-.assigned-section #application h4 {
-    color: #A5A5A5;
-    padding-left: 20px;
-    margin-top: 30px;
-    padding-left: 30px;
-}
-.assigned-section #application #name-list {
-    margin-left: 30px;
-    padding-left: 0px;
-    margin-top: 25px;
-}
+
+/*================== Bookmark ==================
 #bookmark {
     padding-bottom: 10px;
     position: relative;
@@ -146,19 +201,23 @@
     margin-left: 25px;
     height：100vh;
 }
+
 #bookmark #name-list #group {
     background-color: #DFF0D8;
     color: #609A60;
 }
+
 #bookmark #name-list #people {
     background-color: #D9EDF7;
     color: #0088CC;
 }
+
 #bookmark #sub-name-list {
     margin-left: 15px;
     margin-right: 15px;
     padding-left: 0px;
 }
+
 #bookmark #sub-name-list li {
     color: #0088CC;
     background-color: #D9EDF7;
@@ -171,19 +230,5 @@
     font-size: 20px;
     border-radius: 5px;
 }
-.col-md-8 .searchbar-application {
-    padding-top: 5px;
-    width: 100%;
-    height: 85px;
-    background: white;
-    border-bottom: 8px;
-    border-bottom-color: #E0E0E0;
-    border-bottom-style: solid;
-}
-.page-content {}
 
-}
-.col-md-4 .searchbar-application .input-group .glyphicon {
-    opacity: 0.5;
-    margin-bottom: 3px;
-}
+=======*/

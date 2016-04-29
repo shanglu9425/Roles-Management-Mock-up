@@ -1,11 +1,12 @@
+/*================== body ==================*/
+
 body {
-    font: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    overflow-y: hidden;
 }
 
-.row {
-    margin-left: -1px;
-    margin-right: 0px;
-}
+
+/*================== Navi ==================*/
 
 .navbar {
     background-color: #294B74;
@@ -24,9 +25,8 @@ body {
     margin: 0px;
 }
 
-.glyphicon {
-    top: 3px;
-}
+
+/*================== Grid system==================*/
 
 .col-md-6 {
     padding-left: 0px;
@@ -50,4 +50,16 @@ body {
     padding-left: 0px;
     padding-right: 0px;
     width: 75%;
+}
+
+.row {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+
+/*================== MISC==================*/
+
+.glyphicon {
+    top: 3px;
 }

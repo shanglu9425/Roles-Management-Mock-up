@@ -1,0 +1,134 @@
+.setting-button {
+  margin-top: 30px; }
+  .setting-button a.button-delete {
+    display: block;
+    padding: 0;
+    background: #FA776A;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3);
+    font-size: 15px;
+    font-family: "Helvetica Neue", sans-serif;
+    font-weight: 400;
+    color: #fff;
+    border: 1px solid #94C4FF;
+    border-radius: 5px;
+    box-shadow: 0 0 0 transparent;
+    padding-top: 4px;
+    padding-bottom: 4px; }
+  .setting-button a.button-change {
+    display: block;
+    padding: 0;
+    background: #58B957;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3);
+    font-size: 15px;
+    font-family: "Helvetica Neue", sans-serif;
+    font-weight: 400;
+    color: #fff;
+    border: 1px solid #94C4FF;
+    border-radius: 5px;
+    box-shadow: 0 0 0 transparent;
+    padding-top: 4px;
+    padding-bottom: 4px; }
+
+.setting-button {
+  float: left;
+  display: block;
+  margin-bottom: 0px;
+  width: 100%;
+  clear: both; }
+
+.container {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 400px;
+  min-width: 300px; }
+
+p {
+  color: #555;
+  clear: both; }
+
+fieldset {
+  float: left;
+  position: relative;
+  background: #fff;
+  width: 100%;
+  background: #ffffff;
+  /* W3C */ }
+  fieldset legend {
+    text-align: center;
+    float: left;
+    display: block;
+    width: 100%;
+    position: relative;
+    border-bottom: 1px solid #dfdfdf;
+    top: 0;
+    left: 0;
+    clear: both;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    line-height: 30px;
+    color: #444;
+    text-shadow: 0 1px 0 #fff; }
+  fieldset.beta, fieldset.charlie {
+    display: none; }
+  fieldset .list {
+    display: block;
+    margin-bottom: 10px; }
+    fieldset .list textarea {
+      width: 100%;
+      padding: 6px 6px;
+      font-size: 14px;
+      font-weight: 400;
+      font-family: "Open Sans", sans-serif;
+      border: 1px solid #dedede;
+      border-radius: 5px;
+      box-shadow: 0 0 0 transparent, inset 0 0 5px #eee; }
+      fieldset .list textarea:focus {
+        outline: none;
+        border: 1px solid #94C4FF;
+        box-shadow: 0 0 10px #94C4FF;
+        -webkit-transition: all 0.2s ease-in-out; }
+        fieldset .list textarea:focus::-webkit-input-placeholder {
+          opacity: 0.5; }
+    fieldset .list input {
+      width: 100%;
+      padding: 6px 6px;
+      font-size: 14px;
+      font-weight: 400;
+      font-family: "Open Sans", sans-serif;
+      border: 1px solid #dedede;
+      border-radius: 5px;
+      box-shadow: 0 0 0 transparent, inset 0 0 5px #eee; }
+      fieldset .list input:focus {
+        outline: none;
+        border: 1px solid #94C4FF;
+        box-shadow: 0 0 10px #94C4FF;
+        -webkit-transition: all 0.2s ease-in-out; }
+        fieldset .list input:focus::-webkit-input-placeholder {
+          opacity: 0.5; }
+    fieldset .list h5 {
+      margin: 5px; }
+    fieldset .list:last-child {
+      margin-bottom: 0px; }
+
+#messages #rules {
+  font-size: 12px; }
+  #messages #rules .medium {
+    text-align: center; }
+  #messages #rules .mini {
+    text-align: center; }
+  #messages #rules .large {
+    text-align: center;
+    width: 140px; }
+  #messages #rules .btn-danger {
+    background-color: #FA776A;
+    border: none;
+    padding: 1px 10px; }
+    #messages #rules .btn-danger .btn {
+      padding: none; }
+
+/*# sourceMappingURL=form2.css.map */

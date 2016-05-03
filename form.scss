@@ -1,6 +1,5 @@
 // Gradient Mixin
 @mixin silver-bg {
-    background: #ffffff;
     /* W3C */
 }
 
@@ -14,7 +13,6 @@ $ocean-shadow: #1d5b90;
     position: relative;
     margin: 0 auto;
     width: 100%;
-    max-width: 400px;
     min-width: 300px;
 }
 
@@ -34,17 +32,20 @@ form {
         position: relative;
         width: 100%;
         padding: 20px;
+        /*
         border: none;
         border-radius: 8px;
         border-style: solid;
-        border-color: #E0E0E0;
-        border-width: 2px;
-        background: #fff;
+        border-color: #D9D9D9;
+        border-width: 1px;
+        background-color: #f5f5f5;
+        */
         margin-top: 20px;
         // Mixin
         @include silver-bg;
         // Legend
         legend {
+            font-size: 12pt;
             text-align: center;
             float: left;
             display: block;
@@ -91,9 +92,9 @@ form {
             font-size: 14px;
             font-weight: 400;
             font-family: "Open Sans", sans-serif;
-            border: 1px solid #dedede;
+            border: 1.5px solid #dedede;
             border-radius: 5px;
-            box-shadow: 0 0 0 transparent, inset 0 0 5px #eee;
+            /*box-shadow: 0 0 0 transparent, inset 0 0 5px #eee;*/
             &:focus {
                 outline: none;
                 border: 1px solid $electric-shadow;
@@ -109,39 +110,38 @@ form {
             margin-top: 20px;
             a.button-delete {
                 display: block;
-                height: 100%;
                 padding: 0;
                 background: #FA776A;
-                line-height: 50px;
                 text-align: center;
                 text-decoration: none;
                 text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3);
-                font-size: 1.2em;
+                font-size: 15px;
                 font-family: "Helvetica Neue", sans-serif;
                 font-weight: 400;
                 color: #fff;
-                border: 1px solid $electric-shadow;
+                border: 1px solid #94C4FF;
                 border-radius: 5px;
                 box-shadow: 0 0 0 transparent;
-                float: left;
+                padding-top: 4px;
+                padding-bottom: 4px;
             }
             a.button-change {
                 display: block;
                 height: 100%;
                 padding: 0;
                 background: #58B957;
-                line-height: 50px;
                 text-align: center;
                 text-decoration: none;
                 text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3);
-                font-size: 1.2em;
+                font-size: 15px;
                 font-family: "Helvetica Neue", sans-serif;
                 font-weight: 400;
                 color: #fff;
                 border: 1px solid $electric-shadow;
                 border-radius: 5px;
                 box-shadow: 0 0 0 transparent;
-                float: left;
+                padding-top: 4px;
+                padding-bottom: 4px;
             }
         }
     }

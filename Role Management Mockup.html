@@ -12,23 +12,43 @@
     <link rel="stylesheet" href="form.css">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+
 </head>
 
 <body>
-
     <header class="row">
-        <!--nav-->
+
+        <!--#nav-->
         <nav class="navbar navbar-default">
             <div class="container-fluid">
-                <div class="navbar-header">
-                    <h3 class="navbar-brand">Roles Management</h3>
+                <div class="navbar-header noselect">
+                    <a><h3 class="navbar-brand noselect">Roles Management</h3></a>
                 </div>
 
 
                 <div class="container-fluid pull-right">
 
                     <ul class="nav navbar-nav">
-                        <li><a href="#">Administrate<span style="padding-left: 6px; color:#797877;font-size: 11px;" class="glyphicon glyphicon-triangle-bottom"></span></a></li>
+
+                        <li><a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            Administrate<span style="padding-left: 6px; color:#797877;font-size: 11px;" class="glyphicon glyphicon-triangle-bottom"></span></a>
+                            <ul class="dropdown-menu noselect">
+                                <li><a>Impersonate</a></li>
+                                <li class="divider"></li>
+                                <li><a>API Keys</a></li>
+                                <li><a>API Whitelist</a></li>
+                                <li class="divider"></li>
+                                <li><a>Queued Jobs</a></li>
+                                <li class="divider"></li>
+                                <li><a>About</a></li>
+                            </ul>
+
+
+                        </li>
+
                         <li><a href="#"><span style="padding-right: 8px;" class="glyphicon glyphicon-search"></span>Help</a></li>
                         <li><a href="#"><span style="padding-right: 8px;" class="glyphicon glyphicon-comment"></span>Report a Problem</a></li>
                         <li><a href="#"><span style="padding-right: 8px;" class="glyphicon glyphicon-off"></span>Log out</a></li>
@@ -37,82 +57,82 @@
             </div>
         </nav>
     </header>
-    <!--nav-->
+    <!--#nav-->
 
 
 
-    <!--search bar-->
-
+    <!--#search bar section-->
     <div class="row">
-        <div class="col-md-3">
-            <section class="searchbar-application">
 
-                <div class="input-group">
-                    <span class="input-group-addon" id="basic-addon1"><span style="opacity: 0.5;
-    margin-bottom: 3px;"class="glyphicon glyphicon-search"></span></span>
-                    <input type="text" class="form-control" placeholder="Filter applications" aria-describedby="basic-addon1">
-                </div>
+        <!--#application search bar -->
+        <div class="col-md-3">
+            <section class="searchbar-application" style="position: fixed;box-shadow: -1px 0px 2px 1px rgba(0, 0, 0, 0.2);">
+                <h4>APPLICATION</h4>
+
             </section>
         </div>
+        <!--#application search bar-->
 
+        <!--#role search bar-->
         <div class="col-md-3">
-            <section class="searchbar-application">
-                <div class="input-group">
-                    <span class="input-group-addon" id="basic-addon1"><span style="opacity: 0.5;
-    margin-bottom: 3px;"class="glyphicon glyphicon-search"></span></span>
-                    <input type="text" class="form-control" placeholder="Filter roles" aria-describedby="basic-addon1">
-                </div>
+            <section class="searchbar-application" style="position: fixed;">
+                <h4>ROLE</h4>
+
             </section>
         </div>
+        <!-- #role search bar-->
 
+        <!-- #name search bar-->
         <div class="col-md-3">
-            <section class="searchbar-application">
-                <div class="input-group">
-                    <span class="input-group-addon" id="basic-addon1"><span style="opacity: 0.5;
-    margin-bottom: 3px;"class="glyphicon glyphicon-search"></span></span>
-                    <input type="text" class="form-control" placeholder="Filter people" aria-describedby="basic-addon1">
-                </div>
+            <section class="searchbar-application" style="position: fixed;box-shadow: none;">
+                <h4>ASSIGNED</h4>
             </section>
         </div>
+        <!-- #name search bar-->
 
         <div class="col-md-3">
-            <section class="searchbar-application">
-                <div class="input-group">
-                    <span class="input-group-addon" id="basic-addon1"><span style="opacity: 0.5;
-    margin-bottom: 3px;"class="glyphicon glyphicon-search"></span></span>
-                    <input type="text" class="form-control" placeholder="Filter applications" aria-describedby="basic-addon1">
-                </div>
+            <section class="searchbar-application" style="border-left: 8px solid rgb(224, 224, 224);
+border-bottom: medium none;">
+
 
 
             </section>
 
         </div>
     </div>
+    <!--#Search bar section-->
 
+    <!--#Left 3 columns-->
+    <div class="row" style="margin-top: 50px;">
 
-    <!--search bar-->
-
-    <div class="row">
+        <!--#Application-->
         <div class="col-md-4 background-blue">
             <div class="wrapper">
-
                 <div class="application-section">
-                    <!--application-->
-                    <!--#application-->
-                    <section id="application">
-                        <h4>APPLICATION</h4>
 
+                    <!-- <span class="glyphicons glyphicons-search"></span>  for search bar -->
+
+                    <div class="search-application" type="text">
+                        <span class="glyphicons glyphicons-search"></span>
+                        <input placeholder=" Filter Applications" type="text">
+
+                    </div>
+
+                    <section id="application">
                         <ul id="sub-name-list">
-                            <li><a href="#">Anthropology Mailing Lists </a></li>
+                            <li><a href="#">Anthropology Mailing Lists </a> </li>
+
                             <li><a href="#">Database Access</a></li>
                             <li><a href="#">Faculty Memeber Phone Lists</a></li>
                             <li><a href="#">Lab Remote Access</a></li>
                             <li><a href="#">Printer A Wireless Accesss</a> </li>
 
 
-
-
                         </ul>
+
+                        <a href="#">
+                            <p>Adding An Application </p>
+                        </a>
 
                     </section>
 
@@ -120,61 +140,76 @@
                 </div>
             </div>
         </div>
+        <!--#Application-->
 
-        <!-- #application -->
+        <!--#Role-->
         <div class="col-md-4 background-gray">
-            <div class="rule-section">
-                <!-- #role -->
+            <div class="wrapper">
+                <div class="rule-section">
+                    <div class="search-role" type="text">
+                        <span class="glyphicons glyphicons-search"></span>
+                        <input placeholder=" Filter Roles" type="text">
 
-                <section id="application">
-                    <h4>ROLES</h4>
-
-                    <ul id="sub-name-list">
-                        <li><a href="#">Admin</a> </li>
-                        <li> <a href="#">Video files/Media resources</a></li>
-                        <li> <a href="#">Shared files(1/10/16-3/25/16)</a></li>
-                        <li><a href="#">Contact list</a></li>
-
-                    </ul>
-
-                </section>
-
-            </div>
-        </div>
-
-        <!-- #role -->
-        <div class="col-md-4 background-white">
-
-            <div class="assigned-section">
-                <!-- #assigned-section -->
-                <section id="application">
-                    <h4>ASSIGNED</h4>
-                    <div class="assigned-lists">
-                        <ul id="name-list">
-                            <li>Tom Lee</li>
-                            <li>Byran Mash</li>
-                            <li>Hanna Hurrison</li>
-                            <li>Daniel Jackson</li>
-                            <li>Steve Graphhin</li>
-                            <li>Thomas Livingston</li>
-                            <li>Andrew Kim</li>
-                            <li>Shawn Wang</li>
-                        </ul>
                     </div>
-                </section>
 
+                    <section id="application">
+                        <ul id="sub-name-list">
+                            <li><a href="#">Admin</a> </li>
+                            <li> <a href="#">Video files/Media resources</a></li>
+                            <li> <a href="#">Shared files(1/10/16-3/25/16)</a></li>
+                            <li><a href="#">Contact list</a></li>
+
+                        </ul>
+
+                        <a href="#">
+                            <p>Adding A Role </p>
+                        </a>
+
+
+                    </section>
+
+                </div>
             </div>
         </div>
+        <!-- #Role-->
 
+        <!-- #Names -->
+        <div class="col-md-4 background-white">
+            <div class="wrapper">
+                <div class="assigned-section">
+                    <div class="search-assigned" type="text">
+                        <span class="glyphicons glyphicons-search"></span>
+                        <input placeholder=" Filter People " type="text">
 
-        <!-- #assigned-section -->
+                    </div>
+                    <!-- #assigned-section -->
+                    <section id="application">
+                        <div class="assigned-lists">
+                            <ul id="name-list">
+                                <li>Tom Lee</li>
+                                <li>Byran Mash</li>
+                                <li>Hanna Hurrison</li>
+                                <li>Daniel Jackson</li>
+                                <li>Steve Graphhin</li>
+                                <li>Thomas Livingston</li>
+                                <li>Andrew Kim</li>
+                                <li>Shawn Wang</li>
+                            </ul>
+                        </div>
+                    </section>
 
+                </div>
+            </div>
+        </div>
+        <!-- #Names -->
 
-        <div class="col-md-4">
-            <div class="bookmark-name">
+        <!--#Right control panel-->
+        <div class="col-md-6" style="float:right;">
+            <div class="control-panel">
 
                 <section class='container'>
-                    <!-- / Form -->
+
+                    <!-- Form -->
                     <form>
                         <!-- / Fieldset Alpha -->
                         <fieldset class='alpha'>
@@ -210,10 +245,10 @@
                 </section>
             </div>
         </div>
+        <!--#right control panel-->
     </div>
-    <footer>
+    <!--Shang, I commented this out    </div>-->
 
-    </footer>
 
 </body>
 

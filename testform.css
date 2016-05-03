@@ -1,0 +1,65 @@
+.col-xs-3 {
+    width: 120px;
+}
+
+.model-body {
+    padding: 20px;
+}
+
+.tabs-left {
+    border-bottom: none;
+    padding-top: 2px;
+}
+
+.tabs-left .nav {
+    margin-right: 25px;
+    border-right: 1px solid #ddd;
+    border-bottom: none;
+}
+
+.tabs-left>ul>li,
+.tabs-right>li {
+    float: none;
+    margin-bottom: 2px;
+}
+
+.tabs-left>ul>li {
+    margin-right: -1px;
+}
+
+.tabs-left>ul>li.active>a,
+.tabs-left>ul>li.active>a:hover,
+.tabs-left>ul>li.active>a:focus {
+    border-bottom-color: #ddd;
+    border-right-color: transparent;
+}
+
+.tabs-right>ul>li.active>a,
+.tabs-right>ul>li.active>a:hover,
+.tabs-right>ul>li.active>a:focus {
+    border-bottom: 1px solid #ddd;
+    border-left-color: transparent;
+}
+
+.tabs-left>ul>li>a {
+    border-radius: 4px 0 0 4px;
+    margin-right: 0;
+    display: block;
+}
+
+.sideways.tabs-left {
+    left: -50px;
+}
+
+.sideways.tabs-left>li {
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+}
+
+.container {
+    max-width: 500px;
+    margin-bottom: 20px;
+}

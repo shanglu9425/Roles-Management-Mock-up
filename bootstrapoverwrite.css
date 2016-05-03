@@ -1,15 +1,31 @@
-.row {
-    margin-left: -1px;
-    margin-right: 0px;
+@import url("//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css");
+
+/*================== body ==================*/
+
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    overflow-y: hidden;
 }
+
+
+/*================== Navi ==================*/
 
 .navbar {
     background-color: #294B74;
-    box-shadow: inset 0px 0px 11px 4px #0A315F;
     color: white;
     border: none;
     border-radius: 0px;
     margin-bottom: 0px;
+    position: fixed;
+    width: 100%;
+    z-index: 2013;
+}
+
+.navbar-default .navbar-brand,
+.navbar-default .navbar-brand:focus,
+.navbar-default .navbar-brand:hover {
+    color: white;
+    cursor: pointer;
 }
 
 .navbar-default .navbar-brand {
@@ -17,23 +33,78 @@
     margin: 0px;
 }
 
-.glyphicon {
-    top: 3px;
+.dropdown-toggle {}
+
+.dropdown-menu {
+    color: black;
+}
+
+.navbar-default .navbar-nav > .open > a:focus,
+navbar-default .navbar-nav > .open > a:hover,
+navbar-default .navbar-nav > .open > a:active {
+    background-color: #0E2E55;
+    color: white;
+}
+
+.navbar-default .navbar-nav .dropdown-menu li a {
+    color: #263E5B;
+    cursor: pointer;
+}
+
+
+/*================== Grid system==================*/
+
+.col-md-6 {
+    padding-left: 0px;
+    padding-right: 0px;
+    width: 40%;
 }
 
 .col-md-4 {
     padding-left: 0px;
     padding-right: 0px;
-    width: 25%;
+    width: 20%;
 }
 
 .col-md-3 {
     padding-left: 0px;
     padding-right: 0px;
+    width: 20%;
 }
 
 .col-md-8 {
     padding-left: 0px;
     padding-right: 0px;
     width: 75%;
+}
+
+.row {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+
+/*================== MISC==================*/
+
+.glyphicon {
+    top: 3px;
+}
+
+
+/*==================== Webkit =================*/
+
+.noselect a {
+    -webkit-touch-callout: none;
+    /* iOS Safari */
+    -webkit-user-select: none;
+    /* Chrome/Safari/Opera */
+    -khtml-user-select: none;
+    /* Konqueror */
+    -moz-user-select: none;
+    /* Firefox */
+    -ms-user-select: none;
+    /* Internet Explorer/Edge */
+    user-select: none;
+    /* Non-prefixed version, currently
+                                  not supported by any browser */
 }

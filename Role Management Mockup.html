@@ -24,7 +24,7 @@
         <!--#nav-->
         <nav class="navbar navbar-default">
             <div class="container-fluid">
-                <div class="navbar-header">
+                <div class="navbar-header noselect">
                     <a><h3 class="navbar-brand noselect">Roles Management</h3></a>
                 </div>
 
@@ -66,8 +66,8 @@
 
         <!--#application search bar -->
         <div class="col-md-3">
-            <section class="searchbar-application" style="position: fixed;top: 50px;z-index: 2012;background-color: white;box-shadow: -1px 0px 2px 1px rgba(0, 0, 0, 0.2);">
-                <h4 style="padding: 30px;">APPLICATION</h4>
+            <section class="searchbar-application" style="position: fixed;box-shadow: -1px 0px 2px 1px rgba(0, 0, 0, 0.2);">
+                <h4>APPLICATION</h4>
 
             </section>
         </div>
@@ -75,8 +75,8 @@
 
         <!--#role search bar-->
         <div class="col-md-3">
-            <section class="searchbar-application" style="position: fixed;top: 50px;z-index: 2012;background-color: white;">
-                <h4 style="padding: 30px;">ROLE</h4>
+            <section class="searchbar-application" style="position: fixed;">
+                <h4>ROLE</h4>
 
             </section>
         </div>
@@ -84,8 +84,8 @@
 
         <!-- #name search bar-->
         <div class="col-md-3">
-            <section class="searchbar-application" style="position: fixed;top: 50px;z-index: 2012;background-color: white;box-shadow: none;">
-                <h4 style="padding: 30px;">ASSIGNED</h4>
+            <section class="searchbar-application" style="position: fixed;box-shadow: none;">
+                <h4>ASSIGNED</h4>
             </section>
         </div>
         <!-- #name search bar-->
@@ -112,9 +112,9 @@ border-bottom: medium none;">
 
                     <!-- <span class="glyphicons glyphicons-search"></span>  for search bar -->
 
-                    <div style="position: fixed; z-index: 2003; margin-top: 0px; color: gray; padding: 10px; background-color: rgb(38, 62, 91); width: 20%;" type="text">
+                    <div class="search-application" type="text">
                         <span class="glyphicons glyphicons-search"></span>
-                        <input placeholder=" Filter Applications" style="border-radius: 5px; background: rgb(255, 255, 255) none repeat scroll 0% 0%; border: 1px solid rgb(204, 204, 204); box-shadow: 0px 1px 0px 0px rgb(236, 236, 236) inset; margin: 5px; width: 95%;" type="text">
+                        <input placeholder=" Filter Applications" type="text">
 
                     </div>
 
@@ -130,6 +130,10 @@ border-bottom: medium none;">
 
                         </ul>
 
+                        <a href="#">
+                            <p>Adding An Application </p>
+                        </a>
+
                     </section>
 
 
@@ -142,9 +146,9 @@ border-bottom: medium none;">
         <div class="col-md-4 background-gray">
             <div class="wrapper">
                 <div class="rule-section">
-                    <div style="position: fixed; z-index: 2003; margin-top: 0px; color: gray; padding: 10px; background-color: #E3E3E3; width: 20%;" type="text">
+                    <div class="search-role" type="text">
                         <span class="glyphicons glyphicons-search"></span>
-                        <input placeholder=" Filter Applications" style="border-radius: 5px; background: rgb(255, 255, 255) none repeat scroll 0% 0%; border: 1px solid rgb(204, 204, 204); box-shadow: 0px 1px 0px 0px rgb(236, 236, 236) inset; margin: 5px; width: 95%;" type="text">
+                        <input placeholder=" Filter Roles" type="text">
 
                     </div>
 
@@ -157,6 +161,11 @@ border-bottom: medium none;">
 
                         </ul>
 
+                        <a href="#">
+                            <p>Adding A Role </p>
+                        </a>
+
+
                     </section>
 
                 </div>
@@ -168,9 +177,9 @@ border-bottom: medium none;">
         <div class="col-md-4 background-white">
             <div class="wrapper">
                 <div class="assigned-section">
-                    <div style="position: fixed; z-index: 2003; margin-top: 0px; color: gray; padding: 10px; background-color: #F7F7F7; width: 20%;" type="text">
+                    <div class="search-assigned" type="text">
                         <span class="glyphicons glyphicons-search"></span>
-                        <input placeholder=" Filter Applications" style="border-radius: 5px; background: rgb(255, 255, 255) none repeat scroll 0% 0%; border: 1px solid rgb(204, 204, 204); box-shadow: 0px 1px 0px 0px rgb(236, 236, 236) inset; margin: 5px; width: 95%;" type="text">
+                        <input placeholder=" Filter People " type="text">
 
                     </div>
                     <!-- #assigned-section -->

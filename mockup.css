@@ -3,13 +3,18 @@ body {
   margin: 0px;
   width: 100%;
   height: 100%;
-  font-size: 15px; }
+  font-size: 14px; }
   body ul {
     list-style: none; }
 
 .searchbar-application {
-  height: 70px;
-  width: 100%; }
+  height: 50px;
+  width: 100%;
+  background-color: white;
+  top: 50px;
+  z-index: 2012; }
+  .searchbar-application h4 {
+    padding: 10px; }
   .searchbar-application .form-control {
     width: 200px; }
   .searchbar-application .input-group {
@@ -25,13 +30,88 @@ body {
     background: #ffffff;
     box-shadow: inset 0px 1px 0px 0px #ECECEC; }
 
-.application-section ul {
+.application-section .search-application {
+  position: fixed;
+  z-index: 2003;
+  margin-top: 0px;
+  color: gray;
+  padding: 10px;
+  background-color: #263e5b;
+  width: 20%; }
+  .application-section .search-application input {
+    border-radius: 5px;
+    background: white none repeat scroll 0% 0%;
+    border: 1px solid #cccccc;
+    box-shadow: 0px 1px 0px 0px #ececec inset;
+    margin: 5px;
+    width: 95%; }
+.application-section #application ul {
   list-style: none; }
-.application-section li {
+.application-section #application li {
   padding-right: 0px;
   color: white; }
+.application-section #application a {
+  text-decoration: none; }
+  .application-section #application a p {
+    background-color: #3e6894;
+    color: white;
+    text-align: center;
+    border-radius: 3px;
+    margin-left: 30px;
+    padding: 5px;
+    margin-top: 30px;
+    font-size: 14px;
+    width: 200px; }
+.application-section #application a:hover p {
+  background-color: #FAC369; }
 
-.assigned-section li {
+.rule-section .search-role {
+  position: fixed;
+  z-index: 2003;
+  margin-top: 0px;
+  color: gray;
+  padding: 10px;
+  background-color: #E3E3E3;
+  width: 20%; }
+.rule-section input {
+  border-radius: 5px;
+  background: white none repeat scroll 0% 0%;
+  border: 1px solid #cccccc;
+  box-shadow: 0px 1px 0px 0px #ececec inset;
+  margin: 5px;
+  width: 95%; }
+.rule-section #application a {
+  text-decoration: none; }
+  .rule-section #application a p {
+    background-color: #3e6894;
+    color: white;
+    text-align: center;
+    border-radius: 3px;
+    margin-left: 30px;
+    padding: 5px;
+    margin-top: 30px;
+    font-size: 14px;
+    width: 200px; }
+.rule-section #application a:hover p {
+  background-color: #FAC369; }
+
+.assigned-section .search-assigned {
+  position: fixed;
+  z-index: 2003;
+  margin-top: 0px;
+  color: gray;
+  padding: 10px;
+  background-color: #F7F7F7;
+  width: 20%;
+  margin-top: 1.3031px; }
+.assigned-section input {
+  border-radius: 5px;
+  background: white none repeat scroll 0% 0%;
+  border: 1px solid #cccccc;
+  box-shadow: 0px 1px 0px 0px #ececec inset;
+  margin: 5px;
+  width: 95%; }
+.assigned-section #application ul li {
   width: 200px;
   color: #0088CC;
   background-color: #D9EDF7;

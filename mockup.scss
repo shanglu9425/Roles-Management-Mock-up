@@ -3,7 +3,7 @@ body {
     margin: 0px;
     width: 100%;
     height: 100%;
-    font-size: 15px;
+    font-size: 14px;
     .nav {}
     ul {
         list-style: none;
@@ -11,8 +11,14 @@ body {
 }
 
 .searchbar-application {
-    height: 70px;
+    height: 50px;
     width: 100%;
+    background-color: white;
+    top: 50px;
+    z-index: 2012;
+    h4 {
+        padding: 10px;
+    }
     .form-control {
         width: 200px;
     }
@@ -33,28 +39,129 @@ body {
 }
 
 .application-section {
-    ul {
-        list-style: none;
+    .search-application {
+        position: fixed;
+        z-index: 2003;
+        margin-top: 0px;
+        color: gray;
+        padding: 10px;
+        background-color: rgb(38, 62, 91);
+        width: 20%;
+        input {
+            border-radius: 5px;
+            background: rgb(255, 255, 255) none repeat scroll 0% 0%;
+            border: 1px solid rgb(204, 204, 204);
+            box-shadow: 0px 1px 0px 0px rgb(236, 236, 236) inset;
+            margin: 5px;
+            width: 95%;
+        }
     }
-    li {
-        padding-right: 0px;
-        color: white;
+    #application {
+        ul {
+            list-style: none;
+        }
+        li {
+            padding-right: 0px;
+            color: white;
+        }
+        a {
+            text-decoration: none;
+            p {
+                background-color: rgb(62, 104, 148);
+                color: white;
+                text-align: center;
+                border-radius: 3px;
+                margin-left: 30px;
+                padding: 5px;
+                margin-top: 30px;
+                font-size: 14px;
+                width: 200px;
+            }
+        }
+        a:hover {
+            p {
+                background-color: #FAC369;
+            }
+        }
+    }
+}
+
+.rule-section {
+    .search-role {
+        position: fixed;
+        z-index: 2003;
+        margin-top: 0px;
+        color: gray;
+        padding: 10px;
+        background-color: #E3E3E3;
+        width: 20%;
+    }
+    input {
+        border-radius: 5px;
+        background: rgb(255, 255, 255) none repeat scroll 0% 0%;
+        border: 1px solid rgb(204, 204, 204);
+        box-shadow: 0px 1px 0px 0px rgb(236, 236, 236) inset;
+        margin: 5px;
+        width: 95%;
+    }
+    #application {
+        a {
+            text-decoration: none;
+            p {
+                background-color: rgb(62, 104, 148);
+                color: white;
+                text-align: center;
+                border-radius: 3px;
+                margin-left: 30px;
+                padding: 5px;
+                margin-top: 30px;
+                font-size: 14px;
+                width: 200px;
+            }
+        }
+        a:hover {
+            p {
+                background-color: #FAC369;
+            }
+        }
     }
 }
 
 .assigned-section {
-    li {
-        width: 200px;
-        color: #0088CC;
-        background-color: #D9EDF7;
-        padding-top: 2px;
-        padding-bottom: 2px;
-        padding-left: 12px;
-        border-bottom: 1px solid #f2f2f2;
-        margin-top: 15px;
-        font-size: 15px;
+    .search-assigned {
+        position: fixed;
+        z-index: 2003;
+        margin-top: 0px;
+        color: gray;
+        padding: 10px;
+        background-color: #F7F7F7;
+        width: 20%;
+        margin-top: 1.3031px;
+    }
+    input {
         border-radius: 5px;
-        overflow-y: auto;
+        background: rgb(255, 255, 255) none repeat scroll 0% 0%;
+        border: 1px solid rgb(204, 204, 204);
+        box-shadow: 0px 1px 0px 0px rgb(236, 236, 236) inset;
+        margin: 5px;
+        width: 95%;
+    }
+    #application {
+        ul {
+            li {
+                width: 200px;
+                color: #0088CC;
+                background-color: #D9EDF7;
+                padding-top: 2px;
+                padding-bottom: 2px;
+                padding-left: 12px;
+                border-bottom: 1px solid #f2f2f2;
+                margin-top: 15px;
+                font-size: 15px;
+                border-radius: 5px;
+                overflow-y: auto;
+            }
+        }
     }
 }
 

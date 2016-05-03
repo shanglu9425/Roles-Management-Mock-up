@@ -12,6 +12,10 @@
     <link rel="stylesheet" href="form.css">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+
 </head>
 
 <body>
@@ -21,14 +25,30 @@
         <nav class="navbar navbar-default">
             <div class="container-fluid">
                 <div class="navbar-header">
-                    <h3 class="navbar-brand">Roles Management</h3>
+                    <a><h3 class="navbar-brand noselect">Roles Management</h3></a>
                 </div>
 
 
                 <div class="container-fluid pull-right">
 
                     <ul class="nav navbar-nav">
-                        <li><a href="#">Administrate<span style="padding-left: 6px; color:#797877;font-size: 11px;" class="glyphicon glyphicon-triangle-bottom"></span></a></li>
+
+                        <li><a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            Administrate<span style="padding-left: 6px; color:#797877;font-size: 11px;" class="glyphicon glyphicon-triangle-bottom"></span></a>
+                            <ul class="dropdown-menu noselect">
+                                <li><a>Impersonate</a></li>
+                                <li class="divider"></li>
+                                <li><a>API Keys</a></li>
+                                <li><a>API Whitelist</a></li>
+                                <li class="divider"></li>
+                                <li><a>Queued Jobs</a></li>
+                                <li class="divider"></li>
+                                <li><a>About</a></li>
+                            </ul>
+
+
+                        </li>
+
                         <li><a href="#"><span style="padding-right: 8px;" class="glyphicon glyphicon-search"></span>Help</a></li>
                         <li><a href="#"><span style="padding-right: 8px;" class="glyphicon glyphicon-comment"></span>Report a Problem</a></li>
                         <li><a href="#"><span style="padding-right: 8px;" class="glyphicon glyphicon-off"></span>Log out</a></li>
@@ -47,27 +67,17 @@
         <!--#application search bar -->
         <div class="col-md-3">
             <section class="searchbar-application" style="position: fixed;top: 50px;z-index: 2012;background-color: white;box-shadow: -1px 0px 2px 1px rgba(0, 0, 0, 0.2);">
+                <h4 style="padding: 30px;">APPLICATION</h4>
 
-                <div class="input-group">
-                    <span class="input-group-addon" id="basic-addon1"><span style="opacity: 0.5;
-    margin-bottom: 3px;"class="glyphicon glyphicon-search"></span></span>
-                    <input type="text" class="form-control" placeholder="Filter applications" aria-describedby="basic-addon1">
-                </div>
             </section>
         </div>
         <!--#application search bar-->
 
         <!--#role search bar-->
         <div class="col-md-3">
-            <section class="searchbar-application" style="position: fixed;
-top: 50px;
-z-index: 2012;
-background-color: white;">
-                <div class="input-group">
-                    <span class="input-group-addon" id="basic-addon1"><span style="opacity: 0.5;
-    margin-bottom: 3px;"class="glyphicon glyphicon-search"></span></span>
-                    <input type="text" class="form-control" placeholder="Filter roles" aria-describedby="basic-addon1">
-                </div>
+            <section class="searchbar-application" style="position: fixed;top: 50px;z-index: 2012;background-color: white;">
+                <h4 style="padding: 30px;">ROLE</h4>
+
             </section>
         </div>
         <!-- #role search bar-->
@@ -75,11 +85,7 @@ background-color: white;">
         <!-- #name search bar-->
         <div class="col-md-3">
             <section class="searchbar-application" style="position: fixed;top: 50px;z-index: 2012;background-color: white;box-shadow: none;">
-                <div class="input-group">
-                    <span class="input-group-addon" id="basic-addon1"><span style="opacity: 0.5;
-    margin-bottom: 3px;"class="glyphicon glyphicon-search"></span></span>
-                    <input type="text" class="form-control" placeholder="Filter people" aria-describedby="basic-addon1">
-                </div>
+                <h4 style="padding: 30px;">ASSIGNED</h4>
             </section>
         </div>
         <!-- #name search bar-->
@@ -103,10 +109,19 @@ border-bottom: medium none;">
         <div class="col-md-4 background-blue">
             <div class="wrapper">
                 <div class="application-section">
-                    <h5 style="position: fixed; z-index: 2003; margin-top: 0px; color: white; background-color: rgb(41, 75, 116); padding: 15px 15px 15px 2%; width: 18.8%;">APPLICATION</h4>
+
+                    <!-- <span class="glyphicons glyphicons-search"></span>  for search bar -->
+
+                    <div style="position: fixed; z-index: 2003; margin-top: 0px; color: gray; padding: 10px; background-color: rgb(38, 62, 91); width: 20%;" type="text">
+                        <span class="glyphicons glyphicons-search"></span>
+                        <input placeholder=" Filter Applications" style="border-radius: 5px; background: rgb(255, 255, 255) none repeat scroll 0% 0%; border: 1px solid rgb(204, 204, 204); box-shadow: 0px 1px 0px 0px rgb(236, 236, 236) inset; margin: 5px; width: 95%;" type="text">
+
+                    </div>
+
                     <section id="application">
                         <ul id="sub-name-list">
                             <li><a href="#">Anthropology Mailing Lists </a> </li>
+
                             <li><a href="#">Database Access</a></li>
                             <li><a href="#">Faculty Memeber Phone Lists</a></li>
                             <li><a href="#">Lab Remote Access</a></li>
@@ -126,8 +141,12 @@ border-bottom: medium none;">
         <!--#Role-->
         <div class="col-md-4 background-gray">
             <div class="wrapper">
-            <div class="rule-section">
-                <h5 style="margin-top: 0px; linear-gradient(-90deg, #F9F9F9 9%, #F0F0F0 83%); width: 18.8%; z-index: 2003; padding: 15px; position: fixed;">APPLICATION</h5>
+                <div class="rule-section">
+                    <div style="position: fixed; z-index: 2003; margin-top: 0px; color: gray; padding: 10px; background-color: #E3E3E3; width: 20%;" type="text">
+                        <span class="glyphicons glyphicons-search"></span>
+                        <input placeholder=" Filter Applications" style="border-radius: 5px; background: rgb(255, 255, 255) none repeat scroll 0% 0%; border: 1px solid rgb(204, 204, 204); box-shadow: 0px 1px 0px 0px rgb(236, 236, 236) inset; margin: 5px; width: 95%;" type="text">
+
+                    </div>
 
                     <section id="application">
                         <ul id="sub-name-list">
@@ -149,7 +168,11 @@ border-bottom: medium none;">
         <div class="col-md-4 background-white">
             <div class="wrapper">
                 <div class="assigned-section">
-                    <h5 style="margin-top: 0px; background-color: white; width: 18.8%; z-index: 2003; padding: 15px; position: fixed;">ASSIGNED</h5>
+                    <div style="position: fixed; z-index: 2003; margin-top: 0px; color: gray; padding: 10px; background-color: #F7F7F7; width: 20%;" type="text">
+                        <span class="glyphicons glyphicons-search"></span>
+                        <input placeholder=" Filter Applications" style="border-radius: 5px; background: rgb(255, 255, 255) none repeat scroll 0% 0%; border: 1px solid rgb(204, 204, 204); box-shadow: 0px 1px 0px 0px rgb(236, 236, 236) inset; margin: 5px; width: 95%;" type="text">
+
+                    </div>
                     <!-- #assigned-section -->
                     <section id="application">
                         <div class="assigned-lists">
@@ -215,7 +238,8 @@ border-bottom: medium none;">
         </div>
         <!--#right control panel-->
     </div>
-    </div>
+    <!--Shang, I commented this out    </div>-->
+
 
 </body>
 

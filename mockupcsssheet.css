@@ -38,6 +38,10 @@ html {
     width: 100%;
     float: left;
     font-size: 15px;
+    overflow-y: hidden;
+}
+
+.application-section:hover {
     overflow-y: auto;
 }
 
@@ -86,6 +90,10 @@ html {
     float: left;
     font-size: 15px;
     width: 100%;
+    overflow-y: hidden;
+}
+
+.rule-section:hover {
     overflow-y: auto;
 }
 

@@ -9,10 +9,7 @@ body {
 
 .searchbar-application {
   height: 70px;
-  border-bottom-color: #E0E0E0;
-  border-bottom-style: solid;
-  width: 100%;
-  border-bottom-width: 5px; }
+  width: 100%; }
   .searchbar-application .form-control {
     width: 200px; }
   .searchbar-application .input-group {
@@ -58,7 +55,8 @@ body {
   border-left-width: 5px;
   position: fixed;
   margin: auto;
-  box-shadow: 0px -1px 2px 1px rgba(0, 0, 0, 0.2); }
+  box-shadow: 0px -1px 2px 1px rgba(0, 0, 0, 0.2);
+  z-index: 2010; }
 
 #bookmark {
   width: 80%; }

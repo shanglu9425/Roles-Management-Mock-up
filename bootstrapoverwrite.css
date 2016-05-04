@@ -86,6 +86,26 @@ navbar-default .navbar-nav > .open > a:active {
 
 /*================== MISC==================*/
 
+a {
+    color: #173C68;
+}
+
+.application-section #sub-name-list li {
+    font-size: 10pt;
+}
+
+.rule-section #application #sub-name-list li {
+    font-size: 10pt;
+}
+
+.aassigned-section #application ul li {
+    font-size: 10pt;
+}
+
+input {
+    font-size: 10pt;
+}
+
 .glyphicon {
     top: 3px;
 }

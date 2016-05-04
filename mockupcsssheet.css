@@ -109,7 +109,6 @@ html {
 }
 
 .rule-section #sub-name-list li a {
-    color: #173C68;
     display: block;
     padding: 5px 30px;
     padding-right: 25px;
@@ -174,6 +173,12 @@ html {
 
 /*================== MISC==================*/
 
+#background-panel {
+    position: fixed;
+    left: 0;
+    width: 100%;
+}
+
 .wrapper {
     position: relative;
     height: 100%;
@@ -193,6 +198,13 @@ html {
 .col-md-4 .searchbar-application .input-group .glyphicon {
     opacity: 0.5;
     margin-bottom: 3px;
+}
+
+
+/*================== CSS FOR JS==================*/
+
+.col-md-4 .app-panel {
+    width: 100%;
 }
 
 

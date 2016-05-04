@@ -27,7 +27,7 @@ form {
     border-width: 1px;
     background-color: #f5f5f5;
     */
-    margin-top: 20px;
+    margin-top: 10px;
     /* W3C */ }
     form fieldset legend {
       font-size: 12pt;
@@ -57,7 +57,7 @@ form {
       float: left;
       display: block;
       width: 100%;
-      margin-bottom: 10px; }
+      margin-bottom: 5px; }
       form fieldset .list h5 {
         margin: 5px; }
       form fieldset .list:last-child {
@@ -65,7 +65,7 @@ form {
     form fieldset input {
       float: left;
       width: 100%;
-      padding: 6px 6px;
+      padding: 2px 6px;
       font-size: 14px;
       font-weight: 400;
       font-family: "Open Sans", sans-serif;

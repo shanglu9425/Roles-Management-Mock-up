@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="mockupcsssheet.css">
     <link rel="stylesheet" href="bootstrapoverwrite.css">
     <link rel="stylesheet" href="mockup.css">
+    <link rel="stylesheet" href="mockup.scss">
     <link rel="stylesheet" href="form.css">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 
@@ -76,7 +77,7 @@
         <!--#role search bar-->
         <div class="col-md-3">
             <section class="searchbar-application" style="position: fixed;">
-                <h4 style="display:none;">ROLE</h4>
+                <h4 class="roles" style="display:none;">ROLE</h4>
 
             </section>
         </div>
@@ -85,7 +86,7 @@
         <!-- #name search bar-->
         <div class="col-md-3">
             <section class="searchbar-application" style="position: fixed;box-shadow: none;">
-                <h4 style="display:none;">ASSIGNED</h4>
+                <h4 class="assign" style="display:none;">ASSIGNED</h4>
             </section>
         </div>
         <!-- #name search bar-->
@@ -120,14 +121,14 @@ border-bottom: medium none;">
 
                         </div>
 
-                        <section id="application">
+                        <section id="application" class="app">
                             <ul id="sub-name-list">
-                                <li><a href="#" onclick="openRoles()">Anthropology Mailing Lists </a> </li>
+                                <li><a href="#" onclick="openRoles(this)">Anthropology Mailing Lists </a> </li>
 
-                                <li><a href="#">Database Access</a></li>
-                                <li><a href="#">Faculty Memeber Phone Lists</a></li>
-                                <li><a href="#">Lab Remote Access</a></li>
-                                <li><a href="#">Printer A Wireless Accesss</a> </li>
+                                <li><a href="#" onclick="openRoles(this)">Database Access</a></li>
+                                <li><a href="#" onclick="openRoles(this)">Faculty Memeber Phone Lists</a></li>
+                                <li><a href="#" onclick="openRoles(this)">Lab Remote Access</a></li>
+                                <li><a href="#" onclick="openRoles(this)">Printer A Wireless Accesss</a> </li>
 
 
                             </ul>
@@ -145,7 +146,7 @@ border-bottom: medium none;">
             <!--#Application-->
 
             <!--#Role-->
-            <div class="col-md-4 app-panel background-gray" style="display:none;">
+            <div class="col-md-4 app-panel background-gray roles" style="display:none;">
                 <div class="wrapper">
                     <div class="rule-section">
                         <div class="search-role" type="text">
@@ -154,12 +155,12 @@ border-bottom: medium none;">
 
                         </div>
 
-                        <section id="application">
+                        <section id="application" class="roles">
                             <ul id="sub-name-list">
-                                <li><a href="#" onclick="openAssignment()">Admin</a> </li>
-                                <li> <a href="#">Video files/Media resources</a></li>
-                                <li> <a href="#">Shared files(1/10/16-3/25/16)</a></li>
-                                <li><a href="#">Contact list</a></li>
+                                <li><a href="#" onclick="openAssignment(this)">Admin</a> </li>
+                                <li> <a href="#" onclick="openAssignment(this)">Video files/Media resources</a></li>
+                                <li> <a href="#" onclick="openAssignment(this)">Shared files(1/10/16-3/25/16)</a></li>
+                                <li><a href="#" onclick="openAssignment(this)">Contact list</a></li>
 
                             </ul>
 
@@ -176,7 +177,7 @@ border-bottom: medium none;">
             <!-- #Role-->
 
             <!-- #Names -->
-            <div class="col-md-4 app-panel background-white" style="display:none;">
+            <div class="col-md-4 app-panel background-white assign" style="display:none;">
                 <div class="wrapper">
                     <div class="assigned-section">
                         <div class="search-assigned" type="text">
@@ -185,7 +186,7 @@ border-bottom: medium none;">
 
                         </div>
                         <!-- #assigned-section -->
-                        <section id="application">
+                        <section id="application" class="assign">
                             <div class="assigned-lists">
                                 <ul id="name-list">
                                     <li>Tom Lee</li>

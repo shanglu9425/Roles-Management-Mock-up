@@ -127,6 +127,11 @@ body {
     }
 }
 
+a.selected {
+  background-color: #FAC369;
+  color: #FFFFFF;
+}
+
 .assigned-section {
     .search-assigned {
         position: fixed;

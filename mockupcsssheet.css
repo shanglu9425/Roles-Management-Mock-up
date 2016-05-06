@@ -24,11 +24,21 @@ html {
     background-color: #102F54;
 }
 
+a,
+a:active,
+a:focus {
+    outline: none;
+}
+
 .navbar-default .navbar-brand {
     color: white;
     margin: 0px;
 }
 
+.selected {
+  background-color: #FAC369;
+  color: #FFFFFF;
+}
 
 /*================== application-section===================*/
 

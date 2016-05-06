@@ -1,4 +1,4 @@
-function openRoles(e, application) {
+function openRoles(e, application, value) {
   // Open Roles and change the background color
   $('.roles').show();
   $('.panel-wrapper').removeClass('background-blue');
@@ -14,8 +14,11 @@ function openRoles(e, application) {
 
   // Add selected class to the clicked button
   $(e).addClass("selected");
+
+  // Change Title
+  $('.modal-header legend')[0].innerHTML = "<b>" +value + "<\/b>";
+
   // Open application
-  // $(application).addClass('show');
   $(application).addClass('show');
 }
 

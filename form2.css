@@ -49,6 +49,9 @@
   width: 100%;
   max-width: 400px;
   min-width: 300px; }
+  .container .modal-header legend {
+    font-size: 14pt;
+    padding-bottom: 10px; }
 
 p {
   color: #555;
@@ -62,6 +65,7 @@ fieldset {
   background: #ffffff;
   /* W3C */ }
   fieldset legend {
+    font-size: 12pt;
     text-align: center;
     float: left;
     display: block;

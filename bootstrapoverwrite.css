@@ -81,8 +81,12 @@
     
     .btn-success {
         border: none;
-        background-color: #7E8790;
+        background-color: #7E8790!important;
         height: 34px;
+    }
+    
+    .btn-danger {
+        background-color: #FA776A;
     }
     
     .btn-success.active,

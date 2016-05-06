@@ -146,6 +146,14 @@ body {
   overflow-y: auto; }
 
 /*===================== comtrol-panel ======================*/
+.control-panel .container {
+  display: none;
+}
+
+.control-panel .container.show {
+  display: block;
+}
+
 .control-panel {
   height: 100vh;
   border-left-color: #E0E0E0;

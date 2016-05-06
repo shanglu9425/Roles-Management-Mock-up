@@ -145,15 +145,10 @@ body {
   border-radius: 5px;
   overflow-y: auto; }
 
-/*===================== comtrol-panel ======================*/
-.control-panel .container {
+/*===================== control-panel ======================*/
+.module {
   display: none;
 }
-
-.control-panel .container.show {
-  display: block;
-}
-
 .control-panel {
   height: 100vh;
   border-left-color: #E0E0E0;

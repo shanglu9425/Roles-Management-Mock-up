@@ -14,6 +14,10 @@
     <link rel="stylesheet" href="testform.css">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="roles.js"></script>
+
 </head>
 
 <body>
@@ -141,6 +145,9 @@
                                 </tr>
                             </tbody>
                         </table>
+                        <p style="margin-left: 160px; margin-top: 20px;">
+                            <button style="padding-bottom: 0px; padding-top: 0px;" class="btn btn-danger" id="remove_group_rule" type="button">Remove</button>
+                        </p>
                     </div>
                 </div>
                 <!-- Rules -->
@@ -148,8 +155,15 @@
                 <!-- Buttons -->
                 <div class='setting-button modal-footer'>
 
-                    <a class='button-delete' href='#' style="width:30%; float:left;">Delete</a>
-                    <a class='button-change' href='#' style="width:60%; float:right;">Accept Changes</a>
+                    <button type="button" class="btn btn-danger" style="float:left;">Delete</button>
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-file" style="margin-bottom: 5px;margin-left: 1px;"></span></button>
+                        <ul class="dropdown-menu">
+                            <li><a href="#" id="csv-download">Download CSV</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <button type="button" class="btn btn-primary">Submit Changes</button>
                 </div>
                 <!-- Buttons -->
 

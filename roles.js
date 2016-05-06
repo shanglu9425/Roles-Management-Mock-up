@@ -6,6 +6,9 @@ function openRoles(e) {
 
   // Remove selected class from previously selected item
   $("#application.app #sub-name-list .selected").removeClass("selected");
+  // Hide Assigned
+  $('.assign').hide();
+
 
   // Add selected class to the clicked button
   $(e).addClass("selected");

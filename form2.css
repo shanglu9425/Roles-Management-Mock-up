@@ -87,7 +87,7 @@ fieldset {
     margin-bottom: 10px; }
     fieldset .list textarea {
       width: 100%;
-      padding: 6px 6px;
+      padding: 2px 6px;
       font-size: 14px;
       font-weight: 400;
       font-family: "Open Sans", sans-serif;
@@ -103,13 +103,12 @@ fieldset {
           opacity: 0.5; }
     fieldset .list input {
       width: 100%;
-      padding: 6px 6px;
+      padding: 2px 6px;
       font-size: 14px;
       font-weight: 400;
       font-family: "Open Sans", sans-serif;
       border: 1px solid #dedede;
-      border-radius: 5px;
-      box-shadow: 0 0 0 transparent, inset 0 0 5px #eee; }
+      border-radius: 5px; }
       fieldset .list input:focus {
         outline: none;
         border: 1px solid #94C4FF;
@@ -122,20 +121,29 @@ fieldset {
     fieldset .list:last-child {
       margin-bottom: 0px; }
 
-#messages #rules {
+#roles #rules {
   font-size: 12px; }
-  #messages #rules .medium {
-    text-align: center; }
-  #messages #rules .mini {
-    text-align: center; }
-  #messages #rules .large {
+  #roles #rules .medium {
+    text-align: center;
+    width: 90px; }
+  #roles #rules .mini {
+    text-align: center;
+    width: 45px; }
+  #roles #rules .large {
     text-align: center;
     width: 140px; }
-  #messages #rules .btn-danger {
+  #roles #rules .btn-danger {
     background-color: #FA776A;
     border: none;
     padding: 1px 10px; }
-    #messages #rules .btn-danger .btn {
+    #roles #rules .btn-danger .btn {
       padding: none; }
+  #roles #rules input {
+    padding: 2px 6px;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: "Open Sans", sans-serif;
+    border: 1px solid #dedede;
+    border-radius: 5px; }
 
 /*# sourceMappingURL=form2.css.map */

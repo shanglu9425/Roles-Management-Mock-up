@@ -79,6 +79,10 @@
     }
     /*================== MISC==================*/
     
+    .modal-footer {
+        border-top: none;
+    }
+    
     .btn-success {
         border: none;
         background-color: #7E8790!important;

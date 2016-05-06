@@ -35,6 +35,10 @@ a:focus {
     margin: 0px;
 }
 
+.selected {
+  background-color: #FAC369;
+  color: #FFFFFF;
+}
 
 /*================== application-section===================*/
 

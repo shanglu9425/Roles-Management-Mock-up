@@ -27,7 +27,7 @@
 
         <!-- Title -->
         <div class="modal-header" style="text-align:center; border-bottom:none;">
-            <h3>Kerr 186 Crew</h3>
+            <legend><b>TEST APPLICATION</b></legend>
         </div>
         <!-- Title -->
 
@@ -37,8 +37,8 @@
             <!-- Nav tabs -->
             <ul class="nav nav-tabs" role="tablist" style="float:left;width:100%;">
                 <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Summary</a></li>
-                <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Relations</a></li>
-                <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Rules</a></li>
+                <li role="presentation"><a href="#roles" aria-controls="roles" role="tab" data-toggle="tab">Roles</a></li>
+                <li role="presentation"><a href="#active-directory" aria-controls="messages" role="tab" data-toggle="tab">Active Directory</a></li>
             </ul>
             <!-- Nav tabs -->
 
@@ -84,81 +84,60 @@
                 <!-- Summary -->
 
                 <!-- Relations -->
-                <div role="tabpanel" class="tab-pane" id="profile">
+                <div role="tabpanel" class="tab-pane" id="roles">
                     <div role="tabpanel" class="tab-pane active" id="home" style="overflow:auto;">
-                        <div class="container">
+                        <div class="container" style="padding: 0px 0px;">
 
                             <!-- / Fieldset Alpha -->
-                            <fieldset class="alpha">
-
-
-                                <div class="list">
-                                    <h5>Owners</h5>
-                                    <input class="item" type="text">
+                            <div role="tabpanel" class="tab-pane" id="roles" style="overflow:auto;">
+                                <div class="container">
+                                    <table id="rules">
+                                        <thead>
+                                            <tr>
+                                                <th class="medium">Name</th>
+                                                <th class="mini">Token</th>
+                                                <th class="large">Description</th>
+                                                <th>
+                                                    <!-- Actions -->
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody style="display: table-row-group;">
+                                            <tr class="fields">
+                                                <td>
+                                                    <input id="value" size="15" value="" class="medium" autocomplete="off" type="text" style="margin:5px 5px;">
+                                                </td>
+                                                <td>
+                                                    <input id="value" size="15" value="" class="mini" autocomplete="off" type="text" style="margin:5px 5px;">
+                                                </td>
+                                                <td>
+                                                    <input id="value" size="15" value="" class="large" autocomplete="off" type="text" style="margin:5px 5px;">
+                                                </td>
+                                                <td>
+                                                    <button class="btn btn-danger" id="remove_group_rule" type="button">Remove</button>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <p style="margin-left: 140px; margin-top: 20px;">
+                                        <button style="padding-bottom: 0px; padding-top: 0px;" class="btn btn-default" id="remove_group_rule" type="button">Add Role</button>
+                                    </p>
                                 </div>
-                                <div class="list">
-                                    <h5>Operators</h5>
-                                    <input class="item" type="text">
-                                </div>
-                                <div class="list">
-                                    <h5>Members</h5>
-                                    <input class="item" type="text">
-                                </div>
-
-
-                            </fieldset>
-
+                            </div>
 
 
 
                         </div>
                     </div>
                 </div>
-                <!-- Relation -->
+                <!-- Active Directory -->
 
                 <!-- Rules -->
-                <div role="tabpanel" class="tab-pane" id="messages" style="overflow:auto;">
-                    <div class="container">
-                        <table id="rules">
-                            <thead>
-                                <tr>
-                                    <th class="medium">Column</th>
-                                    <th class="mini">Condition</th>
-                                    <th class="large">Value</th>
-                                    <th>
-                                        <!-- Actions -->
-                                    </th>
-                                </tr>
-                            </thead>
-                            <tbody style="display: table-row-group;">
-                                <tr class="fields">
-                                    <td>
-                                        <select id="column" class="medium" style="    margin-right: 5px;">
-                                            <option value="department">Department</option>
-                                            <option value="organization">Organization</option>
-                                            <option value="loginid">Login ID</option>
-                                            <option value="title">Title</option>
-                                            <option value="major">Major</option>
-                                            <option value="affiliation">Affiliation</option>
-                                        </select>
-                                    </td>
-                                    <td>
-                                        <select id="condition" class="mini">
-                                            <option value="is">is</option>
-                                            <option value="is not">is not</option>
-                                        </select>
-                                    </td>
-                                    <td>
-                                        <input id="value" size="15" value="" class="large" autocomplete="off" type="text" style="margin:5px 5px;">
-                                    </td>
-                                    <td>
-                                        <button class="btn btn-danger" id="remove_group_rule" type="button">Remove</button>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        <p style="margin-left: 160px; margin-top: 20px;">
-                            <button style="padding-bottom: 0px; padding-top: 0px;" class="btn btn-danger" id="remove_group_rule" type="button">Add Role</button>
+                <div role="tabpanel" class="tab-pane" id="active-directory" style="overflow:auto;">
+                    <div class="container" style="padding: 0px 0px;">
+
+                        <p style="margin-top: 20px;">
+                            The group name is appended after the base AD path configured by the administrator.
                         </p>
                     </div>
                 </div>

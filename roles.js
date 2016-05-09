@@ -1,6 +1,6 @@
 function openRoles(e, module, value, application) {
   // Open Roles and change the background color
-  $('.roles').css('opacity', '1');
+  $('.roles').show();
   // slideRectangle('.roles', 'animate-open');
   $('.panel-wrapper').removeClass('background-blue');
   $('.panel-wrapper').addClass('background-gray');

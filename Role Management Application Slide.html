@@ -160,31 +160,31 @@ border-bottom: medium none;">
 
                         <section id="application" class="roles">
                             <ul id="sub-name-list" class="anthro-mail" style="display: none;">
-                                <li><a href="#" onclick="openAssignment(this, '.role' )">Anthropology E-Wing Faculty</a> </li>
-                                <li> <a href="#" onclick="openAssignment(this, '.role')">Anthropology E-Wing Grad Students</a></li>
-                                <li> <a href="#" onclick="openAssignment(this, '.role')">Anthropology Emiriti</a></li>
-                                <li><a href="#" onclick="openAssignment(this, '.role')">Anthropology Faculty</a></li>
+                                <li><a href="#" onclick="openAssignment(this, '.role', '.anthro-e-wing-faculty' )">Anthropology E-Wing Faculty</a> </li>
+                                <li> <a href="#" onclick="openAssignment(this, '.role', '.anthro-e-wing-grad-students')">Anthropology E-Wing Grad Students</a></li>
+                                <li> <a href="#" onclick="openAssignment(this, '.role', '.anthro-emiriti')">Anthropology Emiriti</a></li>
+                                <li><a href="#" onclick="openAssignment(this, '.role', '.anthro-faculty')">Anthropology Faculty</a></li>
                             </ul>
 
                             <ul id="sub-name-list" class="db-access" style="display: none;">
-                                <li><a href="#" onclick="openAssignment(this, '.role' )">Access</a> </li>
-                                <li> <a href="#" onclick="openAssignment(this, '.role')">Administer</a></li>
+                                <li><a href="#" onclick="openAssignment(this, '.role', '.db-access-access' )">Access</a> </li>
+                                <li> <a href="#" onclick="openAssignment(this, '.role', '.db-access-administer')">Administer</a></li>
                             </ul>
 
                             <ul id="sub-name-list" class="lab-goodman" style="display: none;">
-                                <li><a href="#" onclick="openAssignment(this, '.role' )">CPPR Admin</a></li>
-                                <li> <a href="#" onclick="openAssignment(this, '.role')">CPPR User</a></li>
-                                <li><a href="#" onclick="openAssignment(this, '.role' )">Lab Admin</a></li>
-                                <li> <a href="#" onclick="openAssignment(this, '.role')">Lab Local Admin</a></li>
-                                <li><a href="#" onclick="openAssignment(this, '.role' )">Lab User</a></li>
+                                <li><a href="#" onclick="openAssignment(this, '.role', '.lab-goodman-cppr-admin' )">CPPR Admin</a></li>
+                                <li> <a href="#" onclick="openAssignment(this, '.role', '.lab-goodman-cppr-user')">CPPR User</a></li>
+                                <li><a href="#" onclick="openAssignment(this, '.role', '.lab-goodman-lab-admin' )">Lab Admin</a></li>
+                                <li> <a href="#" onclick="openAssignment(this, '.role', '.lab-goodman-lab-local-admin')">Lab Local Admin</a></li>
+                                <li><a href="#" onclick="openAssignment(this, '.role', '.lab-goodman-lab-user' )">Lab User</a></li>
                             </ul>
 
                             <ul id="sub-name-list" class="dss-messenger" style="display: none;">
-                                <li><a href="#" onclick="openAssignment(this, '.role' )">Access</a></li>
+                                <li><a href="#" onclick="openAssignment(this, '.role', '.dss-messenger-access' )">Access</a></li>
                             </ul>
 
                             <ul id="sub-name-list" class="printer" style="display: none;">
-                                
+
                             </ul>
 
                             <a href="#" onclick="openAssignment(this, '.role')">
@@ -211,7 +211,7 @@ border-bottom: medium none;">
                         <!-- #assigned-section -->
                         <section id="application" class="assign">
                             <div class="assigned-lists">
-                                <ul id="name-list">
+                                <ul id="name-list" class="anthro-e-wing-faculty" style="display: none;">
                                     <li>Tom Lee</li>
                                     <li>Byran Mash</li>
                                     <li>Hanna Hurrison</li>
@@ -220,6 +220,78 @@ border-bottom: medium none;">
                                     <li>Thomas Livingston</li>
                                     <li>Andrew Kim</li>
                                     <li>Shawn Wang</li>
+                                </ul>
+
+                                <ul id="name-list" class="anthro-e-wing-grad-students" style="display: none;">
+                                    <li>Tom Lee</li>
+                                    <li>Byran Mash</li>
+                                    <li>Hanna Hurrison</li>
+                                    <li>Daniel Jackson</li>
+                                    <li>Steve Graphhin</li>
+                                    <li>Thomas Livingston</li>
+                                </ul>
+
+                                <ul id="name-list" class="anthro-emiriti" style="display: none;">
+                                    <li>Tom Lee</li>
+                                    <li>Byran Mash</li>
+                                    <li>Hanna Hurrison</li>
+                                    <li>Daniel Jackson</li>
+                                    <li>Steve Graphhin</li>
+                                </ul>
+
+                                <ul id="name-list" class="anthro-faculty" style="display: none;">
+                                    <li>Tom Lee</li>
+                                    <li>Byran Mash</li>
+                                    <li>Hanna Hurrison</li>
+                                </ul>
+
+
+                                <ul id="name-list" class="db-access-access" style="display: none;">
+                                    <li>Byran Mash</li>
+                                    <li>Tom Lee</li>
+                                </ul>
+
+                                <ul id="name-list" class="db-access-administer" style="display: none;">
+                                    <li>Byran Mash</li>
+                                    <li>Hanna Hurrison</li>
+                                    <li>Daniel Jackson</li>
+                                    <li>Tom Lee</li>
+                                </ul>
+
+                                <ul id="name-list" class="lab-goodman-cppr-admin" style="display: none;">
+                                    <li>Robin Williams</li>
+                                    <li>Arnold McJagger</li>
+                                    <li>Michael Jackson</li>
+                                </ul>
+
+                                <ul id="name-list" class="lab-goodman-cppr-user" style="display: none;">
+                                    <li>Daniel Jackson</li>
+                                    <li>Steve Graphhin</li>
+                                    <li>Tom Lee</li>
+                                </ul>
+
+                                <ul id="name-list" class="lab-goodman-lab-admin" style="display: none;">
+                                    <li>Daniel Jackson</li>
+                                    <li>Steve Graphhin</li>
+                                    <li>Tom Lee</li>
+                                </ul>
+
+                                <ul id="name-list" class="lab-goodman-lab-local-admin" style="display: none;">
+                                    <li>Steve Graphhin</li>
+                                </ul>
+
+                                <ul id="name-list" class="lab-goodman-lab-user" style="display: none;">
+                                    <li>Hanna Hurrison</li>
+                                    <li>Daniel Jackson</li>
+                                    <li>Steve Graphhin</li>
+                                    <li>Byran Mash</li>
+                                    <li>Tom Lee</li>
+                                </ul>
+
+                                <ul id="name-list" class="dss-messenger-access" style="display: none;">
+                                    <li>Obada Kadri</li>
+                                    <li>Christopher Thielen</li>
+                                    <li>Lloyd Wheeler</li>
                                 </ul>
                             </div>
                         </section>

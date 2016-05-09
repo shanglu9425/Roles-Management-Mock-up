@@ -24,7 +24,7 @@ function openRoles(e, module, value, application) {
   $(application).addClass('show');
 }
 
-function openAssignment(e, application) {
+function openAssignment(e, application, assigned) {
   $('.assign').show();
   $('.panel-wrapper').removeClass('background-gray');
   $('.panel-wrapper').addClass('background-white');
@@ -33,9 +33,11 @@ function openAssignment(e, application) {
   $("#application.roles #sub-name-list .selected").removeClass("selected");
   // Remove show from previous application
   $('.control-panel .container .show').removeClass('show');
+  $('#application #name-list').removeClass('show');
 
   // Add selected class to the clicked button
   $(e).addClass("selected");
   // Open application
   $(application).addClass('show');
+  $(assigned).addClass('show');
 }

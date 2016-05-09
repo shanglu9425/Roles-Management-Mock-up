@@ -5,7 +5,7 @@ function openRoles(e, application, value) {
   $('.panel-wrapper').addClass('background-gray');
 
   // Remove selected class from previously selected item
-  $("#application.app #sub-name-list .selected").removeClass("selected");
+  $(".selected").removeClass("selected");
   // Hide Assigned
   $('.assign').hide();
   // remove show from previous application

@@ -126,17 +126,17 @@ border-bottom: medium none;">
 
                         <section id="application" class="app">
                             <ul id="sub-name-list">
-                                <li><a href="#" onclick="openRoles(this, '.app', 'Anthropology Mailing Lists')">Anthropology Mailing Lists </a> </li>
+                                <li><a href="#" onclick="openRoles(this, '.app', 'Anthropology Mailing Lists', '.anthro-mail')">Anthropology Mailing Lists </a> </li>
 
-                                <li><a href="#" onclick="openRoles(this, '.app', 'Database Access')">Database Access</a></li>
-                                <li><a href="#" onclick="openRoles(this, '.app', 'Faculty Member Phone Lists')">Faculty Member Phone Lists</a></li>
-                                <li><a href="#" onclick="openRoles(this, '.app', 'Lab Remote Access')">Lab Remote Access</a></li>
-                                <li><a href="#" onclick="openRoles(this, '.app', 'Printer A Wireless Accesss')">Printer A Wireless Accesss</a></li>
+                                <li><a href="#" onclick="openRoles(this, '.app', 'Ghetti Lab Computer and File Access', '.db-access')">Ghetti Lab Computer and File Access</a></li>
+                                <li><a href="#" onclick="openRoles(this, '.app', 'Goodman Lab', '.lab-goodman')">Goodman Lab</a></li>
+                                <li><a href="#" onclick="openRoles(this, '.app', 'DSS Messenger', '.dss-messenger')">DSS Messenger</a></li>
+                                <li><a href="#" onclick="openRoles(this, '.app', 'Printer A Wireless Accesss', '.printer')">Printer A Wireless Accesss</a></li>
 
 
                             </ul>
 
-                            <a href="#">
+                            <a href="#" onclick="openRoles(this, '.app', 'New Application')">
                                 <p>Adding An Application </p>
                             </a>
 
@@ -159,15 +159,35 @@ border-bottom: medium none;">
                         </div>
 
                         <section id="application" class="roles">
-                            <ul id="sub-name-list">
-                                <li><a href="#" onclick="openAssignment(this, '.role' )">Admin</a> </li>
-                                <li> <a href="#" onclick="openAssignment(this, '.role')">Video files/Media resources</a></li>
-                                <li> <a href="#" onclick="openAssignment(this, '.role')">Shared files(1/10/16-3/25/16)</a></li>
-                                <li><a href="#" onclick="openAssignment(this, '.role')">Contact list</a></li>
-
+                            <ul id="sub-name-list" class="anthro-mail" style="display: none;">
+                                <li><a href="#" onclick="openAssignment(this, '.role' )">Anthropology E-Wing Faculty</a> </li>
+                                <li> <a href="#" onclick="openAssignment(this, '.role')">Anthropology E-Wing Grad Students</a></li>
+                                <li> <a href="#" onclick="openAssignment(this, '.role')">Anthropology Emiriti</a></li>
+                                <li><a href="#" onclick="openAssignment(this, '.role')">Anthropology Faculty</a></li>
                             </ul>
 
-                            <a href="#">
+                            <ul id="sub-name-list" class="db-access" style="display: none;">
+                                <li><a href="#" onclick="openAssignment(this, '.role' )">Access</a> </li>
+                                <li> <a href="#" onclick="openAssignment(this, '.role')">Administer</a></li>
+                            </ul>
+
+                            <ul id="sub-name-list" class="lab-goodman" style="display: none;">
+                                <li><a href="#" onclick="openAssignment(this, '.role' )">CPPR Admin</a></li>
+                                <li> <a href="#" onclick="openAssignment(this, '.role')">CPPR User</a></li>
+                                <li><a href="#" onclick="openAssignment(this, '.role' )">Lab Admin</a></li>
+                                <li> <a href="#" onclick="openAssignment(this, '.role')">Lab Local Admin</a></li>
+                                <li><a href="#" onclick="openAssignment(this, '.role' )">Lab User</a></li>
+                            </ul>
+
+                            <ul id="sub-name-list" class="dss-messenger" style="display: none;">
+                                <li><a href="#" onclick="openAssignment(this, '.role' )">Access</a></li>
+                            </ul>
+
+                            <ul id="sub-name-list" class="printer" style="display: none;">
+                                
+                            </ul>
+
+                            <a href="#" onclick="openAssignment(this, '.role')">
                                 <p>Adding A Role </p>
                             </a>
 

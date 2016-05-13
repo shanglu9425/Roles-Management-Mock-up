@@ -46,16 +46,22 @@
           showAutocompleteOnFocus: true
         });
 
-        // $('.list #role-name')on('tokenfield:createtoken', function (event) {
-        //     var available_tokens = bloodhound_tokens.index.datums
-        //     var exists = true;
-        //     $.each(available_tokens, function(index, token) {
-        //         if (token.value === event.attrs.value)
-        //             exists = false;
-        //     });
-        //     if(exists === true)
-        //         event.preventDefault();
-        // })
+        $('.list #role-name').on('tokenfield:createtoken', function (event) {
+          // Prevent repeated names
+          var existingTokens = $(this).tokenfield('getTokens');
+          console.log(existingTokens);
+          $.each(existingTokens, function(index, token) {
+            console.log(token);
+              if (token.value === event.attrs.value)
+                  event.preventDefault();
+          });
+
+
+          // console.log(token);
+
+          // Prevent non-existing people
+
+        })
       });
     </script>
 

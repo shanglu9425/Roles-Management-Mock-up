@@ -92,6 +92,12 @@
     }
     /*================== MISC==================*/
     
+
+.btn-primary {
+    color: #fff;
+    background-color: #3e6894;
+    border: none;}
+
     .modal-footer {
         border-top: none;
     }

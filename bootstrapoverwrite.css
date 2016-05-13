@@ -77,6 +77,19 @@
         margin-left: 0px;
         margin-right: 0px;
     }
+    /*=================input-size===============*/
+    
+    .input-large {
+        width: 200px!important;
+    }
+    
+    .input-medium {
+        width: 150px!important;
+    }
+    
+    .input-medium-small {
+        width: 120px!important;
+    }
     /*================== MISC==================*/
     
     .modal-footer {

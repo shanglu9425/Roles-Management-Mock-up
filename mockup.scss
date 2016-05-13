@@ -1,4 +1,4 @@
-        body {
+body {
             padding: 0px;
             margin: 0px;
             width: 100%;
@@ -12,16 +12,17 @@
         /*===================== searchbar-application ======================*/
         
         .searchbar-application {
-            height: 50px;
+            height: 45px;
             width: 100%;
             background-color: white;
             top: 50px;
             z-index: 2012;
             h4 {
-                padding: 10px;
+                margin-left: 25px;
+                padding: 5px;
             }
             .form-control {
-                width: 200px;
+                width: 15%;
             }
             .input-group {
                 top: 15px;
@@ -42,6 +43,7 @@
         
         .application-section {
             .search-application {
+                padding-left: 25px !important;
                 position: fixed;
                 z-index: 2003;
                 margin-top: 0px;
@@ -51,7 +53,7 @@
                 width: 100%;
                 i {
                     position: absolute;
-                    left: 20px;
+                   left: 40px;
                     bottom: 17px;
                 }
                 input {
@@ -61,7 +63,7 @@
                     border: 1px solid rgb(204, 204, 204);
                     box-shadow: 0px 1px 0px 0px rgb(236, 236, 236) inset;
                     margin: 5px;
-                    width: 200px;
+                    width: 15%;
                 }
             }
             #application {
@@ -79,11 +81,9 @@
                         color: white;
                         text-align: center;
                         border-radius: 3px;
-                        margin-left: 30px;
                         padding: 5px;
-                        margin-top: 30px;
                         font-size: 14px;
-                        width: 200px;
+                        width: 100%;
                     }
                 }
                 a:focus {
@@ -100,6 +100,7 @@
         
         .rule-section {
             .search-role {
+                padding-left: 25px !important;
                 position: fixed;
                 z-index: 2003;
                 margin-top: 0px;
@@ -110,7 +111,7 @@
             }
             i {
                 position: absolute;
-                left: 20px;
+               left: 40px;
                 bottom: 17px;
             }
             input {
@@ -130,11 +131,9 @@
                         color: white;
                         text-align: center;
                         border-radius: 3px;
-                        margin-left: 30px;
                         padding: 5px;
-                        margin-top: 30px;
                         font-size: 14px;
-                        width: 200px;
+                        width: 100%;
                     }
                 }
                 a:focus {
@@ -151,6 +150,7 @@
         
         .assigned-section {
             .search-assigned {
+                padding-left: 25px !important;
                 position: fixed;
                 z-index: 2003;
                 margin-top: 0px;
@@ -161,7 +161,7 @@
             }
             i {
                 position: absolute;
-                left: 20px;
+               left: 40px;
                 bottom: 17px;
             }
             input {
@@ -183,10 +183,28 @@
                         padding-bottom: 2px;
                         padding-left: 12px;
                         border-bottom: 1px solid #f2f2f2;
-                        margin-top: 15px;
+                            margin-top: 15px;
                         border-radius: 5px;
                         overflow-y: auto;
                     }
+                    .group-tab {background: none;
+                    overflow-x: visible;
+                    padding-left: 0px;
+                    
+                        span {color: rgb(121, 120, 119); font-size: 11px; margin: 0px; float: right;}
+                        
+                        .panel-style{
+                            width: 200px; color: rgb(39, 73, 115); background-color: rgb(245, 245, 245); padding-top: 2px; margin-top: 15px; border-radius: 5px; overflow-y: auto; border: 1px solid rgb(217, 217, 217); padding-bottom: 2px; padding-left: 12px;}
+                        
+                        .group-member {
+                            color: rgb(0, 136, 204); background-color: rgb(217, 237, 247); padding-top: 2px; border-bottom: 1px solid rgb(242, 242, 242); border-radius: 5px; overflow-y: auto; margin-top: 15px; width: 180px; padding-bottom: 2px; margin-left: 12px;
+                        
+                            a {
+                                color: rgb(0, 136, 204); margin-left: 12px; background-color: rgb(217, 237, 247); padding-top: 2px; border-bottom: 1px solid rgb(242, 242, 242); border-radius: 5px; overflow-y: auto; margin-top: 15px; width: 180px; padding-bottom: 2px}
+                        }
+                    
+                    }
+                    
                 }
             }
         }

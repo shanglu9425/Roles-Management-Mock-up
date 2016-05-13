@@ -16,6 +16,7 @@ form {
   width: 100%;
   position: relative; }
   form fieldset {
+    margin-bottom: 15px;
     float: left;
     position: relative;
     width: 100%;

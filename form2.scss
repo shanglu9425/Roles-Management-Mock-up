@@ -79,6 +79,7 @@ p {
 
 // Form
 fieldset {
+    margin-bottom: 15px;
     float: left;
     position: relative;
     background: #fff;
@@ -108,6 +109,12 @@ fieldset {
         display: none;
     }
     .list {
+        .fa-search {
+            position: relative;
+            left: 23px;
+            color: gray;
+            bottom: 1.5px;
+        }
         textarea {
             width: 100%;
             padding: 2px 6px;
@@ -180,15 +187,13 @@ fieldset {
                 padding: none;
             }
         }
-        
-input{
-    padding: 2px 6px;
-font-size: 14px;
-font-weight: 400;
-font-family: "Open Sans", sans-serif;
-border: 1px solid #dedede;
-border-radius: 5px;    
+        input {
+            padding: 2px 6px;
+            font-size: 14px;
+            font-weight: 400;
+            font-family: "Open Sans", sans-serif;
+            border: 1px solid #dedede;
+            border-radius: 5px;
         }
-        
     }
 }

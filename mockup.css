@@ -59,6 +59,13 @@ body {
 .application-section #application li {
   padding-right: 0px;
   color: white; }
+  .application-section #application li button {
+    margin: 30px;
+    width: 70%; }
+  .application-section #application li button:focus {
+    outline: none; }
+  .application-section #application li button:active {
+    background: none; }
 .application-section #application a {
   text-decoration: none; }
   .application-section #application a p {
@@ -96,9 +103,12 @@ body {
   box-shadow: 0px 1px 0px 0px #ececec inset;
   margin: 5px;
   width: 200px; }
-.rule-section #application a {
+.rule-section #application li button {
+  margin: 30px;
+  width: 70%; }
+.rule-section #application li a {
   text-decoration: none; }
-  .rule-section #application a p {
+  .rule-section #application li a p {
     background-color: #3e6894;
     color: white;
     text-align: center;
@@ -106,9 +116,9 @@ body {
     padding: 5px;
     font-size: 14px;
     width: 100%; }
-.rule-section #application a:focus {
+.rule-section #application li a:focus {
   outline: none; }
-.rule-section #application a:hover p {
+.rule-section #application li a:hover p {
   background-color: #FAC369; }
 
 /*===================== assigned-section ======================*/

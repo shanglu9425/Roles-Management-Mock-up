@@ -73,6 +73,12 @@ body {
                 li {
                     padding-right: 0px;
                     color: white;
+                    
+                    button{margin: 30px;
+width: 70%;  }
+                    
+                    button:focus {outline: none;}
+                    button:active {background: none;}
                 }
                 a {
                     text-decoration: none;
@@ -124,6 +130,9 @@ body {
                 width: 200px;
             }
             #application {
+                
+                li{ button{margin: 30px;
+width: 70%;}
                 a {
                     text-decoration: none;
                     p {
@@ -143,6 +152,7 @@ body {
                     p {
                         background-color: #FAC369;
                     }
+                }
                 }
             }
         }

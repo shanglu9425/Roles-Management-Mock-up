@@ -40,6 +40,8 @@ a:focus {
   color: #FFFFFF;
 }
 
+.selected-none {background:#3e6894;}
+
 /*================== application-section===================*/
 
 .application-section {
@@ -77,6 +79,10 @@ a:focus {
 .application-section #sub-name-list li a:hover {
     color: white;
     background-color: #FAC369;
+}
+.application-section #sub-name-list #hover-none a:hover {
+    color: none;
+    background:none;
 }
 
 .application-section #application {

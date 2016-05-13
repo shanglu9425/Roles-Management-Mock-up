@@ -204,11 +204,10 @@ border-bottom: medium none;">
                                     <li><a href="#" onclick="openRoles(this)">Faculty Memeber Phone Lists</a></li>
                                     <li><a href="#" onclick="openRoles(this)">Lab Remote Access</a></li>
                                     <li><a href="#" onclick="openRoles(this)">Printer A Wireless Accesss</a> </li>
-
+                                    
                                     <li>
-                                     <a href="#" onclick="openRoles(this, '.app', 'Add an Application')">
-                                <p>Add An Application </p>
-                            </a>
+                                <button type="button" onclick="openRoles(this, '.app', 'Add an Application')" class="btn btn-primary selected-none">Add An Application</button>
+                                    
                                     </li>
                                 </ul>
                             </nav>
@@ -243,10 +242,9 @@ border-bottom: medium none;">
                                 <li><a href="#" onclick="openAssignment(this)">Contact list</a></li>
 
                                 <li>
-                                <a href="#" onclick="openAssignment(this, '.role', 'Add a Role')">
-                                <p>Add A Role </p>
-                                </a>
+                                  <button type="button" onclick="openRoles(this, '.app', 'Add an Application')" class="btn btn-primary selected-none">Add A Role</button>
                                 </li>
+                            </ul>
                             <ul id="sub-name-list" class="dss-messenger" style="display: none;">
                                 <li><a href="#" onclick="openAssignment(this, '.role', '.dss-messenger-access' )">Access</a></li>
                             </ul>

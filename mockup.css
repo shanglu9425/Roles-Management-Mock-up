@@ -72,7 +72,7 @@ body {
 .application-section #application a:focus {
   outline: none; }
 .application-section #application a:hover p {
-  background-color: #FAC369; }
+  background-color: none; }
 
 /*===================== rule-section ======================*/
 .rule-section .search-role {
@@ -187,10 +187,7 @@ body {
       width: 180px;
       padding-bottom: 2px; }
 
-/*===================== control-panel ======================*/
-.module {
-  display: none;
-}
+/*===================== comtrol-panel ======================*/
 .control-panel {
   height: 100vh;
   border-left-color: #E0E0E0;

@@ -187,7 +187,10 @@ body {
       width: 180px;
       padding-bottom: 2px; }
 
-/*===================== comtrol-panel ======================*/
+/*===================== control-panel ======================*/
+.module {
+ display: none;
+}
 .control-panel {
   height: 100vh;
   border-left-color: #E0E0E0;

@@ -57,7 +57,7 @@ a:focus {
 
 .application-section #sub-name-list {
     padding: 0px;
-    margin-top: 90px;
+    margin-top: 0px;
 }
 
 .application-section #sub-name-list li {
@@ -81,7 +81,7 @@ a:focus {
 
 .application-section #application {
     position: relative;
-    top: 20px;
+    
 }
 
 .application-section #application h4 {
@@ -152,6 +152,10 @@ a:focus {
     background-color: #ffffff;
     width: 100%;
     float: left;
+
+}
+.assigned-section:hover {
+    overflow-y: auto;
 }
 
 .assigned-section #application h4 {

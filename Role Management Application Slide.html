@@ -45,6 +45,17 @@
           },
           showAutocompleteOnFocus: true
         });
+
+        $('.list #role-name')on('tokenfield:createtoken', function (event) {
+            var available_tokens = bloodhound_tokens.index.datums
+            var exists = true;
+            $.each(available_tokens, function(index, token) {
+                if (token.value === event.attrs.value)
+                    exists = false;
+            });
+            if(exists === true)
+                event.preventDefault();
+        })
       });
     </script>
 

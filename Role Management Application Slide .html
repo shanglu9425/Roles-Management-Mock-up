@@ -46,17 +46,29 @@
           showAutocompleteOnFocus: true
         });
 
-        // $('.list #role-name')on('tokenfield:createtoken', function (event) {
-        //     var available_tokens = bloodhound_tokens.index.datums
-        //     var exists = true;
-        //     $.each(available_tokens, function(index, token) {
-        //         if (token.value === event.attrs.value)
-        //             exists = false;
-        //     });
-        //     if(exists === true)
-        //         event.preventDefault();
-        // })
+        $('.list #role-name').on('tokenfield:createtoken', function (event) {
+          // Prevent adding non-existent person
+          if(!findPerson(event.attrs.value, mock_values))
+            event.preventDefault();
+
+          // Prevent repeated names
+          var existingTokens = $(this).tokenfield('getTokens');
+          $.each(existingTokens, function(index, token) {
+              if (token.value === event.attrs.value)
+                  event.preventDefault();
+          });
+
+        })
       });
+
+      function findPerson(value, from) {
+
+        for (var i = 0; i < from.length; i++) {
+          if (value == from[i])
+            return true;
+        }
+        return false;
+      }
     </script>
 
 </head>
@@ -192,10 +204,9 @@ border-bottom: medium none;">
                                     <li><a href="#" onclick="openRoles(this)">Faculty Memeber Phone Lists</a></li>
                                     <li><a href="#" onclick="openRoles(this)">Lab Remote Access</a></li>
                                     <li><a href="#" onclick="openRoles(this)">Printer A Wireless Accesss</a> </li>
-                                    
+
                                     <li>
-                                <button type="button" onclick="openRoles(this, '.app', 'Add an Application')" class="btn btn-primary selected-none">Add An Application</button>
-                                    
+                                     <button type="button" onclick="openRoles(this, '.app', 'Add an Application')" class="btn btn-primary selected-none">Add An Application</button>
                                     </li>
                                 </ul>
                             </nav>
@@ -230,9 +241,8 @@ border-bottom: medium none;">
                                 <li><a href="#" onclick="openAssignment(this)">Contact list</a></li>
 
                                 <li>
-                                  <button type="button" onclick="openRoles(this, '.app', 'Add an Application')" class="btn btn-primary selected-none">Add A Role</button>
+                                <button type="button" onclick="openAssignment(this, '.role', 'Add a Role')" class="btn btn-primary selected-none">Add A Role</button>
                                 </li>
-                            </ul>
                             <ul id="sub-name-list" class="dss-messenger" style="display: none;">
                                 <li><a href="#" onclick="openAssignment(this, '.role', '.dss-messenger-access' )">Access</a></li>
                             </ul>

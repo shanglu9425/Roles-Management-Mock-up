@@ -58,6 +58,7 @@ p {
   clear: both; }
 
 fieldset {
+  margin-bottom: 15px;
   float: left;
   position: relative;
   background: #fff;
@@ -85,6 +86,11 @@ fieldset {
   fieldset .list {
     display: block;
     margin-bottom: 10px; }
+    fieldset .list .fa-search {
+      position: relative;
+      left: 23px;
+      color: gray;
+      bottom: 1.5px; }
     fieldset .list textarea {
       width: 100%;
       padding: 2px 6px;

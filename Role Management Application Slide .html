@@ -152,21 +152,47 @@ border-bottom: medium none;">
 
                         </div>
 
-                        <section id="application" class="app">
-                            <ul id="sub-name-list">
-                                <li><a href="#" onclick="openRoles(this, '.app', 'Anthropology Mailing Lists', '.anthro-mail')">Anthropology Mailing Lists </a> </li>
+                        <section id="application" class="app" style="margin-top:90px;">
+                            <nav style="display: block; float:left;">
+                                <ul id="sub-name-list">
+                                    <li><a href="#" onclick="openRoles(this)">Anthropology Mailing Lists </a> </li>
 
-                                <li><a href="#" onclick="openRoles(this, '.app', 'Ghetti Lab Computer and File Access', '.db-access')">Ghetti Lab Computer and File Access</a></li>
-                                <li><a href="#" onclick="openRoles(this, '.app', 'Goodman Lab', '.lab-goodman')">Goodman Lab</a></li>
-                                <li><a href="#" onclick="openRoles(this, '.app', 'DSS Messenger', '.dss-messenger')">DSS Messenger</a></li>
-                                <li><a href="#" onclick="openRoles(this, '.app', 'Printer A Wireless Accesss', '.printer')">Printer A Wireless Accesss</a></li>
+                                    <li><a href="#" onclick="openRoles(this)">Database Access</a></li>
+                                    <li><a href="#" onclick="openRoles(this)">Faculty Memeber Phone Lists</a></li>
+                                    <li><a href="#" onclick="openRoles(this)">Lab Remote Access</a></li>
+                                    <li><a href="#" onclick="openRoles(this)">Printer A Wireless Accesss</a> </li>
+                                </ul>
+                            </nav>
+                            <nav style="display: block; float:left;">
+                                <ul id="sub-name-list">
+                                    <li><a href="#" onclick="openRoles(this)">Anthropology Mailing Lists </a> </li>
 
+                                    <li><a href="#" onclick="openRoles(this)">Database Access</a></li>
+                                    <li><a href="#" onclick="openRoles(this)">Faculty Memeber Phone Lists</a></li>
+                                    <li><a href="#" onclick="openRoles(this)">Lab Remote Access</a></li>
+                                    <li><a href="#" onclick="openRoles(this)">Printer A Wireless Accesss</a> </li>
+                                </ul>
+                            </nav>
+                            <nav style="display: block;float:left;">
+                                <ul id="sub-name-list">
+                                    <li><a href="#" onclick="openRoles(this)">Anthropology Mailing Lists </a> </li>
 
-                            </ul>
+                                    <li><a href="#" onclick="openRoles(this)">Database Access</a></li>
+                                    <li><a href="#" onclick="openRoles(this)">Faculty Memeber Phone Lists</a></li>
+                                    <li><a href="#" onclick="openRoles(this)">Lab Remote Access</a></li>
+                                    <li><a href="#" onclick="openRoles(this)">Printer A Wireless Accesss</a> </li>
 
-                            <a href="#" onclick="openRoles(this, '.app', 'New Application')">
-                                <p>Adding An Application </p>
+                                    <li>
+                                     <a href="#">
+                                <p>Add An Application </p>
                             </a>
+                                    </li>
+                                </ul>
+                            </nav>
+  
+  
+  
+                           
 
                         </section>
 
@@ -187,39 +213,20 @@ border-bottom: medium none;">
                         </div>
 
                         <section id="application" class="roles">
-                            <ul id="sub-name-list" class="anthro-mail" style="display: none;">
-                                <li><a href="#" onclick="openAssignment(this, '.role', '.anthro-e-wing-faculty' )">Anthropology E-Wing Faculty</a> </li>
-                                <li> <a href="#" onclick="openAssignment(this, '.role', '.anthro-e-wing-grad-students')">Anthropology E-Wing Grad Students</a></li>
-                                <li> <a href="#" onclick="openAssignment(this, '.role', '.anthro-emiriti')">Anthropology Emiriti</a></li>
-                                <li><a href="#" onclick="openAssignment(this, '.role', '.anthro-faculty')">Anthropology Faculty</a></li>
-                            </ul>
-
-                            <ul id="sub-name-list" class="db-access" style="display: none;">
-                                <li><a href="#" onclick="openAssignment(this, '.role', '.db-access-access' )">Access</a> </li>
-                                <li> <a href="#" onclick="openAssignment(this, '.role', '.db-access-administer')">Administer</a></li>
-                            </ul>
-
-                            <ul id="sub-name-list" class="lab-goodman" style="display: none;">
-                                <li><a href="#" onclick="openAssignment(this, '.role', '.lab-goodman-cppr-admin' )">CPPR Admin</a></li>
-                                <li> <a href="#" onclick="openAssignment(this, '.role', '.lab-goodman-cppr-user')">CPPR User</a></li>
-                                <li><a href="#" onclick="openAssignment(this, '.role', '.lab-goodman-lab-admin' )">Lab Admin</a></li>
-                                <li> <a href="#" onclick="openAssignment(this, '.role', '.lab-goodman-lab-local-admin')">Lab Local Admin</a></li>
-                                <li><a href="#" onclick="openAssignment(this, '.role', '.lab-goodman-lab-user' )">Lab User</a></li>
-                            </ul>
-
+                            <ul id="sub-name-list">
+                                <li><a href="#" onclick="openAssignment(this)">Admin</a> </li>
+                                <li> <a href="#" onclick="openAssignment(this)">Video files/Media resources</a></li>
+                                <li> <a href="#" onclick="openAssignment(this)">Shared files(1/10/16-3/25/16)</a></li>
+                                <li><a href="#" onclick="openAssignment(this)">Contact list</a></li>
+                                
+                                <li> 
+                                <a href="#">
+                                <p>Add A Role </p>
+                                </a>
+                                </li>
                             <ul id="sub-name-list" class="dss-messenger" style="display: none;">
                                 <li><a href="#" onclick="openAssignment(this, '.role', '.dss-messenger-access' )">Access</a></li>
                             </ul>
-
-                            <ul id="sub-name-list" class="printer" style="display: none;">
-
-                            </ul>
-
-                            <a href="#" onclick="openAssignment(this, '.role')">
-                                <p>Adding A Role </p>
-                            </a>
-
-
                         </section>
 
                     </div>
@@ -239,7 +246,66 @@ border-bottom: medium none;">
                         <!-- #assigned-section -->
                         <section id="application" class="assign">
                             <div class="assigned-lists">
-                                <ul id="name-list" class="anthro-e-wing-faculty" style="display: none;">
+                                <ul id="name-list">
+                                    <li class="group-tab">
+                                    <div style="width: 200px;" class="panel-group" id="accordion">
+    <div style="border: medium none;" class="panel panel-default">
+            <div class="panel-heading panel-style">
+                <div style="font-size: 10pt;" class="panel-title">
+                    <a class="" aria-expanded="true" data-toggle="collapse" data-parent="#accordion" href="#collapse1">DSS IT Ker 168<span class="glyphicon glyphicon-triangle-bottom"></span></a>
+                </div>
+      </div>
+      <div style="" aria-expanded="true" id="collapse1" class="panel-collapse collapse">
+          
+          <div class="panel-body group-member"><a>Jerry Kim</a></div>
+          
+          <div class="panel-body group-member"><a>Peter Hurrison</a></div>
+          
+          <div class="panel-body group-member"><a>Brian Jackson</a></div>
+          
+      </div>
+    </div>
+    <div style="border: medium none;" class="panel panel-default">
+        
+      <div class="panel-heading panel-style">
+        <div class="panel-title">
+            
+          <a style="font-size: 10pt;" aria-expanded="false" class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse2">Managers<span class="glyphicon glyphicon-triangle-bottom"></span></a>
+        </div>
+      </div>
+      <div style="height: 0px;" aria-expanded="false" id="collapse2" class="panel-collapse collapse">
+        <div style="" aria-expanded="true" id="collapse1" class="panel-collapse collapse in">
+            
+            <div class="panel-body group-member"><a>Impersonate</a></div>
+            
+            <div  class="panel-body group-member"><a>Impersonate</a></div>
+            
+            <div class="panel-body group-member"><a>Impersonate</a></div>
+      </div>
+      </div>
+    </div>
+    <div style="border: medium none;" class="panel panel-default">
+        
+      <div class="panel-heading panel-style">
+          
+        <div class="panel-title">
+            
+          <a style="font-size: 10pt;" aria-expanded="false" class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse3">Admin Team<span class="glyphicon glyphicon-triangle-bottom"></span></a>
+        </div>
+      </div>
+      <div style="height: 0px;" aria-expanded="false" id="collapse3" class="panel-collapse collapse">
+        <div style="" aria-expanded="true" id="collapse1" class="panel-collapse collapse in">
+            
+            <div class="panel-body group-member"><a>Shang Lu</a></div>
+            
+            <div class="panel-body group-member"><a>Anna </a></div>
+            
+            <div class="panel-body group-member"><a>Impersonate</a></div>
+      </div>
+      </div>
+    </div>
+  </div> 
+                                    </li>
                                     <li>Tom Lee</li>
                                     <li>Byran Mash</li>
                                     <li>Hanna Hurrison</li>

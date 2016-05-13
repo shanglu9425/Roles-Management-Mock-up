@@ -47,22 +47,28 @@
         });
 
         $('.list #role-name').on('tokenfield:createtoken', function (event) {
+          // Prevent adding non-existent person
+          if(!findPerson(event.attrs.value, mock_values))
+            event.preventDefault();
+            
           // Prevent repeated names
           var existingTokens = $(this).tokenfield('getTokens');
-          console.log(existingTokens);
           $.each(existingTokens, function(index, token) {
-            console.log(token);
               if (token.value === event.attrs.value)
                   event.preventDefault();
           });
 
-
-          // console.log(token);
-
-          // Prevent non-existing people
-
         })
       });
+
+      function findPerson(value, from) {
+
+        for (var i = 0; i < from.length; i++) {
+          if (value == from[i])
+            return true;
+        }
+        return false;
+      }
     </script>
 
 </head>

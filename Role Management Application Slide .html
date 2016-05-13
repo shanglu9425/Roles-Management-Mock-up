@@ -41,9 +41,10 @@
         $('.list #role-name').tokenfield({
           autocomplete: {
             source: mock_values,
+            autoFocus: true,
+            minLength: 2,
             delay: 100
-          },
-          showAutocompleteOnFocus: true
+          }
         });
 
         $('.list #role-name').on('tokenfield:createtoken', function (event) {

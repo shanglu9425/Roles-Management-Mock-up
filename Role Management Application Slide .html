@@ -34,11 +34,23 @@
           "Christopher Thielen"
         ];
 
-        $('#search-app').autocomplete({
-          source: mock_values
+        $('.list #role-name').autocomplete({
+          source: mock_values,
+          autoFocus: true,
+          minLength: 2,
+          delay: 100
         });
 
-        $('.list #role-name').tokenfield({
+        $('.list #role-owners').tokenfield({
+          autocomplete: {
+            source: mock_values,
+            autoFocus: true,
+            minLength: 2,
+            delay: 100
+          }
+        });
+
+        $('.list #role-operators').tokenfield({
           autocomplete: {
             source: mock_values,
             autoFocus: true,
@@ -48,6 +60,34 @@
         });
 
         $('.list #role-name').on('tokenfield:createtoken', function (event) {
+          // Prevent adding non-existent person
+          if(!findPerson(event.attrs.value, mock_values))
+            event.preventDefault();
+
+          // Prevent repeated names
+          var existingTokens = $(this).tokenfield('getTokens');
+          $.each(existingTokens, function(index, token) {
+              if (token.value === event.attrs.value)
+                  event.preventDefault();
+          });
+
+        })
+
+        $('.list #role-operators').on('tokenfield:createtoken', function (event) {
+          // Prevent adding non-existent person
+          if(!findPerson(event.attrs.value, mock_values))
+            event.preventDefault();
+
+          // Prevent repeated names
+          var existingTokens = $(this).tokenfield('getTokens');
+          $.each(existingTokens, function(index, token) {
+              if (token.value === event.attrs.value)
+                  event.preventDefault();
+          });
+
+        })
+
+        $('.list #role-owners').on('tokenfield:createtoken', function (event) {
           // Prevent adding non-existent person
           if(!findPerson(event.attrs.value, mock_values))
             event.preventDefault();
@@ -558,11 +598,11 @@ border-bottom: medium none;">
                                               </div>
                                               <div class="list">
                                                   <h5>Owners</h5>
-                                                  <input class="item" type="text">
+                                                  <input id="role-owners" class="item" type="text">
                                               </div>
                                               <div class="list">
                                                   <h5>Operators</h5>
-                                                  <input class="item" type="text">
+                                                  <input id="role-operators" class="item" type="text">
                                               </div>
 
 

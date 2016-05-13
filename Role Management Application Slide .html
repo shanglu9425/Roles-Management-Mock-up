@@ -46,16 +46,16 @@
           showAutocompleteOnFocus: true
         });
 
-        $('.list #role-name')on('tokenfield:createtoken', function (event) {
-            var available_tokens = bloodhound_tokens.index.datums
-            var exists = true;
-            $.each(available_tokens, function(index, token) {
-                if (token.value === event.attrs.value)
-                    exists = false;
-            });
-            if(exists === true)
-                event.preventDefault();
-        })
+        // $('.list #role-name')on('tokenfield:createtoken', function (event) {
+        //     var available_tokens = bloodhound_tokens.index.datums
+        //     var exists = true;
+        //     $.each(available_tokens, function(index, token) {
+        //         if (token.value === event.attrs.value)
+        //             exists = false;
+        //     });
+        //     if(exists === true)
+        //         event.preventDefault();
+        // })
       });
     </script>
 
@@ -194,16 +194,16 @@ border-bottom: medium none;">
                                     <li><a href="#" onclick="openRoles(this)">Printer A Wireless Accesss</a> </li>
 
                                     <li>
-                                     <a href="#">
+                                     <a href="#" onclick="openRoles(this, '.app', 'Add an Application')">
                                 <p>Add An Application </p>
                             </a>
                                     </li>
                                 </ul>
                             </nav>
-  
-  
-  
-                           
+
+
+
+
 
                         </section>
 
@@ -229,9 +229,9 @@ border-bottom: medium none;">
                                 <li> <a href="#" onclick="openAssignment(this)">Video files/Media resources</a></li>
                                 <li> <a href="#" onclick="openAssignment(this)">Shared files(1/10/16-3/25/16)</a></li>
                                 <li><a href="#" onclick="openAssignment(this)">Contact list</a></li>
-                                
-                                <li> 
-                                <a href="#">
+
+                                <li>
+                                <a href="#" onclick="openAssignment(this, '.role', 'Add a Role')">
                                 <p>Add A Role </p>
                                 </a>
                                 </li>
@@ -267,55 +267,55 @@ border-bottom: medium none;">
                 </div>
       </div>
       <div style="" aria-expanded="true" id="collapse1" class="panel-collapse collapse">
-          
+
           <div class="panel-body group-member"><a>Jerry Kim</a></div>
-          
+
           <div class="panel-body group-member"><a>Peter Hurrison</a></div>
-          
+
           <div class="panel-body group-member"><a>Brian Jackson</a></div>
-          
+
       </div>
     </div>
     <div style="border: medium none;" class="panel panel-default">
-        
+
       <div class="panel-heading panel-style">
         <div class="panel-title">
-            
+
           <a style="font-size: 10pt;" aria-expanded="false" class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse2">Managers<span class="glyphicon glyphicon-triangle-bottom"></span></a>
         </div>
       </div>
       <div style="height: 0px;" aria-expanded="false" id="collapse2" class="panel-collapse collapse">
         <div style="" aria-expanded="true" id="collapse1" class="panel-collapse collapse in">
-            
+
             <div class="panel-body group-member"><a>Impersonate</a></div>
-            
+
             <div  class="panel-body group-member"><a>Impersonate</a></div>
-            
+
             <div class="panel-body group-member"><a>Impersonate</a></div>
       </div>
       </div>
     </div>
     <div style="border: medium none;" class="panel panel-default">
-        
+
       <div class="panel-heading panel-style">
-          
+
         <div class="panel-title">
-            
+
           <a style="font-size: 10pt;" aria-expanded="false" class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse3">Admin Team<span class="glyphicon glyphicon-triangle-bottom"></span></a>
         </div>
       </div>
       <div style="height: 0px;" aria-expanded="false" id="collapse3" class="panel-collapse collapse">
         <div style="" aria-expanded="true" id="collapse1" class="panel-collapse collapse in">
-            
+
             <div class="panel-body group-member"><a>Shang Lu</a></div>
-            
+
             <div class="panel-body group-member"><a>Anna </a></div>
-            
+
             <div class="panel-body group-member"><a>Impersonate</a></div>
       </div>
       </div>
     </div>
-  </div> 
+  </div>
                                     </li>
                                     <li>Tom Lee</li>
                                     <li>Byran Mash</li>

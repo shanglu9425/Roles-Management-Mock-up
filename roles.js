@@ -11,6 +11,7 @@ function openRoles(e) {
   $(".selected").removeClass("selected");
   // Add selected class to the clicked button
   $(e).addClass("selected");
+  openControlPanel('.app', e.innerHTML);
 }
 
 function openAssignment(e, application, assigned) {
@@ -22,7 +23,7 @@ function openAssignment(e, application, assigned) {
 
   // Add selected class to the clicked button
   $(e).addClass("selected");
-
+  openControlPanel('.role', e.innerHTML);
 }
 
 function openNavigationPanel(panel) {
@@ -85,7 +86,7 @@ function openControlPanel(module, value) {
 
 
   // Change Title
-  $('.modal-header legend')[0].innerHTML = "<b>" +value + "<\/b>";
+  $('.modal-header legend').html("<b>" +value + "<\/b>");
 
   // Open module
   $(module).addClass('show');

@@ -93,6 +93,9 @@
     }
     /*================== MISC==================*/
 
+table {
+  font-size: 10pt !important;
+}
 
 .btn-primary {
     color: #fff;

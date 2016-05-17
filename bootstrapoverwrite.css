@@ -80,7 +80,7 @@
     /*=================input-size===============*/
     
     .input-large {
-        width: 200px!important;
+        width: 150px!important;
     }
     
     .input-medium {
@@ -96,7 +96,7 @@ table {font-size: 10pt !important;}
 
 .btn-primary {
     color: #fff;
-    background-color: #3e6894;
+    background-color: #337ab7;
     border: none;}
 
     .modal-footer {
@@ -137,9 +137,10 @@ table {font-size: 10pt !important;}
     }
     
     a,
-    a:active,
+    a:active, a:hover,
     a:focus {
         outline: none;
+        text-decoration: none;
     }
     
     .application-section #sub-name-list li {

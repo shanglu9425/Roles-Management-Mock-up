@@ -27,7 +27,7 @@
 
         <!-- Title -->
         <div class="modal-header" style="text-align:center; border-bottom:none;">
-            <legend><b>Anthropology Mailing Lists</b></legend>
+            <legend><b>DSS IT Ker 168</b></legend>
         </div>
         <!-- Title -->
 
@@ -39,6 +39,7 @@
                 <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Summary</a></li>
                 <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Relations</a></li>
                 <li role="presentation"><a href="#roles" aria-controls="roles" role="tab" data-toggle="tab">Rules</a></li>
+                <li role="presentation"><a href="#log" aria-controls="log" role="tab" data-toggle="tab">Log</a></li>
             </ul>
             <!-- Nav tabs -->
 
@@ -107,12 +108,12 @@
                 <!-- Rules -->
                 <div role="tabpanel" class="tab-pane" id="roles" style="overflow:auto;">
                     <div class="container">
-                        <table id="rules">
+                        <table id="rules" style="margin-top: 20px;">
                             <thead>
                                 <tr>
-                                    <th class="medium">Column</th>
-                                    <th class="mini">Condition</th>
-                                    <th class="large">Value</th>
+                                    <th style="padding-bottom:5px;" class="medium">Column</th>
+                                    <th style="padding-bottom:5px;" class="mini">Condition</th>
+                                    <th style="padding-bottom:5px;" class="large">Value</th>
                                     <th>
                                         <!-- Actions -->
                                     </th>
@@ -130,7 +131,7 @@
                                             <option value="affiliation">Affiliation</option>
                                         </select>
                                     </td>
-                                    <td>
+                                    <td style="text-align: center;">
                                         <select id="condition" class="mini">
                                             <option value="is">is</option>
                                             <option value="is not">is not</option>
@@ -139,7 +140,7 @@
                                     <td>
                                         <input id="value" size="15" value="" class="large" autocomplete="off" type="text" style="margin:5px 5px;">
                                     </td>
-                                    <td>
+                                    <td  style="padding-left: 10px;">
                                         <button class="btn btn-danger" id="remove_group_rule" type="button">Remove</button>
                                     </td>
                                 </tr>
@@ -151,6 +152,48 @@
                     </div>
                 </div>
                 <!-- Rules -->
+                
+                            <!--Log-->
+                <div role="tabpanel" class="tab-pane" id="log" style="overflow:auto;">
+                    <div class="container" style="padding: 0px 0px;">
+
+                        
+                            <div class="container">
+                           <h5 style="margin-top: 20px;">Log Information</h5>
+                           <p></p>
+                                <table class="table table-hover" style="font-size:10pt; ">
+                                    <thead>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1 day ago</td>
+                                            <td>Added</td>
+                                            <td>Peter Hurrison</td>
+                                        </tr>
+                                        
+                                        <tr>
+                                            <td>2 days ago</td>
+                                            <td>Added</td>
+                                            <td>Jerry Kim</td>
+                                        </tr>
+                                         <tr>
+                                            <td>15 days ago</td>
+                                            <td>Created</td>
+                                            <td>DSS IT Ker 168</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <div class="center">
+                                        <ul class="pagination pagination-sm">
+        <li class="disabled"><a href="#">&laquo;</a></li>
+        <li class="active"><a href="#">1</a></li>
+        <li><a href="#">&raquo;</a></li>
+    </ul>
+                                    </div>
+                                </div>
+                                </div>
+                                </div>
+                
 
                 <!-- Buttons -->
                 <div class='setting-button modal-footer'>

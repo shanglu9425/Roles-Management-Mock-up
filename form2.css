@@ -129,7 +129,8 @@ fieldset {
         fieldset .list input:focus::-webkit-input-placeholder {
           opacity: 0.5; }
     fieldset .list h5 {
-      margin: 5px; }
+      margin: 5px;
+      margin-top: 20px; }
     fieldset .list:last-child {
       margin-bottom: 0px; }
 
@@ -138,6 +139,9 @@ fieldset {
   #roles #rules .medium {
     text-align: center;
     width: 90px; }
+  #roles #rules .medium-2 {
+    text-align: center;
+    width: 120px; }
   #roles #rules .mini {
     text-align: center;
     width: 45px; }

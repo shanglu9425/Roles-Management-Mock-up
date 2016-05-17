@@ -58,6 +58,14 @@ $ocean-shadow: #1d5b90;
     clear: both;
 }*/
 
+.center {
+    ul {
+       
+display: flex;
+align-items: center;
+justify-content: center;
+    margin-top: 30px;}
+}
 .container {
     display: block;
     margin: 0 auto;

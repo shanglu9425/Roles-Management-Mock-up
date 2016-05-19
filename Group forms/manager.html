@@ -1,0 +1,232 @@
+<html>
+
+<head>
+    <title>Roles Management</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="../mockupcsssheet.css">
+    <link rel="stylesheet" href="../bootstrapoverwrite.css">
+    <link rel="stylesheet" href="../mockup.css">
+    <link rel="stylesheet" href="../form2.css">
+    <link rel="stylesheet" href="../testform.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="../roles.js"></script>
+
+</head>
+
+<body>
+
+    <!-- form -->
+    <div class="container" style="border: medium solid gray; border-radius: 15px;">
+
+        <!-- Title -->
+        <div class="modal-header" style="text-align:center; border-bottom:none;">
+            <legend><b>Managers</b></legend>
+        </div>
+        <!-- Title -->
+
+
+        <div class="model-body">
+
+            <!-- Nav tabs -->
+            <ul class="nav nav-tabs" role="tablist" style="float:left;width:100%;">
+                <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Summary</a></li>
+                <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Relations</a></li>
+                <li role="presentation"><a href="#roles" aria-controls="roles" role="tab" data-toggle="tab">Rules</a></li>
+                <li role="presentation"><a href="#log" aria-controls="log" role="tab" data-toggle="tab">Log</a></li>
+            </ul>
+            <!-- Nav tabs -->
+
+
+            <!-- Tab panes -->
+            <div class="tab-content" style="float:left; width:100%;margin-top: 15px;">
+                <div role="tabpanel" class="tab-pane active" id="home" style="overflow:auto;">
+                    <div class="container">
+
+                        <!-- Summary -->
+                        <fieldset class='alpha'>
+
+
+                            <div class='list'>
+                                <h5>Name</h5>
+                                <input class='item' placeholder='Username' type='text' value="Managers">
+                            </div>
+                            <div class='list'>
+                                <h5>Description</h5>
+                                <textarea name="description" class="input-xxlarge" rows="3"></textarea>
+                            </div>
+
+
+                        </fieldset>
+
+
+
+
+                    </div>
+                </div>
+                <!-- Summary -->
+
+                <!-- Relations -->
+                <div role="tabpanel" class="tab-pane" id="profile">
+                    <div role="tabpanel" class="tab-pane active" id="home" style="overflow:auto;">
+                        <div class="container">
+
+                            <!-- / Fieldset Alpha -->
+                            <fieldset class="alpha">
+
+
+                                <div class="list">
+                                    <h5>Owners</h5>
+                                    <input class="item" placeholder="Username" type="text">
+                                </div>
+                                <div class="list">
+                                    <h5>Operators</h5>
+                                    <input class="item" placeholder="Username" type="text">
+                                </div>
+                                <div class="list">
+                                    <h5>Members</h5>
+                                    <input class="item" placeholder="Username" type="text">
+                                </div>
+
+
+                            </fieldset>
+
+
+
+
+                        </div>
+                    </div>
+                </div>
+                <!-- Relation -->
+
+                <!-- Rules -->
+                <div role="tabpanel" class="tab-pane" id="roles" style="overflow:auto;">
+                    <div class="container">
+                        <table id="rules" style="margin-top: 20px;">
+                            <thead>
+                                <tr>
+                                    <th style="padding-bottom:5px;" class="medium">Column</th>
+                                    <th style="padding-bottom:5px;" class="mini">Condition</th>
+                                    <th style="padding-bottom:5px;" class="large">Value</th>
+                                    <th>
+                                        <!-- Actions -->
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody style="display: table-row-group;">
+                                <tr class="fields">
+                                    <td>
+                                        <select id="column" class="medium" style="    margin-right: 5px;">
+                                            <option value="department">Department</option>
+                                            <option value="organization">Organization</option>
+                                            <option value="loginid">Login ID</option>
+                                            <option value="title">Title</option>
+                                            <option value="major">Major</option>
+                                            <option value="affiliation">Affiliation</option>
+                                        </select>
+                                    </td>
+                                    <td style="text-align: center;">
+                                        <select id="condition" class="mini">
+                                            <option value="is">is</option>
+                                            <option value="is not">is not</option>
+                                        </select>
+                                    </td>
+                                    <td>
+                                        <input id="value" size="15" value="" class="large" autocomplete="off" type="text" style="margin:5px 5px;">
+                                    </td>
+                                    <td  style="padding-left: 10px;">
+                                        <button class="btn btn-danger" id="remove_group_rule" type="button">Remove</button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p style="margin-left: 140px; margin-top: 20px;">
+                            <button style="padding-bottom: 0px; padding-top: 0px;" class="btn btn-default" id="remove_group_rule" type="button">Add Rule</button>
+                        </p>
+                    </div>
+                </div>
+                <!-- Rules -->
+                
+                            <!--Log-->
+                <div role="tabpanel" class="tab-pane" id="log" style="overflow:auto;">
+                    <div class="container" style="padding: 0px 0px;">
+
+                        
+                            <div class="container">
+                           <h5 style="margin-top: 20px;">Log Information</h5>
+                           <p></p>
+                                <table class="table table-hover" style="font-size:10pt; ">
+                                    <thead>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1 day ago</td>
+                                            <td>Added</td>
+                                            <td>Peter Hurrison</td>
+                                        </tr>
+                                        
+                                        <tr>
+                                            <td>2 days ago</td>
+                                            <td>Added</td>
+                                            <td>Jerry Kim</td>
+                                        </tr>
+                                         <tr>
+                                            <td>15 days ago</td>
+                                            <td>Created</td>
+                                            <td>Managers</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <div class="center">
+                                        <ul class="pagination pagination-sm">
+        <li class="disabled"><a href="#">&laquo;</a></li>
+        <li class="active"><a href="#">1</a></li>
+        <li><a href="#">&raquo;</a></li>
+    </ul>
+                                    </div>
+                                </div>
+                                </div>
+                                </div>
+                
+
+                <!-- Buttons -->
+                <div class='setting-button modal-footer'>
+
+                    <button type="button" class="btn btn-danger" style="float:left;">Delete</button>
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-file" style="margin-bottom: 5px;margin-left: 1px;"></span></button>
+                        <ul class="dropdown-menu">
+                            <li><a href="#" id="csv-download">Download CSV</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <button type="button" class="btn btn-primary">Submit Changes</button>
+                </div>
+                <!-- Buttons -->
+
+            </div>
+            <!-- Tap panes -->
+
+
+
+
+
+
+        </div>
+    </div>
+    <!--form-->
+
+
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,173 @@
+<html>
+
+<head>
+    <title>Roles Management</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="../mockupcsssheet.css">
+    <link rel="stylesheet" href="../bootstrapoverwrite.css">
+    <link rel="stylesheet" href="../mockup.css">
+    <link rel="stylesheet" href="../form2.css">
+    <link rel="stylesheet" href="../testform.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="../roles.js"></script>
+
+</head>
+
+<body>
+
+    <!-- form -->
+    <div class="container" style="border: medium solid gray; border-radius: 15px;">
+
+        <!-- Title -->
+        <div class="modal-header" style="text-align:center; border-bottom:none;">
+            <legend><b>Access 1</b></legend>
+        </div>
+        <!-- Title -->
+
+
+        <div class="model-body">
+
+            <!-- Nav tabs -->
+            <ul class="nav nav-tabs" role="tablist" style="float:left;width:100%;">
+                <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Role</a></li>
+                 <li role="presentation"><a href="#log" aria-controls="log" role="tab" data-toggle="tab">Log</a></li>
+            </ul>
+            <!-- Nav tabs -->
+
+
+            <!-- Tab panes -->
+            <div class="tab-content" style="float:left; width:100%;margin-top: 15px;">
+                <div role="tabpanel" class="tab-pane active" id="home" style="overflow:auto;">
+                    <div class="container">
+
+                        <!-- Summary -->
+                        <fieldset class='alpha'>
+
+
+                            <div class='list'>
+                                <h5>Name</h5>
+                                <input class='item' type='text' value="Access 1">
+                            </div>
+                            <div class="list">
+                                <h5>Description</h5>
+                                <input class="item" type="text" value="Permission to Access 1">
+                            </div>
+                            <div class="list">
+                                <h5>Token</h5>
+                                <input class="item" type="text">
+                            </div>
+                        
+                        </fieldset>
+
+
+
+
+                    </div>
+                </div>
+                <!-- Summary -->
+
+
+                <!-- Active Directory -->
+
+                <!-- Rules -->
+                <div role="tabpanel" class="tab-pane" id="active-directory" style="overflow:auto;">
+                    <div class="container" style="padding: 0px 0px;">
+
+                        <p style="margin-top: 20px;">
+                            The group name is appended after the base AD path configured by the administrator.
+                        </p>
+                    </div>
+                </div>
+                <!-- Rules -->
+                
+                <!--Log-->
+                <div role="tabpanel" class="tab-pane" id="log" style="overflow:auto;">
+                    <div class="container" style="padding: 0px 0px;">
+
+                        
+                            <div class="container">
+                           <h5 style="margin-top: 20px;">Log Information</h5>
+                           <p></p>
+                                <table class="table table-hover" style="font-size:10pt; ">
+                                    <thead>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1 day ago</td>
+                                            <td>Edited</td>
+                                            <td>Description</td>
+                                        </tr>
+                                        <tr>
+                                            <td>3 days ago</td>
+                                            <td>Deleted</td>
+                                            <td>Jerry Smith</td>
+                                        </tr>
+                                        
+                                        <tr>
+                                            <td>4 days ago</td>
+                                            <td>Added</td>
+                                            <td>Tom Lee</td>
+                                        </tr>
+                                         <tr>
+                                            <td>25 days ago</td>
+                                            <td>Created</td>
+                                            <td>Access 1</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <div class="center">
+                                        <ul class="pagination pagination-sm">
+        <li class="disabled"><a href="#">&laquo;</a></li>
+        <li class="active"><a href="#">1</a></li>
+        <li><a href="#">&raquo;</a></li>
+    </ul>
+                                    </div>
+                                </div>
+                                </div>
+                                </div>
+                                
+                
+        
+
+                <!-- Buttons -->
+                <div class='setting-button modal-footer'>
+
+                    <button type="button" class="btn btn-danger" style="float:left;">Delete</button>
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-file" style="margin-bottom: 5px;margin-left: 1px;"></span></button>
+                        <ul class="dropdown-menu">
+                            <li><a href="#" id="csv-download">Download CSV</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <button type="button" class="btn btn-primary">Submit Changes</button>
+                </div>
+                <!-- Buttons -->
+
+            </div>
+            <!-- Tap panes -->
+
+
+
+
+
+
+        </div>
+    </div>
+    <!--form-->
+
+
+
+
+
+
+</body>
+
+</html>

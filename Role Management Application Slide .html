@@ -211,7 +211,9 @@ border-bottom: medium none;">
                         <!-- <span class="glyphicons glyphicons-search"></span>  for search bar -->
 
                         <div class="search-application" type="text">
-                            <i class="fa fa-search"></i>
+                            <i class="fa fa-search search-icon"></i>
+                            <i class="fa fa-times close-icon fa-lg" aria-hidden="true"></i>
+
                             <input id="search-app" placeholder=" Filter Applications" type="text">
 
                         </div>
@@ -239,12 +241,16 @@ border-bottom: medium none;">
                             </nav>
                             <nav class="block">
                                 <ul id="sub-name-list">
-                                    <li><a href="#" onclick="openRoles(this)">Anthropology Mailing Lists </a> </li>
+                                    <li><a href="#" onclick="openRoles(this)">Anthropology Access </a> </li>
 
                                     <li><a href="#" onclick="openRoles(this)">Database Access</a></li>
-                                    <li><a href="#" onclick="openRoles(this)">Faculty Memeber Phone Lists</a></li>
+                                    <li><a href="#" onclick="openRoles(this)">Faculty Phone Lists</a></li>
                                     <li><a href="#" onclick="openRoles(this)">Lab Remote Access</a></li>
-                                    <li><a href="#" onclick="openRoles(this)">Printer A Wireless Accesss</a> </li>
+                                    <li><a href="#" onclick="openRoles(this)">Printers Wireless Accesss</a> </li>
+                                    <li><a href="#" onclick="openAssignment(this)">DSS IT Application</a> </li>
+                                    <li> <a href="#" onclick="openAssignment(this)">Web Development</a></li>
+                                    <li> <a href="#" onclick="openAssignment(this)">Account Access</a></li>
+                                    <li><a href="#" onclick="openAssignment(this)">Supply Orders</a></li>
 
                                     <li>
                                      <button type="button" onclick="openControlPanel('.app', 'Add an Application')" class="btn btn-primary selected-none">Add An Application</button>
@@ -269,7 +275,9 @@ border-bottom: medium none;">
                 <div class="wrapper">
                     <div class="rule-section">
                         <div class="search-role" type="text">
-                            <i class="fa fa-search"></i>
+                           <i class="fa fa-search search-icon"></i>
+                            <i class="fa fa-times close-icon fa-lg" aria-hidden="true"></i>
+
                             <input placeholder=" Filter Roles" type="text">
 
                         </div>
@@ -287,7 +295,76 @@ border-bottom: medium none;">
                             <ul id="sub-name-list" class="dss-messenger" style="display: none;">
                                 <li><a href="#" onclick="openAssignment(this, '.role', '.dss-messenger-access' )">Access</a></li>
                             </ul>
+                            </ul>
                         </section>
+                        <!--database access application-->
+
+                         <section id="application" class="roles" style="display:;">
+                            <ul id="sub-name-list">
+                                <li><a href="#" onclick="openAssignment(this)">Access 1</a> </li>
+                                <li> <a href="#" onclick="openAssignment(this)">Access 2</a></li>
+                                <li> <a href="#" onclick="openAssignment(this)">Access 3</a></li>
+
+                                <li>
+                                <button type="button" onclick="openAssignment(this, '.role', 'Add a Role')" class="btn btn-primary selected-none">Add A Role</button>
+                                </li>
+                            <ul id="sub-name-list" class="dss-messenger" style="display: none;">
+                                <li><a href="#" onclick="openAssignment(this, '.role', '.dss-messenger-access' )">Access</a></li>
+                            </ul>
+                            </ul>
+                        </section>
+
+                        <!--Phone Lists-->
+
+                         <section id="application" class="roles" style="display:;">
+                            <ul id="sub-name-list">
+                                <li><a href="#" onclick="openAssignment(this)">Admin Phone List</a> </li>
+                                <li> <a href="#" onclick="openAssignment(this)">Manager Phone List</a></li>
+
+                                <li>
+                                <button type="button" onclick="openAssignment(this, '.role', 'Add a Role')" class="btn btn-primary selected-none">Add A Role</button>
+                                </li>
+                            <ul id="sub-name-list" class="dss-messenger" style="display: none;">
+                                <li><a href="#" onclick="openAssignment(this, '.role', '.dss-messenger-access' )">Access</a></li>
+                            </ul>
+                            </ul>
+                        </section>
+
+                              <!--lab remote access-->
+
+                         <section id="application" class="roles" style="display:;">
+                            <ul id="sub-name-list">
+                                <li><a href="#" onclick="openAssignment(this)">Lab Computers</a> </li>
+                                <li> <a href="#" onclick="openAssignment(this)">Lab Server</a></li>
+                                <li> <a href="#" onclick="openAssignment(this)">Lab Alarm</a></li>
+
+                                <li>
+                                <button type="button" onclick="openAssignment(this, '.role', 'Add a Role')" class="btn btn-primary selected-none">Add A Role</button>
+                                </li>
+                            <ul id="sub-name-list" class="dss-messenger" style="display: none;">
+                                <li><a href="#" onclick="openAssignment(this, '.role', '.dss-messenger-access' )">Access</a></li>
+                            </ul>
+                            </ul>
+                        </section>
+
+                       <!--printer-->
+
+                         <section id="application" class="roles" style="display:;">
+                            <ul id="sub-name-list">
+                                <li><a href="#" onclick="openAssignment(this)">Printer A</a> </li>
+                                <li> <a href="#" onclick="openAssignment(this)">Printer B</a></li>
+                                <li> <a href="#" onclick="openAssignment(this)">Printer C</a></li>
+                                <li> <a href="#" onclick="openAssignment(this)">Printer C</a></li>
+
+                                <li>
+                                <button type="button" onclick="openAssignment(this, '.role', 'Add a Role')" class="btn btn-primary selected-none">Add A Role</button>
+                                </li>
+                            <ul id="sub-name-list" class="dss-messenger" style="display: none;">
+                                <li><a href="#" onclick="openAssignment(this, '.role', '.dss-messenger-access' )">Access</a></li>
+                            </ul>
+                            </ul>
+                        </section>
+
 
                     </div>
                 </div>
@@ -299,7 +376,8 @@ border-bottom: medium none;">
                 <div class="wrapper">
                     <div class="assigned-section">
                         <div class="search-assigned" type="text">
-                            <i class="fa fa-search"></i>
+                                <i class="fa fa-search search-icon"></i>
+                            <i class="fa fa-times close-icon fa-lg" aria-hidden="true"></i>
                             <input placeholder=" Filter People " type="text">
 
                         </div>
@@ -317,18 +395,22 @@ border-bottom: medium none;">
       </div>
       <div style="" aria-expanded="true" id="collapse1" class="panel-collapse collapse">
 
-          <div class="panel-body group-member"><a>Jerry Kim</a></div>
+          <div class="panel-body group-member"><a>Christopher Thielen</a></div>
 
-          <div class="panel-body group-member"><a>Peter Hurrison</a></div>
+           <div class="panel-body group-member"><a>Lloyd Wheeler</a></div>
 
-          <div class="panel-body group-member"><a>Brian Jackson</a></div>
+          <div class="panel-body group-member"><a>Mark Diez</a></div>
+
+          <div class="panel-body group-member"><a>Obada Kadri</a></div>
+
+          <div class="panel-body group-member"><a>Shang Lu</a></div>
 
       </div>
     </div>
     <div style="border: medium none;" class="panel panel-default">
 
       <div class="panel-heading panel-style">
-        <div class="panel-title">
+        <div style="font-size:10pt;" class="panel-title">
 
           <a style="font-size: 10pt;" aria-expanded="false" class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse2">Managers<span class="glyphicon glyphicon-triangle-bottom"></span></a>
         </div>
@@ -336,11 +418,9 @@ border-bottom: medium none;">
       <div style="height: 0px;" aria-expanded="false" id="collapse2" class="panel-collapse collapse">
         <div style="" aria-expanded="true" id="collapse1" class="panel-collapse collapse in">
 
-            <div class="panel-body group-member"><a>Impersonate</a></div>
+            <div class="panel-body group-member"><a>Christopher Thielen</a></div>
 
-            <div  class="panel-body group-member"><a>Impersonate</a></div>
 
-            <div class="panel-body group-member"><a>Impersonate</a></div>
       </div>
       </div>
     </div>
@@ -356,11 +436,8 @@ border-bottom: medium none;">
       <div style="height: 0px;" aria-expanded="false" id="collapse3" class="panel-collapse collapse">
         <div style="" aria-expanded="true" id="collapse1" class="panel-collapse collapse in">
 
-            <div class="panel-body group-member"><a>Shang Lu</a></div>
+            <div class="panel-body group-member"><a>Anna Zhu</a></div>
 
-            <div class="panel-body group-member"><a>Anna </a></div>
-
-            <div class="panel-body group-member"><a>Impersonate</a></div>
       </div>
       </div>
     </div>
@@ -374,6 +451,9 @@ border-bottom: medium none;">
                                     <li>Thomas Livingston</li>
                                     <li>Andrew Kim</li>
                                     <li>Shawn Wang</li>
+                                   <li style="background: transparent none repeat scroll 0% 0%; padding-left: 0px;">
+                                     <button style="width: 100%; margin-top: 30px;" type="button" onclick="" class="btn btn-primary selected-none">Add A Person</button>
+                                    </li>
                                 </ul>
 
                                 <ul id="name-list" class="anthro-e-wing-grad-students" style="display: none;">
@@ -458,7 +538,7 @@ border-bottom: medium none;">
             <!--#Right control panel-->
             <div class="col-md-6" style="float:right;">
                 <div class="control-panel">
-
+                   <div style="cursor: pointer; font-weight: bold; bottom: 15px; background-color: white; border-radius: 50%; text-align: center; font-size: 1.9em; top: 37%; position: relative; color: #294B74; width: 60px; height: 60px; right: 25px; box-shadow: -5px 0px 5px -2px rgba(0, 0, 0, 0.2);"><i style="position: absolute; top: 30%; left: 25%;" class="fa fa-chevron-right" aria-hidden="true"></i></div>
                     <section class='container sec'>
                       <!-- Application Module -->
                       <div class="module app">
@@ -647,7 +727,7 @@ border-bottom: medium none;">
     </div>
 
     <!--Shang, I commented this out    </div>-->
-
+    </div>
 
 </body>
 

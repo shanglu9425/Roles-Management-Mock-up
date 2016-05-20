@@ -43,12 +43,19 @@
     width: 100%;
     clear: both;
 }*/
+.center ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px; }
+
 .container {
   display: block;
   margin: 0 auto;
   width: 100%;
   max-width: 400px;
-  min-width: 300px; }
+  min-width: 300px;
+  margin-top: -20px; }
   .container .modal-header legend {
     font-size: 14pt;
     padding-bottom: 10px; }
@@ -117,12 +124,14 @@ fieldset {
       border-radius: 5px; }
       fieldset .list input:focus {
         outline: none;
+        border: 1px solid #94C4FF;
         box-shadow: 0 0 10px #94C4FF;
         -webkit-transition: all 0.2s ease-in-out; }
         fieldset .list input:focus::-webkit-input-placeholder {
           opacity: 0.5; }
     fieldset .list h5 {
-      margin: 5px; }
+      margin: 5px;
+      margin-top: 20px; }
     fieldset .list:last-child {
       margin-bottom: 0px; }
 
@@ -131,6 +140,9 @@ fieldset {
   #roles #rules .medium {
     text-align: center;
     width: 90px; }
+  #roles #rules .medium-2 {
+    text-align: center;
+    width: 120px; }
   #roles #rules .mini {
     text-align: center;
     width: 45px; }

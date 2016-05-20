@@ -2,12 +2,12 @@ html {
     height: 100%;
 }
 
-
+.search-assigned:hover {background:pink;}
 /*===================== navi ======================*/
 
 .navbar {
     background-color: #294B74;
-    box-shadow: inset 0px 0px 11px 4px #0A315F;
+    box-shadow: inset 0px 0px 11px 1px #0A315F;
     color: white;
     border: none;
     border-radius: 0px;

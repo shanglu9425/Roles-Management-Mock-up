@@ -58,12 +58,21 @@ $ocean-shadow: #1d5b90;
     clear: both;
 }*/
 
+.center {
+    ul {
+       
+display: flex;
+align-items: center;
+justify-content: center;
+    margin-top: 30px;}
+}
 .container {
     display: block;
     margin: 0 auto;
     width: 100%;
     max-width: 400px;
     min-width: 300px;
+    margin-top: -20px;  
     .modal-header {
         legend {
             font-size: 14pt;
@@ -156,6 +165,7 @@ fieldset {
         margin-bottom: 10px;
         h5 {
             margin: 5px;
+            margin-top: 20px;
         }
         &:last-child {
             margin-bottom: 0px;
@@ -170,6 +180,11 @@ fieldset {
         .medium {
             text-align: center;
             width: 90px;
+        }
+        
+         .medium-2{
+            text-align: center;
+            width: 120px;
         }
         .mini {
             text-align: center;

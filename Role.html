@@ -27,13 +27,19 @@
 
         <!-- Title -->
         <div class="modal-header" style="text-align:center; border-bottom:none;">
-            <legend style="margin-bottom: 0px;"><b>Adding New Role</b></legend>
+            <legend><b>Admin</b></legend>
         </div>
         <!-- Title -->
 
 
-        <div class="model-body" style="padding-top:0px;">
+        <div class="model-body">
 
+            <!-- Nav tabs -->
+            <ul class="nav nav-tabs" role="tablist" style="float:left;width:100%;">
+                <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Role</a></li>
+                 <li role="presentation"><a href="#log" aria-controls="log" role="tab" data-toggle="tab">Log</a></li>
+            </ul>
+            <!-- Nav tabs -->
 
 
             <!-- Tab panes -->
@@ -54,19 +60,10 @@
                                 <input class="item" type="text">
                             </div>
                             <div class="list">
-                                <h5>URL</h5>
+                                <h5>Token</h5>
                                 <input class="item" type="text">
                             </div>
-                            <div class="list">
-                                <h5>Owners</h5>
-                                <input class="item" type="text">
-                            </div>
-                            <div class="list">
-                                <h5>Operators</h5>
-                                <input class="item" type="text">
-                            </div>
-
-
+                        
                         </fieldset>
 
 
@@ -77,6 +74,67 @@
                 <!-- Summary -->
 
 
+                <!-- Active Directory -->
+
+                <!-- Rules -->
+                <div role="tabpanel" class="tab-pane" id="active-directory" style="overflow:auto;">
+                    <div class="container" style="padding: 0px 0px;">
+
+                        <p style="margin-top: 20px;">
+                            The group name is appended after the base AD path configured by the administrator.
+                        </p>
+                    </div>
+                </div>
+                <!-- Rules -->
+                
+                <!--Log-->
+                <div role="tabpanel" class="tab-pane" id="log" style="overflow:auto;">
+                    <div class="container" style="padding: 0px 0px;">
+
+                        
+                            <div class="container">
+                           <h5 style="margin-top: 20px;">Log Information</h5>
+                           <p></p>
+                                <table class="table table-hover" style="font-size:10pt; ">
+                                    <thead>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1 day ago</td>
+                                            <td>Edited</td>
+                                            <td>Admin description</td>
+                                        </tr>
+                                        <tr>
+                                            <td>3 days ago</td>
+                                            <td>Deleted</td>
+                                            <td>Jerry Smith</td>
+                                        </tr>
+                                        
+                                        <tr>
+                                            <td>4 days ago</td>
+                                            <td>Added</td>
+                                            <td>Tom Lee</td>
+                                        </tr>
+                                         <tr>
+                                            <td>25 days ago</td>
+                                            <td>Created</td>
+                                            <td>Admin</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <div class="center">
+                                        <ul class="pagination pagination-sm">
+        <li class="disabled"><a href="#">&laquo;</a></li>
+        <li class="active"><a href="#">1</a></li>
+        <li><a href="#">&raquo;</a></li>
+    </ul>
+                                    </div>
+                                </div>
+                                </div>
+                                </div>
+                                
+                
+        
 
                 <!-- Buttons -->
                 <div class='setting-button modal-footer'>

@@ -34,19 +34,60 @@
           "Christopher Thielen"
         ];
 
-        $('#search-app').autocomplete({
-          source: mock_values
+        $('.list #role-name').autocomplete({
+          source: mock_values,
+          autoFocus: true,
+          minLength: 2,
+          delay: 100
         });
 
-        $('.list #role-name').tokenfield({
+        $('.list #role-owners').tokenfield({
           autocomplete: {
             source: mock_values,
+            autoFocus: true,
+            minLength: 2,
             delay: 100
-          },
-          showAutocompleteOnFocus: true
+          }
+        });
+
+        $('.list #role-operators').tokenfield({
+          autocomplete: {
+            source: mock_values,
+            autoFocus: true,
+            minLength: 2,
+            delay: 100
+          }
         });
 
         $('.list #role-name').on('tokenfield:createtoken', function (event) {
+          // Prevent adding non-existent person
+          if(!findPerson(event.attrs.value, mock_values))
+            event.preventDefault();
+
+          // Prevent repeated names
+          var existingTokens = $(this).tokenfield('getTokens');
+          $.each(existingTokens, function(index, token) {
+              if (token.value === event.attrs.value)
+                  event.preventDefault();
+          });
+
+        })
+
+        $('.list #role-operators').on('tokenfield:createtoken', function (event) {
+          // Prevent adding non-existent person
+          if(!findPerson(event.attrs.value, mock_values))
+            event.preventDefault();
+
+          // Prevent repeated names
+          var existingTokens = $(this).tokenfield('getTokens');
+          $.each(existingTokens, function(index, token) {
+              if (token.value === event.attrs.value)
+                  event.preventDefault();
+          });
+
+        })
+
+        $('.list #role-owners').on('tokenfield:createtoken', function (event) {
           // Prevent adding non-existent person
           if(!findPerson(event.attrs.value, mock_values))
             event.preventDefault();
@@ -178,7 +219,27 @@ border-bottom: medium none;">
                         </div>
 
                         <section id="application" class="app" style="margin-top:90px;">
-                            <nav style="display: block;float:left;">
+                            <nav class="block">
+                                <ul id="sub-name-list">
+                                    <li><a href="#" onclick="openRoles(this)">Anthropology Mailing Lists </a> </li>
+
+                                    <li><a href="#" onclick="openRoles(this)">Database Access</a></li>
+                                    <li><a href="#" onclick="openRoles(this)">Faculty Memeber Phone Lists</a></li>
+                                    <li><a href="#" onclick="openRoles(this)">Lab Remote Access</a></li>
+                                    <li><a href="#" onclick="openRoles(this)">Printer A Wireless Accesss</a> </li>
+                                </ul>
+                            </nav>
+                            <nav class="block">
+                                <ul id="sub-name-list">
+                                    <li><a href="#" onclick="openRoles(this)">Anthropology Mailing Lists </a> </li>
+
+                                    <li><a href="#" onclick="openRoles(this)">Database Access</a></li>
+                                    <li><a href="#" onclick="openRoles(this)">Faculty Memeber Phone Lists</a></li>
+                                    <li><a href="#" onclick="openRoles(this)">Lab Remote Access</a></li>
+                                    <li><a href="#" onclick="openRoles(this)">Printer A Wireless Accesss</a> </li>
+                                </ul>
+                            </nav>
+                            <nav class="block">
                                 <ul id="sub-name-list">
                                     <li><a href="#" onclick="openRoles(this)">Anthropology Access </a> </li>
 
@@ -192,7 +253,7 @@ border-bottom: medium none;">
                                     <li><a href="#" onclick="openAssignment(this)">Supply Orders</a></li>
 
                                     <li>
-                                     <button type="button" onclick="openRoles(this, '.app', 'Add an Application')" class="btn btn-primary selected-none">Add An Application</button>
+                                     <button type="button" onclick="openControlPanel('.app', 'Add an Application')" class="btn btn-primary selected-none">Add An Application</button>
                                     </li>
                                 </ul>
                             </nav>
@@ -229,7 +290,7 @@ border-bottom: medium none;">
                                 <li><a href="#" onclick="openAssignment(this)">Contact list</a></li>
 
                                 <li>
-                                <button type="button" onclick="openAssignment(this, '.role', 'Add a Role')" class="btn btn-primary selected-none">Add A Role</button>
+                                <button type="button" onclick="openControlPanel('.role', 'Add a Role')" class="btn btn-primary selected-none">Add A Role</button>
                                 </li>
                             <ul id="sub-name-list" class="dss-messenger" style="display: none;">
                                 <li><a href="#" onclick="openAssignment(this, '.role', '.dss-messenger-access' )">Access</a></li>
@@ -237,7 +298,7 @@ border-bottom: medium none;">
                             </ul>
                         </section>
                         <!--database access application-->
-                    
+
                          <section id="application" class="roles" style="display:;">
                             <ul id="sub-name-list">
                                 <li><a href="#" onclick="openAssignment(this)">Access 1</a> </li>
@@ -252,9 +313,9 @@ border-bottom: medium none;">
                             </ul>
                             </ul>
                         </section>
-                        
+
                         <!--Phone Lists-->
-                    
+
                          <section id="application" class="roles" style="display:;">
                             <ul id="sub-name-list">
                                 <li><a href="#" onclick="openAssignment(this)">Admin Phone List</a> </li>
@@ -268,9 +329,9 @@ border-bottom: medium none;">
                             </ul>
                             </ul>
                         </section>
-                        
+
                               <!--lab remote access-->
-                    
+
                          <section id="application" class="roles" style="display:;">
                             <ul id="sub-name-list">
                                 <li><a href="#" onclick="openAssignment(this)">Lab Computers</a> </li>
@@ -287,7 +348,7 @@ border-bottom: medium none;">
                         </section>
 
                        <!--printer-->
-                    
+
                          <section id="application" class="roles" style="display:;">
                             <ul id="sub-name-list">
                                 <li><a href="#" onclick="openAssignment(this)">Printer A</a> </li>
@@ -303,8 +364,8 @@ border-bottom: medium none;">
                             </ul>
                             </ul>
                         </section>
-                        
-                        
+
+
                     </div>
                 </div>
             </div>
@@ -335,7 +396,7 @@ border-bottom: medium none;">
       <div style="" aria-expanded="true" id="collapse1" class="panel-collapse collapse">
 
           <div class="panel-body group-member"><a>Christopher Thielen</a></div>
-          
+
            <div class="panel-body group-member"><a>Lloyd Wheeler</a></div>
 
           <div class="panel-body group-member"><a>Mark Diez</a></div>
@@ -359,7 +420,7 @@ border-bottom: medium none;">
 
             <div class="panel-body group-member"><a>Christopher Thielen</a></div>
 
-   
+
       </div>
       </div>
     </div>
@@ -617,11 +678,11 @@ border-bottom: medium none;">
                                               </div>
                                               <div class="list">
                                                   <h5>Owners</h5>
-                                                  <input class="item" type="text">
+                                                  <input id="role-owners" class="item" type="text">
                                               </div>
                                               <div class="list">
                                                   <h5>Operators</h5>
-                                                  <input class="item" type="text">
+                                                  <input id="role-operators" class="item" type="text">
                                               </div>
 
 

@@ -87,7 +87,7 @@ a:focus {
 
 .application-section #application {
     position: relative;
-    
+
 }
 
 .application-section #application h4 {
@@ -97,6 +97,10 @@ a:focus {
     padding-left: 30px;
 }
 
+.block {
+  display: block;
+  float:left;
+}
 
 /*===================== rule-section ======================*/
 

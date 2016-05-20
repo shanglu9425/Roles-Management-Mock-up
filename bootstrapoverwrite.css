@@ -1,12 +1,12 @@
     @import url("//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css");
     /*================== body ==================*/
-    
+
     body {
         font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
         overflow-y: hidden;
     }
     /*================== Navi ==================*/
-    
+
     .navbar {
         background-color: #294B74;
         color: white;
@@ -17,82 +17,85 @@
         width: 100%;
         z-index: 2013;
     }
-    
+
     .navbar-default .navbar-brand,
     .navbar-default .navbar-brand:focus,
     .navbar-default .navbar-brand:hover {
         color: white;
         cursor: pointer;
     }
-    
+
     .navbar-default .navbar-brand {
         color: white;
         margin: 0px;
     }
-    
+
     .dropdown-toggle {}
-    
+
     .dropdown-menu {
         color: black;
     }
-    
+
     .navbar-default .navbar-nav > .open > a:focus,
     navbar-default .navbar-nav > .open > a:hover,
     navbar-default .navbar-nav > .open > a:active {
         background-color: #0E2E55;
         color: white;
     }
-    
+
     .navbar-default .navbar-nav .dropdown-menu li a {
         color: #263E5B;
         cursor: pointer;
     }
     /*================== Grid system==================*/
-    
+
     .col-md-6 {
         padding-left: 0px;
         padding-right: 0px;
         width: 40%;
     }
-    
+
     .col-md-4 {
         padding-left: 0px;
         padding-right: 0px;
-        width: 20%;
+        /*width: 20%;*/
+        width: 100%;
     }
-    
+
     .col-md-3 {
         padding-left: 0px;
         padding-right: 0px;
         width: 20%;
     }
-    
+
     .col-md-8 {
         padding-left: 0px;
         padding-right: 0px;
         width: 75%;
     }
-    
+
     .row {
         margin-left: 0px;
         margin-right: 0px;
     }
     /*=================input-size===============*/
-    
+
     .input-large {
         width: 150px!important;
     }
-    
+
     .input-medium {
         width: 150px!important;
     }
-    
+
     .input-medium-small {
         width: 120px!important;
     }
     /*================== MISC==================*/
-    
-table {font-size: 10pt !important;}
+
+table {
+  font-size: 10pt !important;
+}
 
 .btn-primary {
     color: #fff;
@@ -102,17 +105,17 @@ table {font-size: 10pt !important;}
     .modal-footer {
         border-top: none;
     }
-    
+
     .btn-success {
         border: none;
         background-color: #7E8790!important;
         height: 34px;
     }
-    
+
     .btn-danger {
         background-color: #FA776A;
     }
-    
+
     .btn-success.active,
     .btn-success:active,
     .open > .dropdown-toggle.btn-success,
@@ -131,39 +134,39 @@ table {font-size: 10pt !important;}
         color: #fff;
         background-color: #C1C3C6;
     }
-    
+
     a {
         color: #173C68;
     }
-    
+
     a,
     a:active, a:hover,
     a:focus {
         outline: none;
         text-decoration: none;
     }
-    
+
     .application-section #sub-name-list li {
         font-size: 10pt;
     }
-    
+
     .rule-section #application #sub-name-list li {
         font-size: 10pt;
     }
-    
+
     .aassigned-section #application ul li {
         font-size: 10pt;
     }
-    
+
     input {
         font-size: 10pt;
     }
-    
+
     .glyphicon {
         top: 3px;
     }
     /*==================== Webkit =================*/
-    
+
     .noselect a {
         -webkit-touch-callout: none;
         /* iOS Safari */

@@ -42,6 +42,11 @@ body {
         /*===================== application-section ======================*/
         
         .application-section {
+            .search-application:hover .close-icon{ position: absolute;
+                   right: 41%;
+                    bottom: 17px;
+                    color: white;
+                    display: block;}
             .search-application {
                 padding-left: 25px !important;
                 position: fixed;
@@ -59,7 +64,9 @@ body {
                 .close-icon { position: absolute;
                    right: 41%;
                     bottom: 17px;
-                    color: white;}
+                    color: white;
+                    display: none;}
+                    
                 input {
                     text-indent: 30px;
                     border-radius: 5px;
@@ -109,6 +116,10 @@ width: 70%;  }
         /*===================== rule-section ======================*/
         
         .rule-section {
+              .search-role:hover .close-icon{ position: absolute;
+                   right: 41%;
+                    bottom: 17px;
+                    display: block;}
             .search-role {
                 padding-left: 25px !important;
                 position: fixed;
@@ -127,6 +138,7 @@ width: 70%;  }
                 .close-icon { position: absolute;
                    left: 38%;
                     bottom: 17px;
+                    display: none;
                    }
             input {
                 text-indent: 30px;
@@ -167,6 +179,13 @@ width: 70%;}
         /*===================== assigned-section ======================*/
         
         .assigned-section {
+           
+               .search-assigned:hover  .close-icon { position: absolute;
+                   left: 18%;
+                   font-size: 20px;
+                    bottom: 17px;
+                    display: block;
+                   }           
             .search-assigned {
                 padding-left: 25px !important;
                 position: fixed;
@@ -182,10 +201,12 @@ width: 70%;}
                    left: 40px;
                     bottom: 17px;
                 }
+                
                 .close-icon { position: absolute;
                    left: 18%;
                    font-size: 20px;
                     bottom: 17px;
+                    display: none;
                    }
             input {
                 text-indent: 30px;

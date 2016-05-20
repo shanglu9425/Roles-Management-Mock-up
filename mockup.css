@@ -33,6 +33,12 @@ body {
     box-shadow: inset 0px 1px 0px 0px #ECECEC; }
 
 /*===================== application-section ======================*/
+.application-section .search-application:hover .close-icon {
+  position: absolute;
+  right: 41%;
+  bottom: 17px;
+  color: white;
+  display: block; }
 .application-section .search-application {
   padding-left: 25px !important;
   position: fixed;
@@ -50,7 +56,8 @@ body {
     position: absolute;
     right: 41%;
     bottom: 17px;
-    color: white; }
+    color: white;
+    display: none; }
   .application-section .search-application input {
     text-indent: 30px;
     border-radius: 5px;
@@ -87,6 +94,11 @@ body {
   background-color: none; }
 
 /*===================== rule-section ======================*/
+.rule-section .search-role:hover .close-icon {
+  position: absolute;
+  right: 41%;
+  bottom: 17px;
+  display: block; }
 .rule-section .search-role {
   padding-left: 25px !important;
   position: fixed;
@@ -103,7 +115,8 @@ body {
 .rule-section .close-icon {
   position: absolute;
   left: 38%;
-  bottom: 17px; }
+  bottom: 17px;
+  display: none; }
 .rule-section input {
   text-indent: 30px;
   border-radius: 5px;
@@ -131,6 +144,12 @@ body {
   background-color: #FAC369; }
 
 /*===================== assigned-section ======================*/
+.assigned-section .search-assigned:hover .close-icon {
+  position: absolute;
+  left: 18%;
+  font-size: 20px;
+  bottom: 17px;
+  display: block; }
 .assigned-section .search-assigned {
   padding-left: 25px !important;
   position: fixed;
@@ -148,7 +167,8 @@ body {
   position: absolute;
   left: 18%;
   font-size: 20px;
-  bottom: 17px; }
+  bottom: 17px;
+  display: none; }
 .assigned-section input {
   text-indent: 30px;
   border-radius: 5px;

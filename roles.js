@@ -20,11 +20,11 @@ function openAssignment(e, application, assigned) {
   openNavigationPanel('.assign');
 
   // Remove selected class from previously selected item
-  $("#application.roles #sub-name-list .selected").removeClass("selected");
+  $("#application.roleData #sub-name-list .selected").removeClass("selected");
 
   // Add selected class to the clicked button
   $(e).addClass("selected");
-  openControlPanel('.role', e.innerHTML);
+  openControlPanel(application, e.innerHTML);
 }
 
 function showData(app) {

@@ -96,6 +96,10 @@ body {
 .module {
   display:none;
 }
+
+.roleData {
+  display: none;
+}
 /*===================== rule-section ======================*/
 .rule-section .search-role:hover .close-icon {
   position: absolute;

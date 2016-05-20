@@ -221,11 +221,11 @@ border-bottom: medium none;">
                         <section id="application" class="app" style="margin-top:90px;">
                             <nav class="block">
                                 <ul id="sub-name-list">
-                                    <li><a href="#" onclick="openRoles(this)">Anthropology Mailing Lists </a> </li>
+                                    <li><a href="#" onclick="openRoles(this, '.roleData.anthro')">Anthropology Mailing Lists </a> </li>
 
-                                    <li><a href="#" onclick="openRoles(this)">Database Access</a></li>
-                                    <li><a href="#" onclick="openRoles(this)">Faculty Memeber Phone Lists</a></li>
-                                    <li><a href="#" onclick="openRoles(this)">Lab Remote Access</a></li>
+                                    <li><a href="#" onclick="openRoles(this, '.roleData.db')">Database Access</a></li>
+                                    <li><a href="#" onclick="openRoles(this, '.roleData.phone')">Faculty Memeber Phone Lists</a></li>
+                                    <li><a href="#" onclick="openRoles(this, '.roleData.lab')">Lab Remote Access</a></li>
                                     <li><a href="#" onclick="openRoles(this)">Printer A Wireless Accesss</a> </li>
                                 </ul>
                             </nav>
@@ -281,25 +281,20 @@ border-bottom: medium none;">
                             <input placeholder=" Filter Roles" type="text">
 
                         </div>
-
-                        <section id="application" class="roles">
+                        <section id="application" class="roleData anthro">
                             <ul id="sub-name-list">
                                 <li><a href="#" onclick="openAssignment(this)">Admin</a> </li>
                                 <li> <a href="#" onclick="openAssignment(this)">Video files/Media resources</a></li>
                                 <li> <a href="#" onclick="openAssignment(this)">Shared files(1/10/16-3/25/16)</a></li>
                                 <li><a href="#" onclick="openAssignment(this)">Contact list</a></li>
-
                                 <li>
                                 <button type="button" onclick="openControlPanel('.role', 'Add a Role')" class="btn btn-primary selected-none">Add A Role</button>
                                 </li>
-                            <ul id="sub-name-list" class="dss-messenger" style="display: none;">
-                                <li><a href="#" onclick="openAssignment(this, '.role', '.dss-messenger-access' )">Access</a></li>
-                            </ul>
                             </ul>
                         </section>
                         <!--database access application-->
 
-                         <section id="application" class="roles" style="display:;">
+                         <section id="application" class="roleData db" style="display:;">
                             <ul id="sub-name-list">
                                 <li><a href="#" onclick="openAssignment(this)">Access 1</a> </li>
                                 <li> <a href="#" onclick="openAssignment(this)">Access 2</a></li>
@@ -308,15 +303,12 @@ border-bottom: medium none;">
                                 <li>
                                 <button type="button" onclick="openAssignment(this, '.role', 'Add a Role')" class="btn btn-primary selected-none">Add A Role</button>
                                 </li>
-                            <ul id="sub-name-list" class="dss-messenger" style="display: none;">
-                                <li><a href="#" onclick="openAssignment(this, '.role', '.dss-messenger-access' )">Access</a></li>
-                            </ul>
                             </ul>
                         </section>
 
                         <!--Phone Lists-->
 
-                         <section id="application" class="roles" style="display:;">
+                         <section id="application" class="roleData phone" style="display:;">
                             <ul id="sub-name-list">
                                 <li><a href="#" onclick="openAssignment(this)">Admin Phone List</a> </li>
                                 <li> <a href="#" onclick="openAssignment(this)">Manager Phone List</a></li>
@@ -324,15 +316,12 @@ border-bottom: medium none;">
                                 <li>
                                 <button type="button" onclick="openAssignment(this, '.role', 'Add a Role')" class="btn btn-primary selected-none">Add A Role</button>
                                 </li>
-                            <ul id="sub-name-list" class="dss-messenger" style="display: none;">
-                                <li><a href="#" onclick="openAssignment(this, '.role', '.dss-messenger-access' )">Access</a></li>
-                            </ul>
                             </ul>
                         </section>
 
                               <!--lab remote access-->
 
-                         <section id="application" class="roles" style="display:;">
+                         <section id="application" class="roleData lab" style="display:;">
                             <ul id="sub-name-list">
                                 <li><a href="#" onclick="openAssignment(this)">Lab Computers</a> </li>
                                 <li> <a href="#" onclick="openAssignment(this)">Lab Server</a></li>
@@ -341,15 +330,12 @@ border-bottom: medium none;">
                                 <li>
                                 <button type="button" onclick="openAssignment(this, '.role', 'Add a Role')" class="btn btn-primary selected-none">Add A Role</button>
                                 </li>
-                            <ul id="sub-name-list" class="dss-messenger" style="display: none;">
-                                <li><a href="#" onclick="openAssignment(this, '.role', '.dss-messenger-access' )">Access</a></li>
-                            </ul>
                             </ul>
                         </section>
 
                        <!--printer-->
 
-                         <section id="application" class="roles" style="display:;">
+                         <section id="application" class="roleData printer" style="display:;">
                             <ul id="sub-name-list">
                                 <li><a href="#" onclick="openAssignment(this)">Printer A</a> </li>
                                 <li> <a href="#" onclick="openAssignment(this)">Printer B</a></li>
@@ -359,9 +345,6 @@ border-bottom: medium none;">
                                 <li>
                                 <button type="button" onclick="openAssignment(this, '.role', 'Add a Role')" class="btn btn-primary selected-none">Add A Role</button>
                                 </li>
-                            <ul id="sub-name-list" class="dss-messenger" style="display: none;">
-                                <li><a href="#" onclick="openAssignment(this, '.role', '.dss-messenger-access' )">Access</a></li>
-                            </ul>
                             </ul>
                         </section>
 

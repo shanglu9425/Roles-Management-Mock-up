@@ -374,7 +374,7 @@ border-bottom: medium none;">
 
                          <section id="application" class="roleData accountAccess" style="display:;">
                             <ul id="sub-name-list">
-                                <li><a href="#" onclick="openAssignment(this)">Student account setting</a> </li>
+                                <li><a href="#" onclick="openAssignment(this, '.aa-sas')">Student account setting</a> </li>
                                 <li> <a href="#" onclick="openAssignment(this)">Account password reset</a></li>
                                 <li> <a href="#" onclick="openAssignment(this)">Account permission setting</a></li>
                                 <li>
@@ -622,9 +622,9 @@ border-bottom: medium none;">
                 <div class="control-panel">
                    <div style="cursor: pointer; font-weight: bold; bottom: 15px; background-color: white; border-radius: 50%; text-align: center; font-size: 1.9em; top: 37%; position: relative; color: #294B74; width: 60px; height: 60px; right: 25px; box-shadow: -5px 0px 5px -2px rgba(0, 0, 0, 0.2);"><i style="position: absolute; top: 30%; left: 25%;" class="fa fa-chevron-right" aria-hidden="true"></i></div>
                     <section class='container sec'>
+
                       <!-- Application Module -->
                       <div class="module app">
-
                           <!-- Title -->
                           <div class="modal-header" style="text-align:center; border-bottom:none;">
                               <legend><b>TEST APPLICATION</b></legend>
@@ -721,8 +721,7 @@ border-bottom: medium none;">
 
                           </div>
                       </div>
-                      <!--form-->
-
+                      <!-- End Application Module-->
                       <!-- Roles Module -->
                       <div class="module role">
 
@@ -798,7 +797,115 @@ border-bottom: medium none;">
                               <!-- Tap panes -->
                           </div>
                       </div>
-                      <!--form-->
+                      <!-- End Roles Module-->
+                      <!-- Account Access / Student Account Setting Module -->
+                      <div class="module aa-sas">
+                        <!-- Title -->
+                        <div class="modal-header" style="text-align:center; border-bottom:none;">
+                            <legend><b>Printer A</b></legend>
+                        </div>
+                        <!-- Title -->
+                        <div class="model-body">
+                          <!-- Nav tabs -->
+                          <ul class="nav nav-tabs" role="tablist" style="float:left;width:100%;">
+                            <li role="presentation" class="active"><a href="#badguy" aria-controls="home" role="tab" data-toggle="tab">Role</a></li>
+                            <li role="presentation"><a href="#log" aria-controls="log" role="tab" data-toggle="tab">Log</a></li>
+                          </ul>
+                          <!-- Nav tabs -->
+                          <!-- Tab panes -->
+                          <div class="tab-content" style="float:left; width:100%;margin-top: 15px;">
+                            <div role="tabpanel" class="tab-pane active" id="badguy" style="overflow:auto;">
+                              <div class="container">
+                                <!-- Summary -->
+                                <fieldset class='alpha'>
+                                  <div class='list'>
+                                    <h5>Name</h5>
+                                    <input class='item' type='text' value="Printer A">
+                                  </div>
+                                  <div class="list">
+                                    <h5>Description</h5>
+                                    <input class="item" type="text" value="Permission to access Printer A in Kerr Hall">
+                                  </div>
+                                  <div class="list">
+                                    <h5>Token</h5>
+                                    <input class="item" type="text">
+                                  </div>
+                                </fieldset>
+                              </div>
+                            </div>
+                            <!-- Summary -->
+                            <!-- Active Directory -->
+                            <!-- Rules -->
+                            <div role="tabpanel" class="tab-pane" id="active-directory" style="overflow:auto;">
+                              <div class="container" style="padding: 0px 0px;">
+                                <p style="margin-top: 20px;">
+                                    The group name is appended after the base AD path configured by the administrator.
+                                </p>
+                              </div>
+                            </div>
+                            <!-- Rules -->
+
+                            <!--Log-->
+                            <div role="tabpanel" class="tab-pane" id="log" style="overflow:auto;">
+                              <div class="container" style="padding: 0px 0px;">
+                                <div class="container">
+                                   <h5 style="margin-top: 20px;">Log Information</h5>
+                                   <p></p>
+                                   <table class="table table-hover" style="font-size:10pt; ">
+                                    <thead>
+                                    </thead>
+                                    <tbody>
+                                      <tr>
+                                        <td>1 day ago</td>
+                                        <td>Edited</td>
+                                        <td>Description</td>
+                                      </tr>
+                                      <tr>
+                                        <td>3 days ago</td>
+                                        <td>Deleted</td>
+                                        <td>Jerry Smith</td>
+                                      </tr>
+                                      <tr>
+                                        <td>4 days ago</td>
+                                        <td>Added</td>
+                                        <td>Tom Lee</td>
+                                      </tr>
+                                      <tr>
+                                        <td>25 days ago</td>
+                                        <td>Created</td>
+                                        <td>Printer A</td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                  <div class="center">
+                                    <ul class="pagination pagination-sm">
+                                      <li class="disabled"><a href="#">&laquo;</a></li>
+                                      <li class="active"><a href="#">1</a></li>
+                                      <li><a href="#">&raquo;</a></li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- Buttons -->
+                            <div class='setting-button modal-footer'>
+                              <button type="button" class="btn btn-danger" style="float:left;">Delete</button>
+                              <div class="btn-group">
+                                <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-file" style="margin-bottom: 5px;margin-left: 1px;"></span></button>
+                                <ul class="dropdown-menu">
+                                  <li><a href="#" id="csv-download">Download CSV</a>
+                                  </li>
+                                </ul>
+                              </div>
+                              <button type="button" class="btn btn-primary">Submit Changes</button>
+                            </div>
+                            <!-- Buttons -->
+                          </div>
+                          <!-- Tap panes -->
+                        </div>
+                      </div>
+                      <!-- End Account Access / Student Account Setting-->
+                      
 
 
                     </section>

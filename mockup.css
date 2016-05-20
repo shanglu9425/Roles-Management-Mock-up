@@ -42,10 +42,15 @@ body {
   padding: 8px;
   background-color: #263e5b;
   width: 100%; }
-  .application-section .search-application i {
+  .application-section .search-application .search-icon {
     position: absolute;
     left: 40px;
     bottom: 17px; }
+  .application-section .search-application .close-icon {
+    position: absolute;
+    right: 41%;
+    bottom: 17px;
+    color: white; }
   .application-section .search-application input {
     text-indent: 30px;
     border-radius: 5px;
@@ -91,9 +96,13 @@ body {
   padding: 8px;
   background-color: #E3E3E3;
   width: 100%; }
-.rule-section i {
+.rule-section .search-icon {
   position: absolute;
   left: 40px;
+  bottom: 17px; }
+.rule-section .close-icon {
+  position: absolute;
+  left: 38%;
   bottom: 17px; }
 .rule-section input {
   text-indent: 30px;
@@ -131,9 +140,14 @@ body {
   padding: 8px;
   background-color: #F7F7F7;
   width: 100%; }
-.assigned-section i {
+.assigned-section .search-icon {
   position: absolute;
   left: 40px;
+  bottom: 17px; }
+.assigned-section .close-icon {
+  position: absolute;
+  left: 18%;
+  font-size: 20px;
   bottom: 17px; }
 .assigned-section input {
   text-indent: 30px;
@@ -197,10 +211,7 @@ body {
       width: 180px;
       padding-bottom: 2px; }
 
-/*===================== control-panel ======================*/
-.module {
- display: none;
-}
+/*===================== comtrol-panel ======================*/
 .control-panel {
   height: 100vh;
   border-left-color: #E0E0E0;

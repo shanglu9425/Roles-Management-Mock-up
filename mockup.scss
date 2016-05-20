@@ -51,11 +51,15 @@ body {
                 padding: 8px;
                 background-color: rgb(38, 62, 91);
                 width: 100%;
-                i {
+                .search-icon {
                     position: absolute;
                    left: 40px;
                     bottom: 17px;
                 }
+                .close-icon { position: absolute;
+                   right: 41%;
+                    bottom: 17px;
+                    color: white;}
                 input {
                     text-indent: 30px;
                     border-radius: 5px;
@@ -115,11 +119,15 @@ width: 70%;  }
                 background-color: #E3E3E3;
                 width: 100%;
             }
-            i {
-                position: absolute;
-               left: 40px;
-                bottom: 17px;
-            }
+                .search-icon {
+                    position: absolute;
+                   left: 40px;
+                    bottom: 17px;
+                }
+                .close-icon { position: absolute;
+                   left: 38%;
+                    bottom: 17px;
+                   }
             input {
                 text-indent: 30px;
                 border-radius: 5px;
@@ -169,11 +177,16 @@ width: 70%;}
                 background-color: #F7F7F7;
                 width: 100%;
             }
-            i {
-                position: absolute;
-               left: 40px;
-                bottom: 17px;
-            }
+                .search-icon {
+                    position: absolute;
+                   left: 40px;
+                    bottom: 17px;
+                }
+                .close-icon { position: absolute;
+                   left: 18%;
+                   font-size: 20px;
+                    bottom: 17px;
+                   }
             input {
                 text-indent: 30px;
                 border-radius: 5px;

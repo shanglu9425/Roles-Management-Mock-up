@@ -93,6 +93,9 @@ body {
 .application-section #application a:hover p {
   background-color: none; }
 
+.module {
+  display:none;
+}
 /*===================== rule-section ======================*/
 .rule-section .search-role:hover .close-icon {
   position: absolute;

@@ -1,6 +1,7 @@
-function openRoles(e) {
+function openRoles(e, app) {
   // Open Roles and change the background color
   openNavigationPanel('.roles');
+  showData(app);
 
   // Hide Assigned
   if ($('.assign').is(':visible')) {
@@ -24,6 +25,13 @@ function openAssignment(e, application, assigned) {
   // Add selected class to the clicked button
   $(e).addClass("selected");
   openControlPanel('.role', e.innerHTML);
+}
+
+function showData(app) {
+  var pos = app.lastIndexOf('.');
+  var toHide = app.substring(0, pos);
+  $(toHide).hide();
+  $(app).show();
 }
 
 function openNavigationPanel(panel) {

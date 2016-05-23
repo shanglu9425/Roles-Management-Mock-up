@@ -16,6 +16,11 @@ body {
   display: none;
 }
 
+[data-notify="container"] {
+  -moz-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+}
+
 /*===================== searchbar-application ======================*/
 .searchbar-application {
   height: 45px;

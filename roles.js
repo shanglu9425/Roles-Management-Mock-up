@@ -40,22 +40,18 @@ function openNavigationPanel(panel) {
 }
 
 function resizeNavigationPanels() {
-  var moreWidth = 0;
-
-  if ($('.control-panel').is(':visible')) {
-    moreWidth = 40;
-  }
-
+  var value = ($('.control-panel').is(':visible')) ? 0 : 40;
+  console.log(value);
   switch($('.app-panel:visible').length) {
     case 1:
       $('.block').css("width", "");
-
+      value += 60;
       if ($('.col-md-4.background-blue').is(':visible')) {
-        $('.col-md-4.background-blue').css("width", "60%");
+        $('.col-md-4.background-blue').css("width", value + "%");
       } else if ($('.col-md-4.background-gray').is(':visible')) {
-        $('.col-md-4.background-gray').css("width", "60%");
+        $('.col-md-4.background-gray').css("width", value + "%");
       } else if ($('.col-md-4.background-white').is(':visible')) {
-        $('.col-md-4.background-white').css("width", "60%");
+        $('.col-md-4.background-white').css("width", value + "%");
       } else {
         console.log('There are no active navigation panels');
       }
@@ -63,25 +59,27 @@ function resizeNavigationPanels() {
     case 2:
       //
       $('.block').css("width", "100%");
+      value += 40;
       //
       if ($('.col-md-4.background-blue').is(':visible')) {
         $('.col-md-4.background-blue').css("width", "20%");
 
         if ($('.col-md-4.background-gray').is(':visible')) {
-          $('.col-md-4.background-gray').css("width", "40%");
+          $('.col-md-4.background-gray').css("width", value + "%");
         } else {
-          $('.col-md-4.background-white').css("width", "40%");
+          $('.col-md-4.background-white').css("width", value + "%");
         }
 
       } else {
         $('.col-md-4.background-gray').css("width", "20%");
-        $('.col-md-4.background-white').css("width", "40%");
+        $('.col-md-4.background-white').css("width", value + "%");
       }
       break;
     case 3:
+      value += 20;
       $('.col-md-4.background-blue').css("width", "20%");
       $('.col-md-4.background-gray').css("width", "20%");
-      $('.col-md-4.background-white').css("width", "20%");
+      $('.col-md-4.background-white').css("width", value + "%");
       break;
     default:
       console.log("Something went wrong, there are " + activePanels + " active navigation panels");

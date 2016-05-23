@@ -114,14 +114,16 @@ function openControlPanel(module, value) {
      "Christopher Thielen"
    ];
 
-   $('.list #role-name').autocomplete({
+   // Add this class to an input to have auto-complete features only
+   $('.add-autocomplete').autocomplete({
      source: mock_values,
      autoFocus: true,
      minLength: 2,
      delay: 100
    });
 
-   $('.list #role-owners').tokenfield({
+   // Add this class to have tokens and auto-complete
+   $('.add-token').tokenfield({
      autocomplete: {
        source: mock_values,
        autoFocus: true,
@@ -130,16 +132,8 @@ function openControlPanel(module, value) {
      }
    });
 
-   $('.list #role-operators').tokenfield({
-     autocomplete: {
-       source: mock_values,
-       autoFocus: true,
-       minLength: 2,
-       delay: 100
-     }
-   });
-
-   $('.list #role-name').on('tokenfield:createtoken', function (event) {
+   // Makes sure avoid token repetition
+   $('.add-token, .add-autocomplete').on('tokenfield:createtoken', function (event) {
      // Prevent adding non-existent person
      if(!findPerson(event.attrs.value, mock_values))
        event.preventDefault();
@@ -153,33 +147,6 @@ function openControlPanel(module, value) {
 
    })
 
-   $('.list #role-operators').on('tokenfield:createtoken', function (event) {
-     // Prevent adding non-existent person
-     if(!findPerson(event.attrs.value, mock_values))
-       event.preventDefault();
-
-     // Prevent repeated names
-     var existingTokens = $(this).tokenfield('getTokens');
-     $.each(existingTokens, function(index, token) {
-         if (token.value === event.attrs.value)
-             event.preventDefault();
-     });
-
-   })
-
-   $('.list #role-owners').on('tokenfield:createtoken', function (event) {
-     // Prevent adding non-existent person
-     if(!findPerson(event.attrs.value, mock_values))
-       event.preventDefault();
-
-     // Prevent repeated names
-     var existingTokens = $(this).tokenfield('getTokens');
-     $.each(existingTokens, function(index, token) {
-         if (token.value === event.attrs.value)
-             event.preventDefault();
-     });
-
-   })
  });
 
  function findPerson(value, from) {

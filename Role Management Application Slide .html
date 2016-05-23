@@ -23,95 +23,6 @@
     <script src="vendor/jquery-ui.min.js"></script>
     <script src="vendor/bootstrap-tokenfield.min.js"></script>
     <script src="roles.js"></script>
-
-    <script type="text/javascript">
-      $(function() {
-        var mock_values = [
-          "Mark Diez",
-          "Shang Lu",
-          "Obada Kaldri",
-          "Lloyd Wheeler",
-          "Christopher Thielen"
-        ];
-
-        $('.list #role-name').autocomplete({
-          source: mock_values,
-          autoFocus: true,
-          minLength: 2,
-          delay: 100
-        });
-
-        $('.list #role-owners').tokenfield({
-          autocomplete: {
-            source: mock_values,
-            autoFocus: true,
-            minLength: 2,
-            delay: 100
-          }
-        });
-
-        $('.list #role-operators').tokenfield({
-          autocomplete: {
-            source: mock_values,
-            autoFocus: true,
-            minLength: 2,
-            delay: 100
-          }
-        });
-
-        $('.list #role-name').on('tokenfield:createtoken', function (event) {
-          // Prevent adding non-existent person
-          if(!findPerson(event.attrs.value, mock_values))
-            event.preventDefault();
-
-          // Prevent repeated names
-          var existingTokens = $(this).tokenfield('getTokens');
-          $.each(existingTokens, function(index, token) {
-              if (token.value === event.attrs.value)
-                  event.preventDefault();
-          });
-
-        })
-
-        $('.list #role-operators').on('tokenfield:createtoken', function (event) {
-          // Prevent adding non-existent person
-          if(!findPerson(event.attrs.value, mock_values))
-            event.preventDefault();
-
-          // Prevent repeated names
-          var existingTokens = $(this).tokenfield('getTokens');
-          $.each(existingTokens, function(index, token) {
-              if (token.value === event.attrs.value)
-                  event.preventDefault();
-          });
-
-        })
-
-        $('.list #role-owners').on('tokenfield:createtoken', function (event) {
-          // Prevent adding non-existent person
-          if(!findPerson(event.attrs.value, mock_values))
-            event.preventDefault();
-
-          // Prevent repeated names
-          var existingTokens = $(this).tokenfield('getTokens');
-          $.each(existingTokens, function(index, token) {
-              if (token.value === event.attrs.value)
-                  event.preventDefault();
-          });
-
-        })
-      });
-
-      function findPerson(value, from) {
-
-        for (var i = 0; i < from.length; i++) {
-          if (value == from[i])
-            return true;
-        }
-        return false;
-      }
-    </script>
-
 </head>
 
 <body>
@@ -163,7 +74,7 @@
         <!--#application search bar -->
         <div class="col-md-3">
             <section class="searchbar-application" style="position: fixed;box-shadow: -1px 0px 2px 1px rgba(0, 0, 0, 0.2);">
-                <h4>APPLICATION</h4>
+                <h4 class="application">APPLICATION</h4>
 
             </section>
         </div>
@@ -200,11 +111,11 @@ border-bottom: medium none;">
 
     <!--#Left 3 columns-->
 
-    <div class="panel-wrapper background-blue" id="background-panel">
+    <div class="panel-wrapper background-white" id="background-panel">
         <div class="row" style="margin-top: 50px;">
 
             <!--#Application-->
-            <div class="col-md-4 app-panel background-blue">
+            <div class="col-md-4 app-panel background-blue application">
                 <div class="wrapper">
                     <div class="application-section">
 
@@ -212,7 +123,7 @@ border-bottom: medium none;">
 
                         <div class="search-application" type="text">
                             <i class="fa fa-search search-icon"></i>
-                            <i class="fa fa-times close-icon fa-lg" aria-hidden="true"></i>
+                            <a class="close" onclick="closeNavigationPanel('.application')"><i class="fa fa-times close-icon fa-lg" aria-hidden="true"></i></a>
 
                             <input id="search-app" placeholder=" Filter Applications" type="text">
 
@@ -266,7 +177,7 @@ border-bottom: medium none;">
                     <div class="rule-section">
                         <div class="search-role" type="text">
                            <i class="fa fa-search search-icon"></i>
-                            <i class="fa fa-times close-icon fa-lg" aria-hidden="true"></i>
+                            <a class="close" onclick="closeNavigationPanel('.roles')"><i class="fa fa-times close-icon fa-lg" aria-hidden="true"></i></a>
 
                             <input placeholder=" Filter Roles" type="text">
 
@@ -459,7 +370,7 @@ border-bottom: medium none;">
                     <div class="assigned-section">
                         <div class="search-assigned" type="text">
                                 <i class="fa fa-search search-icon"></i>
-                            <i class="fa fa-times close-icon fa-lg" aria-hidden="true"></i>
+                            <a class="close" onclick="closeNavigationPanel('.assign')"><i class="fa fa-times close-icon fa-lg" aria-hidden="true"></i></a>
                             <input placeholder=" Filter People " type="text">
 
                         </div>
@@ -534,7 +445,7 @@ border-bottom: medium none;">
                                     <li>Andrew Kim</li>
                                     <li>Shawn Wang</li>
                                    <li style="background: transparent none repeat scroll 0% 0%; padding-left: 0px;">
-                                     <button style="width: 100%; margin-top: 30px;" type="button" onclick="" class="btn btn-primary selected-none">Add A Person</button>
+                                     <button style="width: 100%; margin-top: 30px;" type="button" onclick="openControlPanel('.add-people', 'Add A Person')" class="btn btn-primary selected-none">Add A Person</button>
                                     </li>
                                 </ul>
 
@@ -616,11 +527,11 @@ border-bottom: medium none;">
                 </div>
             </div>
             <!-- #Names -->
-
+            <!-- <div id="float-box" style="width:50px; height:50px; background-color: black; z-index:5000;"></div> -->
+            <div id="float-box" style="cursor: pointer; font-weight: bold; background-color: white; border-radius: 50%; text-align: center; font-size: 1.9em; top: 43.5%; left:58%; position: absolute; color: #294B74; width: 60px; height: 60px; box-shadow: -5px 0px 5px -2px rgba(0, 0, 0, 0.2); z-index:5000;"><a onclick="toggleControlPanel('#toggle-button');"><i id="toggle-button" style="position: absolute; top: 30%; left: 25%;" class="fa fa-chevron-right" aria-hidden="true"></a></i></div>
             <!--#Right control panel-->
             <div class="col-md-6" style="float:right;">
                 <div class="control-panel">
-                   <div style="cursor: pointer; font-weight: bold; bottom: 15px; background-color: white; border-radius: 50%; text-align: center; font-size: 1.9em; top: 37%; position: relative; color: #294B74; width: 60px; height: 60px; right: 25px; box-shadow: -5px 0px 5px -2px rgba(0, 0, 0, 0.2);"><i style="position: absolute; top: 30%; left: 25%;" class="fa fa-chevron-right" aria-hidden="true"></i></div>
                     <section class='container sec'>
 
                       <!-- Application Module -->
@@ -653,7 +564,7 @@ border-bottom: medium none;">
 
                                               <div class='list'>
                                                   <h5>Name</h5>
-                                                  <input class='item' type='text'>
+                                                  <input class='add-autocomplete item' type='text'>
                                               </div>
                                               <div class="list">
                                                   <h5>Description</h5>
@@ -665,11 +576,11 @@ border-bottom: medium none;">
                                               </div>
                                               <div class="list">
                                                   <h5>Owners</h5>
-                                                  <input class="item" type="text">
+                                                  <input class="add-token item" type="text">
                                               </div>
                                               <div class="list">
                                                   <h5>Operators</h5>
-                                                  <input class="item" type="text">
+                                                  <input class="add-token item" type="text">
                                               </div>
 
 
@@ -722,7 +633,7 @@ border-bottom: medium none;">
                           </div>
                       </div>
                       <!-- End Application Module-->
-                      <!-- Roles Module -->
+                      <!-- Add Roles Module -->
                       <div class="module add-role">
 
                           <!-- Title -->
@@ -747,7 +658,7 @@ border-bottom: medium none;">
 
                                               <div class='list'>
                                                   <h5>Name</h5>
-                                                  <input id="role-name" class='item' type='text'>
+                                                  <input class='add-autocomplete item' type='text'>
                                               </div>
                                               <div class="list">
                                                   <h5>Description</h5>
@@ -759,11 +670,11 @@ border-bottom: medium none;">
                                               </div>
                                               <div class="list">
                                                   <h5>Owners</h5>
-                                                  <input id="role-owners" class="item" type="text">
+                                                  <input class="add-token item" type="text">
                                               </div>
                                               <div class="list">
                                                   <h5>Operators</h5>
-                                                  <input id="role-operators" class="item" type="text">
+                                                  <input class="add-token item" type="text">
                                               </div>
 
 
@@ -798,7 +709,7 @@ border-bottom: medium none;">
                           </div>
                       </div>
                       <!-- End Roles Module-->
-                      <!-- Account Access / Student Account Setting Module -->
+                      <!-- Specific Role -->
                       <div class="module specific-role">
                         <!-- Title -->
                         <div class="modal-header" style="text-align:center; border-bottom:none;">
@@ -904,7 +815,73 @@ border-bottom: medium none;">
                           <!-- Tap panes -->
                         </div>
                       </div>
-                      <!-- End Account Access / Student Account Setting-->
+                      <!-- End Specific Role -->
+                      <!-- Add People -->
+                      <div class="module add-people">
+                        <!-- Title -->
+                        <div class="modal-header" style="text-align:center; border-bottom:none;">
+                          <legend style="margin-bottom: 0px;"><b>Add New People</b></legend>
+                        </div>
+                        <!-- Title -->
+
+
+                        <div class="model-body" style="padding-top:0px;">
+
+
+
+                          <!-- Tab panes -->
+                          <div class="tab-content" style="float:left; width:100%;margin-top: 15px;">
+                            <div role="tabpanel" class="tab-pane active" id="home" style="overflow:auto;">
+                              <div class="container">
+
+                                <!-- Summary -->
+                                <fieldset class='alpha'>
+
+
+                                  <div class='list'>
+                                    <h5>Assigning</h5>
+                                    <textarea name="description" class="input-xxlarge add-token" rows="3"></textarea>
+                                  </div>
+
+
+
+                                </fieldset>
+
+
+
+
+                              </div>
+                            </div>
+                            <!-- Summary -->
+
+
+
+                            <!-- Buttons -->
+                            <div class='setting-button modal-footer'>
+
+                              <button type="button" class="btn btn-danger" style="float:left;">Delete</button>
+                              <div class="btn-group">
+                                <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-file" style="margin-bottom: 5px;margin-left: 1px;"></span></button>
+                                <ul class="dropdown-menu">
+                                  <li><a href="#" id="csv-download">Download CSV</a>
+                                  </li>
+                                </ul>
+                              </div>
+                              <button type="button" class="btn btn-primary">Submit Changes</button>
+                            </div>
+                            <!-- Buttons -->
+
+                          </div>
+                          <!-- Tap panes -->
+
+
+
+
+
+
+                        </div>
+                      </div>
+                      <!--form-->
                     </section>
                 </div>
             </div>

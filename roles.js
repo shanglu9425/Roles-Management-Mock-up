@@ -40,6 +40,12 @@ function openNavigationPanel(panel) {
 }
 
 function resizeNavigationPanels() {
+  var moreWidth = 0;
+
+  if ($('.control-panel').is(':visible')) {
+    moreWidth = 40;
+  }
+
   switch($('.app-panel:visible').length) {
     case 1:
       $('.block').css("width", "");
@@ -100,6 +106,78 @@ function openControlPanel(module, value) {
   $(module).addClass('show');
   // $(application).addClass('show');
 }
+
+function toggleControlPanel(e) {
+  $('.control-panel').toggle();
+  if($('.control-panel').is(':visible')) {
+    $(e).removeClass('fa-chevron-left');
+    $(e).addClass('fa-chevron-right');
+    $('#float-box').css("left", "58%");
+  } else {
+    $(e).removeClass('fa-chevron-right');
+    $(e).addClass('fa-chevron-left');
+    $('#float-box').css("left", "97.3%");
+  }
+
+  resizeNavigationPanels();
+}
+
+/*
+ * Autocomplete and Token Code
+ */
+
+ $(function() {
+   var mock_values = [
+     "Mark Diez",
+     "Shang Lu",
+     "Obada Kaldri",
+     "Lloyd Wheeler",
+     "Christopher Thielen"
+   ];
+
+   // Add this class to an input to have auto-complete features only
+   $('.add-autocomplete').autocomplete({
+     source: mock_values,
+     autoFocus: true,
+     minLength: 2,
+     delay: 100
+   });
+
+   // Add this class to have tokens and auto-complete
+   $('.add-token').tokenfield({
+     autocomplete: {
+       source: mock_values,
+       autoFocus: true,
+       minLength: 2,
+       delay: 100
+     }
+   });
+
+   // Makes sure avoid token repetition
+   $('.add-token, .add-autocomplete').on('tokenfield:createtoken', function (event) {
+     // Prevent adding non-existent person
+     if(!findPerson(event.attrs.value, mock_values))
+       event.preventDefault();
+
+     // Prevent repeated names
+     var existingTokens = $(this).tokenfield('getTokens');
+     $.each(existingTokens, function(index, token) {
+         if (token.value === event.attrs.value)
+             event.preventDefault();
+     });
+
+   })
+
+ });
+
+ function findPerson(value, from) {
+
+   for (var i = 0; i < from.length; i++) {
+     if (value == from[i])
+       return true;
+   }
+   return false;
+ }
 
 /*
 * Animation Code

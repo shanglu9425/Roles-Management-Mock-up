@@ -102,6 +102,96 @@ function openControlPanel(module, value) {
 }
 
 /*
+ * Autocomplete and Token Code
+ */
+
+ $(function() {
+   var mock_values = [
+     "Mark Diez",
+     "Shang Lu",
+     "Obada Kaldri",
+     "Lloyd Wheeler",
+     "Christopher Thielen"
+   ];
+
+   $('.list #role-name').autocomplete({
+     source: mock_values,
+     autoFocus: true,
+     minLength: 2,
+     delay: 100
+   });
+
+   $('.list #role-owners').tokenfield({
+     autocomplete: {
+       source: mock_values,
+       autoFocus: true,
+       minLength: 2,
+       delay: 100
+     }
+   });
+
+   $('.list #role-operators').tokenfield({
+     autocomplete: {
+       source: mock_values,
+       autoFocus: true,
+       minLength: 2,
+       delay: 100
+     }
+   });
+
+   $('.list #role-name').on('tokenfield:createtoken', function (event) {
+     // Prevent adding non-existent person
+     if(!findPerson(event.attrs.value, mock_values))
+       event.preventDefault();
+
+     // Prevent repeated names
+     var existingTokens = $(this).tokenfield('getTokens');
+     $.each(existingTokens, function(index, token) {
+         if (token.value === event.attrs.value)
+             event.preventDefault();
+     });
+
+   })
+
+   $('.list #role-operators').on('tokenfield:createtoken', function (event) {
+     // Prevent adding non-existent person
+     if(!findPerson(event.attrs.value, mock_values))
+       event.preventDefault();
+
+     // Prevent repeated names
+     var existingTokens = $(this).tokenfield('getTokens');
+     $.each(existingTokens, function(index, token) {
+         if (token.value === event.attrs.value)
+             event.preventDefault();
+     });
+
+   })
+
+   $('.list #role-owners').on('tokenfield:createtoken', function (event) {
+     // Prevent adding non-existent person
+     if(!findPerson(event.attrs.value, mock_values))
+       event.preventDefault();
+
+     // Prevent repeated names
+     var existingTokens = $(this).tokenfield('getTokens');
+     $.each(existingTokens, function(index, token) {
+         if (token.value === event.attrs.value)
+             event.preventDefault();
+     });
+
+   })
+ });
+
+ function findPerson(value, from) {
+
+   for (var i = 0; i < from.length; i++) {
+     if (value == from[i])
+       return true;
+   }
+   return false;
+ }
+
+/*
 * Animation Code
 */
 

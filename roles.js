@@ -20,6 +20,7 @@ function openRoles(e, app) {
 function openAssignment(e, application, assigned) {
   // Adjust panel sizes
   openNavigationPanel('.assign');
+  showData(assigned);
 
   // Remove selected class from previously selected item
   $("#application.roleData #sub-name-list .selected").removeClass("selected");

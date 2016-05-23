@@ -2,6 +2,8 @@ function openRoles(e, app) {
   // Open Roles and change the background color
   openNavigationPanel('.roles');
   showData(app);
+  // if first time open application, show the expand button
+  $('#float-box').show();
 
   // Hide Assigned
   if ($('.assign').is(':visible')) {

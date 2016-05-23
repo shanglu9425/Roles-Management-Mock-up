@@ -124,7 +124,6 @@ fieldset {
       border-radius: 5px; }
       fieldset .list input:focus {
         outline: none;
-        border: 1px solid #94C4FF;
         box-shadow: 0 0 10px #94C4FF;
         -webkit-transition: all 0.2s ease-in-out; }
         fieldset .list input:focus::-webkit-input-placeholder {

@@ -93,6 +93,7 @@ fieldset {
     position: relative;
     background: #fff;
     width: 100%;
+    
     // Mixin
     @include silver-bg;
     // Legend
@@ -153,7 +154,6 @@ fieldset {
             border-radius: 5px;
             &:focus {
                 outline: none;
-                border: 1px solid $electric-shadow;
                 box-shadow: 0 0 10px $electric-shadow;
                 -webkit-transition: all 0.2s ease-in-out;
                 &::-webkit-input-placeholder {

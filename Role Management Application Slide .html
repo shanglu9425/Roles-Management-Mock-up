@@ -534,7 +534,7 @@ border-bottom: medium none;">
                                     <li>Andrew Kim</li>
                                     <li>Shawn Wang</li>
                                    <li style="background: transparent none repeat scroll 0% 0%; padding-left: 0px;">
-                                     <button style="width: 100%; margin-top: 30px;" type="button" onclick="" class="btn btn-primary selected-none">Add A Person</button>
+                                     <button style="width: 100%; margin-top: 30px;" type="button" onclick="openControlPanel('.add-people', 'Add A Person')"" class="btn btn-primary selected-none">Add A Person</button>
                                     </li>
                                 </ul>
 
@@ -722,7 +722,7 @@ border-bottom: medium none;">
                           </div>
                       </div>
                       <!-- End Application Module-->
-                      <!-- Roles Module -->
+                      <!-- Add Roles Module -->
                       <div class="module add-role">
 
                           <!-- Title -->
@@ -798,7 +798,7 @@ border-bottom: medium none;">
                           </div>
                       </div>
                       <!-- End Roles Module-->
-                      <!-- Account Access / Student Account Setting Module -->
+                      <!-- Specific Role -->
                       <div class="module specific-role">
                         <!-- Title -->
                         <div class="modal-header" style="text-align:center; border-bottom:none;">
@@ -904,7 +904,73 @@ border-bottom: medium none;">
                           <!-- Tap panes -->
                         </div>
                       </div>
-                      <!-- End Account Access / Student Account Setting-->
+                      <!-- End Specific Role -->
+                      <!-- Add People -->
+                      <div class="module add-people">
+                        <!-- Title -->
+                        <div class="modal-header" style="text-align:center; border-bottom:none;">
+                          <legend style="margin-bottom: 0px;"><b>Add New People</b></legend>
+                        </div>
+                        <!-- Title -->
+
+
+                        <div class="model-body" style="padding-top:0px;">
+
+
+
+                          <!-- Tab panes -->
+                          <div class="tab-content" style="float:left; width:100%;margin-top: 15px;">
+                            <div role="tabpanel" class="tab-pane active" id="home" style="overflow:auto;">
+                              <div class="container">
+
+                                <!-- Summary -->
+                                <fieldset class='alpha'>
+
+
+                                  <div class='list'>
+                                    <h5>Assigning</h5>
+                                    <textarea name="description" class="input-xxlarge" rows="3"></textarea>
+                                  </div>
+
+
+
+                                </fieldset>
+
+
+
+
+                              </div>
+                            </div>
+                            <!-- Summary -->
+
+
+
+                            <!-- Buttons -->
+                            <div class='setting-button modal-footer'>
+
+                              <button type="button" class="btn btn-danger" style="float:left;">Delete</button>
+                              <div class="btn-group">
+                                <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-file" style="margin-bottom: 5px;margin-left: 1px;"></span></button>
+                                <ul class="dropdown-menu">
+                                  <li><a href="#" id="csv-download">Download CSV</a>
+                                  </li>
+                                </ul>
+                              </div>
+                              <button type="button" class="btn btn-primary">Submit Changes</button>
+                            </div>
+                            <!-- Buttons -->
+
+                          </div>
+                          <!-- Tap panes -->
+
+
+
+
+
+
+                        </div>
+                      </div>
+                      <!--form-->
                     </section>
                 </div>
             </div>

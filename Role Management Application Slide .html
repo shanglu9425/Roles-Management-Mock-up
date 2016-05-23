@@ -163,7 +163,7 @@
         <!--#application search bar -->
         <div class="col-md-3">
             <section class="searchbar-application" style="position: fixed;box-shadow: -1px 0px 2px 1px rgba(0, 0, 0, 0.2);">
-                <h4>APPLICATION</h4>
+                <h4 class="application">APPLICATION</h4>
 
             </section>
         </div>
@@ -200,11 +200,11 @@ border-bottom: medium none;">
 
     <!--#Left 3 columns-->
 
-    <div class="panel-wrapper background-blue" id="background-panel">
+    <div class="panel-wrapper background-white" id="background-panel">
         <div class="row" style="margin-top: 50px;">
 
             <!--#Application-->
-            <div class="col-md-4 app-panel background-blue">
+            <div class="col-md-4 app-panel background-blue application">
                 <div class="wrapper">
                     <div class="application-section">
 
@@ -212,7 +212,7 @@ border-bottom: medium none;">
 
                         <div class="search-application" type="text">
                             <i class="fa fa-search search-icon"></i>
-                            <i class="fa fa-times close-icon fa-lg" aria-hidden="true"></i>
+                            <a class="close" onclick="closeNavigationPanel('.application')"><i class="fa fa-times close-icon fa-lg" aria-hidden="true"></i></a>
 
                             <input id="search-app" placeholder=" Filter Applications" type="text">
 
@@ -266,7 +266,7 @@ border-bottom: medium none;">
                     <div class="rule-section">
                         <div class="search-role" type="text">
                            <i class="fa fa-search search-icon"></i>
-                            <i class="fa fa-times close-icon fa-lg" aria-hidden="true"></i>
+                            <a class="close" onclick="closeNavigationPanel('.roles')"><i class="fa fa-times close-icon fa-lg" aria-hidden="true"></i></a>
 
                             <input placeholder=" Filter Roles" type="text">
 
@@ -459,7 +459,7 @@ border-bottom: medium none;">
                     <div class="assigned-section">
                         <div class="search-assigned" type="text">
                                 <i class="fa fa-search search-icon"></i>
-                            <i class="fa fa-times close-icon fa-lg" aria-hidden="true"></i>
+                            <a class="close" onclick="closeNavigationPanel('.assign')"><i class="fa fa-times close-icon fa-lg" aria-hidden="true"></i></a>
                             <input placeholder=" Filter People " type="text">
 
                         </div>

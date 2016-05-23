@@ -11,6 +11,11 @@ body {
 .close {
    cursor: pointer;
 }
+
+.assignData {
+  display: none;
+}
+
 /*===================== searchbar-application ======================*/
 .searchbar-application {
   height: 45px;

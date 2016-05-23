@@ -40,6 +40,12 @@ function openNavigationPanel(panel) {
 }
 
 function resizeNavigationPanels() {
+  var moreWidth = 0;
+
+  if ($('.control-panel').is(':visible')) {
+    moreWidth = 40;
+  }
+
   switch($('.app-panel:visible').length) {
     case 1:
       $('.block').css("width", "");
@@ -99,6 +105,21 @@ function openControlPanel(module, value) {
   // Open module
   $(module).addClass('show');
   // $(application).addClass('show');
+}
+
+function toggleControlPanel(e) {
+  $('.control-panel').toggle();
+  if($('.control-panel').is(':visible')) {
+    $(e).removeClass('fa-chevron-left');
+    $(e).addClass('fa-chevron-right');
+    $('#float-box').css("left", "58%");
+  } else {
+    $(e).removeClass('fa-chevron-right');
+    $(e).addClass('fa-chevron-left');
+    $('#float-box').css("left", "97.3%");
+  }
+
+  resizeNavigationPanels();
 }
 
 /*

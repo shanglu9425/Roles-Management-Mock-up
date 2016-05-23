@@ -123,6 +123,28 @@ function toggleControlPanel(e) {
 }
 
 /*
+ * Notification
+ */
+
+ function submit (msg, type) {
+   $.notify({
+  	// options
+  	message: msg
+  },{
+  	// settings
+  	type: type,
+    z_index: 50000,
+    animate: {
+  		enter: 'animated fadeInDown',
+  		exit: 'animated fadeOutUp'
+	  },
+    spacing: 0,
+    offset: 0,
+    delay: 1000
+  });
+ }
+
+/*
  * Autocomplete and Token Code
  */
 

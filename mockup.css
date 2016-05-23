@@ -77,7 +77,7 @@ body {
   color: white; }
   .application-section #application li button {
     margin: 30px;
-    width: 70%; }
+    width: 200px; }
   .application-section #application li button:focus {
     outline: none; }
   .application-section #application li button:active {
@@ -138,7 +138,7 @@ body {
   width: 200px; }
 .rule-section #application li button {
   margin: 30px;
-  width: 70%; }
+  width: 200px; }
 .rule-section #application li a {
   text-decoration: none; }
   .rule-section #application li a p {

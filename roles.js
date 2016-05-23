@@ -41,7 +41,6 @@ function openNavigationPanel(panel) {
 
 function resizeNavigationPanels() {
   var value = ($('.control-panel').is(':visible')) ? 0 : 40;
-  console.log(value);
   switch($('.app-panel:visible').length) {
     case 1:
       $('.block').css("width", "");

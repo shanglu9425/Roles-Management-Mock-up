@@ -47,6 +47,7 @@ function resizeNavigationPanels() {
   switch($('.app-panel:visible').length) {
     case 1:
       $('.block').css("width", "");
+      $('.block.role').css("width", "");
       value += 60;
       if ($('.col-md-4.background-blue').is(':visible')) {
         $('.col-md-4.background-blue').css("width", value + "%");
@@ -61,6 +62,7 @@ function resizeNavigationPanels() {
     case 2:
       //
       $('.block').css("width", "100%");
+      $('.block.role').css("width", "");
       value += 40;
       //
       if ($('.col-md-4.background-blue').is(':visible')) {
@@ -79,6 +81,7 @@ function resizeNavigationPanels() {
       break;
     case 3:
       value += 20;
+      $('.block.role').css("width", "100%");
       $('.col-md-4.background-blue').css("width", "20%");
       $('.col-md-4.background-gray').css("width", "20%");
       $('.col-md-4.background-white').css("width", value + "%");

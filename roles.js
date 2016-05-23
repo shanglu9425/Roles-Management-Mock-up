@@ -2,6 +2,8 @@ function openRoles(e, app) {
   // Open Roles and change the background color
   openNavigationPanel('.roles');
   showData(app);
+  // if first time open application, show the expand button
+  $('#float-box').show();
 
   // Hide Assigned
   if ($('.assign').is(':visible')) {
@@ -18,6 +20,7 @@ function openRoles(e, app) {
 function openAssignment(e, application, assigned) {
   // Adjust panel sizes
   openNavigationPanel('.assign');
+  showData(assigned);
 
   // Remove selected class from previously selected item
   $("#application.roleData #sub-name-list .selected").removeClass("selected");
@@ -41,10 +44,10 @@ function openNavigationPanel(panel) {
 
 function resizeNavigationPanels() {
   var value = ($('.control-panel').is(':visible')) ? 0 : 40;
-  console.log(value);
   switch($('.app-panel:visible').length) {
     case 1:
       $('.block').css("width", "");
+      $('.block.role').css("width", "");
       value += 60;
       if ($('.col-md-4.background-blue').is(':visible')) {
         $('.col-md-4.background-blue').css("width", value + "%");
@@ -59,6 +62,7 @@ function resizeNavigationPanels() {
     case 2:
       //
       $('.block').css("width", "100%");
+      $('.block.role').css("width", "");
       value += 40;
       //
       if ($('.col-md-4.background-blue').is(':visible')) {
@@ -77,6 +81,7 @@ function resizeNavigationPanels() {
       break;
     case 3:
       value += 20;
+      $('.block.role').css("width", "100%");
       $('.col-md-4.background-blue').css("width", "20%");
       $('.col-md-4.background-gray').css("width", "20%");
       $('.col-md-4.background-white').css("width", value + "%");
@@ -119,6 +124,28 @@ function toggleControlPanel(e) {
 
   resizeNavigationPanels();
 }
+
+/*
+ * Notification
+ */
+
+ function submit (msg, type) {
+   $.notify({
+  	// options
+  	message: msg
+  },{
+  	// settings
+  	type: type,
+    z_index: 50000,
+    animate: {
+  		enter: 'animated fadeInDown',
+  		exit: 'animated fadeOutUp'
+	  },
+    spacing: 0,
+    offset: 0,
+    delay: 1000
+  });
+ }
 
 /*
  * Autocomplete and Token Code

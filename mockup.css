@@ -11,6 +11,17 @@ body {
 .close {
    cursor: pointer;
 }
+
+.assignData {
+  display: none;
+}
+
+[data-notify="container"] {
+  -moz-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+  z-index: 50000;
+}
+
 /*===================== searchbar-application ======================*/
 .searchbar-application {
   height: 45px;

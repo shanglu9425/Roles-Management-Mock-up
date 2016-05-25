@@ -1,3 +1,15 @@
+/*
+ * Intro Start
+ */
+
+ $(document).ready(function() {
+   $('.module.intro').addClass('show');
+ });
+
+ /*
+  * Functions
+  */
+
 function openRoles(e, app) {
   // Open Roles and change the background color
   openNavigationPanel('.roles');
@@ -34,10 +46,6 @@ function openGroup(e) {
   openControlPanel('.assign-group', e.innerHTML);
   var members = $(e.getAttribute('href') + " .panel-body").length;
   $('#group-member-count').text(members);
-}
-
-function openPerson(e) {
-  
 }
 
 function showData(app) {
@@ -160,7 +168,6 @@ function toggleControlPanel(e) {
 /*
  * Autocomplete and Token Code
  */
-
  $(function() {
    var mock_values = [
      "Mark Diez",

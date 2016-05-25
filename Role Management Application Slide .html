@@ -412,11 +412,11 @@
                     <div style="border: medium none;" class="panel panel-default">
                       <div class="panel-heading panel-style">
                         <div style="font-size: 10pt;" class="panel-title">
-                          <a class="assign-block" aria-expanded="true" data-toggle="collapse" data-parent="#accordion" href="#collapse1" onclick="">DSS IT Ker 168<span class="glyphicon glyphicon-triangle-bottom"></span></a>
+                          <a class="assign-block" aria-expanded="true" data-toggle="collapse" data-parent="#accordion" href="#collapse1" onclick="openGroup(this)">DSS IT Kerr 168<span class="glyphicon glyphicon-triangle-bottom"></span></a>
                         </div>
                       </div>
                       <div style="" aria-expanded="true" id="collapse1" class="panel-collapse collapse">
-                          
+
                         <div class="panel-body group-member"><a class="assign-block" href="#" onclick="">Christopher Thielen</a></div>
 
                         <div class="panel-body group-member"><a class="assign-block" href="#" onclick="">Lloyd Wheeler</a></div>
@@ -434,11 +434,11 @@
                       <div class="panel-heading panel-style">
                         <div style="font-size:10pt;" class="panel-title">
 
-                          <a style="font-size: 10pt;" aria-expanded="false" class="assign-block collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse2" onclick="">Managers<span class="glyphicon glyphicon-triangle-bottom"></span></a>
+                          <a style="font-size: 10pt;" aria-expanded="false" class="assign-block collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse2" onclick="openGroup(this)">Managers<span class="glyphicon glyphicon-triangle-bottom"></span></a>
                         </div>
                       </div>
                       <div style="height: 0px;" aria-expanded="false" id="collapse2" class="panel-collapse collapse">
-                        <div style="" aria-expanded="true" id="collapse1" class="panel-collapse collapse in">
+                        <div style="" aria-expanded="true" id="collapse2" class="panel-collapse collapse in">
                           <div class="panel-body group-member"><a class="assign-block" href="#" onclick="">Christopher Thielen</a></div>
 
 
@@ -449,7 +449,7 @@
 
                       <div class="panel-heading panel-style">
                         <div style="font-size:10pt;" class="panel-title">
-                          <a style="font-size: 10pt;" aria-expanded="false" class="assign-block collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse3" onclick="">Admin Group<span class="glyphicon glyphicon-triangle-bottom"></span></a>
+                          <a style="font-size: 10pt;" aria-expanded="false" class="assign-block collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse3" onclick="openGroup(this);">Admin Group<span class="glyphicon glyphicon-triangle-bottom"></span></a>
                         </div>
                       </div>
                       <div style="height: 0px;" aria-expanded="false" id="collapse3" class="panel-collapse collapse">
@@ -775,7 +775,6 @@
             </div>
           </div>
           <!-- End Specific Role -->
-
           <!-- Add People -->
           <div class="module add-people">
             <!-- Title -->
@@ -841,7 +840,211 @@
 
             </div>
           </div>
-          <!--form-->
+          <!-- End Add People -->
+          <!-- Specific Group -->
+          <div class="module assign-group">
+
+            <!-- Title -->
+            <div class="modal-header" style="text-align:center; border-bottom:none;">
+              <legend><b>DSS IT Kerr 168</b></legend>
+            </div>
+            <!-- Title -->
+
+
+            <div class="model-body" style="padding-top:0px;">
+              <!-- memeber count -->
+              <span id="group-member">
+                <span id="group-member-count">5</span><br>members
+              </span>
+              <!-- memeber count -->
+
+              <!-- Nav tabs -->
+              <ul class="nav nav-tabs" role="tablist" style="float:left;width:100%;">
+                <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Summary</a></li>
+                <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Relations</a></li>
+                <li role="presentation"><a href="#roles" aria-controls="roles" role="tab" data-toggle="tab">Rules</a></li>
+                <li role="presentation"><a href="#log" aria-controls="log" role="tab" data-toggle="tab">Log</a></li>
+              </ul>
+              <!-- Nav tabs -->
+
+
+              <!-- Tab panes -->
+              <div class="tab-content" style="float:left; width:100%;margin-top: 15px;">
+                <div role="tabpanel" class="tab-pane active" id="home" style="overflow:auto;">
+                  <div class="container">
+
+                    <!-- Summary -->
+                    <fieldset class='alpha'>
+
+
+                      <div class='list'>
+                        <h5>Name</h5>
+                        <input class='item' placeholder='Username' type='text'>
+                      </div>
+                      <div class='list'>
+                        <h5>Description</h5>
+                        <textarea name="description" class="input-xxlarge" rows="3"></textarea>
+                      </div>
+
+
+                    </fieldset>
+
+
+
+
+                  </div>
+                </div>
+                <!-- Summary -->
+
+                <!-- Relations -->
+                <div role="tabpanel" class="tab-pane" id="profile">
+                  <div role="tabpanel" class="tab-pane active" id="home" style="overflow:auto;">
+                    <div class="container">
+
+                      <!-- / Fieldset Alpha -->
+                      <fieldset class="alpha">
+
+
+                        <div class="list">
+                          <h5>Owners</h5>
+                          <input class="item" placeholder="Username" type="text">
+                        </div>
+                        <div class="list">
+                          <h5>Operators</h5>
+                          <input class="item" placeholder="Username" type="text">
+                        </div>
+                        <div class="list">
+                          <h5>Members</h5>
+                          <input class="item" placeholder="Username" type="text">
+                        </div>
+
+
+                      </fieldset>
+
+
+
+
+                    </div>
+                  </div>
+                </div>
+                <!-- Relation -->
+
+                <!-- Rules -->
+                <div role="tabpanel" class="tab-pane" id="roles" style="overflow:auto;">
+                  <div class="container">
+                    <table id="rules" style="margin-top: 20px;">
+                      <thead>
+                        <tr>
+                          <th style="padding-bottom:5px;" class="medium">Column</th>
+                          <th style="padding-bottom:5px;" class="mini">Condition</th>
+                          <th style="padding-bottom:5px;" class="large">Value</th>
+                          <th>
+                            <!-- Actions -->
+                          </th>
+                        </tr>
+                      </thead>
+                      <tbody style="display: table-row-group;">
+                        <tr class="fields">
+                          <td>
+                            <select id="column" class="medium" style="    margin-right: 5px;">
+                              <option value="department">Department</option>
+                              <option value="organization">Organization</option>
+                              <option value="loginid">Login ID</option>
+                              <option value="title">Title</option>
+                              <option value="major">Major</option>
+                              <option value="affiliation">Affiliation</option>
+                            </select>
+                          </td>
+                          <td style="text-align: center;">
+                            <select id="condition" class="mini">
+                              <option value="is">is</option>
+                              <option value="is not">is not</option>
+                            </select>
+                          </td>
+                          <td>
+                            <input id="value" size="15" value="" class="large" autocomplete="off" type="text" style="margin:5px 5px;">
+                          </td>
+                          <td  style="padding-left: 10px;">
+                            <button class="btn btn-danger" id="remove_group_rule" type="button">Remove</button>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <p style="margin-left: 140px; margin-top: 20px;">
+                      <button style="padding-bottom: 0px; padding-top: 0px;" class="btn btn-default" id="remove_group_rule" type="button">Add Rule</button>
+                    </p>
+                  </div>
+                </div>
+                <!-- Rules -->
+
+                <!--Log-->
+                <div role="tabpanel" class="tab-pane" id="log" style="overflow:auto;">
+                  <div class="container" style="padding: 0px 0px;">
+
+
+                    <div class="container">
+                      <h5 style="margin-top: 20px;">Log Information</h5>
+                      <p></p>
+                      <table class="table table-hover" style="font-size:10pt; ">
+                        <thead>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>1 day ago</td>
+                            <td>Added</td>
+                            <td>Peter Hurrison</td>
+                          </tr>
+
+                          <tr>
+                            <td>2 days ago</td>
+                            <td>Added</td>
+                            <td>Jerry Kim</td>
+                          </tr>
+                          <tr>
+                            <td>15 days ago</td>
+                            <td>Created</td>
+                            <td>DSS IT Ker 168</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <div class="center">
+                        <ul class="pagination pagination-sm">
+                          <li class="disabled"><a href="#">&laquo;</a></li>
+                          <li class="active"><a href="#">1</a></li>
+                          <li><a href="#">&raquo;</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+                <!-- Buttons -->
+                <div class='setting-button modal-footer'>
+
+                  <button type="button" class="btn btn-danger" style="float:left;">Delete</button>
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-file" style="margin-bottom: 5px;margin-left: 1px;"></span></button>
+                    <ul class="dropdown-menu">
+                      <li><a href="#" id="csv-download">Download CSV</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <button type="button" class="btn btn-primary">Submit Changes</button>
+                </div>
+                <!-- Buttons -->
+
+              </div>
+              <!-- Tap panes -->
+
+
+
+
+
+
+            </div>
+          </div>
+          <!-- End Specific Group-->
         </section>
       </div>
     </div>

@@ -30,6 +30,13 @@ function openAssignment(e, application, assigned) {
   openControlPanel(application, e.innerHTML);
 }
 
+function openGroup(e) {
+  openControlPanel('.assign-group', e.innerHTML);
+  var members = $(e.getAttribute('href') + " .panel-body").length;
+  console.log(members);
+  $('#group-member-count').text(members);
+}
+
 function showData(app) {
   var pos = app.lastIndexOf('.');
   var toHide = app.substring(0, pos);

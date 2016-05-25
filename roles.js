@@ -11,6 +11,8 @@
   */
 
 function openRoles(e, app) {
+  console.log(app);
+  addAutoComplete('.add-autocomplete-role', app +' a')
   // Open Roles and change the background color
   openNavigationPanel('.roles');
   showData(app);
@@ -178,14 +180,40 @@ function toggleControlPanel(e) {
 /*
  * Autocomplete and Token Code
  */
- $(function() {
+
+ function addAutoComplete(itemClass, itemValues) {
+   var data = [];
+   for (var i = 0; i < $(itemValues).length; i++) {
+     data.push($(itemValues)[i].innerHTML);
+   }
+
+  $(itemClass).autocomplete({
+    source: data,
+    autoFocus: true,
+    minLength: 2,
+    delay: 100
+  });
+ }
+
+ $(function(mock_values) {
    var mock_values = [
      "Mark Diez",
      "Shang Lu",
      "Obada Kaldri",
      "Lloyd Wheeler",
-     "Christopher Thielen"
+     "Christopher Thielen",
+     "Tom Lee",
+     "Byran Mash",
+     "Hanna Hurrison",
+     "Daniel Jackson",
+     "Steve Graphhin",
+     "Thomas Livingston",
+     "Andrew Kim",
+     "Shawn Wang",
+     "Anna Zhu"
    ];
+
+   addAutoComplete('.add-autocomplete-app','#app-nav-panel a');
 
    // Add this class to an input to have auto-complete features only
    $('.add-autocomplete').autocomplete({

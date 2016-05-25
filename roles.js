@@ -115,6 +115,10 @@ function closeNavigationPanel(panel) {
 }
 
 function openControlPanel(module, value) {
+  // open control panel if closed
+  if ($('.control-panel').is(':hidden')) {
+    toggleControlPanel('#toggle-button');
+  }
   // remove show from previous module
   $('.control-panel .container .show').removeClass('show');
   // $('#application #sub-name-list').removeClass('show');
@@ -134,10 +138,16 @@ function toggleControlPanel(e) {
     $(e).removeClass('fa-chevron-left');
     $(e).addClass('fa-chevron-right');
     $('#float-box').css("left", "58%");
+    $('ul#name-list').css("-webkit-column-count","1");
+    $('ul#name-list').css("-moz-column-count","1");
+    $('ul#name-list').css("column-count","1");
   } else {
     $(e).removeClass('fa-chevron-right');
     $(e).addClass('fa-chevron-left');
     $('#float-box').css("left", "97.3%");
+    $('ul#name-list').css("-webkit-column-count","3");
+    $('ul#name-list').css("-moz-column-count","3");
+    $('ul#name-list').css("column-count","3");
   }
 
   resizeNavigationPanels();

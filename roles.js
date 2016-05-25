@@ -33,8 +33,11 @@ function openAssignment(e, application, assigned) {
 function openGroup(e) {
   openControlPanel('.assign-group', e.innerHTML);
   var members = $(e.getAttribute('href') + " .panel-body").length;
-  console.log(members);
   $('#group-member-count').text(members);
+}
+
+function openPerson(e) {
+  
 }
 
 function showData(app) {

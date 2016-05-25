@@ -43,6 +43,17 @@
     width: 100%;
     clear: both;
 }*/
+#group-member {
+  font-size: 8pt;
+  float: right;
+  text-align: center;
+  padding-right: 20px; }
+  #group-member #group-member-count {
+    font-weight: bold;
+    font-size: 20pt;
+    color: #333333;
+    text-align: center; }
+
 .center ul {
   display: flex;
   align-items: center;

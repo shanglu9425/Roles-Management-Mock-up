@@ -1,4 +1,18 @@
+/*
+ * Intro Start
+ */
+
+ $(document).ready(function() {
+   $('.module.intro').addClass('show');
+ });
+
+ /*
+  * Functions
+  */
+
 function openRoles(e, app) {
+  console.log(app);
+  addAutoComplete('.add-autocomplete-role', app +' a')
   // Open Roles and change the background color
   openNavigationPanel('.roles');
   showData(app);
@@ -28,6 +42,12 @@ function openAssignment(e, application, assigned) {
   // Add selected class to the clicked button
   $(e).addClass("selected");
   openControlPanel(application, e.innerHTML);
+}
+
+function openGroup(e) {
+  openControlPanel('.assign-group', e.innerHTML);
+  var members = $(e.getAttribute('href') + " .panel-body").length;
+  $('#group-member-count').text(members);
 }
 
 function showData(app) {
@@ -97,6 +117,10 @@ function closeNavigationPanel(panel) {
 }
 
 function openControlPanel(module, value) {
+  // open control panel if closed
+  if ($('.control-panel').is(':hidden')) {
+    toggleControlPanel('#toggle-button');
+  }
   // remove show from previous module
   $('.control-panel .container .show').removeClass('show');
   // $('#application #sub-name-list').removeClass('show');
@@ -116,10 +140,16 @@ function toggleControlPanel(e) {
     $(e).removeClass('fa-chevron-left');
     $(e).addClass('fa-chevron-right');
     $('#float-box').css("left", "58%");
+    $('ul#name-list').css("-webkit-column-count","1");
+    $('ul#name-list').css("-moz-column-count","1");
+    $('ul#name-list').css("column-count","1");
   } else {
     $(e).removeClass('fa-chevron-right');
     $(e).addClass('fa-chevron-left');
     $('#float-box').css("left", "97.3%");
+    $('ul#name-list').css("-webkit-column-count","3");
+    $('ul#name-list').css("-moz-column-count","3");
+    $('ul#name-list').css("column-count","3");
   }
 
   resizeNavigationPanels();
@@ -151,14 +181,39 @@ function toggleControlPanel(e) {
  * Autocomplete and Token Code
  */
 
- $(function() {
+ function addAutoComplete(itemClass, itemValues) {
+   var data = [];
+   for (var i = 0; i < $(itemValues).length; i++) {
+     data.push($(itemValues)[i].innerHTML);
+   }
+
+  $(itemClass).autocomplete({
+    source: data,
+    autoFocus: true,
+    minLength: 2,
+    delay: 100
+  });
+ }
+
+ $(function(mock_values) {
    var mock_values = [
      "Mark Diez",
      "Shang Lu",
      "Obada Kaldri",
      "Lloyd Wheeler",
-     "Christopher Thielen"
+     "Christopher Thielen",
+     "Tom Lee",
+     "Byran Mash",
+     "Hanna Hurrison",
+     "Daniel Jackson",
+     "Steve Graphhin",
+     "Thomas Livingston",
+     "Andrew Kim",
+     "Shawn Wang",
+     "Anna Zhu"
    ];
+
+   addAutoComplete('.add-autocomplete-app','#app-nav-panel a');
 
    // Add this class to an input to have auto-complete features only
    $('.add-autocomplete').autocomplete({

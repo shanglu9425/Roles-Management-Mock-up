@@ -16,6 +16,10 @@ body {
   display: none;
 }
 
+.assign-block {
+  display: block;
+}
+
 [data-notify="container"] {
   -moz-animation-iteration-count: 1;
   animation-iteration-count: 1;

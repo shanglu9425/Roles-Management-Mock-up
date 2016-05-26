@@ -117,7 +117,7 @@
   <div class="row" style="margin-top: 50px;">
 
     <!--#Application-->
-    <div class="col-md-4 app-panel background-blue application">
+    <div id="app-nav-panel" class="col-md-4 app-panel background-blue application">
       <div class="wrapper">
         <div class="application-section">
 
@@ -127,7 +127,7 @@
             <i class="fa fa-search search-icon"></i>
 
 
-            <input id="search-app" placeholder=" Filter Applications" type="text">
+            <input id="search-app" placeholder=" Filter Applications" type="text" class="add-autocomplete-app">
 
           </div>
 
@@ -176,7 +176,7 @@
             <i class="fa fa-search search-icon"></i>
             <a class="close" onclick="closeNavigationPanel('.roles')"><i class="fa fa-times close-icon" aria-hidden="true"></i></a>
 
-            <input placeholder=" Filter Roles" type="text">
+            <input placeholder=" Filter Roles" type="text" class="add-autocomplete-role">
 
           </div>
           <section id="application" class="roleData anthro">
@@ -195,195 +195,195 @@
           <!--database access application-->
 
           <section id="application" class="roleData db" style="display:;">
-              <nav class="block role">
-            <ul id="sub-name-list">
-              <li><a href="#" onclick="openAssignment(this, '.specific-role', '.assignData.general')">Access 1</a> </li>
-              <li> <a href="#" onclick="openAssignment(this, '.specific-role', '.assignData.general')">Access 2</a></li>
-              <li> <a href="#" onclick="openAssignment(this, '.specific-role', '.assignData.general')">Access 3</a></li>
+            <nav class="block role">
+              <ul id="sub-name-list">
+                <li><a href="#" onclick="openAssignment(this, '.specific-role', '.assignData.general')">Access 1</a> </li>
+                <li> <a href="#" onclick="openAssignment(this, '.specific-role', '.assignData.general')">Access 2</a></li>
+                <li> <a href="#" onclick="openAssignment(this, '.specific-role', '.assignData.general')">Access 3</a></li>
 
-              <li>
-                <button type="button" onclick="openAssignment(this, '.add-role', '.assignData.empty')" class="btn btn-primary selected-none">Add A Role</button>
-              </li>
-            </ul>
-              </nav>
+                <li>
+                  <button type="button" onclick="openAssignment(this, '.add-role', '.assignData.empty')" class="btn btn-primary selected-none">Add A Role</button>
+                </li>
+              </ul>
+            </nav>
           </section>
 
           <!--Phone Lists-->
 
           <section id="application" class="roleData phone" style="display:;">
-           <nav class="block role">
-            <ul id="sub-name-list">
-              <li><a href="#" onclick="openAssignment(this, '.specific-role', '.assignData.general')">Admin Phone List</a> </li>
-              <li> <a href="#" onclick="openAssignment(this, '.specific-role', '.assignData.general')">Manager Phone List</a></li>
+            <nav class="block role">
+              <ul id="sub-name-list">
+                <li><a href="#" onclick="openAssignment(this, '.specific-role', '.assignData.general')">Admin Phone List</a> </li>
+                <li> <a href="#" onclick="openAssignment(this, '.specific-role', '.assignData.general')">Manager Phone List</a></li>
 
-              <li>
-                <button type="button" onclick="openAssignment(this, '.add-role', '.assignData.empty')" class="btn btn-primary selected-none">Add A Role</button>
-              </li>
-            </ul>
+                <li>
+                  <button type="button" onclick="openAssignment(this, '.add-role', '.assignData.empty')" class="btn btn-primary selected-none">Add A Role</button>
+                </li>
+              </ul>
             </nav>
           </section>
 
           <!--lab remote access-->
 
           <section id="application" class="roleData lab" style="display:;">
-             <nav class="block role">
-            <ul id="sub-name-list">
-              <li><a href="#" onclick="openAssignment(this, '.specific-role', '.assignData.general')">Lab Computers</a> </li>
-              <li> <a href="#" onclick="openAssignment(this, '.specific-role', '.assignData.general')">Lab Server</a></li>
-              <li> <a href="#" onclick="openAssignment(this, '.specific-role', '.assignData.general')">Lab Alarm</a></li>
-              <li>
-                <button type="button" onclick="openAssignment(this, '.add-role', '.assignData.empty')" class="btn btn-primary selected-none">Add A Role</button>
-              </li>
-            </ul>
+            <nav class="block role">
+              <ul id="sub-name-list">
+                <li><a href="#" onclick="openAssignment(this, '.specific-role', '.assignData.general')">Lab Computers</a> </li>
+                <li> <a href="#" onclick="openAssignment(this, '.specific-role', '.assignData.general')">Lab Server</a></li>
+                <li> <a href="#" onclick="openAssignment(this, '.specific-role', '.assignData.general')">Lab Alarm</a></li>
+                <li>
+                  <button type="button" onclick="openAssignment(this, '.add-role', '.assignData.empty')" class="btn btn-primary selected-none">Add A Role</button>
+                </li>
+              </ul>
             </nav>
           </section>
 
           <!--printer-->
 
           <section id="application" class="roleData printer" style="display:;">
-           <nav class="block role">
-            <ul id="sub-name-list">
-              <li><a href="#" onclick="openAssignment(this, '.specific-role', '.assignData.general')">Printer A</a> </li>
-              <li> <a href="#" onclick="openAssignment(this, '.specific-role', '.assignData.general')">Printer B</a></li>
-              <li> <a href="#" onclick="openAssignment(this, '.specific-role', '.assignData.general')">Printer C</a></li>
-              <li> <a href="#" onclick="openAssignment(this, '.specific-role', '.assignData.general')">Printer C</a></li>
-              <li>
-                <button type="button" onclick="openAssignment(this, '.add-role', '.assignData.empty')" class="btn btn-primary selected-none">Add A Role</button>
-              </li>
-            </ul>
+            <nav class="block role">
+              <ul id="sub-name-list">
+                <li><a href="#" onclick="openAssignment(this, '.specific-role', '.assignData.general')">Printer A</a> </li>
+                <li> <a href="#" onclick="openAssignment(this, '.specific-role', '.assignData.general')">Printer B</a></li>
+                <li> <a href="#" onclick="openAssignment(this, '.specific-role', '.assignData.general')">Printer C</a></li>
+                <li> <a href="#" onclick="openAssignment(this, '.specific-role', '.assignData.general')">Printer C</a></li>
+                <li>
+                  <button type="button" onclick="openAssignment(this, '.add-role', '.assignData.empty')" class="btn btn-primary selected-none">Add A Role</button>
+                </li>
+              </ul>
             </nav>
           </section>
 
           <!--DSS Application-->
 
           <section id="application" class="roleData dss" style="display:;">
-            <nav class="block role">   
-            <ul id="sub-name-list">
-              <li><a href="#" onclick="openAssignment(this, '.specific-role', '.assignData.general')">Desktop control</a> </li>
-              <li> <a href="#" onclick="openAssignment(this, '.specific-role', '.assignData.general')">E-mail system</a></li>
-              <li> <a href="#" onclick="openAssignment(this, '.specific-role', '.assignData.general')">Group Report</a></li>
-              <li>
-                <button type="button" onclick="openAssignment(this, '.add-role', '.assignData.empty')" class="btn btn-primary selected-none">Add A Role</button>
-              </li>
-              <ul id="sub-name-list" class="dss-messenger" style="display: none;">
-                <li><a href="#" onclick="openAssignment(this, '.add-role', '.assignData.general' )">Access</a></li>
+            <nav class="block role">
+              <ul id="sub-name-list">
+                <li><a href="#" onclick="openAssignment(this, '.specific-role', '.assignData.general')">Desktop control</a> </li>
+                <li> <a href="#" onclick="openAssignment(this, '.specific-role', '.assignData.general')">E-mail system</a></li>
+                <li> <a href="#" onclick="openAssignment(this, '.specific-role', '.assignData.general')">Group Report</a></li>
+                <li>
+                  <button type="button" onclick="openAssignment(this, '.add-role', '.assignData.empty')" class="btn btn-primary selected-none">Add A Role</button>
+                </li>
+                <ul id="sub-name-list" class="dss-messenger" style="display: none;">
+                  <li><a href="#" onclick="openAssignment(this, '.add-role', '.assignData.general' )">Access</a></li>
+                </ul>
               </ul>
-            </ul>
             </nav>
           </section>
 
           <!--Web Development-->
 
           <section id="application" class="roleData web" style="display:;">
-            <nav class="block role">   
-            <ul id="sub-name-list">
-              <li><a href="#" onclick="openAssignment(this, '.specific-role', '.assignData.general')">Web assests</a> </li>
-              <li> <a href="#" onclick="openAssignment(this, '.specific-role', '.assignData.general')">Web Script</a></li>
-              <li> <a href="#" onclick="openAssignment(this, '.specific-role', '.assignData.general')">Web team projects</a></li>
-              <li>
-                <button type="button" onclick="openAssignment(this, '.add-role', '.assignData.empty')" class="btn btn-primary selected-none">Add A Role</button>
-              </li>
-              <ul id="sub-name-list" class="dss-messenger" style="display: none;">
-                <li><a href="#" onclick="openAssignment(this, '.add-role', '.assignData.general' )">Access</a></li>
+            <nav class="block role">
+              <ul id="sub-name-list">
+                <li><a href="#" onclick="openAssignment(this, '.specific-role', '.assignData.general')">Web assests</a> </li>
+                <li> <a href="#" onclick="openAssignment(this, '.specific-role', '.assignData.general')">Web Script</a></li>
+                <li> <a href="#" onclick="openAssignment(this, '.specific-role', '.assignData.general')">Web team projects</a></li>
+                <li>
+                  <button type="button" onclick="openAssignment(this, '.add-role', '.assignData.empty')" class="btn btn-primary selected-none">Add A Role</button>
+                </li>
+                <ul id="sub-name-list" class="dss-messenger" style="display: none;">
+                  <li><a href="#" onclick="openAssignment(this, '.add-role', '.assignData.general' )">Access</a></li>
+                </ul>
               </ul>
-            </ul>
             </nav>
           </section>
 
           <!--Account Access-->
 
           <section id="application" class="roleData accountAccess" style="display:;">
-           <nav class="block role"> 
-            <ul id="sub-name-list">
-              <li><a href="#" onclick="openAssignment(this, '.specific-role', '.assignData.general')">Student account setting</a> </li>
-              <li> <a href="#" onclick="openAssignment(this, '.specific-role', '.assignData.general')">Account password reset</a></li>
-              <li> <a href="#" onclick="openAssignment(this, '.specific-role', '.assignData.general')">Account permission setting</a></li>
-              <li>
-                <button type="button" onclick="openAssignment(this, '.add-role', '.assignData.empty')" class="btn btn-primary selected-none">Add A Role</button>
-              </li>
-              <ul id="sub-name-list" class="dss-messenger" style="display: none;">
-                <li><a href="#" onclick="openAssignment(this, '.add-role', '.assignData.general' )">Access</a></li>
+            <nav class="block role">
+              <ul id="sub-name-list">
+                <li><a href="#" onclick="openAssignment(this, '.specific-role', '.assignData.general')">Student account setting</a> </li>
+                <li> <a href="#" onclick="openAssignment(this, '.specific-role', '.assignData.general')">Account password reset</a></li>
+                <li> <a href="#" onclick="openAssignment(this, '.specific-role', '.assignData.general')">Account permission setting</a></li>
+                <li>
+                  <button type="button" onclick="openAssignment(this, '.add-role', '.assignData.empty')" class="btn btn-primary selected-none">Add A Role</button>
+                </li>
+                <ul id="sub-name-list" class="dss-messenger" style="display: none;">
+                  <li><a href="#" onclick="openAssignment(this, '.add-role', '.assignData.general' )">Access</a></li>
+                </ul>
               </ul>
-            </ul>
-           </nav>
+            </nav>
           </section>
 
           <!--Supply Order-->
 
           <section id="application" class="roleData supplyOrder" style="display:;">
-           <nav class="block role"> 
-            <ul id="sub-name-list">
-              <li><a href="#" onclick="openAssignment(this, '.specific-role', '.assignData.general')">Hardware orders</a> </li>
-              <li> <a href="#" onclick="openAssignment(this, '.specific-role', '.assignData.general')">Trackig numbers</a></li>
-              <li>
-                <button type="button" onclick="openAssignment(this, '.add-role', '.assignData.empty')" class="btn btn-primary selected-none">Add A Role</button>
-              </li>
-              <ul id="sub-name-list" class="dss-messenger" style="display: none;">
-                <li><a href="#" onclick="openAssignment(this, '.add-role', '.assignData.general' )">Access</a></li>
+            <nav class="block role">
+              <ul id="sub-name-list">
+                <li><a href="#" onclick="openAssignment(this, '.specific-role', '.assignData.general')">Hardware orders</a> </li>
+                <li> <a href="#" onclick="openAssignment(this, '.specific-role', '.assignData.general')">Trackig numbers</a></li>
+                <li>
+                  <button type="button" onclick="openAssignment(this, '.add-role', '.assignData.empty')" class="btn btn-primary selected-none">Add A Role</button>
+                </li>
+                <ul id="sub-name-list" class="dss-messenger" style="display: none;">
+                  <li><a href="#" onclick="openAssignment(this, '.add-role', '.assignData.general' )">Access</a></li>
+                </ul>
               </ul>
-            </ul>
             </nav>
           </section>
 
           <!--Data Entry-->
 
           <section id="application" class="roleData dataEntry" style="display:;">
-           <nav class="block role"> 
-            <ul id="sub-name-list">
-              <li><a href="#" onclick="openAssignment(this, '.specific-role', '.assignData.general')">Web data collection</a> </li>
-              <li> <a href="#" onclick="openAssignment(this, '.specific-role', '.assignData.general')">Research data permission</a></li>
-              <li>
-                <button type="button" onclick="openAssignment(this, '.add-role', '.assignData.empty')" class="btn btn-primary selected-none">Add A Role</button>
-              </li>
-              <ul id="sub-name-list" class="dss-messenger" style="display: none;">
-                <li><a href="#" onclick="openAssignment(this, '.add-role', '.assignData.general' )">Access</a></li>
+            <nav class="block role">
+              <ul id="sub-name-list">
+                <li><a href="#" onclick="openAssignment(this, '.specific-role', '.assignData.general')">Web data collection</a> </li>
+                <li> <a href="#" onclick="openAssignment(this, '.specific-role', '.assignData.general')">Research data permission</a></li>
+                <li>
+                  <button type="button" onclick="openAssignment(this, '.add-role', '.assignData.empty')" class="btn btn-primary selected-none">Add A Role</button>
+                </li>
+                <ul id="sub-name-list" class="dss-messenger" style="display: none;">
+                  <li><a href="#" onclick="openAssignment(this, '.add-role', '.assignData.general' )">Access</a></li>
+                </ul>
               </ul>
-            </ul>
             </nav>
           </section>
 
           <!--Personel Access Only-->
 
           <section id="application" class="roleData personel" style="display:;">
-           <nav class="block role">    
-            <ul id="sub-name-list">
-              <li><a href="#" onclick="openAssignment(this, '.specific-role', '.assignData.general')">User/Password reset permission</a> </li>
-              <li> <a href="#" onclick="openAssignment(this, '.specific-role', '.assignData.general')">Application system permission</a></li>
-              <li>
-                <button type="button" onclick="openAssignment(this, '.add-role', '.assignData.empty')" class="btn btn-primary selected-none">Add A Role</button>
-              </li>
-              <ul id="sub-name-list" class="dss-messenger" style="display: none;">
-                <li><a href="#" onclick="openAssignment(this, '.add-role', '.assignData.general' )">Access</a></li>
+            <nav class="block role">
+              <ul id="sub-name-list">
+                <li><a href="#" onclick="openAssignment(this, '.specific-role', '.assignData.general')">User/Password reset permission</a> </li>
+                <li> <a href="#" onclick="openAssignment(this, '.specific-role', '.assignData.general')">Application system permission</a></li>
+                <li>
+                  <button type="button" onclick="openAssignment(this, '.add-role', '.assignData.empty')" class="btn btn-primary selected-none">Add A Role</button>
+                </li>
+                <ul id="sub-name-list" class="dss-messenger" style="display: none;">
+                  <li><a href="#" onclick="openAssignment(this, '.add-role', '.assignData.general' )">Access</a></li>
+                </ul>
               </ul>
-            </ul>
-           </nav>
+            </nav>
           </section>
 
 
           <!--Admin Checkbox-->
 
           <section id="application" class="roleData adminCheckbox" style="display:;">
-           <nav class="block role">    
-            <ul id="sub-name-list">
-              <li><a href="#" onclick="openAssignment(this, '.specific-role', '.assignData.general')">Checkbox access</a> </li>
-              <li> <a href="#" onclick="openAssignment(this, '.specific-role', '.assignData.general')">Checkbox account permission</a></li>
-              <li>
-                <button type="button" onclick="openAssignment(this, '.add-role', '.assignData.empty')" class="btn btn-primary selected-none">Add A Role</button>
-              </li>
-              <ul id="sub-name-list" class="dss-messenger" style="display: none;">
-                <li><a href="#" onclick="openAssignment(this, '.add-role', '.assignData.general' )">Access</a></li>
+            <nav class="block role">
+              <ul id="sub-name-list">
+                <li><a href="#" onclick="openAssignment(this, '.specific-role', '.assignData.general')">Checkbox access</a> </li>
+                <li> <a href="#" onclick="openAssignment(this, '.specific-role', '.assignData.general')">Checkbox account permission</a></li>
+                <li>
+                  <button type="button" onclick="openAssignment(this, '.add-role', '.assignData.empty')" class="btn btn-primary selected-none">Add A Role</button>
+                </li>
+                <ul id="sub-name-list" class="dss-messenger" style="display: none;">
+                  <li><a href="#" onclick="openAssignment(this, '.add-role', '.assignData.general' )">Access</a></li>
+                </ul>
               </ul>
-            </ul>
             </nav>
           </section>
 
           <section id="application" class="roleData empty" style="display:;">
-           <nav class="block role">    
-            <ul id="sub-name-list">
-              <li>
-                <button type="button" onclick="openAssignment(this, '.add-role', '.assignData.empty')" class="btn btn-primary selected-none">Add A Role</button>
-              </li>
-            </ul>
+            <nav class="block role">
+              <ul id="sub-name-list">
+                <li>
+                  <button type="button" onclick="openAssignment(this, '.add-role', '.assignData.empty')" class="btn btn-primary selected-none">Add A Role</button>
+                </li>
+              </ul>
             </nav>
           </section>
 
@@ -400,7 +400,7 @@
           <div class="search-assigned" type="text">
             <i class="fa fa-search search-icon"></i>
             <a class="close" onclick="closeNavigationPanel('.assign')"><i class="fa fa-times close-icon" aria-hidden="true"></i></a>
-            <input placeholder=" Filter People " type="text">
+            <input placeholder=" Filter People " type="text" class="add-autocomplete">
 
           </div>
           <!-- #assigned-section -->
@@ -412,20 +412,20 @@
                     <div style="border: medium none;" class="panel panel-default">
                       <div class="panel-heading panel-style">
                         <div style="font-size: 10pt;" class="panel-title">
-                          <a class="" aria-expanded="true" data-toggle="collapse" data-parent="#accordion" href="#collapse1" onclick="">DSS IT Ker 168<span class="glyphicon glyphicon-triangle-bottom"></span></a>
+                          <a class="assign-block" aria-expanded="true" data-toggle="collapse" data-parent="#accordion" href="#collapse1" onclick="openGroup(this)">DSS IT Kerr 168<span class="glyphicon glyphicon-triangle-bottom"></span></a>
                         </div>
                       </div>
                       <div style="" aria-expanded="true" id="collapse1" class="panel-collapse collapse">
 
-                        <div class="panel-body group-member"><a href="#" onclick="">Christopher Thielen</a></div>
+                        <div class="panel-body group-member"><a class="assign-block" href="#" onclick="openControlPanel('.assign-person', this.innerHTML)">Christopher Thielen</a></div>
 
-                        <div class="panel-body group-member"><a href="#" onclick="">Lloyd Wheeler</a></div>
+                        <div class="panel-body group-member"><a class="assign-block" href="#" onclick="openControlPanel('.assign-person', this.innerHTML)">Lloyd Wheeler</a></div>
 
-                        <div class="panel-body group-member"><a href="#" onclick="">Mark Diez</a></div>
+                        <div class="panel-body group-member"><a class="assign-block" href="#" onclick="openControlPanel('.assign-person', this.innerHTML)">Mark Diez</a></div>
 
-                        <div class="panel-body group-member"><a href="#" onclick="">Obada Kadri</a></div>
+                        <div class="panel-body group-member"><a class="assign-block" href="#" onclick="openControlPanel('.assign-person', this.innerHTML)">Obada Kadri</a></div>
 
-                        <div class="panel-body group-member"><a href="#" onclick="">Shang Lu</a></div>
+                        <div class="panel-body group-member"><a class="assign-block" href="#" onclick="openControlPanel('.assign-person', this.innerHTML)">Shang Lu</a></div>
 
                       </div>
                     </div>
@@ -434,12 +434,12 @@
                       <div class="panel-heading panel-style">
                         <div style="font-size:10pt;" class="panel-title">
 
-                          <a style="font-size: 10pt;" aria-expanded="false" class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse2" onclick="">Managers<span class="glyphicon glyphicon-triangle-bottom"></span></a>
+                          <a style="font-size: 10pt;" aria-expanded="false" class="assign-block collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse2" onclick="openGroup(this)">Managers<span class="glyphicon glyphicon-triangle-bottom"></span></a>
                         </div>
                       </div>
                       <div style="height: 0px;" aria-expanded="false" id="collapse2" class="panel-collapse collapse">
-                        <div style="" aria-expanded="true" id="collapse1" class="panel-collapse collapse in">
-                          <div class="panel-body group-member"><a href="#" onclick="">Christopher Thielen</a></div>
+                        <div style="" aria-expanded="true" id="collapse2" class="panel-collapse collapse in">
+                          <div class="panel-body group-member"><a class="assign-block" href="#" onclick="openControlPanel('.assign-person', this.innerHTML)">Christopher Thielen</a></div>
 
 
                         </div>
@@ -449,28 +449,27 @@
 
                       <div class="panel-heading panel-style">
                         <div style="font-size:10pt;" class="panel-title">
-
-                          <a style="font-size: 10pt;" aria-expanded="false" class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse2" onclick="">Admin Group<span class="glyphicon glyphicon-triangle-bottom"></span></a>
+                          <a style="font-size: 10pt;" aria-expanded="false" class="assign-block collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse3" onclick="openGroup(this);">Admin Group<span class="glyphicon glyphicon-triangle-bottom"></span></a>
                         </div>
                       </div>
-                      <div style="height: 0px;" aria-expanded="false" id="collapse2" class="panel-collapse collapse">
-                        <div style="" aria-expanded="true" id="collapse1" class="panel-collapse collapse in">
-                          <div class="panel-body group-member"><a href="#" onclick="">Anna Zhu</a></div>
-
-
+                      <div style="height: 0px;" aria-expanded="false" id="collapse3" class="panel-collapse collapse">
+                        <div aria-expanded="true" id="collapse3" class="panel-collapse collapse in">
+                          <div class="panel-body group-member">
+                            <a href="#" class="assign-block" onclick="openControlPanel('.assign-person', this.innerHTML)">Anna Zhu</a>
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
                 </li>
-                <li><a href="#" onclick="">Tom Lee</a></li>
-                <li><a href="#" onclick="">Byran Mash</a></li>
-                <li><a href="#" onclick="">Hanna Hurrison</a></li>
-                <li><a href="#" onclick="">Daniel Jackson</a></li>
-                <li><a href="#" onclick="">Steve Graphhin</a></li>
-                <li><a href="#" onclick="">Thomas Livingston</a></li>
-                <li><a href="#" onclick="">Andrew Kim</a></li>
-                <li><a href="#" onclick="">Shawn Wang</a></li>
+                <li><a class="assign-block" href="#" onclick="openControlPanel('.assign-person', this.innerHTML)">Tom Lee</a></li>
+                <li><a class="assign-block" href="#" onclick="openControlPanel('.assign-person', this.innerHTML)">Byran Mash</a></li>
+                <li><a class="assign-block" href="#" onclick="openControlPanel('.assign-person', this.innerHTML)">Hanna Hurrison</a></li>
+                <li><a class="assign-block" href="#" onclick="openControlPanel('.assign-person', this.innerHTML)">Daniel Jackson</a></li>
+                <li><a class="assign-block" href="#" onclick="openControlPanel('.assign-person', this.innerHTML)">Steve Graphhin</a></li>
+                <li><a class="assign-block" href="#" onclick="openControlPanel('.assign-person', this.innerHTML)">Thomas Livingston</a></li>
+                <li><a class="assign-block" href="#" onclick="openControlPanel('.assign-person', this.innerHTML)">Andrew Kim</a></li>
+                <li><a class="assign-block" href="#" onclick="openControlPanel('.assign-person', this.innerHTML)">Shawn Wang</a></li>
                 <li style="background: transparent none repeat scroll 0% 0%; padding-left: 0px;">
                   <button style="width: 100%; margin-top: 30px;" type="button" onclick="openControlPanel('.add-people', 'Add A Person')" class="btn btn-primary selected-none">Add A Person</button>
                 </li>
@@ -482,375 +481,801 @@
                 </li>
               </ul>
 
-          </section>
+            </section>
 
+          </div>
         </div>
       </div>
-    </div>
-    <!-- #Names -->
-    <div id="float-box" style="display:none; cursor: pointer; font-weight: bold; background-color: white; border-radius: 50%; text-align: center; font-size: 1.9em; top: 43.5%; left:58%; position: absolute; color: #294B74; width: 60px; height: 60px; box-shadow: -5px 0px 5px -2px rgba(0, 0, 0, 0.2); z-index:5000;"><a onclick="toggleControlPanel('#toggle-button');"style="padding: 30px;"><i id="toggle-button" style="position: absolute; top: 30%; left: 25%;" class="fa fa-chevron-right" aria-hidden="true"></a></i></div>
-    <!--#Right control panel-->
-    <div class="col-md-6" style="float:right;">
-      <div class="control-panel">
-        <section class='container sec' style="margin-top: 25px;">
-
-          <!-- Application Module -->
-          <div class="module app">
-            <!-- Title -->
-            <div class="modal-header" style="text-align:center; border-bottom:none;">
-              <legend><b>TEST APPLICATION</b></legend>
-            </div>
-            <!-- Title -->
-
-
-            <div class="model-body">
-
-              <!-- Nav tabs -->
-              <ul class="nav nav-tabs" role="tablist" style="float:left;width:100%;">
-                <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Summary</a></li>
-                <li role="presentation"><a href="#active-directory" aria-controls="messages" role="tab" data-toggle="tab">Active Directory</a></li>
-              </ul>
-              <!-- Nav tabs -->
-
-
-              <!-- Tab panes -->
-              <div class="tab-content" style="float:left; width:100%;margin-top: 15px;">
-                <div role="tabpanel" class="tab-pane active" id="home" style="overflow:auto;">
-                  <div class="container">
-
-                    <!-- Summary -->
-                    <fieldset class='alpha'>
-
-
-                      <div class='list'>
-                        <h5>Name</h5>
-                        <input class='add-autocomplete item' type='text'>
-                      </div>
-                      <div class="list">
-                        <h5>Description</h5>
-                        <input class="item" type="text">
-                      </div>
-                      <div class="list">
-                        <h5>URL</h5>
-                        <input class="item" type="text">
-                      </div>
-                      <div class="list">
-                        <h5>Owners</h5>
-                        <input class="add-token item" type="text">
-                      </div>
-                      <div class="list">
-                        <h5>Operators</h5>
-                        <input class="add-token item" type="text">
-                      </div>
-
-
-                    </fieldset>
-
-
-
-
-                  </div>
-                </div>
-                <!-- Summary -->
-
-
-                <!-- Active Directory -->
-
-                <!-- Rules -->
-                <div role="tabpanel" class="tab-pane" id="active-directory" style="overflow:auto;">
-                  <div class="container" style="padding: 0px 0px;">
-
-                    <p style="margin-top: 20px;">
-                      The group name is appended after the base AD path configured by the administrator.
-                    </p>
-                  </div>
-                </div>
-                <!-- Rules -->
-
-                <!-- Buttons -->
-                <div class='setting-button modal-footer'>
-
-                  <button type="button" class="btn btn-danger" style="float:left;" onclick="submit('Deleted', 'danger');">Delete</button>
-                  <div class="btn-group">
-                    <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-file" style="margin-bottom: 5px;margin-left: 1px;"></span></button>
-                    <ul class="dropdown-menu">
-                      <li><a href="#" id="csv-download">Download CSV</a>
-                      </li>
-                    </ul>
-                  </div>
-                  <button type="button" class="btn btn-primary" onclick="submit('Submission was a success!', 'success');">Submit Changes</button>
-                </div>
-                <!-- Buttons -->
-
+      <!-- #Names -->
+      <div id="float-box" style="display:none; cursor: pointer; font-weight: bold; background-color: white; border-radius: 50%; text-align: center; font-size: 1.9em; top: 43.5%; left:58%; position: absolute; color: #294B74; width: 60px; height: 60px; box-shadow: -5px 0px 5px -2px rgba(0, 0, 0, 0.2); z-index:5000;"><a onclick="toggleControlPanel('#toggle-button');"style="padding: 30px;"><i id="toggle-button" style="position: absolute; top: 30%; left: 25%;" class="fa fa-chevron-right" aria-hidden="true"></a></i></div>
+      <!--#Right control panel-->
+      <div class="col-md-6" style="float:right;">
+        <div class="control-panel">
+          <section class='container sec' style="margin-top: 25px;">
+            <!-- Start Introduction -->
+            <div class="module intro">
+              <div class="modal-header" style="text-align:center; border-bottom:none;">
+                <legend><b>Welcome to Roles Management</b></legend>
               </div>
-              <!-- Tap panes -->
+              <div class="model-body">
+                <div class="tab-content" style="float:left; width:100%;margin-top: 15px;">
 
-
-
-
-
-
-            </div>
-          </div>
-          <!-- End Application Module-->
-          <!-- Add Roles Module -->
-          <div class="module add-role">
-
-            <!-- Title -->
-            <div class="modal-header" style="text-align:center; border-bottom:none;">
-              <legend style="margin-bottom: 0px;"><b>Adding New Role</b></legend>
-            </div>
-            <!-- Title -->
-
-
-            <div class="model-body" style="padding-top:0px;">
-
-
-
-              <!-- Tab panes -->
-              <div class="tab-content" style="float:left; width:100%;margin-top: 15px;">
-                <div role="tabpanel" class="tab-pane active" id="home" style="overflow:auto;">
                   <div class="container">
+                    <p> Please read the instruction below before using <b>Role Management</b></p>
 
-                    <!-- Summary -->
-                    <fieldset class='alpha'>
-
-
-                      <div class='list'>
-                        <h5>Name</h5>
-                        <input class='add-autocomplete item' type='text'>
-                      </div>
-                      <div class="list">
-                        <h5>Description</h5>
-                        <input class="item" type="text">
-                      </div>
-                      <div class="list">
-                        <h5>URL</h5>
-                        <input class="item" type="text">
-                      </div>
-                      <div class="list">
-                        <h5>Owners</h5>
-                        <input class="add-token item" type="text">
-                      </div>
-                      <div class="list">
-                        <h5>Operators</h5>
-                        <input class="add-token item" type="text">
-                      </div>
-
-
-                    </fieldset>
-
-
-
-
-                  </div>
-                </div>
-                <!-- Summary -->
-
-
-
-                <!-- Buttons -->
-                <div class='setting-button modal-footer'>
-
-                  <button type="button" class="btn btn-danger" style="float:left;" onclick="submit('Deleted', 'danger');">Delete</button>
-                  <div class="btn-group">
-                    <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-file" style="margin-bottom: 5px;margin-left: 1px;"></span></button>
-                    <ul class="dropdown-menu">
-                      <li><a href="#" id="csv-download">Download CSV</a>
+                    <br>
+                    <ol>
+                      <li>Select an <b>application</b> to start. If you have not yet create an application, please click
+                        <b>"Add An Application"</b> to continue.</p>
                       </li>
-                    </ul>
+                      <br>
+                      <br>
+                      <li>Once you selected an application, the panels on the left will expand and become your <b>application-panel</b>, <b>role-panel</b>, <b>and assigned-panel</b>.
+                      </li>
+                      <br>
+                      <br>
+                      <li>Each <b>application</b> includes different <a>roles</a>, and <a>each role</a> includes <b>people and groups that are assigned</b>.
+                      </li>
+                      <br>
+                      <br>
+                      <li>Let us know if you have any question or concern regarding <b>Roles Management</b>, thank you!
+                      </li>
+                    </ol>
                   </div>
-                  <button type="button" class="btn btn-primary" onclick="submit('Submission was a success!', 'success');">Submit Changes</button>
                 </div>
-                <!-- Buttons -->
-
               </div>
-              <!-- Tap panes -->
             </div>
-          </div>
-          <!-- End Roles Module-->
-          <!-- Specific Role -->
-          <div class="module specific-role">
-            <!-- Title -->
-            <div class="modal-header" style="text-align:center; border-bottom:none;">
-              <legend><b>Printer A</b></legend>
-            </div>
-            <!-- Title -->
-            <div class="model-body">
-              <!-- Nav tabs -->
-              <ul class="nav nav-tabs" role="tablist" style="float:left;width:100%;">
-                <li role="presentation" class="active"><a href="#badguy" aria-controls="home" role="tab" data-toggle="tab">Role</a></li>
-                <li role="presentation"><a href="#log" aria-controls="log" role="tab" data-toggle="tab">Log</a></li>
-              </ul>
-              <!-- Nav tabs -->
-              <!-- Tab panes -->
-              <div class="tab-content" style="float:left; width:100%;margin-top: 15px;">
-                <div role="tabpanel" class="tab-pane active" id="badguy" style="overflow:auto;">
-                  <div class="container">
-                    <!-- Summary -->
-                    <fieldset class='alpha'>
-                      <div class='list'>
-                        <h5>Name</h5>
-                        <input class='item' type='text' value="Printer A">
-                      </div>
-                      <div class="list">
-                        <h5>Description</h5>
-                        <input class="item" type="text" value="Permission to access Printer A in Kerr Hall">
-                      </div>
-                      <div class="list">
-                        <h5>Token</h5>
-                        <input class="item" type="text">
-                      </div>
-                    </fieldset>
-                  </div>
-                </div>
-                <!-- Summary -->
-                <!-- Active Directory -->
-                <!-- Rules -->
-                <div role="tabpanel" class="tab-pane" id="active-directory" style="overflow:auto;">
-                  <div class="container" style="padding: 0px 0px;">
-                    <p style="margin-top: 20px;">
-                      The group name is appended after the base AD path configured by the administrator.
-                    </p>
-                  </div>
-                </div>
-                <!-- Rules -->
+            <!-- End Introduction -->
+            <!-- Application Module -->
+            <div class="module app">
+              <!-- Title -->
+              <div class="modal-header" style="text-align:center; border-bottom:none;">
+                <legend><b>TEST APPLICATION</b></legend>
+              </div>
+              <!-- Title -->
 
-                <!--Log-->
-                <div role="tabpanel" class="tab-pane" id="log" style="overflow:auto;">
-                  <div class="container" style="padding: 0px 0px;">
+
+              <div class="model-body">
+
+                <!-- Nav tabs -->
+                <ul class="nav nav-tabs" role="tablist" style="float:left;width:100%;">
+                  <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Summary</a></li>
+                  <li role="presentation"><a href="#active-directory" aria-controls="messages" role="tab" data-toggle="tab">Active Directory</a></li>
+                </ul>
+                <!-- Nav tabs -->
+
+
+                <!-- Tab panes -->
+                <div class="tab-content" style="float:left; width:100%;margin-top: 15px;">
+                  <div role="tabpanel" class="tab-pane active" id="home" style="overflow:auto;">
                     <div class="container">
-                      <h5 style="margin-top: 20px;">Log Information</h5>
-                      <p></p>
-                      <table class="table table-hover" style="font-size:10pt; ">
-                        <thead>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <td>1 day ago</td>
-                            <td>Edited</td>
-                            <td>Description</td>
-                          </tr>
-                          <tr>
-                            <td>3 days ago</td>
-                            <td>Deleted</td>
-                            <td>Jerry Smith</td>
-                          </tr>
-                          <tr>
-                            <td>4 days ago</td>
-                            <td>Added</td>
-                            <td>Tom Lee</td>
-                          </tr>
-                          <tr>
-                            <td>25 days ago</td>
-                            <td>Created</td>
-                            <td>Printer A</td>
-                          </tr>
-                        </tbody>
-                      </table>
-                      <div class="center">
-                        <ul class="pagination pagination-sm">
-                          <li class="disabled"><a href="#">&laquo;</a></li>
-                          <li class="active"><a href="#">1</a></li>
-                          <li><a href="#">&raquo;</a></li>
-                        </ul>
+
+                      <!-- Summary -->
+                      <fieldset class='alpha'>
+
+
+                        <div class='list'>
+                          <h5>Name</h5>
+                          <input class='add-autocomplete item' type='text'>
+                        </div>
+                        <div class="list">
+                          <h5>Description</h5>
+                          <input class="item" type="text">
+                        </div>
+                        <div class="list">
+                          <h5>URL</h5>
+                          <input class="item" type="text">
+                        </div>
+                        <div class="list">
+                          <h5>Owners</h5>
+                          <input class="add-token item" type="text">
+                        </div>
+                        <div class="list">
+                          <h5>Operators</h5>
+                          <input class="add-token item" type="text">
+                        </div>
+
+
+                      </fieldset>
+
+
+
+
+                    </div>
+                  </div>
+                  <!-- Summary -->
+
+
+                  <!-- Active Directory -->
+
+                  <!-- Rules -->
+                  <div role="tabpanel" class="tab-pane" id="active-directory" style="overflow:auto;">
+                    <div class="container" style="padding: 0px 0px;">
+
+                      <p style="margin-top: 20px;">
+                        The group name is appended after the base AD path configured by the administrator.
+                      </p>
+                    </div>
+                  </div>
+                  <!-- Rules -->
+
+                  <!-- Buttons -->
+                  <div class='setting-button modal-footer'>
+
+                    <button type="button" class="btn btn-danger" style="float:left;" onclick="submit('Deleted', 'danger');">Delete</button>
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-file" style="margin-bottom: 5px;margin-left: 1px;"></span></button>
+                      <ul class="dropdown-menu">
+                        <li><a href="#" id="csv-download">Download CSV</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <button type="button" class="btn btn-primary" onclick="submit('Submission was a success!', 'success');">Submit Changes</button>
+                  </div>
+                  <!-- Buttons -->
+
+                </div>
+                <!-- Tap panes -->
+
+
+
+
+
+
+              </div>
+            </div>
+            <!-- End Application Module-->
+            <!-- Add Roles Module -->
+            <div class="module add-role">
+
+              <!-- Title -->
+              <div class="modal-header" style="text-align:center; border-bottom:none;">
+                <legend style="margin-bottom: 0px;"><b>Adding New Role</b></legend>
+              </div>
+              <!-- Title -->
+
+
+              <div class="model-body" style="padding-top:0px;">
+
+
+
+                <!-- Tab panes -->
+                <div class="tab-content" style="float:left; width:100%;margin-top: 15px;">
+                  <div role="tabpanel" class="tab-pane active" id="home" style="overflow:auto;">
+                    <div class="container">
+
+                      <!-- Summary -->
+                      <fieldset class='alpha'>
+
+
+                        <div class='list'>
+                          <h5>Name</h5>
+                          <input class='add-autocomplete item' type='text'>
+                        </div>
+                        <div class="list">
+                          <h5>Description</h5>
+                          <input class="item" type="text">
+                        </div>
+                        <div class="list">
+                          <h5>URL</h5>
+                          <input class="item" type="text">
+                        </div>
+                        <div class="list">
+                          <h5>Owners</h5>
+                          <input class="add-token item" type="text">
+                        </div>
+                        <div class="list">
+                          <h5>Operators</h5>
+                          <input class="add-token item" type="text">
+                        </div>
+
+
+                      </fieldset>
+
+
+
+
+                    </div>
+                  </div>
+                  <!-- Summary -->
+
+
+
+                  <!-- Buttons -->
+                  <div class='setting-button modal-footer'>
+
+                    <button type="button" class="btn btn-danger" style="float:left;" onclick="submit('Deleted', 'danger');">Delete</button>
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-file" style="margin-bottom: 5px;margin-left: 1px;"></span></button>
+                      <ul class="dropdown-menu">
+                        <li><a href="#" id="csv-download">Download CSV</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <button type="button" class="btn btn-primary" onclick="submit('Submission was a success!', 'success');">Submit Changes</button>
+                  </div>
+                  <!-- Buttons -->
+
+                </div>
+                <!-- Tap panes -->
+              </div>
+            </div>
+            <!-- End Roles Module-->
+            <!-- Specific Role -->
+            <div class="module specific-role">
+              <!-- Title -->
+              <div class="modal-header" style="text-align:center; border-bottom:none;">
+                <legend><b>Printer A</b></legend>
+              </div>
+              <!-- Title -->
+              <div class="model-body">
+                <!-- Nav tabs -->
+                <ul class="nav nav-tabs" role="tablist" style="float:left;width:100%;">
+                  <li role="presentation" class="active"><a href="#badguy" aria-controls="home" role="tab" data-toggle="tab">Role</a></li>
+                  <li role="presentation"><a href="#log" aria-controls="log" role="tab" data-toggle="tab">Log</a></li>
+                </ul>
+                <!-- Nav tabs -->
+                <!-- Tab panes -->
+                <div class="tab-content" style="float:left; width:100%;margin-top: 15px;">
+                  <div role="tabpanel" class="tab-pane active" id="badguy" style="overflow:auto;">
+                    <div class="container">
+                      <!-- Summary -->
+                      <fieldset class='alpha'>
+                        <div class='list'>
+                          <h5>Name</h5>
+                          <input class='item' type='text' value="Printer A">
+                        </div>
+                        <div class="list">
+                          <h5>Description</h5>
+                          <input class="item" type="text" value="Permission to access Printer A in Kerr Hall">
+                        </div>
+                        <div class="list">
+                          <h5>Token</h5>
+                          <input class="item" type="text">
+                        </div>
+                      </fieldset>
+                    </div>
+                  </div>
+                  <!-- Summary -->
+                  <!-- Active Directory -->
+                  <!-- Rules -->
+                  <div role="tabpanel" class="tab-pane" id="active-directory" style="overflow:auto;">
+                    <div class="container" style="padding: 0px 0px;">
+                      <p style="margin-top: 20px;">
+                        The group name is appended after the base AD path configured by the administrator.
+                      </p>
+                    </div>
+                  </div>
+                  <!-- Rules -->
+
+                  <!--Log-->
+                  <div role="tabpanel" class="tab-pane" id="log" style="overflow:auto;">
+                    <div class="container" style="padding: 0px 0px;">
+                      <div class="container">
+                        <h5 style="margin-top: 20px;">Log Information</h5>
+                        <p></p>
+                        <table class="table table-hover" style="font-size:10pt; ">
+                          <thead>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>1 day ago</td>
+                              <td>Edited</td>
+                              <td>Description</td>
+                            </tr>
+                            <tr>
+                              <td>3 days ago</td>
+                              <td>Deleted</td>
+                              <td>Jerry Smith</td>
+                            </tr>
+                            <tr>
+                              <td>4 days ago</td>
+                              <td>Added</td>
+                              <td>Tom Lee</td>
+                            </tr>
+                            <tr>
+                              <td>25 days ago</td>
+                              <td>Created</td>
+                              <td>Printer A</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                        <div class="center">
+                          <ul class="pagination pagination-sm">
+                            <li class="disabled"><a href="#">&laquo;</a></li>
+                            <li class="active"><a href="#">1</a></li>
+                            <li><a href="#">&raquo;</a></li>
+                          </ul>
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
-                <!-- Buttons -->
-                <div class='setting-button modal-footer'>
-                  <button type="button" class="btn btn-danger" style="float:left;" onclick="submit('Deleted', 'danger');">Delete</button>
-                  <div class="btn-group">
-                    <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-file" style="margin-bottom: 5px;margin-left: 1px;"></span></button>
-                    <ul class="dropdown-menu">
-                      <li><a href="#" id="csv-download">Download CSV</a>
-                      </li>
-                    </ul>
+                  <!-- Buttons -->
+                  <div class='setting-button modal-footer'>
+                    <button type="button" class="btn btn-danger" style="float:left;" onclick="submit('Deleted', 'danger');">Delete</button>
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-file" style="margin-bottom: 5px;margin-left: 1px;"></span></button>
+                      <ul class="dropdown-menu">
+                        <li><a href="#" id="csv-download">Download CSV</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <button type="button" class="btn btn-primary" onclick="submit('Submission was a success!', 'success');">Submit Changes</button>
                   </div>
-                  <button type="button" class="btn btn-primary" onclick="submit('Submission was a success!', 'success');">Submit Changes</button>
+                  <!-- Buttons -->
                 </div>
-                <!-- Buttons -->
+                <!-- Tap panes -->
               </div>
-              <!-- Tap panes -->
             </div>
-          </div>
-          <!-- End Specific Role -->                          
-        
-          <!-- Add People -->
-          <div class="module add-people">
-            <!-- Title -->
-            <div class="modal-header" style="text-align:center; border-bottom:none;">
-              <legend style="margin-bottom: 0px;"><b>Add New People</b></legend>
+            <!-- End Specific Role -->
+            <!-- Add People -->
+            <div class="module add-people">
+              <!-- Title -->
+              <div class="modal-header" style="text-align:center; border-bottom:none;">
+                <legend style="margin-bottom: 0px;"><b>Add New People</b></legend>
+              </div>
+              <!-- Title -->
+
+
+              <div class="model-body" style="padding-top:0px;">
+
+
+
+                <!-- Tab panes -->
+                <div class="tab-content" style="float:left; width:100%;margin-top: 15px;">
+                  <div role="tabpanel" class="tab-pane active" id="home">
+                    <div class="container">
+
+                      <!-- Summary -->
+                      <fieldset class='alpha'>
+
+
+                        <div class='list'>
+                          <h5>Assigning</h5>
+                          <textarea name="description" class="input-xxlarge add-token" rows="3"></textarea>
+                        </div>
+
+
+
+                      </fieldset>
+
+
+
+
+                    </div>
+                  </div>
+                  <!-- Summary -->
+
+
+
+                  <!-- Buttons -->
+                  <div class='setting-button modal-footer'>
+
+                    <button type="button" class="btn btn-danger" style="float:left;" onclick="submit('Deleted', 'danger');">Delete</button>
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-file" style="margin-bottom: 5px;margin-left: 1px;"></span></button>
+                      <ul class="dropdown-menu">
+                        <li><a href="#" id="csv-download">Download CSV</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <button type="button" class="btn btn-primary" onclick="submit('Submission was a success!', 'success');">Submit Changes</button>
+                  </div>
+                  <!-- Buttons -->
+
+                </div>
+                <!-- Tap panes -->
+
+
+
+
+
+
+              </div>
             </div>
-            <!-- Title -->
+            <!-- End Add People -->
+            <!-- Specific Group -->
+            <div class="module assign-group">
+
+              <!-- Title -->
+              <div class="modal-header" style="text-align:center; border-bottom:none;">
+                <legend><b>DSS IT Kerr 168</b></legend>
+              </div>
+              <!-- Title -->
 
 
-            <div class="model-body" style="padding-top:0px;">
+              <div class="model-body" style="padding-top:0px;">
+                <!-- memeber count -->
+                <span id="group-member">
+                  <span id="group-member-count">5</span><br>members
+                </span>
+                <!-- memeber count -->
+
+                <!-- Nav tabs -->
+                <ul class="nav nav-tabs" role="tablist" style="float:left;width:100%;">
+                  <li role="presentation" class="active"><a href="#group-home" aria-controls="home" role="tab" data-toggle="tab">Summary</a></li>
+                  <li role="presentation"><a href="#group-profile" aria-controls="profile" role="tab" data-toggle="tab">Relations</a></li>
+                  <li role="presentation"><a href="#group-roles" aria-controls="roles" role="tab" data-toggle="tab">Rules</a></li>
+                  <li role="presentation"><a href="#group-log" aria-controls="log" role="tab" data-toggle="tab">Log</a></li>
+                </ul>
+                <!-- Nav tabs -->
+
+
+                <!-- Tab panes -->
+                <div class="tab-content" style="float:left; width:100%;margin-top: 15px;">
+                  <div role="tabpanel" class="tab-pane active" id="group-home" style="overflow:auto;">
+                    <div class="container">
+
+                      <!-- Summary -->
+                      <fieldset class='alpha'>
+
+
+                        <div class='list'>
+                          <h5>Name</h5>
+                          <input class='item' placeholder='Username' type='text'>
+                        </div>
+                        <div class='list'>
+                          <h5>Description</h5>
+                          <textarea name="description" class="input-xxlarge" rows="3"></textarea>
+                        </div>
+
+
+                      </fieldset>
 
 
 
-              <!-- Tab panes -->
-              <div class="tab-content" style="float:left; width:100%;margin-top: 15px;">
-                <div role="tabpanel" class="tab-pane active" id="home">
-                  <div class="container">
 
-                    <!-- Summary -->
-                    <fieldset class='alpha'>
+                    </div>
+                  </div>
+                  <!-- Summary -->
+
+                  <!-- Relations -->
+                  <div role="tabpanel" class="tab-pane" id="group-profile">
+                    <div role="tabpanel" class="tab-pane active" id="home" style="overflow:auto;">
+                      <div class="container">
+
+                        <!-- / Fieldset Alpha -->
+                        <fieldset class="alpha">
 
 
-                      <div class='list'>
-                        <h5>Assigning</h5>
-                        <textarea name="description" class="input-xxlarge add-token" rows="3"></textarea>
+                          <div class="list">
+                            <h5>Owners</h5>
+                            <input class="item" placeholder="Username" type="text">
+                          </div>
+                          <div class="list">
+                            <h5>Operators</h5>
+                            <input class="item" placeholder="Username" type="text">
+                          </div>
+                          <div class="list">
+                            <h5>Members</h5>
+                            <input class="item" placeholder="Username" type="text">
+                          </div>
+
+
+                        </fieldset>
+
+
+
+
                       </div>
-
-
-
-                    </fieldset>
-
-
-
-
+                    </div>
                   </div>
-                </div>
-                <!-- Summary -->
+                  <!-- Relation -->
 
-
-
-                <!-- Buttons -->
-                <div class='setting-button modal-footer'>
-
-                  <button type="button" class="btn btn-danger" style="float:left;" onclick="submit('Deleted', 'danger');">Delete</button>
-                  <div class="btn-group">
-                    <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-file" style="margin-bottom: 5px;margin-left: 1px;"></span></button>
-                    <ul class="dropdown-menu">
-                      <li><a href="#" id="csv-download">Download CSV</a>
-                      </li>
-                    </ul>
+                  <!-- Rules -->
+                  <div role="tabpanel" class="tab-pane" id="group-roles" style="overflow:auto;">
+                    <div class="container">
+                      <table id="rules" style="margin-top: 20px;">
+                        <thead>
+                          <tr>
+                            <th style="padding-bottom:5px;" class="medium">Column</th>
+                            <th style="padding-bottom:5px;" class="mini">Condition</th>
+                            <th style="padding-bottom:5px;" class="large">Value</th>
+                            <th>
+                              <!-- Actions -->
+                            </th>
+                          </tr>
+                        </thead>
+                        <tbody style="display: table-row-group;">
+                          <tr class="fields">
+                            <td>
+                              <select id="column" class="medium" style="    margin-right: 5px;">
+                                <option value="department">Department</option>
+                                <option value="organization">Organization</option>
+                                <option value="loginid">Login ID</option>
+                                <option value="title">Title</option>
+                                <option value="major">Major</option>
+                                <option value="affiliation">Affiliation</option>
+                              </select>
+                            </td>
+                            <td style="text-align: center;">
+                              <select id="condition" class="mini">
+                                <option value="is">is</option>
+                                <option value="is not">is not</option>
+                              </select>
+                            </td>
+                            <td>
+                              <input id="value" size="15" value="" class="large" autocomplete="off" type="text" style="margin:5px 5px;">
+                            </td>
+                            <td  style="padding-left: 10px;">
+                              <button class="btn btn-danger" id="remove_group_rule" type="button">Remove</button>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <p style="margin-left: 140px; margin-top: 20px;">
+                        <button style="padding-bottom: 0px; padding-top: 0px;" class="btn btn-default" id="remove_group_rule" type="button">Add Rule</button>
+                      </p>
+                    </div>
                   </div>
-                  <button type="button" class="btn btn-primary" onclick="submit('Submission was a success!', 'success');">Submit Changes</button>
+                  <!-- Rules -->
+
+                  <!--Log-->
+                  <div role="tabpanel" class="tab-pane" id="group-log" style="overflow:auto;">
+                    <div class="container" style="padding: 0px 0px;">
+
+
+                      <div class="container">
+                        <h5 style="margin-top: 20px;">Log Information</h5>
+                        <p></p>
+                        <table class="table table-hover" style="font-size:10pt; ">
+                          <thead>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>1 day ago</td>
+                              <td>Added</td>
+                              <td>Peter Hurrison</td>
+                            </tr>
+
+                            <tr>
+                              <td>2 days ago</td>
+                              <td>Added</td>
+                              <td>Jerry Kim</td>
+                            </tr>
+                            <tr>
+                              <td>15 days ago</td>
+                              <td>Created</td>
+                              <td>DSS IT Ker 168</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                        <div class="center">
+                          <ul class="pagination pagination-sm">
+                            <li class="disabled"><a href="#">&laquo;</a></li>
+                            <li class="active"><a href="#">1</a></li>
+                            <li><a href="#">&raquo;</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+
+                  <!-- Buttons -->
+                  <div class='setting-button modal-footer'>
+
+                    <button type="button" class="btn btn-danger" style="float:left;">Delete</button>
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-file" style="margin-bottom: 5px;margin-left: 1px;"></span></button>
+                      <ul class="dropdown-menu">
+                        <li><a href="#" id="csv-download">Download CSV</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <button type="button" class="btn btn-primary">Submit Changes</button>
+                  </div>
+                  <!-- Buttons -->
+
                 </div>
-                <!-- Buttons -->
+                <!-- Tap panes -->
+
+
+
+
+
 
               </div>
-              <!-- Tap panes -->
-
-
-
-
-
-
             </div>
-          </div>
-          <!--form-->
-        </section>
-      </div>
-    </div>
-    <!--#right control panel-->
-  </div>
-</div>
+            <!-- End Specific Group-->
+            <!-- Specific Person -->
+            <div class="module assign-person">
 
-<!--Shang, I commented this out    </div>-->
+              <!-- Title -->
+              <div class="modal-header" style="text-align:center; border-bottom:none;">
+                <legend><b>Andrew Kim</b></legend>
+              </div>
+              <!-- Title -->
+
+
+              <div class="model-body">
+
+                <!-- Nav tabs -->
+                <ul class="nav nav-tabs" role="tablist" style="float:left;width:100%;">
+                  <li role="presentation" class="active"><a href="#person-home" aria-controls="home" role="tab" data-toggle="tab">Summary</a></li>
+                  <li role="presentation"><a href="#person-roles" aria-controls="roles" role="tab" data-toggle="tab">Relations</a></li>
+                  <li role="presentation"><a href="#person-active-directory" aria-controls="messages" role="tab" data-toggle="tab">Roles</a></li>
+                  <li role="presentation"><a href="#person-log" aria-controls="log" role="tab" data-toggle="tab">Log</a></li>
+                </ul>
+                <!-- Nav tabs -->
+
+
+                <!-- Tab panes -->
+                <div class="tab-content" style="float:left; width:100%;margin-top: 15px;">
+                  <div role="tabpanel" class="tab-pane active" id="person-home" style="overflow:auto;">
+                    <div class="container">
+
+                      <!-- Summary -->
+                      <fieldset class='alpha'>
+
+
+                        <div class='list' style="display:inline-block;">
+                          <h5>First</h5>
+                          <input class='item input-medium' type='text' value="Andrew">
+                        </div>
+                        <div class='list' style="display:inline-block;">
+                          <h5>Last</h5>
+                          <input class='item input-medium' type='text' value="Kim">
+                        </div>
+                        <div class="list" style="display:inline-block;">
+                          <h5>Login ID</h5>
+                          <input class='item input-medium' type='text' value="Andrewk2">
+                        </div>
+                        <div class="list" style="display:inline-block;">
+                          <h5>E-mail</h5>
+                          <input class='item input-medium' type='text' value="andrewk2@ucdavis.edu">
+                        </div>
+                        <div class="list" style="display:inline-block;">
+                          <h5>Phone</h5>
+                          <input class='item input-medium-small' type='text' value="626-345-1937">
+                        </div>
+                        <div class="list" style="display:inline-block;">
+                          <h5>Address</h5>
+                          <input class='item input-large' type='text' style=";">
+                        </div>
+
+
+                      </fieldset>
+
+
+
+
+                    </div>
+                  </div>
+                  <!-- Summary -->
+
+                  <!-- Relations -->
+                  <div role="tabpanel" class="tab-pane" id="person-roles">
+                    <div role="tabpanel" class="tab-pane active" id="home" style="overflow:auto;">
+                      <div class="container" style="padding: 0px 0px;">
+
+                        <!-- / Fieldset Alpha -->
+                        <fieldset class="alpha">
+
+
+                          <div class="list">
+                            <h5>Group Ownerships</h5>
+                            <input class="item" type="text">
+                          </div>
+                          <div class="list">
+                            <h5>Group Operatorships</h5>
+                            <input class="item" type="text">
+                          </div>
+                          <div class="list">
+                            <h5>Group Memberships</h5>
+                            <input class="item" type="text">
+                          </div>
+                          <div class="list">
+                            <h5>Organizational Units</h5>
+                            <input class="item" type="text">
+                          </div>
+
+
+
+
+                        </fieldset>
+
+
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Active Directory -->
+
+                  <!-- Rules -->
+                  <div role="tabpanel" class="tab-pane" id="person-active-directory" style="overflow:auto;">
+                    <div class="container" style="padding: 0px 0px;">
+                      <fieldset class="alpha">
+
+
+                        <div class="list">
+                          <h5>Admin</h5>
+                          <input class="item" type="text">
+                        </div>
+
+                        <div class="list">
+                          <h5>Contact list</h5>
+                          <input class="item" type="text">
+                        </div>
+                        <div class="list" style="text-align:center; margin-top:25px;margin-bottom:25px;">
+                          <i class="fa fa-search"></i>
+                          <input class="input-large" placeholder="Add Application..." type="text" style="text-indent:25px">
+
+
+                        </div>
+
+                      </fieldset>
+                    </div>
+                  </div>
+                  <!-- Rules -->
+
+
+                  <!--Log-->
+                  <div role="tabpanel" class="tab-pane" id="person-log" style="overflow:auto;">
+                    <div class="container" style="padding: 0px 0px;">
+
+                      <div class="container">
+                        <h5 style="margin-top: 20px;">Log Information</h5>
+                        <p></p>
+                        <table class="table table-hover" style="font-size:10pt; ">
+                          <thead>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>2 days ago</td>
+                              <td>Added to</td>
+                              <td>Contact List</td>
+                            </tr>
+                            <tr>
+                              <td>15 days ago</td>
+                              <td>Added to</td>
+                              <td>Admin</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                        <div class="center">
+                          <ul class="pagination pagination-sm">
+                            <li class="disabled"><a href="#">&laquo;</a></li>
+                            <li class="active"><a href="#">1</a></li>
+                            <li><a href="#">&raquo;</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+
+
+                  <!-- Buttons -->
+                  <div class='setting-button modal-footer'>
+
+                    <button type="button" class="btn btn-danger" style="float:left;">Delete</button>
+                    <div class="btn-group" role="group" aria-label="..." style="margin-right: 26px;">
+                      <button type="button" class="btn btn-default active">Active</button>
+                      <button type="button" class="btn btn-default">Inactive</button>
+                    </div>
+                    <button type="button" class="btn btn-primary">Submit Changes</button>
+                  </div>
+                  <!-- Buttons -->
+
+                </div>
+                <!-- Tap panes -->
+
+
+
+
+
+
+              </div>
+            </div>
+            <!-- End Specific Person -->
+          </section>
+        </div>
+      </div>
+      <!--#right control panel-->
+    </div>
+  </div>
+
+  <!--Shang, I commented this out    </div>-->
 </div>
 
 </body>

@@ -215,6 +215,7 @@ body {
   margin-top: 15px;
   border-radius: 5px;
   overflow-y: auto; }
+  .assigned-section #application ul li:hover {box-shadow: 0px 0px 9px 1px rgba(84,166,242,1);}
 .assigned-section #application ul .group-tab {
   background: none;
   overflow-x: visible;

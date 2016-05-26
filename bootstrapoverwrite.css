@@ -165,6 +165,9 @@ table {
     .glyphicon {
         top: 3px;
     }
+    
+    .panel {box-shadow: 0 1px 1px white;}
+    
     /*==================== Webkit =================*/
 
     .noselect a {

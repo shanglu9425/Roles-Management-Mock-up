@@ -213,8 +213,7 @@ body {
   padding-left: 12px;
   border-bottom: 1px solid #f2f2f2;
   margin-top: 15px;
-  border-radius: 5px;
-  overflow-y: auto; }
+  border-radius: 5px;}
   .assigned-section #application ul li:hover {box-shadow: 0px 0px 9px 1px rgba(84,166,242,1);}
 .assigned-section #application ul .group-tab {
   background: none;
@@ -232,7 +231,6 @@ body {
     padding-top: 2px;
     margin-top: 15px;
     border-radius: 5px;
-    overflow-y: auto;
     border: 1px solid #d9d9d9;
     padding-bottom: 2px;
     padding-left: 12px; }
@@ -246,7 +244,6 @@ body {
       padding-top: 2px;
       border-bottom: 1px solid #f2f2f2;
       border-radius: 5px;
-      overflow-y: auto;
       margin-top: 15px;
       width: 180px;
       padding: 0px;

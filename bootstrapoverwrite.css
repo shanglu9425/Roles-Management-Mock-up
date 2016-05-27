@@ -168,6 +168,7 @@ table {
         top: 3px;
     }
     
+    .panel {box-shadow:none;}
     
     /*===================== js-css ==================*/
     .ui-menu .ui-menu-item {background-color: white;}

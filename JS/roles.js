@@ -11,7 +11,6 @@
   */
 
 function openRoles(e, app) {
-  console.log(app);
   addAutoComplete('.add-autocomplete-role', app +' a')
   // Open Roles and change the background color
   openNavigationPanel('.roles');
@@ -191,8 +190,23 @@ function toggleControlPanel(e) {
     source: data,
     autoFocus: true,
     minLength: 2,
-    delay: 100
+    delay: 100,
+    select: function(e, ui) {
+      openSelected(e, ui)
+    }
   });
+ }
+
+ function openSelected(e, ui) {
+   // Click the element
+   var elements = $('a');
+   var target = ui.item.label;
+
+   for (var i = 0; i < elements.length; i++) {
+     if(elements[i].innerHTML.indexOf(target) != -1) {
+       elements[i].click();
+     }
+   }
  }
 
  $(function(mock_values) {
@@ -216,6 +230,16 @@ function toggleControlPanel(e) {
    addAutoComplete('.add-autocomplete-app','#app-nav-panel a');
 
    // Add this class to an input to have auto-complete features only
+   $('.add-autocomplete-people').autocomplete({
+     source: mock_values,
+     autoFocus: true,
+     minLength: 2,
+     delay: 100,
+     select: function(e, ui) {
+       openSelected(e, ui)
+     }
+   });
+
    $('.add-autocomplete').autocomplete({
      source: mock_values,
      autoFocus: true,

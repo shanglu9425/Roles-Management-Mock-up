@@ -410,7 +410,7 @@
                 <li class="group-tab">
                   <div style="width: 200px;" class="panel-group" id="accordion">
                     <div style="border: medium none;" class="panel panel-default">
-                      <div class="panel-heading panel-style">
+                      <div class="panel-heading panel-style" style="margin-top: 0px;">
                         <div style="font-size: 10pt;" class="panel-title">
                           <a class="assign-block" aria-expanded="true" data-toggle="collapse" data-parent="#accordion" href="#collapse1" onclick="openGroup(this)">DSS IT Kerr 168<span class="glyphicon glyphicon-triangle-bottom"></span></a>
                         </div>
@@ -460,6 +460,21 @@
                         </div>
                       </div>
                     </div>
+                    <div style="border: medium none;" class="panel panel-default">
+
+                      <div class="panel-heading panel-style">
+                        <div style="font-size:10pt;" class="panel-title">
+                          <a style="font-size: 10pt;" aria-expanded="false" class="assign-block collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse4" onclick="openGroup(this);">Admin Support<span class="glyphicon glyphicon-triangle-bottom"></span></a>
+                        </div>
+                      </div>
+                      <div style="height: 0px;" aria-expanded="false" id="collapse4" class="panel-collapse collapse">
+                        <div aria-expanded="true" id="collapse4" class="panel-collapse collapse in">
+                          <div class="panel-body group-member">
+                            <a href="#" class="assign-block" onclick="openControlPanel('.assign-person', this.innerHTML)">Hanna Choi</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </li>
                 <li class="name" tabindex="1"><a class="assign-block" href="#" onclick="openControlPanel('.assign-person', this.innerHTML)">Tom Lee</a></li>
@@ -477,7 +492,7 @@
 
               <ul id="name-list" class="assignData empty">
                 <li style="background: transparent none repeat scroll 0% 0%; padding-left: 0px;">
-                  <button style="width: 100%; margin-top: 30px;" type="button" onclick="openControlPanel('.add-people', 'Add A Person')" class="btn btn-primary selected-none">Add A Person</button>
+                  <button style="width: 200px; margin-top: 38px;" type="button" onclick="openControlPanel('.add-people', 'Add A Person')" class="btn btn-primary selected-none">Add A Person</button>
                 </li>
               </ul>
 
@@ -504,13 +519,13 @@
                     <p> Please read the instruction below before using <b>Roles Management</b></p>
 
                     <br>
-                    <ol>
+                    <ol class="introduction">
                       <li>Select an <b>application</b> to start. If you have not yet create an application, please click
                         <b>"Add An Application"</b> to continue.</p>
                       </li>
                       <br>
                       <br>
-                      <li>Once you selected an application, the panels on the left will expand and become your <b>application-panel</b>, <b>role-panel</b>, <b>and assigned-panel</b>. The right panel is your control panel that allows you to make any changes to your applcations, roles, and assign people.
+                      <li>Once you selected an application, the left panels will expand to become your <b>application-panel</b>, <b>role-panel</b>, <b>and assigned-panel</b>. The right panel is your control panel that allows you to make any changes to your applcations, roles, and assign people.
                       </li>
                       <br>
                       <br>

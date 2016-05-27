@@ -91,6 +91,15 @@
     .input-medium-small {
         width: 120px!important;
     }
+    
+    /*========= link =========*/
+    a,
+    a:active, a:hover,
+    a:focus {
+       color: black;
+        outline: none;
+        text-decoration: none;
+    }
     /*================== MISC==================*/
 
 table {
@@ -137,15 +146,6 @@ table {
 
     a {
         color: black;
-    }
-
-
-    a,
-    a:active, a:hover,
-    a:focus {
-       color: black;
-        outline: none;
-        text-decoration: none;
     }
 
     .application-section #sub-name-list li {

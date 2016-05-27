@@ -135,20 +135,24 @@ function openControlPanel(module, value) {
 
 function toggleControlPanel(e) {
   $('.control-panel').toggle();
-  if($('.control-panel').is(':visible')) {
+  if($('.control-panel').is(':visible')) { // Closing
     $(e).removeClass('fa-chevron-left');
     $(e).addClass('fa-chevron-right');
     $('#float-box').css("left", "58%");
     $('ul#name-list').css("-webkit-column-count","1");
     $('ul#name-list').css("-moz-column-count","1");
     $('ul#name-list').css("column-count","1");
-  } else {
+    // Move X
+    $('.close-icon').css("left", "38%");
+  } else { // Opening
     $(e).removeClass('fa-chevron-right');
     $(e).addClass('fa-chevron-left');
     $('#float-box').css("left", "97.3%");
     $('ul#name-list').css("-webkit-column-count","3");
     $('ul#name-list').css("-moz-column-count","3");
     $('ul#name-list').css("column-count","3");
+    // Move X
+    $('.close-icon').css("left", "78%");
   }
 
   resizeNavigationPanels();

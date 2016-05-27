@@ -146,7 +146,7 @@
           <div class="rule-section">
             <div class="search-role" type="text">
               <i class="fa fa-search search-icon"></i>
-              <a class="close" onclick="closeNavigationPanel('.roles')"><i class="fa fa-times close-icon" aria-hidden="true"></i></a>
+              <a class="close" onclick="closeNavigationPanel('.roles')"><i id="button-close-role" class="fa fa-times close-icon" aria-hidden="true"></i></a>
               <input placeholder=" Filter Roles" type="text" class="add-autocomplete-role">
             </div>
             <section id="application" class="roleData anthro">
@@ -355,7 +355,7 @@
           <div class="assigned-section">
             <div class="search-assigned" type="text">
               <i class="fa fa-search search-icon"></i>
-              <a class="close" onclick="closeNavigationPanel('.assign')"><i class="fa fa-times close-icon" aria-hidden="true"></i></a>
+              <a class="close" onclick="closeNavigationPanel('.assign')"><i id="button-close-assign" class="fa fa-times close-icon" aria-hidden="true"></i></a>
               <input placeholder=" Filter People " type="text" class="add-autocomplete-people">
             </div>
 
@@ -474,7 +474,7 @@
         <div class="control-panel">
           <section class='container sec' style="margin-top: 25px;">
             <!-- Start Introduction -->
-            <div class="module intro">
+            <div id="introduction" class="module">
               <div class="modal-header" style="text-align:center; border-bottom:none;">
                 <legend><b>Welcome to Roles Management</b></legend>
               </div>

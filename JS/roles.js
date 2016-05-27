@@ -3,7 +3,7 @@
  */
 
  $(document).ready(function() {
-   $('.module.intro').addClass('show');
+   $('#introduction').addClass('show');
  });
 
  /*
@@ -143,8 +143,10 @@ function toggleControlPanel(e) {
     $('ul#name-list').css("-webkit-column-count","1");
     $('ul#name-list').css("-moz-column-count","1");
     $('ul#name-list').css("column-count","1");
+
     // Move X
-    $('.close-icon').css("left", "38%");
+    $('#button-close-role').css("left", "38%");
+    $('#button-close-assign').css("left", "18%");
   } else { // Opening
     $(e).removeClass('fa-chevron-right');
     $(e).addClass('fa-chevron-left');
@@ -153,7 +155,8 @@ function toggleControlPanel(e) {
     $('ul#name-list').css("-moz-column-count","3");
     $('ul#name-list').css("column-count","3");
     // Move X
-    $('.close-icon').css("left", "78%");
+    $('#button-close-role').css("left", "78%");
+    $('#button-close-assign').css("left", "58%");
   }
 
   resizeNavigationPanels();

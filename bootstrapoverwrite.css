@@ -136,14 +136,14 @@ table {
     }
 
     a {
-        color: #0088CC;
+        color: black;
     }
-    a:hover {color:none;}
+
 
     a,
     a:active, a:hover,
     a:focus {
-       color: #0088CC;
+       color: black;
         outline: none;
         text-decoration: none;
     }

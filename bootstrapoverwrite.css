@@ -168,6 +168,10 @@ table {
         top: 3px;
     }
     
+    
+    /*===================== js-css ==================*/
+    .ui-menu .ui-menu-item {background-color: white;}
+    .ui-state-focus {color:black!important; background:white!important; border: 1px solid lightgray!important;}
    
     
     /*==================== Webkit =================*/

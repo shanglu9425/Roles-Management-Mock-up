@@ -136,12 +136,14 @@ table {
     }
 
     a {
-        color: #173C68;
+        color: #0088CC;
     }
+    a:hover {color:none;}
 
     a,
     a:active, a:hover,
     a:focus {
+       color: #0088CC;
         outline: none;
         text-decoration: none;
     }
@@ -166,7 +168,7 @@ table {
         top: 3px;
     }
     
-    .panel {box-shadow: 0 1px 1px white;}
+   
     
     /*==================== Webkit =================*/
 

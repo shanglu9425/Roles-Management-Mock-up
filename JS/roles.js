@@ -11,7 +11,6 @@
   */
 
 function openRoles(e, app) {
-  console.log(app);
   addAutoComplete('.add-autocomplete-role', app +' a')
   // Open Roles and change the background color
   openNavigationPanel('.roles');
@@ -45,7 +44,8 @@ function openAssignment(e, application, assigned) {
 }
 
 function openGroup(e) {
-  openControlPanel('.assign-group', e.innerHTML);
+  var text = e.innerHTML.substring(0, e.innerHTML.indexOf("<"));
+  openControlPanel('.assign-group', text);
   var members = $(e.getAttribute('href') + " .panel-body").length;
   $('#group-member-count').text(members);
 }
@@ -136,20 +136,24 @@ function openControlPanel(module, value) {
 
 function toggleControlPanel(e) {
   $('.control-panel').toggle();
-  if($('.control-panel').is(':visible')) {
+  if($('.control-panel').is(':visible')) { // Closing
     $(e).removeClass('fa-chevron-left');
     $(e).addClass('fa-chevron-right');
     $('#float-box').css("left", "58%");
     $('ul#name-list').css("-webkit-column-count","1");
     $('ul#name-list').css("-moz-column-count","1");
     $('ul#name-list').css("column-count","1");
-  } else {
+    // Move X
+    $('.close-icon').css("left", "38%");
+  } else { // Opening
     $(e).removeClass('fa-chevron-right');
     $(e).addClass('fa-chevron-left');
     $('#float-box').css("left", "97.3%");
     $('ul#name-list').css("-webkit-column-count","3");
     $('ul#name-list').css("-moz-column-count","3");
     $('ul#name-list').css("column-count","3");
+    // Move X
+    $('.close-icon').css("left", "78%");
   }
 
   resizeNavigationPanels();
@@ -191,8 +195,23 @@ function toggleControlPanel(e) {
     source: data,
     autoFocus: true,
     minLength: 2,
-    delay: 100
+    delay: 100,
+    select: function(e, ui) {
+      openSelected(e, ui)
+    }
   });
+ }
+
+ function openSelected(e, ui) {
+   // Click the element
+   var elements = $('a');
+   var target = ui.item.label;
+
+   for (var i = 0; i < elements.length; i++) {
+     if(elements[i].innerHTML.indexOf(target) != -1) {
+       elements[i].click();
+     }
+   }
  }
 
  $(function(mock_values) {
@@ -216,6 +235,16 @@ function toggleControlPanel(e) {
    addAutoComplete('.add-autocomplete-app','#app-nav-panel a');
 
    // Add this class to an input to have auto-complete features only
+   $('.add-autocomplete-people').autocomplete({
+     source: mock_values,
+     autoFocus: true,
+     minLength: 2,
+     delay: 100,
+     select: function(e, ui) {
+       openSelected(e, ui)
+     }
+   });
+
    $('.add-autocomplete').autocomplete({
      source: mock_values,
      autoFocus: true,

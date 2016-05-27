@@ -44,7 +44,8 @@ function openAssignment(e, application, assigned) {
 }
 
 function openGroup(e) {
-  openControlPanel('.assign-group', e.innerHTML);
+  var text = e.innerHTML.substring(0, e.innerHTML.indexOf("<"));
+  openControlPanel('.assign-group', text);
   var members = $(e.getAttribute('href') + " .panel-body").length;
   $('#group-member-count').text(members);
 }

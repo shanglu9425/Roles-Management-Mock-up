@@ -51,6 +51,7 @@ a:focus {
     float: left;
     font-size: 15px;
     overflow-y: hidden;
+    overflow-x: hidden!important;
 }
 
 .application-section:hover {
@@ -111,10 +112,12 @@ a:focus {
     font-size: 15px;
     width: 100%;
     overflow-y: hidden;
+    overflow-x: hidden!important;
 }
 
 .rule-section:hover {
     overflow-y: auto;
+    overflow-x: hidden;
 }
 
 .rule-section #sub-name-list {
@@ -163,7 +166,7 @@ a:focus {
     width: 100%;
     float: left;
     overflow-y: hidden;
-
+    overflow-x: hidden!important;
 }
 .assigned-section:hover {
     overflow-y: auto;

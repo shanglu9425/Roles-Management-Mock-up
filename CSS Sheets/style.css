@@ -812,39 +812,39 @@ body ul {
 }
 
 .rule-section .role-lists {
-    padding: 0px;
-    margin-top: 90px;
+  padding: 0px;
+  margin-top: 90px;
 }
 
 .rule-section .role-group .role-lists li {
-    margin-top: 20px;
-    font-size: 10pt;
-    color: #173C68
+  margin-top: 20px;
+  font-size: 10pt;
+  color: #173C68
 }
 
 .rule-section .role-lists li a {
-    display: block;
-    padding: 5px 30px;
-    padding-right: 25px;
-    text-decoration: none;
+  display: block;
+  padding: 5px 30px;
+  padding-right: 25px;
+  text-decoration: none;
 }
 
 .rule-section .role-group .role-lists li a:focus,
 .rule-section .role-group .role-lists li a:hover {
-    color: white;
-    background-color: #FAC369;
+  color: white;
+  background-color: #FAC369;
 }
 
 .rule-section .role-group {
-    position: relative;
-    top: 20px;
+  position: relative;
+  top: 20px;
 }
 
 .rule-section .role-group h4 {
-    color: #A5A5A5;
-    padding-left: 20px;
-    margin-top: 30px;
-    padding-left: 30px;
+  color: #A5A5A5;
+  padding-left: 20px;
+  margin-top: 30px;
+  padding-left: 30px;
 }
 
 .rule-section .role-group li button {
@@ -885,16 +885,27 @@ body ul {
     overflow-x: hidden!important;
 }
 
+.collapse-margin-bottom {
+    margin-bottom: 15px;
+}
+
+.group-style {
+    width: 200px;
+    padding-top: 0px;
+    margin-top: 0px;
+    border-top-width: 0px;
+    background-color: rgb(247, 249, 250);}
+
 .assigned-section:hover {
     overflow-y: auto;
 }
 
 .assigned-section .search-assigned:hover .close-icon {
-  position: absolute;
-  left: 18%;
-  font-size: 20px;
-  bottom: 17px;
-  display: block;
+    position: absolute;
+    left: 18%;
+    font-size: 20px;
+    bottom: 17px;
+    display: block;
 }
 
 .assigned-section .search-assigned {

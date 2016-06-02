@@ -13,6 +13,9 @@ table {
   font-size: 10pt !important;
 }
 
+#row-margin-top {
+  margin-top:50px;
+  }
 /*================== Navigation ==================*/
 .selected {
   background-color: #FAC369;
@@ -34,6 +37,8 @@ table {
   width: 100%;
   z-index: 2013;
 }
+
+.navbar-padding-right {padding-right: 8px;}
 
 .navbar-default .navbar-nav li a {
   color: white;
@@ -71,6 +76,14 @@ navbar-default .navbar-nav > .open > a:active {
 .navbar-default .navbar-nav .dropdown-menu li a {
   color: #263E5B;
   cursor: pointer;
+}
+
+.title {position: fixed;}
+
+#title-shadow-none {box-shadow: none;}
+
+#title-shadow {
+  box-shadow: -1px 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 .btn-primary {
@@ -183,6 +196,16 @@ input {
 }
 
 /*================== MISC==================*/
+.drop-down-button {
+padding-left: 6px;
+color: white;
+font-size: 11px;}
+
+.modal-header{
+text-align: center; 
+border-bottom: medium none; 
+}
+
 .modal-footer {
   border-top: none;
 }
@@ -208,7 +231,7 @@ input {
   z-index: 3000;
 }
 
-.assigned-section #application ul li {
+.assigned-section .role-group ul li {
   font-size: 10pt;
 }
 
@@ -603,6 +626,10 @@ body ul {
   width: 100%;
 }
 
+#application-margin-top {
+  margin-top: 90px;
+  }
+
 .application-section .search-application .search-icon {
   position: absolute;
   left: 40px;
@@ -627,21 +654,21 @@ body ul {
   width: 15%;
 }
 
-.application-section #sub-name-list {
+.application-section .role-lists {
   padding: 0px;
   margin-top: 0px;
 }
 
-.application-section #sub-name-list li {
+.application-section .role-lists li {
   font-size: 10pt;
 }
 
-.application-section #sub-name-list li {
+.application-section .role-lists li {
   margin-top: 20px;
   font-size: inherit;
 }
 
-.application-section #sub-name-list li a {
+.application-section .role-lists li a {
   color: white;
   display: block;
   padding: 5px 30px;
@@ -649,55 +676,55 @@ body ul {
   text-decoration: none;
 }
 
-.application-section #sub-name-list li a:focus,
-.application-section #sub-name-list li a:hover {
+.application-section .role-lists li a:focus,
+.application-section .role-lists li a:hover {
   color: white;
   background-color: #FAC369;
 }
-.application-section #sub-name-list #hover-none a:hover {
+.application-section .role-lists #hover-none a:hover {
   color: none;
   background:none;
 }
 
-.application-section #application {
+.application-section .role-group {
   position: relative;
 
 }
 
-.application-section #application h4 {
+.application-section .role-group h4 {
   color: #A5A5A5;
   padding-left: 20px;
   margin-top: 30px;
   padding-left: 30px;
 }
 
-.application-section #application ul {
+.application-section .role-group ul {
   list-style: none;
 }
 
-.application-section #application li {
+.application-section .role-group li {
   padding-right: 0px;
   color: white;
 }
 
-.application-section #application li button {
+.application-section .role-group li button {
   margin: 30px;
   width: 200px;
 }
 
-.application-section #application li button:focus {
+.application-section .role-group li button:focus {
   outline: none;
 }
 
-.application-section #application li button:active {
+.application-section .role-group li button:active {
   background: none;
 }
 
-.application-section #application a {
+.application-section .role-group a {
   text-decoration: none;
 }
 
-.application-section #application a p {
+.application-section .role-group a p {
   background-color: #3e6894;
   color: white;
   text-align: center;
@@ -707,11 +734,11 @@ body ul {
   width: 100%;
 }
 
-.application-section #application a:focus {
+.application-section .role-group a:focus {
   outline: none;
 }
 
-.application-section #application a:hover p {
+.application-section .role-group a:hover p {
   background-color: none;
 }
 
@@ -780,56 +807,56 @@ body ul {
   width: 200px;
 }
 
-.rule-section #application #sub-name-list li {
+.rule-section .role-group .role-lists li {
   font-size: 10pt;
 }
 
-.rule-section #sub-name-list {
+.rule-section .role-lists {
     padding: 0px;
     margin-top: 90px;
 }
 
-.rule-section #application #sub-name-list li {
+.rule-section .role-group .role-lists li {
     margin-top: 20px;
     font-size: 10pt;
     color: #173C68
 }
 
-.rule-section #sub-name-list li a {
+.rule-section .role-lists li a {
     display: block;
     padding: 5px 30px;
     padding-right: 25px;
     text-decoration: none;
 }
 
-.rule-section #application #sub-name-list li a:focus,
-.rule-section #application #sub-name-list li a:hover {
+.rule-section .role-group .role-lists li a:focus,
+.rule-section .role-group .role-lists li a:hover {
     color: white;
     background-color: #FAC369;
 }
 
-.rule-section #application {
+.rule-section .role-group {
     position: relative;
     top: 20px;
 }
 
-.rule-section #application h4 {
+.rule-section .role-group h4 {
     color: #A5A5A5;
     padding-left: 20px;
     margin-top: 30px;
     padding-left: 30px;
 }
 
-.rule-section #application li button {
+.rule-section .role-group li button {
   margin: 30px;
   width: 200px;
 }
 
-.rule-section #application li a {
+.rule-section .role-group li a {
   text-decoration: none;
 }
 
-.rule-section #application li a p {
+.rule-section .role-group li a p {
   background-color: #3e6894;
   color: white;
   text-align: center;
@@ -839,11 +866,11 @@ body ul {
   width: 100%;
 }
 
-.rule-section #application li a:focus {
+.rule-section .role-group li a:focus {
   outline: none;
 }
 
-.rule-section #application li a:hover p {
+.rule-section .role-group li a:hover p {
   background-color: #FAC369;
 }
 
@@ -905,22 +932,22 @@ body ul {
   width: 200px;
 }
 
-.assigned-section #application h4 {
+.assigned-section .role-group h4 {
     color: #A5A5A5;
     padding-left: 20px;
     margin-top: 30px;
     padding-left: 30px;
 }
 
-.assigned-section #application #name-list {
+.assigned-section .role-group #name-list {
     margin-left: 40px;
     padding-left: 0px;
     margin-top: 110px;
 }
 
-.assigned-section #application ul li button {margin-top: 30px; width: 200px;}
+.assigned-section .role-group ul li button {margin-top: 30px; width: 200px;}
 
-.assigned-section #application ul .name a{width: 200px;
+.assigned-section .role-group ul .name a{width: 200px;
   color: #0088CC;
   background-color: #D9EDF7;
   padding-top: 2px;
@@ -931,28 +958,28 @@ body ul {
   border-radius: 5px;
 }
 
-.assigned-section #application ul .name a:focus {
+.assigned-section .role-group ul .name a:focus {
   color: #0088CC!important; box-shadow: 0px 0px 4px 2px rgba(91,188,240,1);
 }
 
-.assigned-section #application ul .name a:hover {
+.assigned-section .role-group ul .name a:hover {
   color: #0088CC!important; box-shadow: 0px 0px 4px 2px rgba(91,188,240,1);
 }
 
-.assigned-section #application ul .group-tab {
+.assigned-section .role-group ul .group-tab {
   background: none;
   overflow-x: visible;
   padding-left: 0px;
 }
 
-.assigned-section #application ul .group-tab span {
+.assigned-section .role-group ul .group-tab span {
   color: #797877;
   font-size: 10pt;
   margin: 0px;
   float: right;
 }
 
-.assigned-section #application ul .group-tab .panel-style {
+.assigned-section .role-group ul .group-tab .panel-style {
   width: 200px;
   color: #274973;
   background-color: whitesmoke;
@@ -964,12 +991,12 @@ body ul {
   padding-left: 12px;
 }
 
-.assigned-section #application ul .group-tab .panel-body {
+.assigned-section .role-group ul .group-tab .panel-body {
   padding: 0px;
   border-top: none !important;
 }
 
-.assigned-section #application ul .group-tab .group-member a {
+.assigned-section .role-group ul .group-tab .group-member a {
   color: #0088cc;
   margin-left: 12px;
   background-color: #d9edf7;
@@ -984,15 +1011,15 @@ body ul {
   padding-top: 2px;
 }
 
-.assigned-section #application ul .group-tab .group-member a:hover {
+.assigned-section .role-group ul .group-tab .group-member a:hover {
   color:#0088CC; box-shadow: 0px 0px 4px 2px rgba(91,188,240,1);
 }
 
-.assigned-section #application ul .group-tab .group-member a:focus {
+.assigned-section .role-group ul .group-tab .group-member a:focus {
   color: #0088CC;box-shadow: 0px 0px 4px 2px rgba(91,188,240,1);
 }
 
-.assigned-section #application ul .group-tab a:focus {
+.assigned-section .role-group ul .group-tab a:focus {
   color: black;
 }
 

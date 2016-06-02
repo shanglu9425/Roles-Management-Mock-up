@@ -34,7 +34,7 @@
         <div class="container-fluid pull-right">
           <ul class="nav navbar-nav">
             <li><a href="#" class="dropdown-toggle" data-toggle="dropdown">
-              Administrate<span style="padding-left: 6px; color:#797877;font-size: 11px;" class="glyphicon glyphicon-triangle-bottom"></span></a>
+              Administrate<span class="glyphicon glyphicon-triangle-bottom drop-down-button"></span></a>
               <ul class="dropdown-menu noselect">
                 <li><a>Impersonate</a></li>
                 <li class="divider"></li>
@@ -46,9 +46,9 @@
                 <li><a>About</a></li>
               </ul>
             </li>
-            <li><a href="#"><span style="padding-right: 8px;" class="glyphicon glyphicon-search"></span>Help</a></li>
-            <li><a href="#"><span style="padding-right: 8px;" class="glyphicon glyphicon-comment"></span>Report a Problem</a></li>
-            <li><a href="#"><span style="padding-right: 8px;" class="glyphicon glyphicon-off"></span>Log out</a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-search navbar-padding-right"></span>Help</a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-comment navbar-padding-right"></span>Report a Problem</a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-off navbar-padding-right"></span>Log out</a></li>
           </ul>
         </div>
       </div>
@@ -61,7 +61,7 @@
 
     <!--#application search bar -->
     <div class="col-md-3">
-      <section class="searchbar-application" style="position: fixed;box-shadow: -1px 0px 2px 1px rgba(0, 0, 0, 0.2);">
+      <section id="title-shadow" class="searchbar-application title">
         <h4 class="application">APPLICATION</h4>
       </section>
     </div>
@@ -69,7 +69,7 @@
 
     <!--#role search bar-->
     <div class="col-md-3">
-      <section class="searchbar-application" style="position: fixed;">
+      <section class="searchbar-application title">
         <h4 class="roles" style="display:none;">ROLE</h4>
       </section>
     </div>
@@ -77,15 +77,14 @@
 
     <!-- #name search bar-->
     <div class="col-md-3">
-      <section class="searchbar-application" style="position: fixed;box-shadow: none;">
+      <section id="title-shadow-none" class="searchbar-application title">
         <h4 class="assign" style="display:none;">ASSIGNED</h4>
       </section>
     </div>
     <!-- #name search bar-->
 
     <div class="col-md-3">
-      <section class="searchbar-application" style="border-left: 8px solid rgb(224, 224, 224);
-        border-bottom: medium none;">
+      <section class="searchbar-application">
       </section>
     </div>
   </div>
@@ -94,7 +93,7 @@
 <!--#Left 3 columns-->
 
   <div class="panel-wrapper background-white" id="background-panel">
-    <div class="row" style="margin-top: 50px;">
+    <div id="row-margin-top" class="row">
 
       <!--#Application-->
       <div id="app-nav-panel" class="col-md-4 app-panel background-blue application">
@@ -105,9 +104,9 @@
               <input id="search-app" placeholder=" Filter Applications" type="text" class="add-autocomplete-app">
             </div>
 
-            <section id="application" class="app" style="margin-top:90px;">
+            <section id="application-margin-top" class="app role-group">
               <nav class="block">
-                <ul id="sub-name-list">
+                <ul class="role-lists">
                   <li><a id="testTrigger" href="#" onclick="openRoles(this, '.roleData.anthro')">Anthropology Mailing Lists </a></li>
                   <li><a href="#" onclick="openRoles(this, '.roleData.db')">Database Access</a></li>
                   <li><a href="#" onclick="openRoles(this, '.roleData.phone')">Faculty Memeber Phone Lists</a></li>
@@ -116,7 +115,7 @@
                 </ul>
               </nav>
               <nav class="block">
-                <ul id="sub-name-list">
+                <ul class="role-lists">
                   <li><a href="#" onclick="openRoles(this, '.roleData.dss')">DSS IT Application </a> </li>
                   <li><a href="#" onclick="openRoles(this, '.roleData.web')">Web Development</a></li>
                   <li><a href="#" onclick="openRoles(this, '.roleData.accountAccess')">Account Access</a></li>
@@ -125,7 +124,7 @@
                 </ul>
               </nav>
               <nav class="block">
-                <ul id="sub-name-list">
+                <ul class="role-lists">
                   <li><a href="#" onclick="openRoles(this, '.roleData.personel')">Personel Access Only </a> </li>
                   <li><a href="#" onclick="openRoles(this, '.roleData.adminCheckbox')">Admin Checkbox</a></li>
                   <li>
@@ -148,9 +147,9 @@
               <a class="close" onclick="closeNavigationPanel('.roles')"><i id="button-close-role" class="fa fa-times close-icon" aria-hidden="true"></i></a>
               <input placeholder=" Filter Roles" type="text" class="add-autocomplete-role">
             </div>
-            <section id="application" class="roleData anthro">
+            <section id="application" class="roleData anthro role-group">
               <nav class="block role">
-                <ul id="sub-name-list">
+                <ul class="role-lists">
                   <li><a href="#" onclick="openAssignment(this, '.specific-role', '.assignData.general')">Admin</a></li>
                   <li> <a href="#" onclick="openAssignment(this, '.specific-role', '.assignData.general')">Video files/Media resources</a></li>
                   <li> <a href="#" onclick="openAssignment(this, '.specific-role', '.assignData.general')">Shared files(1/10/16-3/25/16)</a></li>
@@ -163,9 +162,9 @@
             </section>
 
             <!--database access application-->
-            <section id="application" class="roleData db" style="display:;">
+            <section class="roleData db role-group">
               <nav class="block role">
-                <ul id="sub-name-list">
+                <ul class="role-lists">
                   <li><a href="#" onclick="openAssignment(this, '.specific-role', '.assignData.general')">Access 1</a> </li>
                   <li> <a href="#" onclick="openAssignment(this, '.specific-role', '.assignData.general')">Access 2</a></li>
                   <li> <a href="#" onclick="openAssignment(this, '.specific-role', '.assignData.general')">Access 3</a></li>
@@ -177,9 +176,9 @@
             </section>
 
             <!--Phone Lists-->
-            <section id="application" class="roleData phone" style="display:;">
+            <section id="application" class="roleData phone role-group">
               <nav class="block role">
-                <ul id="sub-name-list">
+                <ul class="role-lists">
                   <li><a href="#" onclick="openAssignment(this, '.specific-role', '.assignData.general')">Admin Phone List</a> </li>
                   <li> <a href="#" onclick="openAssignment(this, '.specific-role', '.assignData.general')">Manager Phone List</a></li>
                   <li>
@@ -190,9 +189,9 @@
             </section>
 
             <!--lab remote access-->
-            <section id="application" class="roleData lab" style="display:;">
+            <section id="application" class="roleData lab role-group">
               <nav class="block role">
-                <ul id="sub-name-list">
+                <ul class="role-lists">
                   <li><a href="#" onclick="openAssignment(this, '.specific-role', '.assignData.general')">Lab Computers</a> </li>
                   <li> <a href="#" onclick="openAssignment(this, '.specific-role', '.assignData.general')">Lab Server</a></li>
                   <li> <a href="#" onclick="openAssignment(this, '.specific-role', '.assignData.general')">Lab Alarm</a></li>
@@ -204,9 +203,9 @@
             </section>
 
             <!--printer-->
-            <section id="application" class="roleData printer" style="display:;">
+            <section id="application" class="roleData printer role-group">
               <nav class="block role">
-                <ul id="sub-name-list">
+                <ul class="role-lists">
                   <li><a href="#" onclick="openAssignment(this, '.specific-role', '.assignData.general')">Printer A</a> </li>
                   <li> <a href="#" onclick="openAssignment(this, '.specific-role', '.assignData.general')">Printer B</a></li>
                   <li> <a href="#" onclick="openAssignment(this, '.specific-role', '.assignData.general')">Printer C</a></li>
@@ -219,16 +218,16 @@
             </section>
 
             <!--DSS Application-->
-            <section id="application" class="roleData dss" style="display:;">
+            <section id="application" class="roleData dss role-group">
               <nav class="block role">
-                <ul id="sub-name-list">
+                <ul class="role-lists">
                   <li><a href="#" onclick="openAssignment(this, '.specific-role', '.assignData.general')">Desktop control</a> </li>
                   <li> <a href="#" onclick="openAssignment(this, '.specific-role', '.assignData.general')">E-mail system</a></li>
                   <li> <a href="#" onclick="openAssignment(this, '.specific-role', '.assignData.general')">Group Report</a></li>
                   <li>
                     <button type="button" onclick="openAssignment(this, '.add-role', '.assignData.empty')" class="btn btn-primary selected-none">Add A Role</button>
                   </li>
-                  <ul id="sub-name-list" class="dss-messenger" style="display: none;">
+                  <ul class="role-lists" class="dss-messenger" style="display: none;">
                     <li><a href="#" onclick="openAssignment(this, '.add-role', '.assignData.general' )">Access</a></li>
                   </ul>
                 </ul>
@@ -236,16 +235,16 @@
             </section>
 
             <!--Web Development-->
-            <section id="application" class="roleData web" style="display:;">
+            <section id="application" class="roleData web role-group">
               <nav class="block role">
-                <ul id="sub-name-list">
+                <ul class="role-lists">
                   <li><a href="#" onclick="openAssignment(this, '.specific-role', '.assignData.general')">Web assests</a> </li>
                   <li> <a href="#" onclick="openAssignment(this, '.specific-role', '.assignData.general')">Web Script</a></li>
                   <li> <a href="#" onclick="openAssignment(this, '.specific-role', '.assignData.general')">Web team projects</a></li>
                   <li>
                     <button type="button" onclick="openAssignment(this, '.add-role', '.assignData.empty')" class="btn btn-primary selected-none">Add A Role</button>
                   </li>
-                  <ul id="sub-name-list" class="dss-messenger" style="display: none;">
+                  <ul class="role-lists" class="dss-messenger" style="display: none;">
                     <li><a href="#" onclick="openAssignment(this, '.add-role', '.assignData.general' )">Access</a></li>
                   </ul>
                 </ul>
@@ -253,16 +252,16 @@
             </section>
 
             <!--Account Access-->
-            <section id="application" class="roleData accountAccess" style="display:;">
+            <section id="application" class="roleData accountAccess role-group">
               <nav class="block role">
-                <ul id="sub-name-list">
+                <ul class="role-lists">
                   <li><a href="#" onclick="openAssignment(this, '.specific-role', '.assignData.general')">Student account setting</a> </li>
                   <li> <a href="#" onclick="openAssignment(this, '.specific-role', '.assignData.general')">Account password reset</a></li>
                   <li> <a href="#" onclick="openAssignment(this, '.specific-role', '.assignData.general')">Account permission setting</a></li>
                   <li>
                     <button type="button" onclick="openAssignment(this, '.add-role', '.assignData.empty')" class="btn btn-primary selected-none">Add A Role</button>
                   </li>
-                  <ul id="sub-name-list" class="dss-messenger" style="display: none;">
+                  <ul class="role-lists" class="dss-messenger" style="display: none;">
                     <li><a href="#" onclick="openAssignment(this, '.add-role', '.assignData.general' )">Access</a></li>
                   </ul>
                 </ul>
@@ -270,15 +269,15 @@
             </section>
 
             <!--Supply Order-->
-            <section id="application" class="roleData supplyOrder" style="display:;">
+            <section id="application" class="roleData supplyOrder role-group">
               <nav class="block role">
-                <ul id="sub-name-list">
+                <ul class="role-lists">
                   <li><a href="#" onclick="openAssignment(this, '.specific-role', '.assignData.general')">Hardware orders</a> </li>
                   <li> <a href="#" onclick="openAssignment(this, '.specific-role', '.assignData.general')">Trackig numbers</a></li>
                   <li>
                     <button type="button" onclick="openAssignment(this, '.add-role', '.assignData.empty')" class="btn btn-primary selected-none">Add A Role</button>
                   </li>
-                  <ul id="sub-name-list" class="dss-messenger" style="display: none;">
+                  <ul class="role-lists" class="dss-messenger" style="display: none;">
                     <li><a href="#" onclick="openAssignment(this, '.add-role', '.assignData.general' )">Access</a></li>
                   </ul>
                 </ul>
@@ -286,15 +285,15 @@
             </section>
 
             <!--Data Entry-->
-            <section id="application" class="roleData dataEntry" style="display:;">
+            <section id="application" class="roleData dataEntry role-group">
               <nav class="block role">
-                <ul id="sub-name-list">
+                <ul class="role-lists">
                   <li><a href="#" onclick="openAssignment(this, '.specific-role', '.assignData.general')">Web data collection</a> </li>
                   <li> <a href="#" onclick="openAssignment(this, '.specific-role', '.assignData.general')">Research data permission</a></li>
                   <li>
                     <button type="button" onclick="openAssignment(this, '.add-role', '.assignData.empty')" class="btn btn-primary selected-none">Add A Role</button>
                   </li>
-                  <ul id="sub-name-list" class="dss-messenger" style="display: none;">
+                  <ul class="role-lists" class="dss-messenger" style="display: none;">
                     <li><a href="#" onclick="openAssignment(this, '.add-role', '.assignData.general' )">Access</a></li>
                   </ul>
                 </ul>
@@ -302,15 +301,15 @@
             </section>
 
             <!--Personel Access Only-->
-            <section id="application" class="roleData personel" style="display:;">
+            <section id="application" class="roleData personel role-group">
               <nav class="block role">
-                <ul id="sub-name-list">
+                <ul class="role-lists">
                   <li><a href="#" onclick="openAssignment(this, '.specific-role', '.assignData.general')">User/Password reset permission</a> </li>
                   <li> <a href="#" onclick="openAssignment(this, '.specific-role', '.assignData.general')">Application system permission</a></li>
                   <li>
                     <button type="button" onclick="openAssignment(this, '.add-role', '.assignData.empty')" class="btn btn-primary selected-none">Add A Role</button>
                   </li>
-                  <ul id="sub-name-list" class="dss-messenger" style="display: none;">
+                  <ul class="role-lists" class="dss-messenger" style="display: none;">
                     <li><a href="#" onclick="openAssignment(this, '.add-role', '.assignData.general' )">Access</a></li>
                   </ul>
                 </ul>
@@ -319,24 +318,24 @@
 
 
             <!--Admin Checkbox-->
-            <section id="application" class="roleData adminCheckbox" style="display:;">
+            <section id="application" class="roleData adminCheckbox role-group">
               <nav class="block role">
-                <ul id="sub-name-list">
+                <ul class="role-lists">
                   <li><a href="#" onclick="openAssignment(this, '.specific-role', '.assignData.general')">Checkbox access</a> </li>
                   <li> <a href="#" onclick="openAssignment(this, '.specific-role', '.assignData.general')">Checkbox account permission</a></li>
                   <li>
                     <button type="button" onclick="openAssignment(this, '.add-role', '.assignData.empty')" class="btn btn-primary selected-none">Add A Role</button>
                   </li>
-                  <ul id="sub-name-list" class="dss-messenger" style="display: none;">
+                  <ul class="role-lists" class="dss-messenger" style="display: none;">
                     <li><a href="#" onclick="openAssignment(this, '.add-role', '.assignData.general' )">Access</a></li>
                   </ul>
                 </ul>
               </nav>
             </section>
 
-            <section id="application" class="roleData empty" style="display:;">
+            <section id="application" class="roleData empty role-group">
               <nav class="block role">
-                <ul id="sub-name-list">
+                <ul class="role-lists">
                   <li>
                     <button type="button" onclick="openAssignment(this, '.add-role', '.assignData.empty')" class="btn btn-primary selected-none">Add A Role</button>
                   </li>
@@ -359,7 +358,7 @@
             </div>
 
             <!-- #assigned-section -->
-            <section id="application" class="assign">
+            <section id="application" class="assign role-group">
               <div class="assigned-lists">
                 <ul id="name-list" class="assignData general">
                   <li class="group-tab">
@@ -474,7 +473,7 @@
           <section class="container-control-panel sec" style="margin-top: 25px;">
             <!-- Start Introduction -->
             <div id="introduction" class="module">
-              <div class="modal-header" style="text-align:center; border-bottom:none;">
+              <div class="modal-header">
                 <legend><b>Welcome to Roles Management</b></legend>
               </div>
               <div class="model-body">
@@ -508,7 +507,7 @@
             <!-- Application Module -->
             <div class="module app">
               <!-- Title -->
-              <div class="modal-header" style="text-align:center; border-bottom:none;">
+              <div class="modal-header">
                 <legend><b>TEST APPLICATION</b></legend>
               </div>
 
@@ -582,7 +581,7 @@
             <div class="module add-role">
 
               <!-- Title -->
-              <div class="modal-header" style="text-align:center; border-bottom:none;">
+              <div class="modal-header">
                 <legend style="margin-bottom: 0px;"><b>Adding New Role</b></legend>
               </div>
 
@@ -641,7 +640,7 @@
             <!-- Specific Role -->
             <div class="module specific-role">
               <!-- Title -->
-              <div class="modal-header" style="text-align:center; border-bottom:none;">
+              <div class="modal-header">
                 <legend><b>Printer A</b></legend>
               </div>
               <!-- Title -->
@@ -747,7 +746,7 @@
             <!-- Add People -->
             <div class="module add-people">
               <!-- Title -->
-              <div class="modal-header" style="text-align:center; border-bottom:none;">
+              <div class="modal-header">
                 <legend style="margin-bottom: 0px;"><b>Add New People</b></legend>
               </div>
 
@@ -795,7 +794,7 @@
             <div class="module assign-group">
 
               <!-- Title -->
-              <div class="modal-header" style="text-align:center; border-bottom:none;">
+              <div class="modal-header">
                 <legend><b>DSS IT Kerr 168</b></legend>
               </div>
 
@@ -962,7 +961,7 @@
             <div class="module assign-person">
 
               <!-- Title -->
-              <div class="modal-header" style="text-align:center; border-bottom:none;">
+              <div class="modal-header">
                 <legend><b>Andrew Kim</b></legend>
               </div>
 

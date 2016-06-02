@@ -1,0 +1,1083 @@
+/*
+* Bootstrap Overwrites
+*/
+
+/*================== Body ==================*/
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  overflow-y: hidden;
+}
+
+table {
+  font-size: 10pt !important;
+}
+
+/*================== Navigation ==================*/
+.selected {
+  background-color: #FAC369;
+  color: #FFFFFF;
+}
+
+.selected-none {
+  background:#3e6894;
+}
+
+.navbar {
+  background-color: #294B74;
+  box-shadow: inset 0px 0px 11px 1px #0A315F;
+  color: white;
+  border: none;
+  border-radius: 0px;
+  margin-bottom: 0px;
+  position: fixed;
+  width: 100%;
+  z-index: 2013;
+}
+
+.navbar-default .navbar-nav li a {
+  color: white;
+}
+
+.navbar-default .navbar-nav > li > a:focus,
+.navbar-default .navbar-nav > li > a:hover {
+  color: white;
+  background-color: #102F54;
+}
+
+.navbar-default .navbar-brand,
+.navbar-default .navbar-brand:focus,
+.navbar-default .navbar-brand:hover {
+  color: white;
+  cursor: pointer;
+}
+
+.navbar-default .navbar-brand {
+  color: white;
+  margin: 0px;
+}
+
+.dropdown-menu {
+  color: black;
+}
+
+.navbar-default .navbar-nav > .open > a:focus,
+navbar-default .navbar-nav > .open > a:hover,
+navbar-default .navbar-nav > .open > a:active {
+  background-color: #0E2E55;
+  color: white;
+}
+
+.navbar-default .navbar-nav .dropdown-menu li a {
+  color: #263E5B;
+  cursor: pointer;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #337ab7;
+  border: none;
+}
+
+.btn-success {
+  border: none;
+  background-color: #7E8790!important;
+  height: 34px;
+}
+
+.btn-danger {
+  background-color: #FA776A;
+}
+
+.btn-success.active,
+.btn-success:active,
+.open > .dropdown-toggle.btn-success,
+.btn-success.active.focus,
+.btn-success.active:hover,
+.btn-success:hover,
+.btn-success:active,
+.btn-success:focus,
+.btn-success.focus:active,
+.btn-success:active:focus,
+.btn-success:active:hover,
+.open > .dropdown-toggle.btn-success.focus,
+.open > .dropdown-toggle.btn-success:focus,
+.open > .dropdown-toggle.btn-success.active.focus,
+.open > .dropdown-toggle.btn-success:hover {
+  color: #fff;
+  background-color: #C1C3C6;
+}
+
+a,
+a:active, a:hover,
+a:focus {
+  color: black;
+  outline: none;
+  text-decoration: none;
+}
+
+/** Used to avoid text highlight on links **/
+.noselect a {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/*================== Grid system==================*/
+.col-md-6 {
+  padding-left: 0px;
+  padding-right: 0px;
+  width: 40%;
+}
+
+.col-md-4 {
+  padding-left: 0px;
+  padding-right: 0px;
+  /*width: 20%;*/
+  width: 100%;
+}
+
+.col-md-3 {
+  padding-left: 0px;
+  padding-right: 0px;
+  width: 20%;
+}
+
+.col-md-8 {
+  padding-left: 0px;
+  padding-right: 0px;
+  width: 75%;
+}
+
+.row {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+/*=================input-size===============*/
+.input-large {
+  width: 150px!important;
+}
+
+.input-medium {
+  width: 150px!important;
+}
+
+.input-medium-small {
+  width: 120px!important;
+}
+
+input {
+  font-size: 10pt;
+}
+
+.glyphicon {
+  top: 3px;
+}
+
+.panel {
+  box-shadow:none;
+}
+
+/*================== MISC==================*/
+.modal-footer {
+  border-top: none;
+}
+
+/* End Bootstrap Overwrite */
+
+/*
+* jQuery Overwrite
+*/
+
+.ui-menu .ui-menu-item {
+  background-color: white;
+}
+
+.ui-state-focus {
+  color: black !important;
+  background: white !important;
+  border: 1px solid lightgray !important;
+}
+
+/** Makes sure autocomplete dropdown is seen **/
+.ui-front {
+  z-index: 3000;
+}
+
+.assigned-section #application ul li {
+  font-size: 10pt;
+}
+
+/* End jQuery Overwrite */
+
+/* Bootstrap Notify Overwrite */
+
+/** Needed because mozila animation-iteration default is infinity **/
+[data-notify="container"] {
+  -moz-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+  z-index: 50000;
+}
+
+/* End Bootstrap Notify */
+
+/*
+* Form Styles
+*/
+
+.container {
+  display: block;
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  min-width: 300px;
+  margin-top: -20px;
+}
+
+.container .modal-header legend {
+  font-size: 14pt;
+  padding-bottom: 10px;
+}
+
+.center ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+p {
+  color: #555;
+  clear: both;
+}
+
+form {
+  float: left;
+  display: block;
+  width: 100%;
+  position: relative;
+}
+
+fieldset {
+  padding: 20px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  float: left;
+  position: relative;
+  background: #fff;
+  width: 100%;
+  background: #ffffff;
+}
+
+fieldset legend {
+  font-size: 12pt;
+  text-align: center;
+  float: left;
+  display: block;
+  width: 100%;
+  position: relative;
+  border-bottom: 1px solid #dfdfdf;
+  top: 0;
+  left: 0;
+  clear: both;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  line-height: 30px;
+  color: #444;
+  text-shadow: 0 1px 0 #fff;
+}
+
+fieldset.beta, fieldset.charlie {
+  display: none;
+}
+
+fieldset .list:last-child {
+  margin-bottom: 0px;
+}
+
+fieldset .list h5 {
+  margin: 5px;
+  margin-top: 20px;
+}
+
+fieldset .list .fa-search {
+  position: relative;
+  left: 23px;
+  color: gray;
+  bottom: 1.5px;
+}
+
+fieldset .list textarea {
+  width: 100%;
+  padding: 2px 6px;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Open Sans", sans-serif;
+  border: 1px solid #dedede;
+  border-radius: 5px;
+  box-shadow: 0 0 0 transparent, inset 0 0 5px #eee;
+}
+
+fieldset .list textarea:focus {
+  outline: none;
+  border: 1px solid #94C4FF;
+  box-shadow: 0 0 10px #94C4FF;
+  -webkit-transition: all 0.2s ease-in-out;
+}
+
+fieldset .list textarea:focus::-webkit-input-placeholder {
+  opacity: 0.5;
+}
+
+fieldset .list input {
+  width: 100%;
+  padding: 2px 6px;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Open Sans", sans-serif;
+  border: 1px solid #dedede;
+  border-radius: 5px;
+}
+
+fieldset .list input:focus {
+  outline: none;
+  box-shadow: 0 0 10px #94C4FF;
+  -webkit-transition: all 0.2s ease-in-out;
+}
+
+fieldset .list input:focus::-webkit-input-placeholder {
+  opacity: 0.5;
+}
+
+fieldset input:focus::-webkit-input-placeholder {
+  opacity: 0.5;
+}
+
+fieldset .setting-button {
+  float: left;
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  width: 100%;
+  clear: both;
+}
+
+fieldset .list {
+  float: left;
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+fieldset input {
+  float: left;
+  width: 100%;
+  padding: 2px 6px;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Open Sans", sans-serif;
+  border: 1.5px solid #dedede;
+  border-radius: 5px;
+}
+
+fieldset input:focus {
+  outline: none;
+  border: 1px solid #94C4FF;
+  box-shadow: 0 0 10px #94C4FF;
+  -webkit-transition: all 0.2s ease-in-out;
+}
+
+fieldset .setting-button a.button-delete {
+  display: block;
+  padding: 0;
+  background: #FA776A;
+  text-align: center;
+  text-decoration: none;
+  text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3);
+  font-size: 15px;
+  font-family: "Helvetica Neue", sans-serif;
+  font-weight: 400;
+  color: #fff;
+  border: 1px solid #94C4FF;
+  border-radius: 5px;
+  box-shadow: 0 0 0 transparent;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+fieldset .setting-button a.button-change {
+  display: block;
+  height: 100%;
+  padding: 0;
+  background: #58B957;
+  text-align: center;
+  text-decoration: none;
+  text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3);
+  font-size: 15px;
+  font-family: "Helvetica Neue", sans-serif;
+  font-weight: 400;
+  color: #fff;
+  border: 1px solid #94C4FF;
+  border-radius: 5px;
+  box-shadow: 0 0 0 transparent;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+#group-member {
+  font-size: 8pt;
+  float: right;
+  text-align: center;
+  padding-right: 20px;
+}
+
+#group-member #group-member-count {
+  font-weight: bold;
+  font-size: 20pt;
+  color: #333333;
+  text-align: center;
+}
+
+#roles #rules {
+  font-size: 12px;
+}
+
+#roles #rules .medium {
+  text-align: center;
+  width: 90px;
+}
+
+#roles #rules .medium-2 {
+  text-align: center;
+  width: 120px;
+}
+
+#roles #rules .mini {
+  text-align: center;
+  width: 45px;
+}
+
+#roles #rules .large {
+  text-align: center;
+  width: 140px;
+}
+
+#roles #rules .btn-danger {
+  background-color: #FA776A;
+  border: none;
+  padding: 1px 10px;
+}
+
+#roles #rules .btn-danger .btn {
+  padding: none;
+}
+
+#roles #rules input {
+  padding: 2px 6px;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Open Sans", sans-serif;
+  border: 1px solid #dedede;
+  border-radius: 5px;
+}
+
+/* End Form Styles */
+
+/*
+* Main CSS
+*/
+html {
+  height: 100%;
+}
+
+body {
+  padding: 0px;
+  margin: 0px;
+  width: 100%;
+  height: 100%;
+  font-size: 10pt;
+}
+
+body ul {
+  list-style: none;
+}
+
+/* Panels */
+.close {
+  cursor: pointer;
+}
+
+.assignData {
+  display: none;
+}
+
+.assign-block {
+  display: block;
+  color: #0088CC;
+}
+
+/*===================== introduction ======================*/
+.introduction {
+  margin-left: -10px;
+}
+
+/*===================== searchbar-application ======================*/
+.searchbar-application {
+  height: 45px;
+  width: 100%;
+  background-color: white;
+  top: 50px;
+  z-index: 2012;
+}
+
+.col-md-8 .searchbar-application {
+    padding-top: 5px;
+    width: 100%;
+    height: 85px;
+    background: white;
+    border-bottom: 8px;
+    border-bottom-color: #E0E0E0;
+    border-bottom-style: solid;
+}
+
+.searchbar-application h4 {
+  margin-left: 25px;
+  padding: 5px;
+}
+
+.searchbar-application .form-control {
+  width: 15%;
+}
+
+.searchbar-application .input-group {
+  top: 15px;
+  margin-left: 25px;
+  width: 30%;
+  float: left;
+}
+
+.searchbar-application .form-control {
+  position: relative;
+  z-index: 2;
+  float: left;
+  width: 160px;
+  background: #ffffff;
+  box-shadow: inset 0px 1px 0px 0px #ECECEC;
+}
+
+/*===================== application-section ======================*/
+.application-section {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  float: left;
+  font-size: 15px;
+  overflow-y: hidden;
+  overflow-x: hidden!important;
+}
+
+.application-section:hover {
+  overflow-y: auto;
+}
+
+.application-section .search-application:hover .close-icon {
+  position: absolute;
+  right: 41%;
+  bottom: 17px;
+  color: white;
+  display: block;
+}
+
+.application-section .search-application {
+  padding-left: 25px !important;
+  position: fixed;
+  z-index: 2003;
+  margin-top: 0px;
+  color: gray;
+  padding: 8px;
+  background-color: #263e5b;
+  width: 100%;
+}
+
+.application-section .search-application .search-icon {
+  position: absolute;
+  left: 40px;
+  bottom: 17px;
+}
+
+.application-section .search-application .close-icon {
+  position: absolute;
+  right: 41%;
+  bottom: 17px;
+  color: white;
+  display: none;
+}
+
+.application-section .search-application input {
+  text-indent: 30px;
+  border-radius: 5px;
+  background: white none repeat scroll 0% 0%;
+  border: 1px solid #cccccc;
+  box-shadow: 0px 1px 0px 0px #ececec inset;
+  margin: 5px;
+  width: 15%;
+}
+
+.application-section #sub-name-list {
+  padding: 0px;
+  margin-top: 0px;
+}
+
+.application-section #sub-name-list li {
+  font-size: 10pt;
+}
+
+.application-section #sub-name-list li {
+  margin-top: 20px;
+  font-size: inherit;
+}
+
+.application-section #sub-name-list li a {
+  color: white;
+  display: block;
+  padding: 5px 30px;
+  padding-right: 25px;
+  text-decoration: none;
+}
+
+.application-section #sub-name-list li a:focus,
+.application-section #sub-name-list li a:hover {
+  color: white;
+  background-color: #FAC369;
+}
+.application-section #sub-name-list #hover-none a:hover {
+  color: none;
+  background:none;
+}
+
+.application-section #application {
+  position: relative;
+
+}
+
+.application-section #application h4 {
+  color: #A5A5A5;
+  padding-left: 20px;
+  margin-top: 30px;
+  padding-left: 30px;
+}
+
+.application-section #application ul {
+  list-style: none;
+}
+
+.application-section #application li {
+  padding-right: 0px;
+  color: white;
+}
+
+.application-section #application li button {
+  margin: 30px;
+  width: 200px;
+}
+
+.application-section #application li button:focus {
+  outline: none;
+}
+
+.application-section #application li button:active {
+  background: none;
+}
+
+.application-section #application a {
+  text-decoration: none;
+}
+
+.application-section #application a p {
+  background-color: #3e6894;
+  color: white;
+  text-align: center;
+  border-radius: 3px;
+  padding: 5px;
+  font-size: 14px;
+  width: 100%;
+}
+
+.application-section #application a:focus {
+  outline: none;
+}
+
+.application-section #application a:hover p {
+  background-color: none;
+}
+
+.module {
+  display:none;
+}
+
+.roleData {
+  display: none;
+}
+
+/*===================== rule-section ======================*/
+.rule-section {
+    position: relative;
+    height: 100%;
+    float: left;
+    font-size: 15px;
+    width: 100%;
+    overflow-y: hidden;
+    overflow-x: hidden!important;
+}
+
+.rule-section:hover {
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.rule-section .search-role:hover .close-icon {
+  position: absolute;
+  right: 41%;
+  bottom: 17px;
+  display: block;
+}
+
+.rule-section .search-role {
+  padding-left: 25px !important;
+  position: fixed;
+  z-index: 2003;
+  margin-top: 0px;
+  color: gray;
+  padding: 8px;
+  background-color: #E3E3E3;
+  width: 100%;
+}
+
+.rule-section .search-icon {
+  position: absolute;
+  left: 40px;
+  bottom: 17px;
+}
+
+.rule-section .close-icon {
+  position: absolute;
+  left: 38%;
+  bottom: 17px;
+  display: none;
+}
+
+.rule-section input {
+  text-indent: 30px;
+  border-radius: 5px;
+  background: white none repeat scroll 0% 0%;
+  border: 1px solid #cccccc;
+  box-shadow: 0px 1px 0px 0px #ececec inset;
+  margin: 5px;
+  width: 200px;
+}
+
+.rule-section #application #sub-name-list li {
+  font-size: 10pt;
+}
+
+.rule-section #sub-name-list {
+    padding: 0px;
+    margin-top: 90px;
+}
+
+.rule-section #application #sub-name-list li {
+    margin-top: 20px;
+    font-size: 15px;
+    color: #173C68
+}
+
+.rule-section #sub-name-list li a {
+    display: block;
+    padding: 5px 30px;
+    padding-right: 25px;
+    text-decoration: none;
+}
+
+.rule-section #application #sub-name-list li a:focus,
+.rule-section #application #sub-name-list li a:hover {
+    color: white;
+    background-color: #FAC369;
+}
+
+.rule-section #application {
+    position: relative;
+    top: 20px;
+}
+
+.rule-section #application h4 {
+    color: #A5A5A5;
+    padding-left: 20px;
+    margin-top: 30px;
+    padding-left: 30px;
+}
+
+.rule-section #application li button {
+  margin: 30px;
+  width: 200px;
+}
+
+.rule-section #application li a {
+  text-decoration: none;
+}
+
+.rule-section #application li a p {
+  background-color: #3e6894;
+  color: white;
+  text-align: center;
+  border-radius: 3px;
+  padding: 5px;
+  font-size: 14px;
+  width: 100%;
+}
+
+.rule-section #application li a:focus {
+  outline: none;
+}
+
+.rule-section #application li a:hover p {
+  background-color: #FAC369;
+}
+
+/*===================== assigned-section ======================*/
+.assigned-section {
+    position: relative;
+    height: 100%;
+    background-color: #ffffff;
+    width: 100%;
+    float: left;
+    overflow-y: hidden;
+    overflow-x: hidden!important;
+}
+
+.assigned-section:hover {
+    overflow-y: auto;
+}
+
+.assigned-section .search-assigned:hover .close-icon {
+  position: absolute;
+  left: 18%;
+  font-size: 20px;
+  bottom: 17px;
+  display: block;
+}
+
+.assigned-section .search-assigned {
+  padding-left: 25px !important;
+  position: fixed;
+  z-index: 2003;
+  margin-top: 0px;
+  color: gray;
+  padding: 8px;
+  background-color: #F7F7F7;
+  width: 100%;
+}
+
+.assigned-section .search-icon {
+  position: absolute;
+  left: 40px;
+  bottom: 17px;
+}
+
+.assigned-section .close-icon {
+  position: absolute;
+  left: 18%;
+  font-size: 20px;
+  bottom: 17px;
+  display: none;
+}
+
+.assigned-section input {
+  text-indent: 30px;
+  border-radius: 5px;
+  background: white none repeat scroll 0% 0%;
+  border: 1px solid #cccccc;
+  box-shadow: 0px 1px 0px 0px #ececec inset;
+  margin: 5px;
+  width: 200px;
+}
+
+.assigned-section #application h4 {
+    color: #A5A5A5;
+    padding-left: 20px;
+    margin-top: 30px;
+    padding-left: 30px;
+}
+
+.assigned-section #application #name-list {
+    margin-left: 40px;
+    padding-left: 0px;
+    margin-top: 110px;
+}
+
+.assigned-section #application ul .name a{width: 200px;
+  color: #0088CC;
+  background-color: #D9EDF7;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-left: 12px;
+  border-bottom: 1px solid #f2f2f2;
+  margin-top: 15px;
+  border-radius: 5px;
+}
+
+.assigned-section #application ul .name a:focus {
+  color: #0088CC!important; box-shadow: 0px 0px 4px 2px rgba(91,188,240,1);
+}
+
+.assigned-section #application ul .name a:hover {
+  color: #0088CC!important; box-shadow: 0px 0px 4px 2px rgba(91,188,240,1);
+}
+
+.assigned-section #application ul .group-tab {
+  background: none;
+  overflow-x: visible;
+  padding-left: 0px;
+}
+
+.assigned-section #application ul .group-tab span {
+  color: #797877;
+  font-size: 11px;
+  margin: 0px;
+  float: right;
+}
+
+.assigned-section #application ul .group-tab .panel-style {
+  width: 200px;
+  color: #274973;
+  background-color: whitesmoke;
+  padding-top: 2px;
+  margin-top: 15px;
+  border-radius: 5px;
+  border: 1px solid #d9d9d9;
+  padding-bottom: 2px;
+  padding-left: 12px;
+}
+
+.assigned-section #application ul .group-tab .panel-body {
+  padding: 0px;
+  border-top: none !important;
+}
+
+.assigned-section #application ul .group-tab .group-member a {
+  color: #0088cc;
+  margin-left: 12px;
+  background-color: #d9edf7;
+  border-bottom: 1px solid #f2f2f2;
+  border-radius: 5px;
+  margin-top: 15px;
+  width: 180px;
+  padding: 0px;
+  border-top: none!important;
+  padding-bottom: 2px;
+  padding-left: 10px;
+  padding-top: 2px;
+}
+
+.assigned-section #application ul .group-tab .group-member a:hover {
+  color:#0088CC; box-shadow: 0px 0px 4px 2px rgba(91,188,240,1);
+}
+
+.assigned-section #application ul .group-tab .group-member a:focus {
+  color: #0088CC;box-shadow: 0px 0px 4px 2px rgba(91,188,240,1);
+}
+
+.assigned-section #application ul .group-tab a:focus {
+  color: black;
+}
+
+/*===================== control-panel ======================*/
+.control-panel {
+  height: 100vh;
+  border-left-color: #E0E0E0;
+  border-bottom: none;
+  background: white;
+  padding-top: 5px;
+  width: 40%;
+  position: fixed;
+  margin: auto;
+  box-shadow: 0px -1px 2px 1px rgba(0, 0, 0, 0.2);
+  z-index: 2010;
+}
+
+#bookmark {
+  width: 80%;
+}
+
+#bookmark h4 {
+  margin-left: 20px;
+}
+
+.col-md-6 .input-group {
+  float: right;
+}
+
+/*================== CSS FOR JS==================*/
+.col-md-4 .app-panel {
+    width: 100%;
+}
+
+/*================== MISC==================*/
+
+#background-panel {
+    position: fixed;
+    left: 0;
+    width: 100%;
+}
+
+.wrapper {
+    position: relative;
+    height: 100%;
+    height: calc(100% - 125px);
+    float: left;
+    width: 100%;
+}
+
+.column-style {
+    background: white;
+}
+
+.one-third {
+    width: 33.3%;
+}
+
+.col-md-4 .searchbar-application .input-group .glyphicon {
+    opacity: 0.5;
+    margin-bottom: 3px;
+}
+
+.block {
+  display: block;
+  float:left;
+}
+
+.background-white {
+  background: white;
+  position: fixed;
+  z-index: 2010;
+  left: 40%;
+  height: 100%;
+}
+
+.background-gray {
+  background-color: #F5F5F5;
+  position: fixed;
+  z-index: 2010;
+  left: 20%;
+  height: 100%;
+}
+
+.background-blue {
+  background: #294B74;
+  position: fixed;
+  height: 100%;
+  z-index: 2010;
+  left: 0%;
+}

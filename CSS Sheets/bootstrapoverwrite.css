@@ -91,7 +91,7 @@
     .input-medium-small {
         width: 120px!important;
     }
-    
+
     /*========= link =========*/
     a,
     a:active, a:hover,
@@ -167,14 +167,14 @@ table {
     .glyphicon {
         top: 3px;
     }
-    
+
     .panel {box-shadow:none;}
-    
+
     /*===================== js-css ==================*/
     .ui-menu .ui-menu-item {background-color: white;}
     .ui-state-focus {color:black!important; background:white!important; border: 1px solid lightgray!important;}
-   
-    
+
+
     /*==================== Webkit =================*/
 
     .noselect a {

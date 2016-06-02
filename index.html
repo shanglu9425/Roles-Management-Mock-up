@@ -6,12 +6,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel="stylesheet" href="vendor/bootstrap-3.3.6-dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
   <link rel="stylesheet" href="vendor/font-awesome-4.6.3/css/font-awesome.min.css">
   <link rel="stylesheet" href="vendor/jquery-ui.min.css">
   <link rel="stylesheet" href="vendor/bootstrap-tokenfield-0.12.1/bootstrap-tokenfield.css">
   <link rel="stylesheet" href="vendor/animate.css">
   <link rel="stylesheet" href="CSS Sheets/style.css">
-
+  <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
   <script src="vendor/bootstrap-3.3.6-dist/bootstrap.min.js"></script>
   <script src="vendor/jquery-ui.min.js"></script>
@@ -454,7 +455,7 @@
 
                 <ul id="name-list" class="assignData empty">
                   <li style="background: transparent none repeat scroll 0% 0%; padding-left: 0px;">
-                    <button style="width: 200px; margin-top: 38px;" type="button" onclick="openControlPanel('.add-people', 'Add A Person')" class="btn btn-primary selected-none">Add A Person</button>
+                    <button type="button" onclick="openControlPanel('.add-people', 'Add A Person')" class="btn btn-primary selected-none">Add A Person</button>
                   </li>
                 </ul>
               </section>
@@ -468,15 +469,15 @@
       <!--#Right control panel-->
       <div class="col-md-6" style="float:right;">
         <div class="control-panel">
-          <section class='container sec' style="margin-top: 25px;">
+          <section class="container-control-panel sec" style="margin-top: 25px;">
             <!-- Start Introduction -->
             <div id="introduction" class="module">
               <div class="modal-header" style="text-align:center; border-bottom:none;">
                 <legend><b>Welcome to Roles Management</b></legend>
               </div>
               <div class="model-body">
-                <div class="tab-content" style="float:left; width:100%;margin-top: 15px;">
-                  <div class="container">
+                <div class="tab-content">
+                  <div class="container-control-panel">
                     <p> Please read the instruction below before using <b>Roles Management</b></p>
                     <br>
                     <ol class="introduction">
@@ -517,7 +518,7 @@
                 </ul>
 
                 <!-- Tab panes -->
-                <div class="tab-content" style="float:left; width:100%;margin-top: 15px;">
+                <div class="tab-content">
                   <div role="tabpanel" class="tab-pane active" id="home" style="overflow:auto;">
                     <div class="container">
 
@@ -549,7 +550,7 @@
 
                   <!-- Rules -->
                   <div role="tabpanel" class="tab-pane" id="active-directory" style="overflow:auto;">
-                    <div class="container" style="padding: 0px 0px;">
+                    <div class="container-control-panel">
                       <p style="margin-top: 20px;">
                         The group name is appended after the base AD path configured by the administrator.
                       </p>
@@ -586,9 +587,9 @@
               <div class="model-body" style="padding-top:0px;">
 
                 <!-- Tab panes -->
-                <div class="tab-content" style="float:left; width:100%;margin-top: 15px;">
+                <div class="tab-content">
                   <div role="tabpanel" class="tab-pane active" id="home" style="overflow:auto;">
-                    <div class="container">
+                    <div class="container-control-panel">
 
                       <!-- Summary -->
                       <fieldset class='alpha'>
@@ -650,9 +651,9 @@
                 </ul>
 
                 <!-- Tab panes -->
-                <div class="tab-content" style="float:left; width:100%;margin-top: 15px;">
+                <div class="tab-content">
                   <div role="tabpanel" class="tab-pane active" id="badguy" style="overflow:auto;">
-                    <div class="container">
+                    <div class="container-control-panel">
 
                       <!-- Summary -->
                       <fieldset class='alpha'>
@@ -674,7 +675,7 @@
 
                   <!-- Rules -->
                   <div role="tabpanel" class="tab-pane" id="active-directory" style="overflow:auto;">
-                    <div class="container" style="padding: 0px 0px;">
+                    <div class="container-control-panel">
                       <p style="margin-top: 20px;">
                         The group name is appended after the base AD path configured by the administrator.
                       </p>
@@ -751,9 +752,9 @@
               <div class="model-body" style="padding-top:0px;">
 
                 <!-- Tab panes -->
-                <div class="tab-content" style="float:left; width:100%;margin-top: 15px;">
+                <div class="tab-content">
                   <div role="tabpanel" class="tab-pane active" id="home">
-                    <div class="container">
+                    <div class="container-control-panel">
 
                       <!-- Summary -->
                       <fieldset class='alpha'>
@@ -812,9 +813,9 @@
                 </ul>
 
                 <!-- Tab panes -->
-                <div class="tab-content" style="float:left; width:100%;margin-top: 15px;">
+                <div class="tab-content">
                   <div role="tabpanel" class="tab-pane active" id="group-home" style="overflow:auto;">
-                    <div class="container">
+                    <div class="container-control-panel">
 
                       <!-- Summary -->
                       <fieldset class='alpha'>
@@ -833,7 +834,7 @@
                   <!-- Relations -->
                   <div role="tabpanel" class="tab-pane" id="group-profile">
                     <div role="tabpanel" class="tab-pane active" id="home" style="overflow:auto;">
-                      <div class="container">
+                      <div class="container-control-panel">
 
                         <!-- Fieldset Alpha -->
                         <fieldset class="alpha">
@@ -856,7 +857,7 @@
 
                   <!-- Rules -->
                   <div role="tabpanel" class="tab-pane" id="group-roles">
-                    <div class="container">
+                    <div class="container-control-panel">
                       <table id="rules" style="margin-top: 20px;">
                         <thead>
                           <tr>
@@ -904,8 +905,7 @@
 
                   <!--Log-->
                   <div role="tabpanel" class="tab-pane" id="group-log" style="overflow:auto;">
-                    <div class="container" style="padding: 0px 0px;">
-                      <div class="container">
+                    <div class="container-control-panel">
                         <h5 style="margin-top: 20px;">Log Information</h5>
                         <p></p>
                         <table class="table table-hover" style="font-size:10pt; ">
@@ -936,7 +936,6 @@
                             <li><a href="#">&raquo;</a></li>
                           </ul>
                         </div>
-                      </div>
                     </div>
                   </div>
 
@@ -977,9 +976,9 @@
                 </ul>
 
                 <!-- Tab panes -->
-                <div class="tab-content" style="float:left; width:100%;margin-top: 15px;">
+                <div class="tab-content">
                   <div role="tabpanel" class="tab-pane active" id="person-home" style="overflow:auto;">
-                    <div class="container">
+                    <div class="container-control-panel">
 
                       <!-- Summary -->
                       <fieldset class='alpha'>
@@ -1014,7 +1013,7 @@
                   <!-- Relations -->
                   <div role="tabpanel" class="tab-pane" id="person-roles">
                     <div role="tabpanel" class="tab-pane active" id="home" style="overflow:auto;">
-                      <div class="container" style="padding: 0px 0px;">
+                      <div class="container-control-panel">
 
                         <!-- / Fieldset Alpha -->
                         <fieldset class="alpha">
@@ -1041,7 +1040,7 @@
 
                   <!-- Rules -->
                   <div role="tabpanel" class="tab-pane" id="person-active-directory" style="overflow:auto;">
-                    <div class="container" style="padding: 0px 0px;">
+                    <div class="container-control-panel">
                       <fieldset class="alpha">
                         <div class="list">
                           <h5>Admin</h5>
@@ -1062,9 +1061,7 @@
 
                   <!--Log-->
                   <div role="tabpanel" class="tab-pane" id="person-log" style="overflow:auto;">
-                    <div class="container" style="padding: 0px 0px;">
-
-                      <div class="container">
+                    <div class="container-control-panel" style="padding: 0px 0px;">
                         <h5 style="margin-top: 20px;">Log Information</h5>
                         <p></p>
                         <table class="table table-hover" style="font-size:10pt; ">
@@ -1090,7 +1087,6 @@
                             <li><a href="#">&raquo;</a></li>
                           </ul>
                         </div>
-                      </div>
                     </div>
                   </div>
 

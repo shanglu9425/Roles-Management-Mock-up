@@ -6,6 +6,7 @@
 body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   overflow-y: hidden;
+  font-size: 10pt!important;
 }
 
 table {
@@ -228,16 +229,16 @@ input {
 * Form Styles
 */
 
-.container {
-  display: block;
-  position: relative;
-  margin: 0 auto;
-  width: 100%;
-  min-width: 300px;
-  margin-top: -20px;
+.container-control-panel{
+display: block;
+margin: 0 auto;
+width: 100%;
+max-width: 400px;
+min-width: 300px;
+margin-top: -20px;
 }
 
-.container .modal-header legend {
+.container-control-panel .modal-header legend {
   font-size: 14pt;
   padding-bottom: 10px;
 }
@@ -313,7 +314,7 @@ fieldset .list .fa-search {
 fieldset .list textarea {
   width: 100%;
   padding: 2px 6px;
-  font-size: 14px;
+  font-size: 10px;
   font-weight: 400;
   font-family: "Open Sans", sans-serif;
   border: 1px solid #dedede;
@@ -335,7 +336,7 @@ fieldset .list textarea:focus::-webkit-input-placeholder {
 fieldset .list input {
   width: 100%;
   padding: 2px 6px;
-  font-size: 14px;
+  font-size: 10px;
   font-weight: 400;
   font-family: "Open Sans", sans-serif;
   border: 1px solid #dedede;
@@ -376,7 +377,7 @@ fieldset input {
   float: left;
   width: 100%;
   padding: 2px 6px;
-  font-size: 14px;
+  font-size: 10pt;
   font-weight: 400;
   font-family: "Open Sans", sans-serif;
   border: 1.5px solid #dedede;
@@ -442,7 +443,7 @@ fieldset .setting-button a.button-change {
 }
 
 #roles #rules {
-  font-size: 12px;
+  font-size: 10pt;
 }
 
 #roles #rules .medium {
@@ -477,7 +478,7 @@ fieldset .setting-button a.button-change {
 
 #roles #rules input {
   padding: 2px 6px;
-  font-size: 14px;
+  font-size: 10px;
   font-weight: 400;
   font-family: "Open Sans", sans-serif;
   border: 1px solid #dedede;
@@ -574,7 +575,7 @@ body ul {
   height: 100%;
   width: 100%;
   float: left;
-  font-size: 15px;
+  font-size: 10pt;
   overflow-y: hidden;
   overflow-x: hidden!important;
 }
@@ -702,7 +703,7 @@ body ul {
   text-align: center;
   border-radius: 3px;
   padding: 5px;
-  font-size: 14px;
+  font-size: 10pt;
   width: 100%;
 }
 
@@ -727,7 +728,7 @@ body ul {
     position: relative;
     height: 100%;
     float: left;
-    font-size: 15px;
+    font-size: 10pt;
     width: 100%;
     overflow-y: hidden;
     overflow-x: hidden!important;
@@ -790,7 +791,7 @@ body ul {
 
 .rule-section #application #sub-name-list li {
     margin-top: 20px;
-    font-size: 15px;
+    font-size: 10pt;
     color: #173C68
 }
 
@@ -834,7 +835,7 @@ body ul {
   text-align: center;
   border-radius: 3px;
   padding: 5px;
-  font-size: 14px;
+  font-size: 10pt;
   width: 100%;
 }
 
@@ -917,6 +918,8 @@ body ul {
     margin-top: 110px;
 }
 
+.assigned-section #application ul li button {margin-top: 30px; width: 200px;}
+
 .assigned-section #application ul .name a{width: 200px;
   color: #0088CC;
   background-color: #D9EDF7;
@@ -944,7 +947,7 @@ body ul {
 
 .assigned-section #application ul .group-tab span {
   color: #797877;
-  font-size: 11px;
+  font-size: 10pt;
   margin: 0px;
   float: right;
 }
@@ -1018,6 +1021,8 @@ body ul {
 .col-md-6 .input-group {
   float: right;
 }
+
+.tab-content {float:left; width:100%;margin-top: 15px;}
 
 /*================== CSS FOR JS==================*/
 .col-md-4 .app-panel {

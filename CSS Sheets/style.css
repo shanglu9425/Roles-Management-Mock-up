@@ -898,6 +898,11 @@ body ul {
     margin-bottom: 15px;
 }
 
+.member-count {
+  float: none!important;
+  margin-left: 10px!important;
+}
+
 .group-style {
     width: 200px;
     padding-top: 0px;
@@ -1002,7 +1007,6 @@ body ul {
   font-size: 10pt;
   margin: 0px;
   float: right;
-  top: -15px;
 }
 
 .assigned-section .role-group ul .group-tab .panel-style {

@@ -203,7 +203,8 @@ font-size: 11px;}
 
 .modal-header{
 text-align: center; 
-border-bottom: medium none; 
+border-bottom: medium none;
+padding:none!important; 
 }
 
 .modal-footer {
@@ -258,7 +259,7 @@ margin: 0 auto;
 width: 100%;
 max-width: 400px;
 min-width: 300px;
-margin-top: -20px;
+margin-top: 15px;
 }
 
 .container-control-panel .modal-header legend {
@@ -273,6 +274,10 @@ margin-top: -20px;
   margin-top: 30px;
 }
 
+#introduction-p-wd {
+  width: 600px;
+  }
+  
 .introduction li {
   margin-top: 25px;
 } 

@@ -380,8 +380,8 @@
                       </div>
                       <div class="panel panel-default group-style">
                         <div class="panel-heading panel-style">
-                          <div style="font-size:10pt;" class="panel-title">
-                            <a style="font-size: 10pt;" aria-expanded="false" class="assign-block collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse2" onclick="openGroup(this)">Managers<span class="glyphicon glyphicon-triangle-bottom"></span></a>
+                          <div class="panel-title">
+                            <a aria-expanded="false" class="assign-block collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse2" onclick="openGroup(this)">Managers<span class="glyphicon glyphicon-triangle-bottom"></span></a>
                           </div>
                         </div>
 
@@ -449,7 +449,7 @@
                   <li class="name">
                     <a class="assign-block" href="#" onclick="openControlPanel('.assign-person', this.innerHTML)">Shawn Wang</a>
                   </li>
-                  <li style="background: transparent none repeat scroll 0% 0%; padding-left: 0px;width: 200px;">
+                  <li>
                     <button type="button" onclick="openControlPanel('.add-people', 'Add A Person')" class="btn btn-primary selected-none">Add A Person</button>
                   </li>
                 </ul>
@@ -465,7 +465,11 @@
         </div>
         <!-- #Names -->
 
-      <div id="float-box" style="display:none; cursor: pointer; font-weight: bold; background-color: white; border-radius: 50%; text-align: center; font-size: 1.9em; top: 43.5%; left:58%; position: absolute; color: #294B74; width: 60px; height: 60px; box-shadow: -5px 0px 5px -2px rgba(0, 0, 0, 0.2); z-index:5000;"><a onclick="toggleControlPanel('#toggle-button');"style="padding: 30px;"><i id="toggle-button" style="position: absolute; top: 30%; left: 25%;" class="fa fa-chevron-right" aria-hidden="true"></a></i></div>
+      <div id="float-box" class="panel-button" style="display:none;">
+          <a onclick="toggleControlPanel('#toggle-button');"style="padding: 30px;">
+            <i id="toggle-button" class="fa fa-chevron-right panel-button-arrow" aria-hidden="true"></i>
+          </a>
+     </div>
 
       <!--#Right control panel-->
       <div class="col-md-6" style="float:right;">
@@ -480,22 +484,20 @@
                 <div class="tab-content">
                   <div class="container-control-panel">
                     <p> Please read the instruction below before using <b>Roles Management</b></p>
-                    <br>
+                    
                     <ol class="introduction">
-                      <li>Select an <b>application</b> to start. If you have not yet create an application, please click
+                      <li>
+                        Select an <b>application</b> to start. If you have not yet create an application, please click
                         <b>"Add An Application"</b> to continue.</p>
                       </li>
-                      <br>
-                      <br>
-                      <li>Once you selected an application, the left panels will expand to become your <b>application-panel</b>, <b>role-panel</b>, <b>and assigned-panel</b>. The right panel is your control panel that allows you to make any changes to your applcations, roles, and assign people.
+                      <li>
+                        Once you selected an application, the left panels will expand to become your <b>application-panel</b>, <b>role-panel</b>, <b>and assigned-panel</b>. The right panel is your control panel that allows you to make any changes to your applcations, roles, and assign people.
+                      </li>  
+                      <li>
+                        Each <b>application</b> includes different <a>roles</a>, and <a>each role</a> includes <b>people and groups that are assigned into</b>.
                       </li>
-                      <br>
-                      <br>
-                      <li>Each <b>application</b> includes different <a>roles</a>, and <a>each role</a> includes <b>people and groups that are assigned into</b>.
-                      </li>
-                      <br>
-                      <br>
-                      <li>Let us know if you have any question or concern regarding <b>Roles Management</b>, thank you!
+                      <li>
+                        Let us know if you have any question or concern regarding <b>Roles Management</b>, thank you!
                       </li>
                     </ol>
                   </div>
@@ -821,11 +823,11 @@
                       <!-- Summary -->
                       <fieldset class='alpha'>
                         <div class='list'>
-                          <h5>Name</h5>
+                          <legend>Name</legend>
                           <input class='item' placeholder='Username' type='text'>
                         </div>
                         <div class='list'>
-                          <h5>Description</h5>
+                          <legend>Description</legend>
                           <textarea name="description" class="input-xxlarge" rows="3"></textarea>
                         </div>
                       </fieldset>
@@ -840,15 +842,15 @@
                         <!-- Fieldset Alpha -->
                         <fieldset class="alpha">
                           <div class="list">
-                            <h5>Owners</h5>
+                            <legend>Owners</legend>
                             <input class="item" placeholder="Username" type="text">
                           </div>
                           <div class="list">
-                            <h5>Operators</h5>
+                            <legend>Operators</legend>
                             <input class="item" placeholder="Username" type="text">
                           </div>
                           <div class="list">
-                            <h5>Members</h5>
+                            <legend>Members</legend>
                             <input class="item" placeholder="Username" type="text">
                           </div>
                         </fieldset>
@@ -984,27 +986,27 @@
                       <!-- Summary -->
                       <fieldset class='alpha'>
                         <div class='list' style="display:inline-block;">
-                          <h5>First</h5>
+                          <legend>First</legend>
                           <input class='item input-medium' type='text' value="Andrew">
                         </div>
                         <div class='list' style="display:inline-block;">
-                          <h5>Last</h5>
+                          <legend>Last</legend>
                           <input class='item input-medium' type='text' value="Kim">
                         </div>
                         <div class="list" style="display:inline-block;">
-                          <h5>Login ID</h5>
+                          <legend>Login ID</legend>
                           <input class='item input-medium' type='text' value="Andrewk2">
                         </div>
                         <div class="list" style="display:inline-block;">
-                          <h5>E-mail</h5>
+                          <legend>E-mail</legend>
                           <input class='item input-medium' type='text' value="andrewk2@ucdavis.edu">
                         </div>
                         <div class="list" style="display:inline-block;">
-                          <h5>Phone</h5>
+                          <legend>Phone</legend>
                           <input class='item input-medium-small' type='text' value="626-345-1937">
                         </div>
                         <div class="list" style="display:inline-block;margin-left: 30px;">
-                          <h5>Address</h5>
+                          <legend>Address</legend>
                           <input class='item input-large' type='text' style=";">
                         </div>
                       </fieldset>
@@ -1019,19 +1021,19 @@
                         <!-- / Fieldset Alpha -->
                         <fieldset class="alpha">
                           <div class="list">
-                            <h5>Group Ownerships</h5>
+                            <legend>Group Ownerships</legend>
                             <input class="item" type="text">
                           </div>
                           <div class="list">
-                            <h5>Group Operatorships</h5>
+                            <legend>Group Operatorships</legend>
                             <input class="item" type="text">
                           </div>
                           <div class="list">
-                            <h5>Group Memberships</h5>
+                            <legend>Group Memberships</legend>
                             <input class="item" type="text">
                           </div>
                           <div class="list">
-                            <h5>Organizational Units</h5>
+                            <legend>Organizational Units</legend>
                             <input class="item" type="text">
                           </div>
                         </fieldset>
@@ -1044,12 +1046,12 @@
                     <div class="container-control-panel">
                       <fieldset class="alpha">
                         <div class="list">
-                          <h5>Admin</h5>
+                          <legend>Admin</legend>
                           <input class="item" type="text">
                         </div>
 
                         <div class="list">
-                          <h5>Contact list</h5>
+                          <legend>Contact list</legend>
                           <input class="item" type="text">
                         </div>
                         <div class="list" style="text-align:center; margin-top:25px;margin-bottom:25px;">
@@ -1063,7 +1065,7 @@
                   <!--Log-->
                   <div role="tabpanel" class="tab-pane" id="person-log" style="overflow:auto;">
                     <div class="container-control-panel" style="padding: 0px 0px;">
-                        <h5 style="margin-top: 20px;">Log Information</h5>
+                        <legend style="margin-top: 20px;">Log Information</legend>
                         <p></p>
                         <table class="table table-hover" style="font-size:10pt; ">
                           <thead>

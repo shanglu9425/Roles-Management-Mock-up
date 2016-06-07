@@ -124,7 +124,7 @@ navbar-default .navbar-nav > .open > a:active {
 a,
 a:active, a:hover,
 a:focus {
-  color: black;
+  color: #173C68;
   outline: none;
   text-decoration: none;
 }
@@ -196,6 +196,7 @@ input {
 }
 
 /*================== MISC==================*/
+.add-button {margin-top: 0px!important;}
 .drop-down-button {
 padding-left: 6px;
 color: white;
@@ -972,6 +973,11 @@ body ul {
 
 .assigned-section .role-group ul li button {
   margin-top: 30px; 
+  width: 200px;
+}
+
+.assigned-section .role-group ul li .add-button {
+  margin-top: 15px!important; 
   width: 200px;
 }
 

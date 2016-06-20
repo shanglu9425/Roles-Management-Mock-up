@@ -282,7 +282,7 @@ function toggleControlPanel(e) {
              event.preventDefault();
      });
 
-   })
+   });
 
  });
 

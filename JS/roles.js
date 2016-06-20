@@ -294,24 +294,3 @@ function toggleControlPanel(e) {
    }
    return false;
  }
-
-/*
-* Animation Code
-*/
-
-function slideRectangle(rectangle, style) {
-  if (style == 'animate-open') {
-    $(rectangle).css('opacity', '1');
-  }
-
-  $(rectangle).addClass(style);
-  $(rectangle).one('webkitAnimationEnd oanimationend msAnimationEnd animationend',
-    function (e) {
-      $(rectangle).removeClass(style);
-      $('.panel-wrapper').removeClass('background-blue');
-      $('.panel-wrapper').addClass('background-gray');
-      if (style == 'animate-close') {
-        $(rectangle).css('opacity', '0');
-      }
-    });
-}

@@ -25,6 +25,7 @@ function openRoles(e, app) {
 
   // Remove selected class from previously selected item
   $(".selected").removeClass("selected");
+
   // Add selected class to the clicked button
   $(e).addClass("selected");
   openControlPanel('.app', e.innerHTML);
@@ -35,14 +36,14 @@ function openAssignment(e, application, assigned) {
   openNavigationPanel('.assign');
   showData(assigned);
 
-  // Update #of members for each panel group
+  // Update number of members for each panel group
   for(var i = 0; i < $(".member-count").length; i++) {
-    var id = '#collapse' + (i + 1) + ' a';
-    $(".member-count")[i].innerText = $(id).length;
+    var num = '#collapse' + (i + 1) + ' a';
+    $(".member-count")[i].innerText = $(num).length;
   }
 
   // Remove selected class from previously selected item
-  $(".role-group.roleData .role-lists .selected").removeClass("selected");
+  $(".role-lists .selected").removeClass("selected");
 
   // Add selected class to the clicked button
   $(e).addClass("selected");
@@ -50,8 +51,8 @@ function openAssignment(e, application, assigned) {
 }
 
 function openGroup(e) {
-  var text = e.innerHTML.substring(0, e.innerHTML.indexOf("<"));
-  openControlPanel('.assign-group', text);
+  var groupTitle = e.innerHTML.substring(0, e.innerHTML.indexOf("<"));
+  openControlPanel('.assign-group', groupTitle);
   var members = $(e.getAttribute('href') + " .panel-body").length;
   $('#group-member-count').text(members);
 }
@@ -69,12 +70,21 @@ function openNavigationPanel(panel) {
 }
 
 function resizeNavigationPanels() {
-  var value = ($('.control-panel').is(':visible')) ? 0 : 40;
+  var controlPanelWidth = 40;
+  // Amount to add to a panel's width in %
+  var value = ($('.control-panel').is(':visible')) ? 0 : controlPanelWidth;
+  // default size of panels
+  var defaultSize = 0;
+
+  // Switch is based on the number of panels open
   switch($('.app-panel:visible').length) {
     case 1:
+      defaultSize = 60;
+      value += defaultSize;
+
       $('.block').css("width", "");
       $('.block.role').css("width", "");
-      value += 60;
+
       if ($('.col-md-4.background-blue').is(':visible')) {
         $('.col-md-4.background-blue').css("width", value + "%");
       } else if ($('.col-md-4.background-gray').is(':visible')) {
@@ -86,10 +96,12 @@ function resizeNavigationPanels() {
       }
       break;
     case 2:
+      defaultSize = 40;
+      value += defaultSize;
       //
       $('.block').css("width", "100%");
       $('.block.role').css("width", "");
-      value += 40;
+
       //
       if ($('.col-md-4.background-blue').is(':visible')) {
         $('.col-md-4.background-blue').css("width", "20%");
@@ -106,7 +118,8 @@ function resizeNavigationPanels() {
       }
       break;
     case 3:
-      value += 20;
+      defaultSize = 20;
+      value += defaultSize;
       $('.block.role').css("width", "100%");
       $('.col-md-4.background-blue').css("width", "20%");
       $('.col-md-4.background-gray').css("width", "20%");

@@ -38,7 +38,6 @@ function openAssignment(e, application, assigned) {
   // Update #of members for each panel group
   for(var i = 0; i < $(".member-count").length; i++) {
     var id = '#collapse' + (i + 1) + ' a';
-    console.log(id);
     $(".member-count")[i].innerText = $(id).length;
   }
 

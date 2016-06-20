@@ -35,8 +35,15 @@ function openAssignment(e, application, assigned) {
   openNavigationPanel('.assign');
   showData(assigned);
 
+  // Update #of members for each panel group
+  for(var i = 0; i < $(".member-count").length; i++) {
+    var id = '#collapse' + (i + 1) + ' a';
+    console.log(id);
+    $(".member-count")[i].innerText = $(id).length;
+  }
+
   // Remove selected class from previously selected item
-  $("#application.roleData #sub-name-list .selected").removeClass("selected");
+  $(".role-group.roleData .role-lists .selected").removeClass("selected");
 
   // Add selected class to the clicked button
   $(e).addClass("selected");
@@ -121,17 +128,15 @@ function openControlPanel(module, value) {
   if ($('.control-panel').is(':hidden')) {
     toggleControlPanel('#toggle-button');
   }
-  // remove show from previous module
-  $('.control-panel .container .show').removeClass('show');
-  // $('#application #sub-name-list').removeClass('show');
 
+  // remove show from previous module
+  $('.module.show').removeClass('show');
 
   // Change Title
   $('.modal-header legend').html("<b>" +value + "<\/b>");
 
   // Open module
   $(module).addClass('show');
-  // $(application).addClass('show');
 }
 
 function toggleControlPanel(e) {

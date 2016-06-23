@@ -6,11 +6,11 @@
 body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   overflow-y: hidden;
-  font-size: 10pt!important;
+  font-size: 9pt!important;
 }
 
 table {
-  font-size: 10pt !important;
+  font-size: 9pt !important;
 }
 
 #row-margin-top {
@@ -95,7 +95,6 @@ navbar-default .navbar-nav > .open > a:active {
 .btn-success {
   border: none;
   background-color: #7E8790!important;
-  height: 34px;
 }
 
 .btn-danger {
@@ -184,11 +183,7 @@ a:focus {
 }
 
 input {
-  font-size: 10pt;
-}
-
-.glyphicon {
-  top: 3px;
+  font-size: 9pt;
 }
 
 .panel {
@@ -203,6 +198,7 @@ input {
   font-size: 11px;}
 
   .modal-header{
+    font-size: 11pt;
     text-align: center;
     border-bottom: medium none;
     padding:none!important;
@@ -234,7 +230,7 @@ input {
   }
 
   .assigned-section .role-group ul li {
-    font-size: 10pt;
+    font-size: 9pt;
   }
 
   /* End jQuery Overwrite */
@@ -372,10 +368,14 @@ input {
     margin-bottom: 10px;
   }
 
+  .list-people {
+    width: 50% !important;
+  }
+
   fieldset .list input {
     width: 100%;
     padding: 2px 6px;
-    font-size: 10px;
+    font-size: 9pt;
     font-weight: 400;
     font-family: "Open Sans", sans-serif;
     border: 1px solid #dedede;
@@ -399,7 +399,7 @@ input {
   fieldset input {
     width: 100%;
     padding: 2px 6px;
-    font-size: 10pt;
+    font-size: 9pt;
     font-weight: 400;
     font-family: "Open Sans", sans-serif;
     border: 1.5px solid #dedede;
@@ -474,7 +474,7 @@ input {
   }
 
   #roles #rules {
-    font-size: 10pt;
+    font-size: 9pt;
   }
 
   #roles #rules .medium {
@@ -509,7 +509,7 @@ input {
 
   #roles #rules input {
     padding: 2px 6px;
-    font-size: 10px;
+    font-size: 9pt;
     font-weight: 400;
     font-family: "Open Sans", sans-serif;
     border: 1px solid #dedede;
@@ -530,7 +530,7 @@ input {
     margin: 0px;
     width: 100%;
     height: 100%;
-    font-size: 10pt;
+    font-size: 9pt;
   }
 
   body ul {
@@ -606,7 +606,7 @@ input {
     height: 100%;
     width: 100%;
     float: left;
-    font-size: 10pt;
+    font-size: 9pt;
     overflow-y: hidden;
     overflow-x: hidden!important;
   }
@@ -668,7 +668,7 @@ input {
   }
 
   .application-section .role-lists li {
-    font-size: 10pt;
+    font-size: 9pt;
   }
 
   .application-section .role-lists li {
@@ -717,7 +717,7 @@ input {
 
   .application-section .role-group li button {
     margin: 30px;
-    width: 200px;
+    width: 180px;
   }
 
   .application-section .role-group li button:focus {
@@ -738,7 +738,7 @@ input {
     text-align: center;
     border-radius: 3px;
     padding: 5px;
-    font-size: 10pt;
+    font-size: 9pt;
     width: 100%;
   }
 
@@ -763,7 +763,7 @@ input {
     position: relative;
     height: 100%;
     float: left;
-    font-size: 10pt;
+    font-size: 9pt;
     width: 100%;
     overflow-y: hidden;
     overflow-x: hidden!important;
@@ -812,11 +812,11 @@ input {
     border: 1px solid #cccccc;
     box-shadow: 0px 1px 0px 0px #ececec inset;
     margin: 5px;
-    width: 200px;
+    width: 180px;
   }
 
   .rule-section .role-group .role-lists li {
-    font-size: 10pt;
+    font-size: 9pt;
   }
 
   .rule-section .role-lists {
@@ -826,7 +826,7 @@ input {
 
   .rule-section .role-group .role-lists li {
     margin-top: 20px;
-    font-size: 10pt;
+    font-size: 9pt;
     color: #173C68
   }
 
@@ -857,7 +857,7 @@ input {
 
   .rule-section .role-group li button {
     margin: 30px;
-    width: 200px;
+    width: 180px;
   }
 
   .rule-section .role-group li a {
@@ -870,7 +870,7 @@ input {
     text-align: center;
     border-radius: 3px;
     padding: 5px;
-    font-size: 10pt;
+    font-size: 9pt;
     width: 100%;
   }
 
@@ -903,7 +903,7 @@ input {
   }
 
   .group-style {
-    width: 200px;
+    width: 180px;
     padding-top: 0px;
     margin-bottom: 14px!important;
     border-top-width: 0px;
@@ -953,7 +953,7 @@ input {
       border: 1px solid #cccccc;
       box-shadow: 0px 1px 0px 0px #ececec inset;
       margin: 5px;
-      width: 200px;
+      width: 180px;
     }
 
     .assigned-section .role-group h4 {
@@ -971,15 +971,16 @@ input {
 
     .assigned-section .role-group ul li button {
       margin-top: 30px;
-      width: 200px;
+      width: 180px;
     }
 
     .assigned-section .role-group ul li .add-button {
       margin-top: 15px!important;
-      width: 200px;
+      width: 180px;
     }
 
-    .assigned-section .role-group ul .name a{width: 200px;
+    .assigned-section .role-group ul .name a{
+      width: 180px;
       color: #0088CC;
       background-color: #D9EDF7;
       padding-top: 2px;
@@ -1008,13 +1009,13 @@ input {
 
     .assigned-section .role-group ul .group-tab span {
       color: #797877;
-      font-size: 10pt;
+      font-size: 9pt;
       margin: 0px;
       float: right;
     }
 
     .assigned-section .role-group ul .group-tab .panel-style {
-      width: 200px;
+      width: 180px;
       color: #274973;
       background-color: whitesmoke;
       padding-top: 2px;
@@ -1024,7 +1025,7 @@ input {
       padding-left: 12px;
     }
     .assigned-section .role-group ul .group-tab .panel-title {
-      font-size: 10pt;
+      font-size: 9pt;
 
     }
 
@@ -1040,7 +1041,7 @@ input {
       border-bottom: 1px solid #f2f2f2;
       border-radius: 5px;
       margin-top: 15px;
-      width: 175px;
+      width: 157px;
       padding: 0px;
       border-top: none!important;
       padding-bottom: 2px;
@@ -1165,4 +1166,13 @@ input {
           height: 100%;
           z-index: 2010;
           left: 0%;
+        }
+
+        button {
+          font-size: 9pt !important;
+        }
+        
+
+        label {
+          display: block !important;
         }

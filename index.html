@@ -28,7 +28,7 @@
     <nav class="navbar navbar-default">
       <div class="container-fluid">
         <div class="navbar-header noselect">
-          <a onclick="location.reload()"><h3 class="navbar-brand noselect">Roles Management</h3></a>
+          <a onclick="location.reload()"><div class="navbar-brand noselect">Roles Management</div></a>
         </div>
 
         <div class="container-fluid pull-right">
@@ -495,7 +495,7 @@
             <!-- Start Introduction -->
             <div id="introduction" class="module">
               <div class="modal-header">
-                <legend><b>Welcome to Roles Management</b></legend>
+                <label><b>Welcome to Roles Management</b></label>
               </div>
               <div class="model-body">
                 <div class="tab-content">
@@ -527,7 +527,7 @@
             <div class="module app">
               <!-- Title -->
               <div class="modal-header">
-                <legend><b>TEST APPLICATION</b></legend>
+                <label><b>TEST APPLICATION</b></label>
               </div>
 
               <div class="model-body">
@@ -545,23 +545,23 @@
                       <!-- Summary -->
                       <fieldset class='alpha'>
                         <div class='list'>
-                          <h5>Name</h5>
+                          <label>Name</label>
                           <input class='add-autocomplete item' type='text'>
                         </div>
                         <div class="list">
-                          <h5>Description</h5>
+                          <label>Description</label>
                           <input class="item" type="text">
                         </div>
                         <div class="list">
-                          <h5>URL</h5>
+                          <label>URL</label>
                           <input class="item" type="text">
                         </div>
                         <div class="list">
-                          <h5>Owners</h5>
+                          <label>Owners</label>
                           <input class="add-token item" type="text">
                         </div>
                         <div class="list">
-                          <h5>Operators</h5>
+                          <label>Operators</label>
                           <input class="add-token item" type="text">
                         </div>
                       </fieldset>
@@ -582,7 +582,7 @@
                     <button type="button" class="btn btn-danger" style="float:left;" onclick="submit('Deleted', 'danger');">Delete</button>
 
                     <div class="btn-group">
-                      <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-file" style="margin-bottom: 5px;margin-left: 1px;"></span></button>
+                      <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-file"></span></button>
                       <ul class="dropdown-menu">
                         <li><a href="#" id="csv-download">Download CSV</a>
                         </li>
@@ -601,7 +601,7 @@
 
               <!-- Title -->
               <div class="modal-header">
-                <legend style="margin-bottom: 0px;"><b>Adding New Role</b></legend>
+                <label style="margin-bottom: 0px;"><b>Adding New Role</b></label>
               </div>
 
               <div class="model-body" style="padding-top:0px;">
@@ -614,23 +614,23 @@
                       <!-- Summary -->
                       <fieldset class='alpha'>
                         <div class='list'>
-                          <h5>Name</h5>
+                          <label>Name</label>
                           <input class='add-autocomplete item' type='text'>
                         </div>
                         <div class="list">
-                          <h5>Description</h5>
+                          <label>Description</label>
                           <input class="item" type="text">
                         </div>
                         <div class="list">
-                          <h5>URL</h5>
+                          <label>URL</label>
                           <input class="item" type="text">
                         </div>
                         <div class="list">
-                          <h5>Owners</h5>
+                          <label>Owners</label>
                           <input class="add-token item" type="text">
                         </div>
                         <div class="list">
-                          <h5>Operators</h5>
+                          <label>Operators</label>
                           <input class="add-token item" type="text">
                         </div>
                       </fieldset>
@@ -642,7 +642,7 @@
                     <button type="button" class="btn btn-danger" style="float:left;" onclick="submit('Deleted', 'danger');">Delete</button>
 
                     <div class="btn-group">
-                      <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-file" style="margin-bottom: 5px;margin-left: 1px;"></span></button>
+                      <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-file"></span></button>
                       <ul class="dropdown-menu">
                         <li><a href="#" id="csv-download">Download CSV</a>
                         </li>
@@ -660,7 +660,7 @@
             <div class="module specific-role">
               <!-- Title -->
               <div class="modal-header">
-                <legend><b>Printer A</b></legend>
+                <label><b>Printer A</b></label>
               </div>
               <!-- Title -->
               <div class="model-body">
@@ -678,15 +678,15 @@
                       <!-- Summary -->
                       <fieldset class='alpha'>
                         <div class='list'>
-                          <h5>Name</h5>
+                          <label>Name</label>
                           <input class='item' type='text' value="Printer A">
                         </div>
                         <div class="list">
-                          <h5>Description</h5>
+                          <label>Description</label>
                           <input class="item" type="text" value="Permission to access Printer A in Kerr Hall">
                         </div>
                         <div class="list">
-                          <h5>Token</h5>
+                          <label>Token</label>
                           <input class="item" type="text">
                         </div>
                       </fieldset>
@@ -704,9 +704,8 @@
 
                   <!--Log-->
                   <div role="tabpanel" class="tab-pane" id="log" style="overflow:auto;">
-                    <div class="container" style="padding: 0px 0px;">
-                      <div class="container">
-                        <h5 style="margin-top: 20px;">Log Information</h5>
+                    <div class="container-control-panel" style="padding: 0px 0px;">
+                        <label style="margin-top: 20px;">Log Information</label>
                         <p></p>
                         <table class="table table-hover" style="font-size:10pt; ">
                           <thead>
@@ -741,7 +740,6 @@
                             <li><a href="#">&raquo;</a></li>
                           </ul>
                         </div>
-                      </div>
                     </div>
                   </div>
 
@@ -749,7 +747,7 @@
                   <div class='setting-button modal-footer'>
                     <button type="button" class="btn btn-danger" style="float:left;" onclick="submit('Deleted', 'danger');">Delete</button>
                     <div class="btn-group">
-                      <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-file" style="margin-bottom: 5px;margin-left: 1px;"></span></button>
+                      <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-file"></span></button>
                       <ul class="dropdown-menu">
                         <li><a href="#" id="csv-download">Download CSV</a>
                         </li>
@@ -766,7 +764,7 @@
             <div class="module add-people">
               <!-- Title -->
               <div class="modal-header">
-                <legend style="margin-bottom: 0px;"><b>Add New People</b></legend>
+                <label style="margin-bottom: 0px;"><b>Add New People</b></label>
               </div>
 
               <div class="model-body" style="padding-top:0px;">
@@ -779,7 +777,7 @@
                       <!-- Summary -->
                       <fieldset class='alpha'>
                         <div class='list'>
-                          <h5>Assigning</h5>
+                          <label>Assigning</label>
                           <textarea name="description" class="input-xxlarge add-token" rows="3"></textarea>
                         </div>
                       </fieldset>
@@ -792,7 +790,7 @@
 
                     <div class="btn-group">
                       <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown">
-                        <span class="glyphicon glyphicon-file" style="margin-bottom: 5px;margin-left: 1px;"></span>
+                        <span class="glyphicon glyphicon-file"></span>
                       </button>
 
                       <ul class="dropdown-menu">
@@ -814,7 +812,7 @@
 
               <!-- Title -->
               <div class="modal-header">
-                <legend><b>DSS IT Kerr 168</b></legend>
+                <label><b>DSS IT Kerr 168</b></label>
               </div>
 
               <div class="model-body" style="padding-top:0px;">
@@ -840,11 +838,11 @@
                       <!-- Summary -->
                       <fieldset class='alpha'>
                         <div class='list'>
-                          <legend>Name</legend>
+                          <label>Name</label>
                           <input class='item' placeholder='Username' type='text'>
                         </div>
                         <div class='list'>
-                          <legend>Description</legend>
+                          <label>Description</label>
                           <textarea name="description" class="input-xxlarge" rows="3"></textarea>
                         </div>
                       </fieldset>
@@ -859,15 +857,15 @@
                         <!-- Fieldset Alpha -->
                         <fieldset class="alpha">
                           <div class="list">
-                            <legend>Owners</legend>
+                            <label>Owners</label>
                             <input class="item" placeholder="Username" type="text">
                           </div>
                           <div class="list">
-                            <legend>Operators</legend>
+                            <label>Operators</label>
                             <input class="item" placeholder="Username" type="text">
                           </div>
                           <div class="list">
-                            <legend>Members</legend>
+                            <label>Members</label>
                             <input class="item" placeholder="Username" type="text">
                           </div>
                         </fieldset>
@@ -926,7 +924,7 @@
                   <!--Log-->
                   <div role="tabpanel" class="tab-pane" id="group-log" style="overflow:auto;">
                     <div class="container-control-panel">
-                        <h5 style="margin-top: 20px;">Log Information</h5>
+                        <label style="margin-top: 20px;">Log Information</label>
                         <p></p>
                         <table class="table table-hover" style="font-size:10pt; ">
                           <thead>
@@ -963,7 +961,7 @@
                   <div class='setting-button modal-footer'>
                     <button type="button" class="btn btn-danger" style="float:left;">Delete</button>
                     <div class="btn-group">
-                      <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-file" style="margin-bottom: 5px;margin-left: 1px;"></span></button>
+                      <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-file"></span></button>
                       <ul class="dropdown-menu">
                         <li><a href="#" id="csv-download">Download CSV</a>
                         </li>
@@ -981,7 +979,7 @@
 
               <!-- Title -->
               <div class="modal-header">
-                <legend><b>Andrew Kim</b></legend>
+                <label><b>Andrew Kim</b></label>
               </div>
 
 
@@ -1002,29 +1000,29 @@
 
                       <!-- Summary -->
                       <fieldset class='alpha'>
-                        <div class='list' style="display:inline-block;">
-                          <legend>First</legend>
-                          <input class='item input-medium' type='text' value="Andrew">
+                        <div class="list list-people" style="display:inline-block;">
+                          <label>First</label>
+                          <input class='item input-medium' type="text" value="Andrew">
                         </div>
-                        <div class='list' style="display:inline-block;">
-                          <legend>Last</legend>
-                          <input class='item input-medium' type='text' value="Kim">
+                        <div class="list list-people" style="display:inline-block;">
+                          <label>Last</label>
+                          <input class="item input-medium" type="text" value="Kim">
                         </div>
-                        <div class="list" style="display:inline-block;">
-                          <legend>Login ID</legend>
-                          <input class='item input-medium' type='text' value="Andrewk2">
+                        <div class="list list-people" style="display:inline-block;">
+                          <label>Login ID</label>
+                          <input class="item input-medium"" type="text" value="Andrewk2">
                         </div>
-                        <div class="list" style="display:inline-block;">
-                          <legend>E-mail</legend>
-                          <input class='item input-medium' type='text' value="andrewk2@ucdavis.edu">
+                        <div class="list list-people" style="display:inline-block;">
+                          <label>E-mail</label>
+                          <input class='item input-medium' type="text"" value="andrewk2@ucdavis.edu">
                         </div>
-                        <div class="list" style="display:inline-block;">
-                          <legend>Phone</legend>
-                          <input class='item input-medium-small' type='text' value="626-345-1937">
+                        <div class="list list-people" style="display:inline-block;">
+                          <label>Phone</label>
+                          <input class="item input-medium-small" type="text"" value="626-345-1937">
                         </div>
-                        <div class="list" style="display:inline-block;margin-left: 30px;">
-                          <legend>Address</legend>
-                          <input class='item input-large' type='text' style=";">
+                        <div class="list list-people" style="display:inline-block;">
+                          <label>Address</label>
+                          <input class="item input-large" type="text">
                         </div>
                       </fieldset>
                     </div>
@@ -1038,19 +1036,19 @@
                         <!-- / Fieldset Alpha -->
                         <fieldset class="alpha">
                           <div class="list">
-                            <legend>Group Ownerships</legend>
+                            <label>Group Ownerships</label>
                             <input class="item" type="text">
                           </div>
                           <div class="list">
-                            <legend>Group Operatorships</legend>
+                            <label>Group Operatorships</label>
                             <input class="item" type="text">
                           </div>
                           <div class="list">
-                            <legend>Group Memberships</legend>
+                            <label>Group Memberships</label>
                             <input class="item" type="text">
                           </div>
                           <div class="list">
-                            <legend>Organizational Units</legend>
+                            <label>Organizational Units</label>
                             <input class="item" type="text">
                           </div>
                         </fieldset>
@@ -1063,17 +1061,15 @@
                     <div class="container-control-panel">
                       <fieldset class="alpha">
                         <div class="list">
-                          <legend>Admin</legend>
-                          <input class="item" type="text">
+                          <input class="input-large pull-right" placeholder="+ Add Application..." type="text">
                         </div>
-
                         <div class="list">
-                          <legend>Contact list</legend>
+                          <label>Admin</label>
                           <input class="item" type="text">
                         </div>
-                        <div class="list" style="text-align:center; margin-top:25px;margin-bottom:25px;">
-                          <i class="fa fa-search"></i>
-                          <input class="input-large" placeholder="Add Application..." type="text" style="text-indent:25px">
+                        <div class="list">
+                          <label>Contact list</label>
+                          <input class="item" type="text">
                         </div>
                       </fieldset>
                     </div>
@@ -1082,7 +1078,7 @@
                   <!--Log-->
                   <div role="tabpanel" class="tab-pane" id="person-log" style="overflow:auto;">
                     <div class="container-control-panel" style="padding: 0px 0px;">
-                        <legend style="margin-top: 20px;">Log Information</legend>
+                        <label style="margin-top: 20px;">Log Information</label>
                         <p></p>
                         <table class="table table-hover" style="font-size:10pt; ">
                           <thead>
@@ -1113,7 +1109,7 @@
                   <!-- Buttons -->
                   <div class='setting-button modal-footer' style="padding: 0px;">
                     <button type="button" class="btn btn-danger" style="float:left;">Delete</button>
-                    <div class="btn-group" role="group" aria-label="..." style="margin-right: 17px;">
+                    <div class="btn-group" role="group" aria-label="..." style="margin-right: 45px;">
                       <button type="button" class="btn btn-default active">Active</button>
                       <button type="button" class="btn btn-default">Inactive</button>
                     </div>
